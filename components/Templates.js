@@ -4,16 +4,7 @@ import Card from './Card'
 
 const Templates = () => {
   return (
-    <div className='relative overflow-hidden' style={{
-        background: 'linear-gradient(180deg, #A46EDB 0%, #4F21A1 36.21%, #200D42 68.68%, #000000 86.54%)',
-        width:'100%',
-        height: '947px',
-        zIndex:'20',
-        position:'relative',
-        top:'-100px'
-
-    }}>
-        <div className='flex flex-col gap-[53px] p-28 justify-center items-center absolute'
+        <div className='flex flex-col gap-[53px] p-28 justify-center items-center relative overflow-hidden mx-auto z-20'
   style={{
     background: `
       radial-gradient(ellipse at center, rgba(0, 0, 0, 0.82) 82.2%, transparent 100%),
@@ -28,7 +19,6 @@ const Templates = () => {
         <div className='mt-14 flex items-center justify-center'>
           <Card/>
         </div>
-    </div>
     </div>
   )
 }

@@ -16,7 +16,7 @@ const Final = () => {
     };
   return (
     <div className='mt-[176px] flex flex-col px-[120px] '>
-        <div className='flex flex-row gap-[40px]'>
+        <div className='flex flex-row gap-[40px] justify-center items-center mx-auto'>
             <Image src={'/Chart.svg'} alt='chart' width={263} height={263} className='relative top-[-106px]'/>
             <div className='flex flex-col gap-[16px]'>
                 <h1 className='font-bold text-[54px] text-center text-[#ffffff]'>Get instant access</h1>
