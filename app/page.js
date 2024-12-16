@@ -14,14 +14,15 @@ import Stars from '@/components/Stars'
 
 const page = () => {
   return (
-    <div className='relative flex flex-col w-full h-full bg-black'>
+    <div className='relative flex flex-col w-full h-full'>
+
       <Stars/>
       <Playmode/>
       <Companies/>
       <Everythingyouneed/>
       <Rectangle/>
       <Templates/>
-      <div className='relative w-[686px] h-[290px] top-[60px] z-20 mt-20 rounded-b-full mx-auto bg-gradient-to-t from-black to-[#8C45FF7D] via-black [background-size:100%_200%] [background-position:49%] backdrop-blur-[304px] glow-gradient'>
+      <div className='relative w-[686px] h-[290px] top-[-170px]  mt-20 rounded-b-full mx-auto bg-gradient-to-t from-black to-[#8C45FF7D] via-black [background-size:100%_200%] [background-position:49%] backdrop-blur-[304px] glow-gradient'>
 </div>
       <CTA/>
       <FAQ/>

@@ -15,7 +15,7 @@ export default function RootLayout({ children }) {
   return (
     <html lang="en">
       <body
-        className={`${inter.variable} antialiased bg-black scroll-container scrollbar-hide`}
+        className={`${inter.variable} antialiased scroll-container scrollbar-hide`}
       >
         {children}
       </body>

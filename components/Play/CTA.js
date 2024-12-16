@@ -4,7 +4,7 @@ const CTA = () => {
 
 
   return (
-    <div className='flex flex-col gap-2.5 z-40 -mt-[240px] px-[100px] rounded-lg border border-card mx-auto justify-center items-center' style={{
+    <div className='flex flex-col gap-2.5 z-10 -mt-[240px] px-[100px] rounded-lg border border-card mx-auto relative top-[-235px] justify-center items-center' style={{
       background: 'linear-gradient(180.17deg, rgba(2, 1, 3, 0) 15.64%, #020103 99.86%), url("/pattern.svg")',
       backgroundSize: 'contain',
       backgroundRepeat: 'no-repeat',
@@ -18,7 +18,7 @@ const CTA = () => {
       <h1 className='text-center text-[#ffffff] font-medium text-[56px]'>
         or Product Owner?
       </h1>
-      <p className="text-base text-center text-[#ffffff]">
+      <p className="text-base text-center text-[#ffffffb3]">
       Don&apos;t miss out on the momentum with Voyex. List your product or tool today and be part of the AI revolution. 
       <strong style={{ fontWeight: 'bold' }}> We&apos;re offering free listing opportunities </strong> 
       for our first few partners. Voyex acts as the Google for AI—don&apos;t let your tool go unnoticed. By partnering with us, your tool becomes a key part of our workflow recommendations, ensuring it reaches users who need it most

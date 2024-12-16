@@ -7,7 +7,10 @@ const Templates = () => {
     <div className='relative overflow-hidden' style={{
         background: 'linear-gradient(180deg, #A46EDB 0%, #4F21A1 36.21%, #200D42 68.68%, #000000 86.54%)',
         width:'100%',
-        height: '947px'
+        height: '947px',
+        zIndex:'20',
+        position:'relative',
+        top:'-100px'
 
     }}>
         <div className='flex flex-col gap-[53px] p-28 justify-center items-center absolute'
