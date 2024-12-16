@@ -22,7 +22,7 @@ const page = () => {
       <Everythingyouneed/>
       <Rectangle/>
       <Templates/>
-      <div className='relative w-[686px] h-[290px] top-[60px]  mt-20 rounded-b-full mx-auto bg-gradient-to-t from-black to-[#8C45FF7D] via-black [background-size:100%_200%] [background-position:49%] backdrop-blur-[304px] glow-gradient'>
+      <div className='relative w-[686px] h-[290px] top-[-10px]  mt-20 rounded-b-full mx-auto bg-gradient-to-t from-black to-[#8C45FF7D] via-black [background-size:100%_200%] [background-position:49%] backdrop-blur-[304px] glow-gradient'>
 </div>
       <CTA/>
       <FAQ/>

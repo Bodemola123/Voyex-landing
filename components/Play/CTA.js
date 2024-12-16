@@ -4,7 +4,7 @@ const CTA = () => {
 
 
   return (
-    <div className='flex flex-col gap-2.5 z-10 px-[100px] rounded-lg border border-card mx-auto relative top-[-235px] justify-center items-center' style={{
+    <div className='flex flex-col gap-2.5 z-10 px-[100px] rounded-lg border border-card mx-auto relative top-[-315px] justify-center items-center' style={{
       background: 'linear-gradient(180.17deg, rgba(2, 1, 3, 0) 15.64%, #020103 99.86%), url("/pattern.svg")',
       backgroundSize: 'contain',
       backgroundRepeat: 'no-repeat',
