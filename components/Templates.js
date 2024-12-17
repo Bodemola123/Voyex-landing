@@ -5,11 +5,12 @@ import Card from './Card';
 const Templates = () => {
   return (
     <div 
-      className="flex flex-col gap-[53px] p-28 justify-center items-center relative overflow-hidden mx-auto z-50 -mt-[130px]"
+      className="flex flex-col gap-[53px] p-28 justify-center items-center absolute top-[3170px]  mx-auto z-50"
       style={{
-        background: 'linear-gradient(180deg, #A46EDB 0%, #010101 9.46%)', 
-        borderTopLeftRadius: "50% 90px",
-        borderTopRightRadius: "50% 90px",
+        background: 'linear-gradient(180deg, #A46EDB 0%, #010101 9.46%)',
+        backgroundImage: "url('/Ellipse.svg')", // Replace with your image path
+        backgroundSize: 'cover',
+        backgroundPosition: 'center',
       }}
     >
       <div className="flex flex-col gap-6 justify-center items-center">

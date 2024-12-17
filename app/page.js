@@ -22,8 +22,9 @@ const page = () => {
       <Everythingyouneed/>
       <Rectangle/>
       <Templates/>
-      <div className='relative w-[686px] h-[290px] top-[-10px]  mt-20 rounded-b-full mx-auto bg-gradient-to-t from-black to-[#8C45FF7D] via-black [background-size:100%_200%] [background-position:49%] backdrop-blur-[304px] glow-gradient'>
+<div className='relative w-[786px] h-[270px] mt-[1080px] top-[40px] opacity-100 rounded-b-full mx-auto bg-gradient-to-t from-black to-[#8C45FF7D] via-[#8C45FF7D] [background-size:100%_200%] [background-position:49%] backdrop-blur-[104px] glow-gradient shadow-[0px_0px_100px_60px_#8C45FF7D]'>
 </div>
+
       <CTA/>
       <FAQ/>
       <Final/>

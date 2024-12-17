@@ -13,7 +13,7 @@ const Everythingyouneed = () => {
                 <p className='-mt-8'>strategies to technical tasks.</p>
             </span>
         </div>
-        <div className='grid grid-cols-2 gap-4'>
+        <div className='grid grid-cols-2 gap-4 w-[1144px]'>
             <div className='p-10 border border-card rounded-xl flex flex-col justify-center items-center bg-[#0d0d0d] gap-6'>
                 <div className='p-5 w-[56px] flex rounded-xl bg-[#ffffff]'><Image src={'/Vector.svg'} alt='vec' width={15.63} height={15.63}/></div>
                 <h1 className='font-bold text-center text-[#ffffff] text-[18px] leading-[23.03px]'>AI Query Engine</h1>
