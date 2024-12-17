@@ -7,7 +7,7 @@ const Hero = () => {
     <div className='flex flex-col items-center justify-center text-center mt-[50px]'>
       <div className='flex flex-row gap-[40px]'>
             <Image src={'/cursor.svg'} alt='chart' width={200} height={200} className='relative top-[90px] left-[140px] z-40'/>
-      <h1 class="text-[165px] font-bold leading-tight text-[#ffffff] shadow-[0px_12px_4px_0px_#0000003D] z-50">
+      <h1 class="text-[168px] font-black leading-tight text-[#ffffff] shadow-[0px_12px_4px_0px_#0000003D] z-50">
         <span>Ideas into</span><br></br>
         <span>Workflows</span>
       </h1>

@@ -41,7 +41,7 @@ const Everythingyouneed = () => {
                 <p className='text-[#ffffffb3]'> This is just the beginning. We're developing </p>
                 <p className='text-[#ffffffb3]'>agent-based workflows that will allow you to</p>
             </div>
-            <div className='flex flex-col p-10 border bg-black border-card items-baseline justify-end col-span-2 rounded-[13px]'
+            <div className='flex flex-col pl-10 pb-5 border bg-black border-card items-baseline justify-end col-span-2 rounded-[13px]'
                     style={{ 
                         backgroundImage: "url('/Visual1.svg')", 
                         backgroundSize: 'contain',  

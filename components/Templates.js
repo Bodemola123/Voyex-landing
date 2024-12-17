@@ -5,7 +5,7 @@ import Card from './Card';
 const Templates = () => {
   return (
     <div 
-      className="flex flex-col gap-[53px] p-28 justify-center items-center absolute top-[3170px]  mx-auto z-50"
+      className="flex flex-col gap-[53px] p-28 justify-center items-center absolute top-[3270px] opacity-[0.89] mx-auto z-50"
       style={{
         background: 'linear-gradient(180deg, #A46EDB 0%, #010101 9.46%)',
         backgroundImage: "url('/Ellipse.svg')", // Replace with your image path
