@@ -1,5 +1,6 @@
 import { Inter } from "next/font/google";
 import "./globals.css";
+import ShootingStars from "@/components/common/ShootingStars";
 
 const inter = Inter({
   variable: "--font-inter", // Custom variable name
@@ -17,6 +18,7 @@ export default function RootLayout({ children }) {
       <body
         className={`${inter.variable} antialiased scroll-container scrollbar-hide w-100% overflow-hidden`}
       >
+        <ShootingStars/>
         {children}
       </body>
     </html>
