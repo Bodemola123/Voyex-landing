@@ -15,10 +15,10 @@ const Final = () => {
       }
     };
   return (
-    <div className='mt-[176px] flex flex-col px-[120px] '>
-        <div className='flex flex-row gap-[40px] justify-center items-center mx-auto'>
-            <Image src={'/Chart.svg'} alt='chart' width={263} height={263} className='relative top-[-106px]'/>
-            <div className='flex flex-col gap-[16px]'>
+    <div className='mt-[176px] flex flex-col lg:px-[120px] md:px-[10px]'>
+        <div className='flex flex-row lg:gap-[40px] justify-center items-center lg:mx-auto'>
+            <Image src={'/Chart.svg'} alt='chart' width={263} height={263} className='relative lg:top-[-106px] md:top-[-136px] lg:left-0 md:right-[110px]'/>
+            <div className='flex flex-col gap-[20px]'>
                 <h1 className='font-bold text-[54px] text-center text-[#ffffff]'>Get instant access</h1>
                 <p className='text-[#bbbbbb] text-base font-normal text-center'>Celebrate the joy of accomplishment with an app designed to track your progress and motivate your efforts.</p>
                 <form onSubmit={handleSubmit}className='flex flex-row justify-center gap-2.5 items-center'>
@@ -34,11 +34,11 @@ const Final = () => {
                     <button type='submit' className='py-2.5 px-[15px] flex gap-1 bg-[#ffffff] text-[#000000] font-medium text-base rounded-[27px]'>Get Access</button>
                 </form>
             </div>
-            <Image src={'/Bolt.svg'} alt='bolt' width={225} height={225} className='relative top-[35px]'/> 
+            <Image src={'/Bolt.svg'} alt='bolt' width={225} height={225} className='relative lg:top-[35px] md:top-[38px] lg:left-0 md:left-[80px]'/> 
         </div>
         <div className='mt-[40px] border-t border-white/20 flex flex-row px-[40px] py-[20px] justify-between items-center'>
         <p className='text-sm font-normal text-[#808080]'>@ 2024 VOYEX, Inc. All rights reserved</p>
-        <div className='flex flex-row gap-[16px]'>
+        <div className='flex flex-row lg:gap-[16px] md:gap-[11px]'>
           <Image src={'/X.svg'} alt='X' width={16} height={14}/>
           <Image src={'/Insta.svg'} alt='X' width={19.5} height={19.5}/>
           <Image src={'/Pinterest.svg'} alt='X' width={16} height={16}/>

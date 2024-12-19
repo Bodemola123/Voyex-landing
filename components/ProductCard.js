@@ -12,7 +12,7 @@ const ProductCard = ( {product} ) => {
     const [hovered, setHovered] = useState(false);
 
   return (
-    <div className='w-auto rounded-3xl flex flex-col gap-4 p-6 bg-custom-gradient backdrop-blur-custom text-white'
+    <div className='w-auto lg:rounded-3xl md:rounded-[17.84px] flex flex-col lg:gap-4 md:gap-[7.13px] lg:p-6 md:p-[17.12px] bg-custom-gradient backdrop-blur-custom text-white'
     style={{
       background: 'linear-gradient(90.83deg, rgba(192, 136, 251, 0.1) 0%, rgba(192, 136, 251, 0.042) 100%)',
     }}
@@ -20,18 +20,18 @@ const ProductCard = ( {product} ) => {
     onMouseLeave={() => setHovered(false)}
     >
         <div className='flex justify-between flex-row'>
-            <div className='flex flex-col gap-2.5'>
-            <Image src={'/chatgpt.svg'} alt='chatgpt' width={52} height={52}/>
-            <h1 className="text-base font-bold">{product.title}</h1>
+            <div className='flex flex-col lg:gap-2.5 md:gap-[7.13px]'>
+            <Image src={'/chatgpt.svg'} alt='chatgpt' width={52} height={52} className='lg:w-[52px] lg:h-[52px] md:w-[37.1px] md:h-[37.1px]'/>
+            <h1 className="lg:text-base md:text-[11.42px] font-bold">{product.title}</h1>
             </div>
-            <FaRegStar/>
+            <FaRegStar className='lg:text-[16px] md:text-[11.42px]'/>
         </div>
-        <div className='text-sm font-normal '>
+        <div className='lg:text-sm md:text-[10px] font-normal '>
             <p>Supports GPT-4 and GPT-3.5. OpenAI&apos;s</p>
             <p className='truncate'>next-generation conversational AI, using intelligent Q&A capabilities to solve your tough questions.</p>
         </div>
         {!hovered && (
-        <div className='flex flex-row items-center truncate gap-2 mt-4'>
+        <div className='flex flex-row items-center truncate lg:gap-2 md:gap-[5.71px] mt-4'>
          <span className="text-xs capitalize px-2 py-1 rounded-[21px] border border-card">
           chatbot
         </span>

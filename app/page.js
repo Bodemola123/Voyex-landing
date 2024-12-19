@@ -10,19 +10,18 @@ import React from 'react'
 import '../app/globals.css'
 import FAQ from '@/components/FAQ'
 import Final from '@/components/Play/Final'
-import Stars from '@/components/Stars'
 
 const page = () => {
   return (
     <div className='relative flex flex-col w-full h-full'>
-
-      <Stars/>
+      <Header/>
+      <Hero/>
       <Playmode/>
       <Companies/>
       <Everythingyouneed/>
       <Rectangle/>
       <Templates/>
-<div className='relative w-[786px] h-[270px] mt-[1080px] top-[40px] opacity-100 rounded-b-full mx-auto bg-gradient-to-t from-black to-[#8C45FF7D] via-[#8C45FF7D] [background-size:100%_200%] [background-position:49%] backdrop-blur-[104px] glow-gradient shadow-[0px_0px_100px_60px_#8C45FF7D]'>
+<div className='relative lg:w-[786px] lg:h-[270px] md:w-[478.15px] md:h-[180px] lg:mt-[1080px] md:mt-[700px] top-[40px] opacity-100 rounded-b-full mx-auto bg-gradient-to-t from-black to-[#8C45FF7D] via-[#8C45FF7D] [background-size:100%_200%] [background-position:49%] backdrop-blur-[104px] glow-gradient shadow-[0px_0px_100px_60px_#8C45FF7D]'>
 </div>
 
       <CTA/>
