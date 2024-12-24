@@ -38,13 +38,15 @@ const Everythingyouneed = () => {
                 <p className='text-[#ffffffb3] sm:mb-5 md:mb-0'> This is just the beginning. We're developing agent-based workflows that will allow you to</p>
                 </div>
             </div>
-            <div className='flex flex-col lg:pl-10 md:pl-[25.71px] lg:gap-2 sm:gap-[5.14px] sm:pl-[19.32px] sm:pb-[37.7px] lg:pb-5 md:pb-[11.1px] border bg-black border-card items-baseline justify-end lg:col-span-2 md:col-span-1 lg:rounded-[13px] md:rounded-[6.43px] sm:rounded-[6.43px] lg:w-[744px] lg:h-[400px] md:w-[370.23px] md:h-[304.19px] sm:w-[360px] sm:h-[400px] '
-                    style={{ 
-                        backgroundImage: ` url('/Visual1.svg'),linear-gradient(180deg, #000000 0%, #371866 100%)`,
-                        backgroundSize: 'contain',  
-                        backgroundRepeat: 'no-repeat',  
-                        backgroundPosition: 'center',  
-                      }}>
+            <div
+  className="flex flex-col items-baseline justify-end 
+  lg:pl-10 lg:gap-2 lg:pb-5 lg:col-span-2 lg:rounded-[13px] lg:w-[744px] lg:h-[400px] 
+  md:pl-[25.71px] md:gap-2 md:pb-[11.1px] md:col-span-1 md:rounded-[6.43px] md:w-[370.23px] md:h-[304.19px] 
+  sm:pl-[19.32px] sm:gap-[5.14px] sm:pb-[66.7px] sm:rounded-[6.43px] sm:w-[360px] sm:h-[400px] 
+  border border-card
+  md:bg-gradient-and-darkstar sm:bg-gradient-and-smview 
+  bg-cover bg-no-repeat bg-center"
+>
                 <h1 className='font-medium text-[#ffffff]'>Automate campaigns</h1>
                 <p className='text-[#ffffffb3] lg:w-[322px] md:w-[285.59px] sm:w-[285.59px]'>Automated campaigns simplify marketing with personalized, data-driven strategies. </p>
             </div>
