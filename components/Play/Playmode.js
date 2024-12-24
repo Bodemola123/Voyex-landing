@@ -5,7 +5,7 @@ import '../././../app/globals.css'
 
 const Playmode = () => {
   return (
-    <div className='flex justify-center items-center md:mt-[179px] sm:mt-[75.32]'>
+    <div className='flex justify-center items-center md:mt-[179px] sm:mt-[75.32px]'>
 <div className='border rounded-[18px] border-card flex justify-center items-center lg:w-[1131px] lg:h-[635px] md:w-[730px] md:h-[409px] sm:w-[344px] sm:h-[193px]' 
   style={{ 
     backgroundImage: "url('/ChatBot.svg')", 
