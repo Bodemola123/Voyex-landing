@@ -36,7 +36,7 @@ const Final = () => {
             </div>
             <Image src={'/Bolt.svg'} alt='bolt' width={225} height={225} className='relative lg:top-[35px] md:top-[38px] lg:left-0 md:left-[0px] sm:hidden md:flex'/> 
         </div>
-        <div className='md:mt-[40px] sm:mt-[72px] border-t border-white/20 flex md:flex-row sm:flex-col px-[40px] md:py-[20px] sm:py-[50px] md:justify-between sm:justify-center items-center sm:gap-2 md:gap-0'>
+        <div className='md:mt-[40px] sm:mt-[72px] border-t border-white/20 flex md:flex-row sm:flex-col px-[40px] md:py-[20px] sm:py-[50px] md:justify-between sm:justify-center sm:items-center sm:gap-2 md:gap-0'>
         <p className='text-sm font-normal text-[#808080]'>@ 2024 VOYEX, Inc. All rights reserved</p>
         <div className='flex flex-row lg:gap-[16px] md:gap-[15px] sm:gap-[15px]'>
           <Image src={'/X.svg'} alt='X' width={16} height={14}/>

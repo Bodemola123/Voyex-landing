@@ -13,7 +13,7 @@ import Final from '@/components/Play/Final'
 
 const page = () => {
   return (
-    <div className='relative flex flex-col w-full h-full'>
+    <div className='relative flex flex-col w-full h-full '>
       <Header/>
       <Hero/>
       <Playmode/>
