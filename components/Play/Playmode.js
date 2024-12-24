@@ -9,7 +9,7 @@ const Playmode = () => {
 <div className='border rounded-[18px] border-card flex justify-center items-center lg:w-[1131px] lg:h-[635px] md:w-[730px] md:h-[409px] sm:w-[344px] sm:h-[193px]' 
   style={{ 
     backgroundImage: "url('/ChatBot.svg')", 
-    backgroundSize: 'contain',  
+    backgroundSize: 'cover',  
     backgroundRepeat: 'no-repeat',  
     backgroundPosition: 'center' 
   }} 

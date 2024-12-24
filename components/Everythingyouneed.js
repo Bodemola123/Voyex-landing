@@ -41,7 +41,7 @@ const Everythingyouneed = () => {
             <div className='flex flex-col lg:pl-10 md:pl-[25.71px] lg:gap-2 sm:gap-[5.14px] sm:pl-[19.32px] sm:pb-[37.7px] lg:pb-5 md:pb-[11.1px] border bg-black border-card items-baseline justify-end lg:col-span-2 md:col-span-1 lg:rounded-[13px] md:rounded-[6.43px] sm:rounded-[6.43px] lg:w-[744px] lg:h-[400px] md:w-[370.23px] md:h-[304.19px] sm:w-[360px] sm:h-[400px] '
                     style={{ 
                         backgroundImage: ` url('/Visual1.svg'),linear-gradient(180deg, #000000 0%, #371866 100%)`,
-                        backgroundSize: 'contain',  
+                        backgroundSize: 'cover',  
                         backgroundRepeat: 'no-repeat',  
                         backgroundPosition: 'center',  
                       }}>
