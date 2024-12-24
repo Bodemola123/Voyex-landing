@@ -19,7 +19,7 @@ const [products] = useState([
 
 
   return (
-    <div className="grid grid-cols-3 lg:gap-4 md:gap-[11.42px] w-[100%] ">
+    <div className="md:grid md:grid-cols-3 sm:grid sm:grid-cols-1 lg:gap-4 md:gap-[11.42px] sm:gap-[11.42px] w-[100%]  ">
         {products.map((product) => (
         <ProductCard key={product.id} product={product} />
       ))}

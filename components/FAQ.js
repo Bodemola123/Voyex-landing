@@ -36,20 +36,20 @@ const FAQ = () => {
   };
 
   return (
-    <div className='mt-[-140px] flex flex-col justify-center items-center text-[#ffffff]' >
-      <h1 className='font-bold text-[54px] text-center'>Frequently asked questions</h1>
+    <div className='md:mt-[-140px] sm:mt-[50px] flex flex-col justify-center items-center text-[#ffffff]' >
+      <h1 className='font-bold md:text-[54px] sm:text-[32px] text-center'>Frequently asked questions</h1>
     <div className="mt-[47px]">
       {faqData.map((faq, index) => (
-        <div key={index} className="border-b py-[30px] w-[675px] border-white/20">
+        <div key={index} className="border-b py-[30px] md:w-[675px] sm:w-[373px] border-white/20">
           <div
-            className="flex justify-between cursor-pointer text-xl font-medium text-[#ffffff]"
+            className="flex justify-between cursor-pointer md:text-xl sm:text-lg font-medium text-[#ffffff]"
             onClick={() => handleToggle(index)}
           >
             <div>{faq.question}</div>
             <Image src={'/Plus.svg'} alt='plus' width={18.75} height={18.75}/>
           </div>
           {openIndex === index && (
-            <div className="mt-4 text-[#ffffff]">
+            <div className="md:mt-4 sm:mt-5 text-[#ffffff]">
               {faq.answer}
             </div>
           )}
