@@ -11,7 +11,7 @@ const Hero = () => {
         <span>Ideas into</span><br></br>
         <span>Workflows</span>
       </h1>
-            <Image src={'/message.svg'} alt='bolt' width={200} height={200} className='relative top-[-25px] lg:left-[-120px] z-40 lg:w-[200px] lg:h-[200px] md:w-[160px] md:h-[160px] md:left-[-165px] sm:hidden md:flex lg:flex'/> 
+            <Image src={'/message.svg'} alt='bolt' width={200} height={200} className='relative top-[-25px] lg:left-[-250px] z-40 lg:w-[200px] lg:h-[200px] md:w-[160px] md:h-[160px] md:left-[-165px] sm:hidden md:flex lg:flex'/> 
       </div>
       <p class="md:mt-6 lg:mt-6 sm:mt-[5.97px] lg:text-xl md:text-base sm:text-sm text-[#ffffff] md:leading-[25.6px] sm:leading-[17.92px] lg:w-[977px] text-center md:w-[584.27px] sm:w-[350px]">
 Voyex is your superapp for finding the right AI tools and workflows tailored to your use case. Describe your needs, and it helps you build a mini agency effortlessly.
