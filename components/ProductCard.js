@@ -26,7 +26,7 @@ const ProductCard = ( {product} ) => {
             </div>
             <FaRegStar className='lg:text-[16px] md:text-[11.42px] sm:text-[11.42px]'/>
         </div>
-        <div className='lg:text-sm md:text-xs sm:text-xs font-normal '>
+        <div className='lg:text-sm md:text-sm sm:text-sm font-normal '>
             <p>Supports GPT-4 and GPT-3.5. OpenAI&apos;s</p>
             <p className='truncate'>next-generation conversational AI, using intelligent Q&A capabilities to solve your tough questions.</p>
         </div>
