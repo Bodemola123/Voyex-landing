@@ -53,3 +53,105 @@ body {
   background-image: linear-gradient(180deg, rgba(140, 69, 255, 0.8), rgba(140, 69, 255, 0.6) 50%, rgba(0, 0, 0, 0));
   filter: blur(20px); /* Add a slight blur to the gradient */
 }
+
+.lazy-load {
+  opacity: 0;
+  transition: opacity 0.5s ease-in-out; /* Fade-in and fade-out transition */
+}
+
+.fade-in {
+  opacity: 1;
+}
+
+.fade-out {
+  opacity: 0;
+}
+/* Hover scale and shadow effect */
+.hover-scale {
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.hover-scale:hover {
+  transform: scale(1.05);
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
+}
+
+/* Text underline hover effect */
+.underline-hover {
+  position: relative;
+}
+
+.underline-hover::after {
+  content: '';
+  position: absolute;
+  width: 0;
+  height: 2px;
+  background-color: #ffffff;
+  bottom: 0;
+  left: 0;
+  transition: width 0.3s ease;
+}
+
+.underline-hover:hover::after {
+  width: 100%;
+}
+/* Add to your global styles or component CSS */
+.rotate-infinite {
+  animation: rotate 10s linear infinite;
+}
+
+@keyframes rotate {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
+@keyframes shake {
+  0% { transform: translateX(0); }
+  25% { transform: translateX(-5px); }
+  50% { transform: translateX(5px); }
+  75% { transform: translateX(-5px); }
+  100% { transform: translateX(0); }
+}
+
+.cursor-shake {
+  animation: shake 4s ease-in-out infinite;
+}
+
+@keyframes bubbleEffect {
+  0% {
+    transform: translateY(0);
+    opacity: 1;
+  }
+  50% {
+    transform: translateY(-20px);
+    opacity: 1;
+  }
+  100% {
+    transform: translateY(0);
+    opacity: 1;
+  }
+}
+
+.message-bubble {
+  animation: bubbleEffect 2s ease-in-out infinite;
+}
+
+@keyframes explode {
+  0% {
+    transform: scale(1);
+  }
+  50% {
+    transform: scale(1.5); /* Exploding effect */
+  }
+  100% {
+    transform: scale(1);
+    opacity: 0;
+  }
+}
+
+.explode-animation {
+  animation: explode 0.8s ease-out forwards;
+}
