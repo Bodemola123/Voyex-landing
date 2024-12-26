@@ -18,7 +18,7 @@ export default {
       },
     },
     screens: {
-      sm: "370px", // Small screens (phones) with minimum width of 370px
+      sm: "357px", // Small screens (phones) with minimum width of 370px
       md: "768px", // Medium screens (tablets)
       lg: "1024px", // Large screens (laptops/desktops)
       xl: "1280px", // Extra large screens
