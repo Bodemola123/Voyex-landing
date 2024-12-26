@@ -6,8 +6,8 @@
 body {
   background-color: black;
   background-image: url('/stars.svg.svg');
-  background-size: contain;
-  -webkit-background-size: contain;  /* Ensure the image covers the entire viewport */
+  background-size: cover;
+  -webkit-background-size: cover;  /* Ensure the image covers the entire viewport */
   background-repeat: no-repeat; /* Prevent the image from repeating */
   background-attachment: fixed;
   background-position: center;
