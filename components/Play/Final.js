@@ -89,7 +89,7 @@ const Final = () => {
                 ref={boltRef}
             />
         </div>
-        <div className='md:mt-[40px] sm:mt-[72px] border-t border-white/20 flex md:flex-row sm:flex-col md:px-[40px] md:py-[20px] sm:py-[50px] md:justify-between sm:justify-center sm:items-center sm:gap-4 md:gap-0'>
+        <div className='md:mt-[40px] sm:mt-[72px] border-t border-white/20 flex md:flex-row sm:flex-col md:px-[40px] md:py-[20px] sm:py-[50px] md:justify-between sm:justify-center sm:items-center sm:gap-3 md:gap-0'>
         <p className='text-sm font-normal text-center text-[#808080]'>@ 2024 VOYEX, Inc. All rights reserved</p>
         <div className='flex flex-row lg:gap-[16px] md:gap-[15px] sm:gap-[15px] justify-center items-center'>
           <div className="social-icon hover:scale-125 transition-transform duration-200"><Image src={'/X.svg'} alt='X' width={16} height={14}/></div>
