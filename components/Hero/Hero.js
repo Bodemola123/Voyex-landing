@@ -41,7 +41,7 @@ const Hero = () => {
           ref={messageRef}
         />
       </div>
-      <p className="flex justify-center items-center md:mt-6 lg:mt-6 sm:mt-[5.97px] lg:text-xl md:text-base sm:text-sm text-[#ffffff] md:leading-[25.6px] sm:leading-[17.92px] lg:w-[977px] text-center md:w-[584.27px] sm:w-[350px]">
+      <p className="flex justify-center items-center md:mt-6 lg:mt-6 sm:mt-[5.97px] lg:text-xl md:text-base sm:text-sm text-[#ffffff] md:leading-[25.6px] sm:leading-[17.92px] lg:w-[977px] text-center md:w-[584.27px] sm:w-auto sm:px-12 md:px-0">
         Voyex is your superapp for finding the right AI tools and workflows tailored to your use case. Describe your needs, and it helps you build a mini agency effortlessly.
       </p>
       <div className='flex md:flex-row lg:flex-row sm:flex-col sm:gap-[16px] lg:gap-4 md:gap-[9.57px] mt-5 justify-center items-center'>

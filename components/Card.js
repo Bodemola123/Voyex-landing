@@ -20,7 +20,7 @@ const Card = () => {
   ];
 
   return (
-    <div className="md:grid md:grid-cols-3 sm:grid sm:grid-cols-1 lg:gap-4 md:gap-[11.42px] sm:gap-[11.42px] w-[100%]">
+    <div className="md:grid md:grid-cols-3 sm:grid sm:grid-cols-1 lg:gap-4 md:gap-[11.42px] sm:gap-[11.42px] w-100%">
       {products.map((product, index) => (
         <div key={product.id} data-aos="fade-up" data-aos-delay={`${index * 100}`}>
           <ProductCard product={product} />

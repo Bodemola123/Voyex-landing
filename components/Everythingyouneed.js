@@ -20,7 +20,7 @@ const Everythingyouneed = () => {
         >
           Everything you need
         </h1>
-        <span className="text-[#ffffff] text-center lg:w-[1144px] md:w-[729px] sm:w-[347px] lg:text-[22px] md:text-[15px] sm:text-[15px] font-normal">
+        <span className="text-[#ffffff] text-center lg:w-[1144px] md:w-[729px] sm:w-auto sm:px-10 md:px-0 lg:text-[22px] md:text-[15px] sm:text-[15px] font-normal">
           <p>
             It&apos;s like having a personal agency that manages everything,
             from content creation and social media strategies to technical
@@ -31,7 +31,7 @@ const Everythingyouneed = () => {
 
       {/* Grid Section */}
       <div
-        className="grid md:grid-cols-2 sm:grid-cols-1 lg:gap-4 md:gap-[10.28px] sm:gap-[10.28px] sm:w-[347px] lg:w-[1144px] md:w-[729px] hover-scale"
+        className="grid md:grid-cols-2 sm:grid-cols-1 lg:gap-4 md:gap-[10.28px] sm:gap-[10.28px] sm:w-auto sm:px-4  lg:w-[1144px] md:w-[729px] hover-scale"
         data-aos="fade-up"
       >
         {/* Card 1 */}
@@ -42,13 +42,13 @@ const Everythingyouneed = () => {
               alt="vec"
               width={15.63}
               height={15.63}
-              className="md:w-[10.04px] md:h-[10.04px] sm:h-[10.04] sm:w-[10.04px] lg:w-[15.63px] lg:h-[15.63px]"
+              className="md:w-[10.04px] md:h-[10.04px] sm:h-[10.04px] sm:w-[10.04px] lg:w-[15.63px] lg:h-[15.63px]"
             />
           </div>
           <h1 className="font-bold text-center text-[#ffffff] text-[18px] lg:leading-[23.03px] md:leading-[24.34px] sm:leading-[24.34px] underline-hover">
             AI Query Engine
           </h1>
-          <span className="flex flex-col lg:w-[319px] md:w-[294.77.px] sm:w-[294.77px] md:text-[14.79px] sm:text-[14.79px] text-center justify-center items-center font-normal lg:text-base text-[#ffffff]">
+          <span className="flex flex-col lg:w-[319px] md:w-[294.77.px] sm:w-auto md:px-0 md:text-[14.79px] sm:text-[14.79px] text-center justify-center items-center font-normal lg:text-base text-[#ffffff]">
             <p>
               Voyex&apos;s AI query engine finds the best tools for your tasks,
               saving you time on research and maximizing efficiency.
@@ -64,13 +64,13 @@ const Everythingyouneed = () => {
               alt="vec"
               width={15.63}
               height={15.63}
-              className="md:w-[10.04px] md:h-[10.04px] sm:h-[10.04] sm:w-[10.04px] lg:w-[15.63px] lg:h-[15.63px]"
+              className="md:w-[10.04px] md:h-[10.04px] sm:h-[10.04px] sm:w-[10.04px] lg:w-[15.63px] lg:h-[15.63px]"
             />
           </div>
           <h1 className="font-bold text-center text-[#ffffff] text-[18px] lg:leading-[23.03px] md:leading-[24.34px] sm:leading-[24.34px] underline-hover">
             Workflow Creation
           </h1>
-          <span className="flex flex-col lg:w-[400px] md:w-[311.67px] sm:w-[311.76px] text-center justify-center items-center font-normal md:text-[14.79px] sm:text-[14.79px] lg:text-base text-[#ffffff]">
+          <span className="flex flex-col lg:w-[400px] md:w-[311.67px] sm:w-auto text-center justify-center items-center font-normal md:text-[14.79px] sm:text-[14.79px] lg:text-base text-[#ffffff]">
             <p>
               Voyex delivers the best tools and workflows, adapting with
               feedback to ensure tasks are completed efficiently from start to
@@ -108,7 +108,7 @@ const Everythingyouneed = () => {
           className="flex flex-col items-baseline justify-end 
           lg:pl-10 lg:gap-2 lg:pb-5 lg:col-span-2 lg:rounded-[13px] lg:w-[744px] lg:h-[400px] 
           md:pl-[25.71px] md:gap-2 md:pb-[11.1px] md:col-span-1 md:rounded-[6.43px] md:w-[370.23px] md:h-[304.19px] 
-          sm:pl-[19.32px] sm:gap-[5.14px] sm:pb-[66.7px] sm:rounded-[6.43px] sm:w-[360px] sm:h-[400px] 
+          sm:pl-[19.32px] sm:gap-[5.14px] sm:pb-[66.7px] sm:rounded-[6.43px] sm:w-auto sm:h-[400px] 
           border border-card
           md:bg-gradient-and-darkstar sm:bg-gradient-and-smview 
           bg-cover bg-no-repeat bg-center"

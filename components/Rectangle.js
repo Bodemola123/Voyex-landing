@@ -10,7 +10,7 @@ const Rectangle = () => {
   
   return (
     <div 
-      className="relative md:top-[-40px] sm:top-[-160px] opacity-[0.37] border-b-0 -z-20 flex items-center justify-center"
+      className="relative md:top-[-40px] sm:top-[-180px] opacity-[0.37] border-b-0 -z-20 flex items-center justify-center"
       style={{
         background: 'linear-gradient(180deg, #000000 0%, #200D42 36.21%, #4F21A1 68.68%, #A46EDB 86.54%)',
         height: '450px',
@@ -25,8 +25,7 @@ const Rectangle = () => {
         <div className="absolute w-full h-full bg-cover bg-center bg-fixed"
           style={{
             backgroundImage: 'url(/your-image.jpg)',
-            backgroundPosition: 'center center',
-            transform: 'scale(1.1)',  // Slightly zoom in the background
+            backgroundPosition: 'center center',  // Slightly zoom in the background
           }}
         ></div>
       </div>
