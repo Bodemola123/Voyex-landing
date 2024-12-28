@@ -20,7 +20,7 @@ const Everythingyouneed = () => {
         >
           Everything you need
         </h1>
-        <span className="text-[#ffffff] text-center lg:w-[1144px] md:w-[729px] sm:w-auto sm:px-10 md:px-0 lg:text-[22px] md:text-[15px] sm:text-[15px] font-normal">
+        <span className="text-[#ffffff] text-center lg:w-[1044px] md:w-[729px] sm:w-auto sm:px-10 md:px-0 lg:text-[22px] md:text-[15px] sm:text-[15px] font-normal">
           <p>
             It&apos;s like having a personal agency that manages everything,
             from content creation and social media strategies to technical
@@ -93,11 +93,11 @@ const Everythingyouneed = () => {
             height={242}
             className="lg:w-[311px] lg:h-[242px] md:w-[199.9px] md:h-[155.55px] sm:w-[263px] sm:h-[206px] sm:mx-auto md:mx-0"
           />
-          <div className="flex flex-col lg:gap-[9px] md:gap-[5.79px] sm:gap-[5.79px] lg:w-[358px] md:w-[320.11px] sm:w-[298px] md:mx-0 sm:mx-auto">
+          <div className="flex flex-col lg:gap-[9px] md:gap-[5.79px] sm:gap-[5.79px] lg:w-auto md:w-[320.11px] sm:w-[298px] md:mx-0 sm:mx-auto">
             <h1 className="font-medium text-[#ffffff]">
               The Future of Automation: Agent-Based Workflows
             </h1>
-            <p className="text-[#ffffffb3] sm:mb-5 md:mb-0">
+            <p className="text-[#ffffffb3] sm:mb-5 md:mb-0 lg:w-auto">
               This is just the beginning. We're developing agent-based
               workflows that will allow you to
             </p>
@@ -106,7 +106,7 @@ const Everythingyouneed = () => {
 
         <div
           className="flex flex-col items-baseline justify-end 
-          lg:pl-10 lg:gap-2 lg:pb-5 lg:col-span-2 lg:rounded-[13px] lg:w-[744px] lg:h-[400px] 
+          lg:pl-10 lg:gap-2 lg:pb-5 lg:col-span-2 lg:rounded-[13px] lg:w-auto lg:h-[400px] 
           md:pl-[25.71px] md:gap-2 md:pb-[11.1px] md:col-span-1 md:rounded-[6.43px] md:w-[370.23px] md:h-[304.19px] 
           sm:pl-[19.32px] sm:gap-[5.14px] sm:pb-[66.7px] sm:rounded-[6.43px] sm:w-auto sm:h-[400px] 
           border border-card
