@@ -57,7 +57,7 @@ const FAQ = () => {
             </div>
             <div
               id={`faq-answer-${index}`}
-              className={`md:mt-4 sm:mt-5 sm:px-2 md:px-0 text-[#ffffff] overflow-hidden transition-all duration-300 ease-in-out ${openIndex === index ? 'max-h-screen' : 'max-h-0'}`}
+              className={`md:mt-4 sm:mt-5 sm:px-4 md:px-0 text-[#ffffff] overflow-hidden transition-all duration-300 ease-in-out ${openIndex === index ? 'max-h-screen' : 'max-h-0'}`}
               aria-hidden={openIndex !== index}
             >
               {faq.answer}
