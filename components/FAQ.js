@@ -39,7 +39,7 @@ const FAQ = () => {
         {faqData.map((faq, index) => (
           <div key={index} className="border-b py-[30px] md:w-[675px] sm:w-auto border-white/20">
             <div
-              className="flex justify-between items-center cursor-pointer md:text-xl sm:text-lg font-medium text-[#ffffff] hover:text-[#C088fb] transition-colors duration-300 sm:px-2 md:px-0"
+              className="flex justify-between items-center cursor-pointer md:text-xl sm:text-lg font-medium text-[#ffffff] hover:text-[#C088fb] transition-colors duration-300 sm:px-4 md:px-0"
               onClick={() => handleToggle(index)}
               tabIndex={0} // Make clickable with keyboard
               aria-expanded={openIndex === index ? "true" : "false"}
