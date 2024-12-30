@@ -11,7 +11,7 @@ const Everythingyouneed = () => {
   }, []);
 
   return (
-    <div className="flex flex-col lg:gap-16 md:gap-[43px] sm:gap-[43px] justify-center items-center">
+    <div className="flex flex-col lg:gap-16 md:gap-[43px] sm:gap-[43px] justify-center items-center sm:px-4 md:px-0">
       {/* Title Section */}
       <div className="flex flex-col lg:gap-5 md:gap-[13px] sm:gap-[13px] mt-44 text-center">
         <h1
