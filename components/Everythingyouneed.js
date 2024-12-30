@@ -108,7 +108,7 @@ const Everythingyouneed = () => {
           className="flex flex-col items-baseline justify-end 
           lg:pl-10 lg:gap-2 lg:pb-5 lg:col-span-2 lg:rounded-[13px] lg:w-auto lg:h-[400px] 
           md:pl-[25.71px] md:gap-2 md:pb-[11.1px] md:col-span-1 md:rounded-[6.43px] md:w-[370.23px] md:h-[304.19px] 
-          sm:pl-[19.32px] sm:gap-[5.14px] sm:pb-[66.7px] sm:rounded-[6.43px] sm:w-auto sm:h-[400px] 
+          sm:pl-[19.32px] sm:gap-[5.14px] sm:pb-[66.7px] sm:rounded-[6.43px] sm:w-full sm:h-[400px] 
           border border-card
           md:bg-gradient-and-darkstar sm:bg-gradient-and-smview 
           bg-cover bg-no-repeat bg-center"
