@@ -2,6 +2,8 @@ import { Inter } from "next/font/google";
 import "./globals.css";
 import ShootingStars from "@/components/common/ShootingStars";
 import Snowfall from "@/components/common/SnowFall";
+import Animate from "@/components/common/animate";
+
 
 const inter = Inter({
   variable: "--font-inter", // Custom variable name
@@ -23,6 +25,7 @@ export default function RootLayout({ children }) {
       <body
         className={`${inter.variable} antialiased scroll-container scrollbar-hide w-full overflow-hidden`}
       >
+        <Animate/>
         <Snowfall/>
         {children}
       </body>
