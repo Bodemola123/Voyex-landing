@@ -5,7 +5,7 @@
 
 body {
   background-color: black;
-  background-image: url('/background.png');
+  background-image: url('/stars.svg.svg');
   background-size: cover;
   -webkit-background-size: cover;  /* Ensure the image covers the entire viewport */
   background-repeat: no-repeat; /* Prevent the image from repeating */
@@ -166,4 +166,18 @@ body {
   animation: explode 0.8s ease-out forwards;
 }
 
+.animate-1 {
+  animation: spin 50s linear infinite;
+}
+.animate-2 {
+  animation: spin 70s linear infinite;
+}
+.animate-3 {
+  animation: spin 90s linear infinite;
+}
 
+@keyframes spin {
+  to {
+    transform: rotate(360deg);
+  }
+}

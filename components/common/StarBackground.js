@@ -77,7 +77,12 @@ const StarBackground = () => {
     return () => window.removeEventListener("resize", handleResize);
   }, []);
 
-  return <canvas ref={canvasRef} className="absolute top-0 left-0 bottom-0 right-0 z-[1]" />;
+  return (
+    <canvas
+      ref={canvasRef}
+      className="fixed top-0 left-0 w-screen h-screen z-0"
+    />
+  );
 };
 
 export default StarBackground;

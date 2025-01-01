@@ -24,13 +24,14 @@ export default function RootLayout({ children }) {
 
       </head>
       <body
-        className={`${inter.variable} antialiased scroll-container scrollbar-hide w-full overflow-hidden`}
-      >
-        <StarBackground/>
-        <Animate/>
-        <Snowfall/>
-        {children}
-      </body>
+  className={`${inter.variable} antialiased scroll-container scrollbar-hide w-full overflow-hidden`}
+>
+  <StarBackground /> {/* Background layer */}
+  <Snowfall />       {/* Snow animation on top */}
+  <Animate />        {/* Swirling images above snow */}
+  {children}         {/* Content layer */}
+</body>
+
     </html>
   );
 }
