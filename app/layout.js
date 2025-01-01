@@ -1,7 +1,6 @@
 import { Inter } from "next/font/google";
 import "./globals.css";
-import ShootingStars from "@/components/common/ShootingStars";
-import Snowfall from "@/components/common/SnowFall";
+
 import Animate from "@/components/common/animate";
 import StarBackground from "@/components/common/StarBackground";
 
@@ -27,7 +26,7 @@ export default function RootLayout({ children }) {
   className={`${inter.variable} antialiased scroll-container scrollbar-hide w-full overflow-hidden`}
 >
   <StarBackground /> {/* Background layer */}
-  <Snowfall />       {/* Snow animation on top */}
+
   <Animate />        {/* Swirling images above snow */}
   {children}         {/* Content layer */}
 </body>
