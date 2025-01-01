@@ -2,67 +2,73 @@
 
 import React, { useRef, useEffect } from "react";
 
-const generateStars = (count, radius) => {
+const generateStars = (count, width, height) => {
   const stars = [];
   for (let i = 0; i < count; i++) {
-    const theta = Math.random() * 2 * Math.PI;
-    const phi = Math.acos(2 * Math.random() - 1);
-    const r = radius * Math.cbrt(Math.random());
-    const x = r * Math.sin(phi) * Math.cos(theta);
-    const y = r * Math.sin(phi) * Math.sin(theta);
-    const z = r * Math.cos(phi);
-    stars.push({ x, y, z });
+    // Spread stars randomly across the screen
+    const x = Math.random() * width - width / 2;  // Random X position within screen width
+    const y = Math.random() * height - height / 2;  // Random Y position within screen height
+    const z = Math.random() * 1000 - 500;  // Adjust depth for visibility
+
+    // Randomly choose rotation direction (1 for clockwise, -1 for counterclockwise)
+    const spinDirection = Math.random() > 0.5 ? 1 : -1; 
+
+    stars.push({ x, y, z, spinDirection });
   }
   return stars;
 };
 
 const StarBackground = () => {
   const canvasRef = useRef();
-  const stars = useRef(generateStars(250, 1.2));
+  const stars = useRef([]);
+  const rotationX = useRef(0);
+  const rotationY = useRef(0);
 
   useEffect(() => {
     const canvas = canvasRef.current;
     const context = canvas.getContext("2d");
-    canvas.width = window.innerWidth;
-    canvas.height = window.innerHeight;
+    const { innerWidth, innerHeight } = window;
 
-    let rotationX = 0;
-    let rotationY = 0;
+    canvas.width = innerWidth;
+    canvas.height = innerHeight;
+
+    stars.current = generateStars(250, innerWidth, innerHeight);
 
     const draw = () => {
       context.clearRect(0, 0, canvas.width, canvas.height);
 
       const centerX = canvas.width / 2;
       const centerY = canvas.height / 2;
-      const scale = Math.min(canvas.width, canvas.height) / 3;
+      const scale = Math.min(canvas.width, canvas.height) / 2;  // Adjust scale to make stars more visible
 
       stars.current.forEach((star) => {
-        const { x, y, z } = star;
+        const { x, y, z, spinDirection } = star;
 
-        // Apply rotation
-        const rotatedX =
-          x * Math.cos(rotationY) - z * Math.sin(rotationY);
-        const rotatedZ =
-          x * Math.sin(rotationY) + z * Math.cos(rotationY);
+        // Apply rotation around the Y and X axis (spin effect)
+        const rotatedX = x * Math.cos(rotationY.current) - z * Math.sin(rotationY.current);
+        const rotatedZ = x * Math.sin(rotationY.current) + z * Math.cos(rotationY.current);
 
-        const rotatedY =
-          y * Math.cos(rotationX) - rotatedZ * Math.sin(rotationX);
-        const finalZ =
-          y * Math.sin(rotationX) + rotatedZ * Math.cos(rotationX);
+        const rotatedY = y * Math.cos(rotationX.current) - rotatedZ * Math.sin(rotationX.current);
+        const finalZ = y * Math.sin(rotationX.current) + rotatedZ * Math.cos(rotationX.current);
 
-        const perspective = scale / (scale - finalZ);
-        const screenX = centerX + rotatedX * perspective * scale;
-        const screenY = centerY + rotatedY * perspective * scale;
+        // Perspective projection
+        const perspective = scale / (scale + finalZ); // Use positive values to bring stars into view
+        const screenX = centerX + rotatedX * perspective;
+        const screenY = centerY + rotatedY * perspective;
 
-        // Draw the star
+        // Draw the star with reduced size (radius of 0.25 instead of 1)
         context.beginPath();
-        context.arc(screenX, screenY, 0.8, 0, 2 * Math.PI);
-        context.fillStyle = "#464645";
+        context.arc(screenX, screenY, 0.65, 0, 2 * Math.PI);  // Reduced size to 0.25
+        context.fillStyle = "#FFFFFF";  // White stars
         context.fill();
+
+        // Apply random spin direction for each star
+        rotationY.current += spinDirection * 0.00026;  // Control the speed and direction of rotation
       });
 
-      rotationX += 0.001;
-      rotationY += 0.001;
+      rotationX.current += 0.00026;  // Rotate on the X axis
+      // rotationY.current += 0.001;  // Rotation handled by individual stars
+
       requestAnimationFrame(draw);
     };
 
@@ -71,7 +77,9 @@ const StarBackground = () => {
     const handleResize = () => {
       canvas.width = window.innerWidth;
       canvas.height = window.innerHeight;
+      stars.current = generateStars(250, canvas.width, canvas.height);
     };
+
     window.addEventListener("resize", handleResize);
 
     return () => window.removeEventListener("resize", handleResize);
