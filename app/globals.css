@@ -9,6 +9,7 @@ body {
   background-size: cover;
   -webkit-background-size: cover;  /* Ensure the image covers the entire viewport */
   background-repeat: no-repeat; /* Prevent the image from repeating */
+  background-attachment: fixed;
   background-position: center;
   background-origin: content-box;
   width: 100%;
@@ -164,3 +165,5 @@ body {
 .explode-animation {
   animation: explode 0.8s ease-out forwards;
 }
+
+
