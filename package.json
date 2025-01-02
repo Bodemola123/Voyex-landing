@@ -3,25 +3,25 @@
   "version": "0.1.0",
   "private": true,
   "scripts": {
-    "dev": "next dev --turbopack",
+    "dev": "next dev",
     "build": "next build",
     "start": "next start",
     "lint": "next lint"
   },
   "dependencies": {
     "@react-icons/all-files": "^4.1.0",
-    "@react-three/drei": "^9.120.5",
-    "@react-three/fiber": "^8.17.10",
     "aos": "^2.3.4",
     "maath": "^0.10.8",
-    "next": "^15.1.0",
     "normalize.css": "^8.0.1",
     "pixi.js": "^8.6.6",
-    "react": "^18.3.1",
-    "react-dom": "^18.3.1",
     "react-icons": "^5.4.0",
     "sass": "^1.83.0",
-    "three": "^0.171.0"
+    "@react-three/drei": "^9.114.2",
+    "@react-three/fiber": "^8.17.9",
+    "three": "^0.169.0",
+    "next": "^14.2.15",
+    "react": "19.0.0",
+    "react-dom": "19.0.0"
   },
   "devDependencies": {
     "postcss": "^8",
