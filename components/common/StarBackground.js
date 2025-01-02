@@ -56,17 +56,17 @@ const StarBackground = () => {
         const screenX = centerX + rotatedX * perspective;
         const screenY = centerY + rotatedY * perspective;
 
-        // Draw the star with reduced size (radius of 0.25 instead of 1)
+        // Draw the star with reduced size (radius of 0.75 instead of 1)
         context.beginPath();
-        context.arc(screenX, screenY, 0.65, 0, 2 * Math.PI);  // Reduced size to 0.25
+        context.arc(screenX, screenY, 0.75, 0, 2 * Math.PI);  // Reduced size to 0.75
         context.fillStyle = "#FFFFFF";  // White stars
         context.fill();
 
         // Apply random spin direction for each star
-        rotationY.current += spinDirection * 0.00026;  // Control the speed and direction of rotation
+        rotationY.current += spinDirection * 0.00015;  // Slower speed of rotation
       });
 
-      rotationX.current += 0.00026;  // Rotate on the X axis
+      rotationX.current += 0.00015;  // Slower speed of X-axis rotation
       // rotationY.current += 0.001;  // Rotation handled by individual stars
 
       requestAnimationFrame(draw);
