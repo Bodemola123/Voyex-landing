@@ -5,7 +5,7 @@ import '../../app/globals.css';
 const CTA = () => {
   return (
     <div
-      className="flex flex-col lg:gap-2.5 md:gap-[6.08px] sm:gap-2.5 z-10 lg:px-[170px] md:px-[70.42px] sm:px-[35px] lg:rounded-lg md:rounded-[6.08px] sm:rounded-[10px] border border-white/15 mx-auto relative lg:top-[-315px] md:top-[-165px] sm:top-[-150px] justify-center items-center lg:max-w-[1100px] lg:h-[473px] md:max-w-[669.17px] md:h-[341.27px] sm:w-full sm:h-[513px] hover:border-white/30 transition-all duration-300"
+      className="flex flex-col lg:gap-2.5 md:gap-[6.08px] sm:gap-2.5 z-10 lg:px-[170px] md:px-[70.42px] sm:px-[35px] lg:rounded-lg md:rounded-[6.08px] sm:rounded-[10px] border border-white/15 mx-auto relative lg:top-[-315px] md:top-[-145px] sm:top-[-200px] justify-center items-center lg:max-w-[1100px] lg:h-[473px] md:max-w-[669.17px] md:h-[341.27px] sm:w-full sm:h-[513px] hover:border-white/30 transition-all duration-300"
       style={{
         background: 'linear-gradient(180.17deg, rgba(2, 1, 3, 0) 0%, #020103 90%), url("/pattern.svg")',
         backgroundSize: 'contain',

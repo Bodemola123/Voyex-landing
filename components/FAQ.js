@@ -33,7 +33,7 @@ const FAQ = () => {
   };
 
   return (
-    <div className='md:mt-[-50px] sm:mt-[50px] flex flex-col justify-center items-center text-[#ffffff]'>
+    <div className='md:mt-[-50px] sm:mt-[-80px] flex flex-col justify-center items-center text-[#ffffff]'>
       <h1 className='font-bold lg:text-[54px] md:text-[48px] sm:text-[32px] text-center'>Frequently asked questions</h1>
       <div className="mt-[47px]">
         {faqData.map((faq, index) => (
