@@ -67,7 +67,50 @@ const Everythingyouneed = () => {
         className="grid md:grid-cols-2 sm:grid-cols-1 lg:gap-4 md:gap-[10.28px] sm:gap-[10.28px] sm:w-auto sm:px-4 lg:w-[1144px] md:w-[729px]"
         data-aos="fade-up"
       >
-        {/* Other cards... */}
+        {/* Card 1 */}
+  <div className="lg:p-10 md:p-[25.71px] sm:p-[25.71px] lg:border md:border-[0.64px] sm:border-[0.64px] border-card lg:rounded-xl md:rounded-[6.43px] sm:rounded-[6.43px] flex flex-col justify-center items-center bg-[#0d0d0d] lg:gap-6 md:gap-[15.43px] sm:gap-[15.43px] transition-transform duration-300 ease-in-out hover:-translate-y-3  hover:shadow-2xl">
+    <div className="lg:p-5 md:p-[11.57px] sm:p-[11.57px] lg:w-[56px] md:w-[36px] sm:w-[36px] flex lg:rounded-xl md:rounded-[6.43px] sm:rounded-[6.43px] bg-[#ffffff]">
+      <Image
+        src={'/Vector.svg'}
+        alt="vec"
+        width={15.63}
+        height={15.63}
+        className="md:w-[10.04px] md:h-[10.04px] sm:h-[10.04px] sm:w-[10.04px] lg:w-[15.63px] lg:h-[15.63px]"
+      />
+    </div>
+    <h1 className="font-bold text-center text-[#ffffff] text-[18px] lg:leading-[23.03px] md:leading-[24.34px] sm:leading-[24.34px] underline-hover">
+      AI Query Engine
+    </h1>
+    <span className="flex flex-col lg:w-[319px] md:w-[294.77px] sm:w-auto md:px-0 md:text-[14.79px] sm:text-[14.79px] text-center justify-center items-center font-normal lg:text-base text-[#ffffff]">
+      <p>
+        Voyex&apos;s AI query engine finds the best tools for your tasks,
+        saving you time on research and maximizing efficiency.
+      </p>
+    </span>
+  </div>
+
+  {/* Card 2 */}
+  <div className="lg:p-10 md:p-[25.71px] sm:p-[25.71px] lg:border md:border-[0.64px] sm:border-[0.64px] border-card lg:rounded-xl md:rounded-[6.43px] sm:rounded-[6.43px] flex flex-col justify-center items-center bg-[#0d0d0d] lg:gap-6 md:gap-[15.43px] sm:gap-[15.43px] transition-transform duration-300 ease-in-out md:hover:-translate-y-3 sm:hover:translate-y-2 hover:shadow-2xl">
+    <div className="lg:p-5 md:p-[11.57px] sm:p-[11.57px] lg:w-[56px] md:w-[36px] sm:w-[36px] flex lg:rounded-xl md:rounded-[6.43px] sm:rounded-[6.43px] bg-[#ffffff]">
+      <Image
+        src={'/Vector.svg'}
+        alt="vec"
+        width={15.63}
+        height={15.63}
+        className="md:w-[10.04px] md:h-[10.04px] sm:h-[10.04px] sm:w-[10.04px] lg:w-[15.63px] lg:h-[15.63px]"
+      />
+    </div>
+    <h1 className="font-bold text-center text-[#ffffff] text-[18px] lg:leading-[23.03px] md:leading-[24.34px] sm:leading-[24.34px] underline-hover">
+      Workflow Creation
+    </h1>
+    <span className="flex flex-col lg:w-[400px] md:w-[311.67px] sm:w-auto text-center justify-center items-center font-normal md:text-[14.79px] sm:text-[14.79px] lg:text-base text-[#ffffff]">
+      <p>
+        Voyex delivers the best tools and workflows, adapting with
+        feedback to ensure tasks are completed efficiently from start to
+        finish.
+      </p>
+    </span>
+  </div>
       </div>
 
       {/* Image Section */}
