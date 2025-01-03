@@ -1,13 +1,46 @@
 'use client';
-import React, { useEffect } from 'react';
+import React, { useState, useEffect } from 'react';
 import '../app/globals.css';
 import Image from 'next/image';
 import AOS from 'aos';
 import 'aos/dist/aos.css';
 
 const Everythingyouneed = () => {
+  const [currentIndex, setCurrentIndex] = useState(0);
+  const [fade, setFade] = useState(true); // Track fade state
+
+  // Carousel content
+  const carouselContent = [
+    {
+      title: "Ask Deeper Questions",
+      description: "Uncover insights with advanced AI for thoughtful, impactful decision-making.",
+    },
+    {
+      title: "Automate Campaigns",
+      description: "Automate campaigns simplify marketing with personalized, data-driven strategies.",
+    },
+    {
+      title: "Track Performance Metrics",
+      description: "Monitor key metrics in real-time for continuous strategic optimization.",
+    },
+    {
+      title: "Run Workflows Using Multiple AI Tools",
+      description: "Streamline processes by integrating AI tools for maximum operational efficiency.",
+    },
+  ];
+
+  // Carousel logic
   useEffect(() => {
     AOS.init({ duration: 1000 });
+    const interval = setInterval(() => {
+      setFade(false); // Start fading out
+      setTimeout(() => {
+        setCurrentIndex((prevIndex) => (prevIndex + 1) % carouselContent.length);
+        setFade(true); // Fade in the new content
+      }, 500); // Wait for fade-out before updating index
+    }, 3000); // Change text every 3 seconds
+
+    return () => clearInterval(interval);
   }, []);
 
   return (
@@ -31,61 +64,18 @@ const Everythingyouneed = () => {
 
       {/* Grid Section */}
       <div
-  className="grid md:grid-cols-2 sm:grid-cols-1 lg:gap-4 md:gap-[10.28px] sm:gap-[10.28px] sm:w-auto sm:px-4 lg:w-[1144px] md:w-[729px]"
-  data-aos="fade-up"
->
-  {/* Card 1 */}
-  <div className="lg:p-10 md:p-[25.71px] sm:p-[25.71px] lg:border md:border-[0.64px] sm:border-[0.64px] border-card lg:rounded-xl md:rounded-[6.43px] sm:rounded-[6.43px] flex flex-col justify-center items-center bg-[#0d0d0d] lg:gap-6 md:gap-[15.43px] sm:gap-[15.43px] transition-transform duration-300 ease-in-out hover:-translate-y-3 hover:shadow-2xl">
-    <div className="lg:p-5 md:p-[11.57px] sm:p-[11.57px] lg:w-[56px] md:w-[36px] sm:w-[36px] flex lg:rounded-xl md:rounded-[6.43px] sm:rounded-[6.43px] bg-[#ffffff]">
-      <Image
-        src={'/Vector.svg'}
-        alt="vec"
-        width={15.63}
-        height={15.63}
-        className="md:w-[10.04px] md:h-[10.04px] sm:h-[10.04px] sm:w-[10.04px] lg:w-[15.63px] lg:h-[15.63px]"
-      />
-    </div>
-    <h1 className="font-bold text-center text-[#ffffff] text-[18px] lg:leading-[23.03px] md:leading-[24.34px] sm:leading-[24.34px] underline-hover">
-      AI Query Engine
-    </h1>
-    <span className="flex flex-col lg:w-[319px] md:w-[294.77px] sm:w-auto md:px-0 md:text-[14.79px] sm:text-[14.79px] text-center justify-center items-center font-normal lg:text-base text-[#ffffff]">
-      <p>
-        Voyex&apos;s AI query engine finds the best tools for your tasks,
-        saving you time on research and maximizing efficiency.
-      </p>
-    </span>
-  </div>
-
-  {/* Card 2 */}
-  <div className="lg:p-10 md:p-[25.71px] sm:p-[25.71px] lg:border md:border-[0.64px] sm:border-[0.64px] border-card lg:rounded-xl md:rounded-[6.43px] sm:rounded-[6.43px] flex flex-col justify-center items-center bg-[#0d0d0d] lg:gap-6 md:gap-[15.43px] sm:gap-[15.43px] transition-transform duration-300 ease-in-out hover:-translate-y-3 hover:shadow-2xl">
-    <div className="lg:p-5 md:p-[11.57px] sm:p-[11.57px] lg:w-[56px] md:w-[36px] sm:w-[36px] flex lg:rounded-xl md:rounded-[6.43px] sm:rounded-[6.43px] bg-[#ffffff]">
-      <Image
-        src={'/Vector.svg'}
-        alt="vec"
-        width={15.63}
-        height={15.63}
-        className="md:w-[10.04px] md:h-[10.04px] sm:h-[10.04px] sm:w-[10.04px] lg:w-[15.63px] lg:h-[15.63px]"
-      />
-    </div>
-    <h1 className="font-bold text-center text-[#ffffff] text-[18px] lg:leading-[23.03px] md:leading-[24.34px] sm:leading-[24.34px] underline-hover">
-      Workflow Creation
-    </h1>
-    <span className="flex flex-col lg:w-[400px] md:w-[311.67px] sm:w-auto text-center justify-center items-center font-normal md:text-[14.79px] sm:text-[14.79px] lg:text-base text-[#ffffff]">
-      <p>
-        Voyex delivers the best tools and workflows, adapting with
-        feedback to ensure tasks are completed efficiently from start to
-        finish.
-      </p>
-    </span>
-  </div>
-</div>
-
+        className="grid md:grid-cols-2 sm:grid-cols-1 lg:gap-4 md:gap-[10.28px] sm:gap-[10.28px] sm:w-auto sm:px-4 lg:w-[1144px] md:w-[729px]"
+        data-aos="fade-up"
+      >
+        {/* Other cards... */}
+      </div>
 
       {/* Image Section */}
       <div
         className="lg:grid lg:grid-cols-3 lg:gap-2.5 md:gap-[6.43px] md:grid md:grid-cols-2 sm:grid sm:grid-cols-1 sm:gap-2.5 lg:max-w-[1144px] md:max-w-[729px] items-center justify-center"
         data-aos="fade-up"
       >
+        {/* Static card */}
         <div className="flex flex-col lg:gap-2 lg:p-4 md:py-[10.93px] md:px-[10.28px] sm:px-[23.03px] border border-card bg-black lg:rounded-[13px] md:rounded-[8.36px] sm:rounded-[10px]">
           <Image
             src={'/Visual.svg'}
@@ -105,6 +95,7 @@ const Everythingyouneed = () => {
           </div>
         </div>
 
+        {/* Carousel card with fade effect */}
         <div
           className="flex flex-col items-baseline justify-end 
           lg:pl-10 lg:gap-2 lg:pb-5 lg:col-span-2 lg:rounded-[13px] lg:w-auto lg:h-[386px] 
@@ -115,10 +106,15 @@ const Everythingyouneed = () => {
           bg-cover bg-no-repeat bg-center"
           data-aos="fade-up"
         >
-          <h1 className="font-medium text-[#ffffff]">Automate campaigns</h1>
-          <p className="text-[#ffffffb3] lg:w-[322px] md:w-[285.59px] sm:w-[285.59px]">
-            Automated campaigns simplify marketing with personalized,
-            data-driven strategies.
+          <h1
+            className={`font-medium text-[#ffffff] transition-opacity duration-500 ${fade ? 'opacity-100' : 'opacity-0'}`}
+          >
+            {carouselContent[currentIndex].title}
+          </h1>
+          <p
+            className={`text-[#ffffffb3] lg:w-[322px] md:w-[285.59px] sm:w-[285.59px] transition-opacity duration-500 ${fade ? 'opacity-100' : 'opacity-0'}`}
+          >
+            {carouselContent[currentIndex].description}
           </p>
         </div>
       </div>

@@ -36,7 +36,7 @@ const Hero = () => {
 
   useEffect(() => {
     const currentString = texts[currentIndex];
-    const typingSpeed = isDeleting ? 50 : 100;
+    const typingSpeed = isDeleting ? 100 : 150;
     const pauseTime = 1000;
 
     if (!isDeleting && charIndex === currentString.length) {
@@ -69,7 +69,7 @@ const Hero = () => {
         
         <div className='flex flex-row gap-[40px] justify-center items-center'>
         <div className='lg:h-[198px] md:h-[186px] sm:h-[118px] mx-auto w-[85%] lg:mb-[80px] sm:mb-[100px] md:mb-[180px]'> 
-        <h1 className="lg:text-[108px] md:text-[98.67px] sm:text-[58.88px] sm:font-bold md:font-bold lg:font-black leading-tight text-[#ffffff] shadow-[0px_12px_4px_0px_#0000003D] z-50">
+        <h1 className="lg:text-[108px] md:text-[98.67px] sm:text-[58.88px] sm:font-bold md:font-bold lg:font-black leading-tight text-[#ffffff]  z-50">
           <span>{currentText}</span>
         </h1>
         </div>
@@ -83,14 +83,21 @@ const Hero = () => {
         Voyex is your superapp for finding the right AI tools and workflows tailored to your use case. Describe your needs, and it helps you build a mini agency effortlessly.
       </p>
 
-      <div className='flex md:flex-row lg:flex-row sm:flex-col sm:gap-[16px] lg:gap-4 md:gap-[9.57px] mt-5 justify-center items-center'>
-        <button className='bg-[#c088fb] flex items-center justify-center sm:py-3 md:py-2.5 sm:px-3 md:px-9 rounded-3xl md:gap-2.5 lg:gap-2.5 sm:gap-[5.98px] text-[#141414] font-medium md:text-base sm:text-sm transition-transform duration-200 ease-in-out sm:hover:bg-[#b075ea]  md:hover:bg-[#a86dfc] hover:scale-110'>
-          Start your AI journey
-        </button>
-        <button className='bg-[#f4f4f4] flex items-center justify-center sm:py-3 sm:px-3 md:py-2.5 md:px-9 rounded-3xl md:gap-2.5 lg:gap-2.5 sm:gap-[5.98px] text-[#032400] font-medium md:text-base sm:text-sm transition-transform duration-200 ease-in-out sm:hover:bg-[#dddddd] md:hover:bg-[#e0e0e0] hover:scale-110'>
-          Upload Product
-        </button>
-      </div>
+      <div className="flex md:flex-row lg:flex-row sm:flex-col sm:gap-[18px] lg:gap-4 md:gap-[15.57px] mt-5 justify-center items-center">
+      <button
+  className="bg-[#c088fb] flex items-center justify-center sm:py-3 md:py-2.5 sm:px-3 md:px-9 rounded-3xl md:gap-2.5 lg:gap-2.5 sm:gap-[5.98px] text-[#141414] font-medium md:text-base sm:text-sm transition-all duration-200 ease-in-out hover:scale-110 hover:bg-[#9b67d7] z-10"
+>
+  Start your AI journey
+</button>
+<button
+  className="bg-[#f4f4f4] flex items-center justify-center sm:py-3 sm:px-3 md:py-2.5 md:px-9 rounded-3xl md:gap-2.5 lg:gap-2.5 sm:gap-[5.98px] text-[#032400] font-medium md:text-base sm:text-sm transition-all duration-200 ease-in-out hover:scale-110 hover:bg-[#e0e0e0] z-10"
+>
+  Upload Product
+</button>
+
+
+</div>
+
     </div>
   );
 };
