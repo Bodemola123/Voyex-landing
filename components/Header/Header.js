@@ -12,10 +12,6 @@ const Header = () => {
     setIsOpen(prevState => !prevState)
   }
 
-  // Handle button click
-  const handleClick = () => {
-    alert('Button Clicked')
-  }
 
   return (
     <div className="flex justify-between items-center mt-6 lg:px-[96px] md:px-[46px] sm:px-[30px]">
@@ -31,9 +27,7 @@ const Header = () => {
 
       {/* Go to App Button */}
       <button 
-        className="sm:hidden lg:flex md:flex bg-[#c088fb] rounded-3xl md:rounded-[27px] border-[1.5px] border-[#c088fb] text-[#0a0a0b] flex gap-2 lg:py-2.5 lg:px-9 md:py-[6px] md:px-9 transition-all duration-200 ease-in-out hover:scale-110 hover:bg-[#9b67d7]" 
-        onClick={handleClick}
-      >
+        className="sm:hidden lg:flex md:flex bg-[#c088fb] rounded-3xl md:rounded-[27px] border-[1.5px] border-[#c088fb] text-[#0a0a0b] flex gap-2 lg:py-2.5 lg:px-9 md:py-[6px] md:px-9 transition-all duration-200 ease-in-out hover:scale-110 hover:bg-[#9b67d7]" >
         Go to App
       </button>
 
