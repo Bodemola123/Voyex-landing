@@ -181,3 +181,21 @@ body {
     transform: rotate(360deg);
   }
 }
+
+.blinking-caret {
+  display: inline-block;
+  width: 2px; /* Thin, like a real typing cursor */
+  height: 0.7em;
+  background-color: white; /* Same color as the text */
+  animation: blink 0.8s steps(2, start) infinite;
+  margin-left: 2px; /* Small spacing for visual clarity */
+}
+
+@keyframes blink {
+  0%, 100% {
+    opacity: 1; /* Fully visible */
+  }
+  50% {
+    opacity: 0; /* Vanishes in the middle of the animation */
+  }
+}

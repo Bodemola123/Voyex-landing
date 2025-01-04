@@ -1,6 +1,7 @@
 'use client'
 import Image from 'next/image'
 import React, { useEffect, useState, useRef } from 'react'
+import "../../app/globals.css"
 
 const Hero = () => {
   const [isInViewMessage, setIsInViewMessage] = useState(false);
@@ -69,13 +70,13 @@ const Hero = () => {
         
         <div className='flex flex-row gap-[40px] justify-center items-center'>
         <div className='lg:h-[198px] md:h-[186px] sm:h-[118px] mx-auto w-[85%] lg:mb-[80px] sm:mb-[100px] md:mb-[180px]'> 
-        <h1 className="lg:text-[108px] md:text-[98.67px] sm:text-[58.88px] sm:font-bold md:font-bold lg:font-black leading-tight text-[#ffffff]  z-50">
+        <h1 className="lg:text-[108px] md:text-[98.67px] sm:text-[58.88px] sm:font-bold md:font-bold lg:font-black leading-tight text-[#ffffff] z-50">
           <span>{currentText}</span>
+          <span className="blinking-caret"></span>
         </h1>
         </div>
       </div>
         
-
         <Image src={'/message.svg'} alt='message' width={200} height={200} className='absolute lg:-h-[200px] lg:w-[200px] md:h-[160px] md:w-[160px] lg:flex md:flex sm:hidden message-bubble lg:top-[130px] lg:right-[240px] -z-20 md:top-[130px] md:right-[100px]'/>
       </div>
 
@@ -90,11 +91,10 @@ const Hero = () => {
   Start your AI journey
 </button>
 <button
-  className="bg-[#f4f4f4] flex items-center justify-center sm:py-3 sm:px-3 md:py-2.5 md:px-9 rounded-3xl md:gap-2.5 lg:gap-2.5 sm:gap-[5.98px] text-[#032400] font-medium md:text-base sm:text-sm transition-all duration-200 ease-in-out hover:scale-110 hover:bg-[#e0e0e0] z-10"
+  className="bg-[#f4f4f4] flex items-center justify-center sm:py-3 sm:px-3 md:py-2.5 md:px-9 rounded-3xl md:gap-2.5 lg:gap-2.5 sm:gap-[5.98px] text-[#032400] font-medium md:text-base sm:text-sm transition-all duration-200 ease-in-out hover:scale-110 hover:bg-[#e0e0e0] z-10 md:w-auto sm:w-[155px]"
 >
   Upload Product
 </button>
-
 
 </div>
 

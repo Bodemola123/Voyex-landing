@@ -12,7 +12,6 @@ const Header = () => {
     setIsOpen(prevState => !prevState)
   }
 
-
   return (
     <div className="flex justify-between items-center mt-6 lg:px-[96px] md:px-[46px] sm:px-[30px]">
       <h1 className="font-bold text-2xl text-white">Voyex.</h1>
@@ -26,10 +25,12 @@ const Header = () => {
       </div>
 
       {/* Go to App Button */}
-      <button 
-        className="sm:hidden lg:flex md:flex bg-[#c088fb] rounded-3xl md:rounded-[27px] border-[1.5px] border-[#c088fb] text-[#0a0a0b] flex gap-2 lg:py-2.5 lg:px-9 md:py-[6px] md:px-9 transition-all duration-200 ease-in-out hover:scale-110 hover:bg-[#9b67d7]" >
+      <a 
+        href="https://voyex-app-dev.vercel.app/" 
+        className="sm:hidden lg:flex md:flex bg-[#c088fb] rounded-3xl md:rounded-[27px] border-[1.5px] border-[#c088fb] text-[#0a0a0b] flex gap-2 lg:py-2.5 lg:px-9 md:py-[6px] md:px-9 transition-all duration-200 ease-in-out hover:scale-110 hover:bg-[#9b67d7] hover:backdrop-blur-[18.4px] hover:shadow-md hover:shadow-[#c088fb]"
+      >
         Go to App
-      </button>
+      </a>
 
       {/* Hamburger Menu Button */}
       <button className="md:hidden" onClick={toggleDropdown}>
@@ -38,13 +39,19 @@ const Header = () => {
 
       {/* Mobile Dropdown */}
       {isOpen && (
-        <div className="absolute top-16 right-8 sm:block bg-[#0d0d0d] text-white rounded-lg shadow-lg py-4 px-6">
+        <div className="absolute top-16 right-8 sm:flex flex-col gap-4 bg-[#0d0d0d] text-white rounded-lg shadow-lg py-4 px-6 z-20">
           <ul className="flex flex-col gap-4">
             <li><a href="#">Pricing</a></li>
             <li><a href="#">Resources</a></li>
             <li><a href="#">About us</a></li>
             <li><a href="#">Blog</a></li>
           </ul>
+          <a 
+              href="https://voyex-app-dev.vercel.app/" 
+              className='bg-[#c088fb] rounded-3xl border-[1.5px] border-[#c088fb] text-sm text-[#0a0a0b] flex gap-2 px-4 py-2 transition-all duration-200 ease-in-out hover:scale-110 hover:bg-[#9b67d7] hover:backdrop-blur-[18.4px] hover:shadow-md hover:shadow-[#c088fb] justify-start'
+            >
+              Go to App
+          </a>
         </div>
       )}
     </div>
