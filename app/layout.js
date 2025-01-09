@@ -1,12 +1,4 @@
-import { Inter } from "next/font/google";  // Correct import for Inter font
 import "./globals.css";
-
-// Load the Inter font
-const inter = Inter({
-  weight: "400", // Specify the desired font weight, e.g., 400 for regular
-  subsets: ["latin"], // Include latin subset
-  variable: true, // Enable variable font for optimal loading
-});
 
 export const metadata = {
   title: "Voyex",
@@ -30,7 +22,7 @@ export default function RootLayout({ children }) {
         </style>
       </head>
       <body
-        className={`${inter.variable} antialiased scroll-container scrollbar-hide overflow-hidden md:bg-[url('/stars.svg.svg')] sm:bg-sm-bg bg-black w-full h-full bg-cover bg-no-repeat bg-fixed bg-center bg-origin-content`}
+        className=antialiased scroll-container scrollbar-hide overflow-hidden md:bg-[url('/stars.svg.svg')] sm:bg-sm-bg bg-black w-full h-full bg-cover bg-no-repeat bg-fixed bg-center bg-origin-content`}
       >
         {children} {/* Content layer */}
       </body>
