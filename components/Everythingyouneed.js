@@ -5,7 +5,7 @@ import Image from 'next/image';
 import AOS from 'aos';
 import 'aos/dist/aos.css';
 import { IoMdArrowForward } from "react-icons/io";
-import { PiLeafBold } from 'react-icons/pi';
+import { HiOutlineLightBulb } from "react-icons/hi2";
 
 const Everythingyouneed = () => {
   const [currentIndex, setCurrentIndex] = useState(0);
@@ -80,8 +80,8 @@ const Everythingyouneed = () => {
       >
         {/* Card 1 */}
         <div className="lg:p-10 md:p-[25.71px] sm:p-[25.71px] lg:border md:border-[0.64px] sm:border-[0.64px] border-card lg:rounded-xl md:rounded-[6.43px] sm:rounded-[6.43px] flex flex-col justify-center items-center bg-[#0d0d0d] lg:gap-6 md:gap-[15.43px] sm:gap-[15.43px] transition-all duration-1000 ease-in-out hover:bg-[#ffffff] group">
-  <div className="lg:p-5 md:p-[11.57px] sm:p-[11.57px] lg:w-[56px] md:w-[36px] sm:w-[36px] flex items-center justify-center lg:rounded-xl md:rounded-[6.43px] sm:rounded-[6.43px] bg-[#ffffff] transition-all duration-1000 ease-in-out group-hover:bg-[#0d0d0d] ">
-    <PiLeafBold className="md:w-[10.04px] md:h-[10.04px] sm:h-[10.04px] sm:w-[10.04px] lg:w-[15.63px] lg:h-[15.63px] text-[24px] text-[#0d0d0d] transition-colors duration-1000 ease-in-out group-hover:text-[#ffffff]" />
+  <div className="p-2.5 w-[52px] flex items-center justify-center lg:rounded-xl md:rounded-[6.43px] sm:rounded-[6.43px] bg-[#ffffff] transition-all duration-1000 ease-in-out  ">
+    <HiOutlineLightBulb className="text-[24px] text-[#0d0d0d] transition-colors duration-1000 ease-in-out " />
   </div>
   <h1 className="font-bold text-center text-[#ffffff] text-[18px] lg:leading-[23.03px] md:leading-[24.34px] sm:leading-[24.34px] underline underline-offset-4 transition-colors duration-1000 ease-in-out group-hover:text-[#0d0d0d]">
     AI Query Engine
@@ -98,8 +98,8 @@ const Everythingyouneed = () => {
 
         {/* Card 2 */}
         <div className="lg:p-10 md:p-[25.71px] sm:p-[25.71px] lg:border md:border-[0.64px] sm:border-[0.64px] border-card lg:rounded-xl md:rounded-[6.43px] sm:rounded-[6.43px] flex flex-col justify-center items-center bg-[#0d0d0d] lg:gap-6 md:gap-[15.43px] sm:gap-[15.43px] transition-all duration-1000 ease-in-out hover:bg-[#ffffff] group">
-  <div className="lg:p-5 md:p-[11.57px] sm:p-[11.57px] lg:w-[56px] md:w-[36px] sm:w-[36px] flex lg:rounded-xl md:rounded-[6.43px] sm:rounded-[6.43px] bg-[#ffffff] transition-all duration-1000 ease-in-out group-hover:bg-[#0d0d0d]">
-    <PiLeafBold className="md:w-[10.04px] md:h-[10.04px] sm:h-[10.04px] sm:w-[10.04px] lg:w-[15.63px] lg:h-[15.63px] text-[24px] text-[#0d0d0d] transition-colors duration-1000 ease-in-out group-hover:text-[#ffffff]" />
+  <div className="p-2.5 w-[52px] flex items-center justify-center lg:rounded-xl md:rounded-[6.43px] sm:rounded-[6.43px] bg-[#ffffff] transition-all duration-1000 ease-in-out ">
+    <HiOutlineLightBulb className="text-[24px] text-[#0d0d0d] transition-colors duration-1000 ease-in-out " />
   </div>
   <h1 className="font-bold text-center text-[#ffffff] text-[18px] lg:leading-[23.03px] md:leading-[24.34px] sm:leading-[24.34px] underline underline-offset-4 transition-colors duration-1000 ease-in-out group-hover:text-[#0d0d0d]">
     Workflow Creation
