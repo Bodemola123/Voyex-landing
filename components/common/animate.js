@@ -4,7 +4,7 @@ import React from "react";
 function Animate() {
   return (
     <>
-      <div className="fixed w-full h-full">
+      <div className="absolute w-full h-full -z-10">
         <div className="relative w-full h-full animate-1">
           <Image
             className="absolute right-[500px] top-40 bg-contain "
@@ -15,7 +15,7 @@ function Animate() {
           />
         </div>
       </div>
-      <div className="fixed w-full h-full">
+      <div className="absolute w-full h-full -z-10">
         <div className="relative w-full h-full animate-2">
           <Image
             className="absolute left-96 top-80 bg-contain "
@@ -26,7 +26,7 @@ function Animate() {
           />
         </div>
       </div>
-      <div className="fixed w-full h-full">
+      <div className="absolute w-full h-full -z-10">
         <div className="relative w-full h-full animate-3">
           <Image
             className="absolute right-96 bottom-36 bg-contain "

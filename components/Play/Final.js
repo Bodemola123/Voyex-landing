@@ -46,7 +46,7 @@ const Final = () => {
     };
 
   return (
-    <div className='md:mt-[176px] sm:mt-[120px] flex flex-col lg:px-[120px] md:px-[10px] sm:px-[16px]'>
+    <div className='md:mt-[176px] sm:mt-[120px] flex flex-col lg:px-[120px] md:px-[10px] sm:px-[16px] bg-black'>
         <div className='flex flex-row sm:gap-[40px] justify-center items-center sm:mx-auto'>
             <Image src={'/Chart.svg'} alt='chart' width={263} height={263} className='relative lg:top-[-106px] md:top-[-136px] lg:left-0 md:right-[0px] sm:hidden md:flex message-bubble'/>
             <div className='flex flex-col gap-[20px]'>

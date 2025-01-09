@@ -4,6 +4,7 @@ import '../app/globals.css';
 import Image from 'next/image';
 import AOS from 'aos';
 import 'aos/dist/aos.css';
+import { IoMdArrowForward } from "react-icons/io";
 
 const Everythingyouneed = () => {
   const [currentIndex, setCurrentIndex] = useState(0);
@@ -13,11 +14,11 @@ const Everythingyouneed = () => {
   const carouselContent = [
     {
       title: "Ask Deeper Questions",
-      description: "Uncover insights with advanced AI for thoughtful,impactful decision-making.",
+      description: "Uncover insights with advanced AI for thoughtful, impactful decision-making.",
     },
     {
       title: "Automate Campaigns",
-      description: "Automate campaigns simplify marketing with personalized, data-driven strategies.",
+      description: "Automate campaigns to simplify marketing with personalized, data-driven strategies.",
     },
     {
       title: "Track Performance Metrics",
@@ -38,10 +39,19 @@ const Everythingyouneed = () => {
         setCurrentIndex((prevIndex) => (prevIndex + 1) % carouselContent.length);
         setFade(true); // Fade in the new content
       }, 500); // Wait for fade-out before updating index
-    }, 3000); // Change text every 3 seconds
+    }, 5000); // Change text every 5 seconds (slower speed)
 
     return () => clearInterval(interval);
   }, []);
+
+  // Handle carousel button clicks
+  const handleNext = () => {
+    setCurrentIndex((prevIndex) => (prevIndex + 1) % carouselContent.length);
+  };
+
+  const handlePrevious = () => {
+    setCurrentIndex((prevIndex) => (prevIndex - 1 + carouselContent.length) % carouselContent.length);
+  };
 
   return (
     <div className="flex flex-col lg:gap-16 md:gap-[43px] sm:gap-[43px] justify-center items-center sm:px-4 md:px-0 sm:-mt-[100px] md:-mt-0">
@@ -68,49 +78,49 @@ const Everythingyouneed = () => {
         data-aos="fade-up"
       >
         {/* Card 1 */}
-  <div className="lg:p-10 md:p-[25.71px] sm:p-[25.71px] lg:border md:border-[0.64px] sm:border-[0.64px] border-card lg:rounded-xl md:rounded-[6.43px] sm:rounded-[6.43px] flex flex-col justify-center items-center bg-[#0d0d0d] lg:gap-6 md:gap-[15.43px] sm:gap-[15.43px] transition-transform duration-300 ease-in-out hover:-translate-y-3  hover:shadow-2xl">
-    <div className="lg:p-5 md:p-[11.57px] sm:p-[11.57px] lg:w-[56px] md:w-[36px] sm:w-[36px] flex lg:rounded-xl md:rounded-[6.43px] sm:rounded-[6.43px] bg-[#ffffff]">
-      <Image
-        src={'/Vector.svg'}
-        alt="vec"
-        width={15.63}
-        height={15.63}
-        className="md:w-[10.04px] md:h-[10.04px] sm:h-[10.04px] sm:w-[10.04px] lg:w-[15.63px] lg:h-[15.63px]"
-      />
-    </div>
-    <h1 className="font-bold text-center text-[#ffffff] text-[18px] lg:leading-[23.03px] md:leading-[24.34px] sm:leading-[24.34px] underline-hover">
-      AI Query Engine
-    </h1>
-    <span className="flex flex-col lg:w-[319px] md:w-[294.77px] sm:w-auto md:px-0 md:text-[14.79px] sm:text-[14.79px] text-center justify-center items-center font-normal lg:text-base text-[#ffffff]">
-      <p>
-        Voyex&apos;s AI query engine finds the best tools for your tasks,
-        saving you time on research and maximizing efficiency.
-      </p>
-    </span>
-  </div>
+        <div className="lg:p-10 md:p-[25.71px] sm:p-[25.71px] lg:border md:border-[0.64px] sm:border-[0.64px] border-card lg:rounded-xl md:rounded-[6.43px] sm:rounded-[6.43px] flex flex-col justify-center items-center bg-[#0d0d0d] lg:gap-6 md:gap-[15.43px] sm:gap-[15.43px] transition-transform duration-300 ease-in-out hover:-translate-y-3  hover:shadow-2xl">
+          <div className="lg:p-5 md:p-[11.57px] sm:p-[11.57px] lg:w-[56px] md:w-[36px] sm:w-[36px] flex lg:rounded-xl md:rounded-[6.43px] sm:rounded-[6.43px] bg-[#ffffff]">
+            <Image
+              src={'/Vector.svg'}
+              alt="vec"
+              width={15.63}
+              height={15.63}
+              className="md:w-[10.04px] md:h-[10.04px] sm:h-[10.04px] sm:w-[10.04px] lg:w-[15.63px] lg:h-[15.63px]"
+            />
+          </div>
+          <h1 className="font-bold text-center text-[#ffffff] text-[18px] lg:leading-[23.03px] md:leading-[24.34px] sm:leading-[24.34px] underline-hover">
+            AI Query Engine
+          </h1>
+          <span className="flex flex-col lg:w-[319px] md:w-[294.77px] sm:w-auto md:px-0 md:text-[14.79px] sm:text-[14.79px] text-center justify-center items-center font-normal lg:text-base text-[#ffffff]">
+            <p>
+              Voyex&apos;s AI query engine finds the best tools for your tasks,
+              saving you time on research and maximizing efficiency.
+            </p>
+          </span>
+        </div>
 
-  {/* Card 2 */}
-  <div className="lg:p-10 md:p-[25.71px] sm:p-[25.71px] lg:border md:border-[0.64px] sm:border-[0.64px] border-card lg:rounded-xl md:rounded-[6.43px] sm:rounded-[6.43px] flex flex-col justify-center items-center bg-[#0d0d0d] lg:gap-6 md:gap-[15.43px] sm:gap-[15.43px] transition-transform duration-300 ease-in-out md:hover:-translate-y-3 sm:hover:translate-y-2 hover:shadow-2xl">
-    <div className="lg:p-5 md:p-[11.57px] sm:p-[11.57px] lg:w-[56px] md:w-[36px] sm:w-[36px] flex lg:rounded-xl md:rounded-[6.43px] sm:rounded-[6.43px] bg-[#ffffff]">
-      <Image
-        src={'/Vector.svg'}
-        alt="vec"
-        width={15.63}
-        height={15.63}
-        className="md:w-[10.04px] md:h-[10.04px] sm:h-[10.04px] sm:w-[10.04px] lg:w-[15.63px] lg:h-[15.63px]"
-      />
-    </div>
-    <h1 className="font-bold text-center text-[#ffffff] text-[18px] lg:leading-[23.03px] md:leading-[24.34px] sm:leading-[24.34px] underline-hover">
-      Workflow Creation
-    </h1>
-    <span className="flex flex-col lg:w-[400px] md:w-[311.67px] sm:w-auto text-center justify-center items-center font-normal md:text-[14.79px] sm:text-[14.79px] lg:text-base text-[#ffffff]">
-      <p>
-        Voyex delivers the best tools and workflows, adapting with
-        feedback to ensure tasks are completed efficiently from start to
-        finish.
-      </p>
-    </span>
-  </div>
+        {/* Card 2 */}
+        <div className="lg:p-10 md:p-[25.71px] sm:p-[25.71px] lg:border md:border-[0.64px] sm:border-[0.64px] border-card lg:rounded-xl md:rounded-[6.43px] sm:rounded-[6.43px] flex flex-col justify-center items-center bg-[#0d0d0d] lg:gap-6 md:gap-[15.43px] sm:gap-[15.43px] transition-transform duration-300 ease-in-out md:hover:-translate-y-3 sm:hover:translate-y-2 hover:shadow-2xl">
+          <div className="lg:p-5 md:p-[11.57px] sm:p-[11.57px] lg:w-[56px] md:w-[36px] sm:w-[36px] flex lg:rounded-xl md:rounded-[6.43px] sm:rounded-[6.43px] bg-[#ffffff]">
+            <Image
+              src={'/Vector.svg'}
+              alt="vec"
+              width={15.63}
+              height={15.63}
+              className="md:w-[10.04px] md:h-[10.04px] sm:h-[10.04px] sm:w-[10.04px] lg:w-[15.63px] lg:h-[15.63px]"
+            />
+          </div>
+          <h1 className="font-bold text-center text-[#ffffff] text-[18px] lg:leading-[23.03px] md:leading-[24.34px] sm:leading-[24.34px] underline-hover">
+            Workflow Creation
+          </h1>
+          <span className="flex flex-col lg:w-[400px] md:w-[311.67px] sm:w-auto text-center justify-center items-center font-normal md:text-[14.79px] sm:text-[14.79px] lg:text-base text-[#ffffff]">
+            <p>
+              Voyex delivers the best tools and workflows, adapting with
+              feedback to ensure tasks are completed efficiently from start to
+              finish.
+            </p>
+          </span>
+        </div>
       </div>
 
       {/* Image Section */}
@@ -119,7 +129,7 @@ const Everythingyouneed = () => {
         data-aos="fade-up"
       >
         {/* Static card */}
-        <div className="flex flex-col lg:gap-2 lg:p-4 md:py-[10.93px] md:px-[10.28px] sm:px-[23.03px] border border-card bg-black lg:rounded-[13px] md:rounded-[8.36px] sm:rounded-[10px]">
+        <div className="flex flex-col lg:gap-2 lg:p-4 md:py-[10.93px] md:px-[10.28px] sm:px-[23.03px] border border-card bg-[#0A0A0B] lg:rounded-[13px] md:rounded-[8.36px] sm:rounded-[10px]">
           <Image
             src={'/Visual.svg'}
             alt="holo"
@@ -140,15 +150,33 @@ const Everythingyouneed = () => {
 
         {/* Carousel card with fade effect */}
         <div
-          className="flex flex-col items-baseline justify-end 
-          lg:pl-10 lg:gap-2 lg:pb-5 lg:col-span-2 lg:rounded-[13px] lg:w-auto lg:h-[386px] 
-          md:pl-[25.71px] md:gap-2 md:pb-[11.1px] md:col-span-1 md:rounded-[6.43px] md:w-[370.23px] md:h-[304.19px] 
-          sm:pl-[14.32px] sm:gap-[5.14px] sm:pb-[66.7px] sm:rounded-[6.43px] sm:w-full sm:h-[400px] 
-          border border-card
-          md:bg-gradient-and-darkstar sm:bg-gradient-and-smview 
-          bg-cover bg-no-repeat bg-center"
-          data-aos="fade-up"
-        >
+  className="group flex flex-col items-baseline justify-end 
+    lg:pl-10 lg:gap-2 lg:pb-5 lg:col-span-2 lg:rounded-[13px] lg:w-auto lg:h-[386px] 
+    md:pl-[25.71px] md:gap-2 md:pb-[11.1px] md:col-span-1 md:rounded-[6.43px] md:w-[370.23px] md:h-[304.19px] 
+    sm:pl-[14.32px] sm:gap-[5.14px] sm:pb-[66.7px] sm:rounded-[6.43px] sm:w-full sm:h-[400px] 
+    border border-card 
+    bg-cover bg-no-repeat bg-center transition-opacity duration-500 
+    group-hover:bg-opacity-100 group-hover:opacity-100"
+  style={{
+    backgroundImage: "url('/Visual1.svg'), linear-gradient(180deg, #000000 0%, #371866 100%)",
+  }}
+  data-aos="fade-up"
+>
+
+          <div className="flex flex-row gap-2">
+            <button 
+              className="flex justify-center items-center border p-2.5 opacity-[.85] rounded-[35px]"
+              onClick={handlePrevious}
+            >
+              <IoMdArrowForward className='text-[24px] text-[#f4f4f4] rotate-180' />
+            </button>
+            <button
+              className="flex justify-center items-center border p-2.5 opacity-[.85] rounded-[35px]"
+              onClick={handleNext}
+            >
+              <IoMdArrowForward className='text-[24px] text-[#f4f4f4]' />
+            </button>
+          </div>
           <h1
             className={`font-medium text-[#ffffff] transition-opacity duration-500 ${fade ? 'opacity-100' : 'opacity-0'}`}
           >
