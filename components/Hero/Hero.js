@@ -40,7 +40,7 @@ const Hero = () => {
           Start your AI journey
         </button>
         <button
-          className="bg-[#f4f4f4] flex items-center justify-center sm:py-3 sm:px-3 md:py-2.5 md:px-9 rounded-3xl md:gap-2.5 lg:gap-2.5 sm:gap-[5.98px] text-[#032400] font-medium md:text-base sm:text-bade transition-all duration-200 ease-in-out hover:scale-110 hover:bg-[#e0e0e0] z-50 md:w-auto sm:w-[286px]"
+          className="bg-[#f4f4f4] flex items-center justify-center sm:py-3 sm:px-3 md:py-2.5 md:px-9 rounded-3xl md:gap-2.5 lg:gap-2.5 sm:gap-[5.98px] text-[#032400] font-medium md:text-base sm:text-base transition-all duration-200 ease-in-out hover:scale-110 hover:bg-[#e0e0e0] z-50 md:w-auto sm:w-[286px]"
         >
           Upload Product
         </button>
