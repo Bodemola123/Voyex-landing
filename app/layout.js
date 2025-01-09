@@ -1,9 +1,11 @@
-import { Inter } from "next/font/google";  // Import Don Sans font
+import { Inter } from "next/font/google";  // Correct import for Inter font
 import "./globals.css";
 
-const donSans = Don_Sans({
+// Load the Inter font
+const inter = Inter({
   weight: "400", // Specify the desired font weight, e.g., 400 for regular
   subsets: ["latin"], // Include latin subset
+  variable: true, // Enable variable font for optimal loading
 });
 
 export const metadata = {
