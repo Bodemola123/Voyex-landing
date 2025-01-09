@@ -1,4 +1,4 @@
-import { Don_Sans } from "next/font/google";  // Import Don Sans font
+import { Inter } from "next/font/google";  // Import Don Sans font
 import "./globals.css";
 
 const donSans = Don_Sans({
@@ -28,7 +28,7 @@ export default function RootLayout({ children }) {
         </style>
       </head>
       <body
-        className={`${donSans.variable} antialiased scroll-container scrollbar-hide overflow-hidden md:bg-[url('/stars.svg.svg')] sm:bg-sm-bg bg-black w-full h-full bg-cover bg-no-repeat bg-fixed bg-center bg-origin-content`}
+        className={`${inter.variable} antialiased scroll-container scrollbar-hide overflow-hidden md:bg-[url('/stars.svg.svg')] sm:bg-sm-bg bg-black w-full h-full bg-cover bg-no-repeat bg-fixed bg-center bg-origin-content`}
       >
         {children} {/* Content layer */}
       </body>
