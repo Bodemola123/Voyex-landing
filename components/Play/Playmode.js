@@ -28,7 +28,7 @@ const Playmode = () => {
   };
 
   return (
-    <div className='flex justify-center items-center md:mt-[159px] sm:mt-[75.32px]  rounded-[18px] mx-auto'>
+    <div className='flex justify-center items-center md:mt-[159px] sm:mt-[75.32px]  rounded-[18px] mx-auto z-35'>
       <div
         className='relative  lg:w-[1131px] lg:h-[635px] md:w-[730px] md:h-[409px] sm:w-[100%] sm:h-[315px]'
       >

@@ -21,7 +21,7 @@ export default function RootLayout({ children }) {
         <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
       </head>
       <body
-        className={`${inter.variable} antialiased scroll-container scrollbar-hide w-full overflow-hidden`}
+        className={`${inter.variable} antialiased scroll-container scrollbar-hide overflow-hidden md:bg-[url('/stars.svg.svg')] sm:bg-sm-bg bg-black w-full h-full bg-cover bg-no-repeat bg-fixed bg-center bg-origin-content`}
       >
         <StarsCanvas /> {/* Background layer */}
         <Animate /> {/* Swirling images above snow */}

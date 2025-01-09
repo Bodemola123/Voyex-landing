@@ -12,9 +12,12 @@ export default {
         foreground: "var(--foreground)", // Ensure these are defined in your CSS
       },
       backgroundImage: {
-        // Custom gradients combined with background images
-        'gradient-and-darkstar': "url('/Visual1.svg'), linear-gradient(180deg, #000000 0%, #371866 100%) ",
-        'gradient-and-smview': "url('/smview.svg'),linear-gradient(180deg, #000000 0%, #371866 100%)",
+        'sm-bg': "url('/mobilebg.JPG')", // Background image for small screens
+        'md-bg': "url('/stars.svg')", // Background image for larger screens
+        'gradient-and-darkstar':
+          "url('/Visual1.svg'), linear-gradient(180deg, #000000 0%, #371866 100%)",
+        'gradient-and-smview':
+          "url('/smview.svg'), linear-gradient(180deg, #000000 0%, #371866 100%)",
       },
     },
     screens: {
