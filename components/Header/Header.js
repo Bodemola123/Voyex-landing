@@ -13,7 +13,7 @@ const Header = () => {
   }
 
   return (
-    <div className="flex justify-between items-center sm:h-[72px] lg:px-[24px] md:px-[24px] sm:px-[24px] bg-[#0A0A0B] sticky top-0 z-40">
+    <div className="flex justify-between items-center sm:h-[72px] lg:px-[24px] md:px-[24px] sm:px-[24px] z-40">
       <h1 className="font-bold text-2xl text-white">Voyex.</h1>
 
       {/* Desktop Navigation */}
@@ -27,7 +27,7 @@ const Header = () => {
       {/* Go to App Button */}
       <a 
         href="https://voyex-app-dev.vercel.app/" 
-        className="sm:hidden lg:flex md:flex bg-[#c088fb] rounded-3xl md:rounded-[27px] border-[1.5px] border-[#c088fb] text-[#0a0a0b] flex gap-2 lg:py-[6px] lg:px-9 md:py-[6px] md:px-9 transition-all duration-200 ease-in-out hover:scale-110 hover:bg-[#9b67d7] hover:backdrop-blur-[18.4px] hover:shadow-md hover:shadow-[#c088fb]"
+        className="sm:hidden lg:flex md:flex bg-[#c088fb] rounded-3xl md:rounded-[27px] border-[1.5px] border-[#c088fb] text-[#0a0a0b] flex gap-2 lg:py-[6px] lg:px-9 md:py-[6px] md:px-9 transition-all duration-200 ease-in-out hover:scale-110 hover:bg-[#9b67d7] hover:backdrop-blur-[18.4px]"
       >
         Go to App
       </a>
@@ -48,7 +48,7 @@ const Header = () => {
           </ul>
           <a 
               href="https://voyex-app-dev.vercel.app/" 
-              className='bg-[#c088fb] rounded-3xl border-[1.5px] border-[#c088fb] text-sm text-[#0a0a0b] flex gap-2 px-4 py-2 transition-all duration-200 ease-in-out hover:scale-110 hover:bg-[#9b67d7] hover:backdrop-blur-[18.4px] hover:shadow-md hover:shadow-[#c088fb] justify-start'
+              className='bg-[#c088fb] rounded-3xl border-[1.5px] border-[#c088fb] text-sm text-[#0a0a0b] flex gap-2 px-4 py-2 transition-all duration-200 ease-in-out hover:scale-110 hover:bg-[#9b67d7] hover:backdrop-blur-[18.4px]  justify-start'
             >
               Go to App
           </a>

@@ -14,8 +14,8 @@ const Hero = () => {
 
   return (
     <div
-      className="flex flex-col items-center justify-center text-center bg-black bg-cover bg-center bg-no-repeat relative gap-[21px] z-20"
-      style={{ backgroundImage: "url('/background.png')" }}
+      className="flex flex-col items-center justify-center text-center relative gap-[21px] z-20"
+      
     >
       <div className="flex flex-row justify-center items-center">
         <div className="lg:h-[322px] md:h-[198px] sm:h-[118px] mx-auto">

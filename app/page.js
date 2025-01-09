@@ -1,7 +1,5 @@
 import Companies from '@/components/Companies/Companies'
 import Everythingyouneed from '@/components/Everythingyouneed'
-import Header from '@/components/Header/Header'
-import Hero from '@/components/Hero/Hero'
 import CTA from '@/components/Play/CTA'
 import Playmode from '@/components/Play/Playmode'
 import Rectangle from '@/components/Rectangle'
@@ -10,12 +8,12 @@ import React from 'react'
 import '../app/globals.css'
 import FAQ from '@/components/FAQ'
 import Final from '@/components/Play/Final'
+import Combo from '@/components/Combo'
 
 const page = () => {
   return (
     <div className='relative flex flex-col w-full h-full '>
-      <Header/>
-      <Hero/>
+      <Combo/>
       <Playmode/>
       <Companies/>
       <Everythingyouneed/>
