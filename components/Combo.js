@@ -9,6 +9,7 @@ const Combo = () => {
     >
       <Header/>
       <Hero/>
+      
     </div>
   )
 }
