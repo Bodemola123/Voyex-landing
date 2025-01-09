@@ -21,7 +21,7 @@ export default function RootLayout({ children }) {
         <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
         <style>
           {`
-            /* Fix for iOS background zoom issue */
+            /
             @supports (-webkit-touch-callout: none) {
               body {
                 background-attachment: scroll; /* Prevent zoom issue on iPhones */
@@ -33,7 +33,7 @@ export default function RootLayout({ children }) {
       <body
         className={`${inter.variable} antialiased scroll-container scrollbar-hide overflow-hidden 
         md:bg-[url('/stars.svg.svg')] sm:bg-sm-bg bg-black w-full h-full bg-cover bg-no-repeat 
-        min-h-100vh bg-center bg-origin-border`}
+       bg-center bg-origin-content bg-fixed`}
       >
         <StarsCanvas /> {/* Background layer */}
         <Animate /> {/* Swirling images above snow */}
