@@ -150,44 +150,42 @@ const Everythingyouneed = () => {
 
         {/* Carousel card with fade effect */}
         <div
-  className="group flex flex-col items-baseline justify-end 
+  className="flex flex-col items-baseline justify-end 
     lg:pl-10 lg:gap-2 lg:pb-5 lg:col-span-2 lg:rounded-[13px] lg:w-auto lg:h-[386px] 
     md:pl-[25.71px] md:gap-2 md:pb-[11.1px] md:col-span-1 md:rounded-[6.43px] md:w-[370.23px] md:h-[304.19px] 
     sm:pl-[14.32px] sm:gap-[5.14px] sm:pb-[66.7px] sm:rounded-[6.43px] sm:w-full sm:h-[400px] 
-    border border-card 
-    bg-cover bg-no-repeat bg-center transition-opacity duration-500 
-    group-hover:bg-opacity-100 group-hover:opacity-100"
-  style={{
-    backgroundImage: "url('/Visual1.svg'), linear-gradient(180deg, #000000 0%, #371866 100%)",
-  }}
+    border border-card
+    bg-cover bg-no-repeat bg-center transition-all duration-2000 ease-in-out
+    bg-[#0a0a0b] opacity-100 hover:opacity-80 hover:bg-gradient-and-darkstar"
   data-aos="fade-up"
 >
 
-          <div className="flex flex-row gap-2">
-            <button 
-              className="flex justify-center items-center border p-2.5 opacity-[.85] rounded-[35px]"
-              onClick={handlePrevious}
-            >
-              <IoMdArrowForward className='text-[24px] text-[#f4f4f4] rotate-180' />
-            </button>
-            <button
-              className="flex justify-center items-center border p-2.5 opacity-[.85] rounded-[35px]"
-              onClick={handleNext}
-            >
-              <IoMdArrowForward className='text-[24px] text-[#f4f4f4]' />
-            </button>
-          </div>
-          <h1
-            className={`font-medium text-[#ffffff] transition-opacity duration-500 ${fade ? 'opacity-100' : 'opacity-0'}`}
-          >
-            {carouselContent[currentIndex].title}
-          </h1>
-          <p
-            className={`text-[#ffffffb3] lg:w-[322px] md:w-[285.59px] sm:w-full transition-opacity duration-500 ${fade ? 'opacity-100' : 'opacity-0'}`}
-          >
-            {carouselContent[currentIndex].description}
-          </p>
-        </div>
+  <div className="flex flex-row gap-2">
+    <button
+      className="flex justify-center items-center border p-2.5 opacity-[.85] rounded-[35px]"
+      onClick={handlePrevious}
+    >
+      <IoMdArrowForward className="text-[24px] text-[#f4f4f4] rotate-180" />
+    </button>
+    <button
+      className="flex justify-center items-center border p-2.5 opacity-[.85] rounded-[35px]"
+      onClick={handleNext}
+    >
+      <IoMdArrowForward className="text-[24px] text-[#f4f4f4]" />
+    </button>
+  </div>
+  <h1
+    className={`font-medium text-[#ffffff] transition-opacity duration-500 ${fade ? 'opacity-100' : 'opacity-0'}`}
+  >
+    {carouselContent[currentIndex].title}
+  </h1>
+  <p
+    className={`text-[#ffffffb3] lg:w-[322px] md:w-[285.59px] sm:w-full transition-opacity duration-500 ${fade ? 'opacity-100' : 'opacity-0'}`}
+  >
+    {carouselContent[currentIndex].description}
+  </p>
+</div>
+
       </div>
     </div>
   );
