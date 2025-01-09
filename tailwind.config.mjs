@@ -19,6 +19,9 @@ export default {
         'gradient-and-smview':
           "url('/smview.svg'), linear-gradient(180deg, #000000 0%, #371866 100%)",
       },
+      fontFamily: {
+        sans: ["'DM Sans'", "sans-serif"], // Add DM Sans as the default sans-serif font
+      },
     },
     screens: {
       sm: "320px", // Small screens (phones) with minimum width of 320px
