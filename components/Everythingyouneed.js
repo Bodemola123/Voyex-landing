@@ -5,6 +5,7 @@ import Image from 'next/image';
 import AOS from 'aos';
 import 'aos/dist/aos.css';
 import { IoMdArrowForward } from "react-icons/io";
+import { PiLeafBold } from 'react-icons/pi';
 
 const Everythingyouneed = () => {
   const [currentIndex, setCurrentIndex] = useState(0);
@@ -78,49 +79,40 @@ const Everythingyouneed = () => {
         data-aos="fade-up"
       >
         {/* Card 1 */}
-        <div className="lg:p-10 md:p-[25.71px] sm:p-[25.71px] lg:border md:border-[0.64px] sm:border-[0.64px] border-card lg:rounded-xl md:rounded-[6.43px] sm:rounded-[6.43px] flex flex-col justify-center items-center bg-[#0d0d0d] lg:gap-6 md:gap-[15.43px] sm:gap-[15.43px] transition-transform duration-300 ease-in-out hover:-translate-y-3 hover:shadow-2xl">
-          <div className="lg:p-5 md:p-[11.57px] sm:p-[11.57px] lg:w-[56px] md:w-[36px] sm:w-[36px] flex lg:rounded-xl md:rounded-[6.43px] sm:rounded-[6.43px] bg-[#ffffff]">
-            <Image
-              src={'/Vector.svg'}
-              alt="vec"
-              width={15.63}
-              height={15.63}
-              className="md:w-[10.04px] md:h-[10.04px] sm:h-[10.04px] sm:w-[10.04px] lg:w-[15.63px] lg:h-[15.63px]"
-            />
-          </div>
-          <h1 className="font-bold text-center text-[#ffffff] text-[18px] lg:leading-[23.03px] md:leading-[24.34px] sm:leading-[24.34px] underline-hover">
-            AI Query Engine
-          </h1>
-          <span className="flex flex-col lg:w-[319px] md:w-[294.77px] sm:w-auto md:px-0 md:text-[14.79px] sm:text-[14.79px] text-center justify-center items-center font-normal lg:text-base text-[#ffffff]">
-            <p>
-              Voyex&apos;s AI query engine finds the best tools for your tasks,
-              saving you time on research and maximizing efficiency.
-            </p>
-          </span>
-        </div>
+        <div className="lg:p-10 md:p-[25.71px] sm:p-[25.71px] lg:border md:border-[0.64px] sm:border-[0.64px] border-card lg:rounded-xl md:rounded-[6.43px] sm:rounded-[6.43px] flex flex-col justify-center items-center bg-[#0d0d0d] lg:gap-6 md:gap-[15.43px] sm:gap-[15.43px] transition-all duration-1000 ease-in-out hover:bg-[#ffffff] group">
+  <div className="lg:p-5 md:p-[11.57px] sm:p-[11.57px] lg:w-[56px] md:w-[36px] sm:w-[36px] flex items-center justify-center lg:rounded-xl md:rounded-[6.43px] sm:rounded-[6.43px] bg-[#ffffff] transition-all duration-1000 ease-in-out group-hover:bg-[#0d0d0d] ">
+    <PiLeafBold className="md:w-[10.04px] md:h-[10.04px] sm:h-[10.04px] sm:w-[10.04px] lg:w-[15.63px] lg:h-[15.63px] text-[24px] text-[#0d0d0d] transition-colors duration-1000 ease-in-out group-hover:text-[#ffffff]" />
+  </div>
+  <h1 className="font-bold text-center text-[#ffffff] text-[18px] lg:leading-[23.03px] md:leading-[24.34px] sm:leading-[24.34px] underline underline-offset-4 transition-colors duration-1000 ease-in-out group-hover:text-[#0d0d0d]">
+    AI Query Engine
+  </h1>
+  <span className="flex flex-col lg:w-[319px] md:w-[294.77px] sm:w-auto md:px-0 md:text-[14.79px] sm:text-[14.79px] text-center justify-center items-center font-normal lg:text-base text-[#ffffff] transition-colors duration-1000 ease-in-out group-hover:text-[#0d0d0d]">
+    <p>
+      Voyex&apos;s AI query engine finds the best tools for your tasks,
+      saving you time on research and maximizing efficiency.
+    </p>
+  </span>
+</div>
+
+
 
         {/* Card 2 */}
-        <div className="lg:p-10 md:p-[25.71px] sm:p-[25.71px] lg:border md:border-[0.64px] sm:border-[0.64px] border-card lg:rounded-xl md:rounded-[6.43px] sm:rounded-[6.43px] flex flex-col justify-center items-center bg-[#0d0d0d] lg:gap-6 md:gap-[15.43px] sm:gap-[15.43px] transition-transform duration-300 ease-in-out md:hover:-translate-y-3 sm:hover:translate-y-2 hover:shadow-2xl">
-          <div className="lg:p-5 md:p-[11.57px] sm:p-[11.57px] lg:w-[56px] md:w-[36px] sm:w-[36px] flex lg:rounded-xl md:rounded-[6.43px] sm:rounded-[6.43px] bg-[#ffffff]">
-            <Image
-              src={'/Vector.svg'}
-              alt="vec"
-              width={15.63}
-              height={15.63}
-              className="md:w-[10.04px] md:h-[10.04px] sm:h-[10.04px] sm:w-[10.04px] lg:w-[15.63px] lg:h-[15.63px]"
-            />
-          </div>
-          <h1 className="font-bold text-center text-[#ffffff] text-[18px] lg:leading-[23.03px] md:leading-[24.34px] sm:leading-[24.34px] underline-hover">
-            Workflow Creation
-          </h1>
-          <span className="flex flex-col lg:w-[400px] md:w-[311.67px] sm:w-auto text-center justify-center items-center font-normal md:text-[14.79px] sm:text-[14.79px] lg:text-base text-[#ffffff]">
-            <p>
-              Voyex delivers the best tools and workflows, adapting with
-              feedback to ensure tasks are completed efficiently from start to
-              finish.
-            </p>
-          </span>
-        </div>
+        <div className="lg:p-10 md:p-[25.71px] sm:p-[25.71px] lg:border md:border-[0.64px] sm:border-[0.64px] border-card lg:rounded-xl md:rounded-[6.43px] sm:rounded-[6.43px] flex flex-col justify-center items-center bg-[#0d0d0d] lg:gap-6 md:gap-[15.43px] sm:gap-[15.43px] transition-all duration-1000 ease-in-out hover:bg-[#ffffff] group">
+  <div className="lg:p-5 md:p-[11.57px] sm:p-[11.57px] lg:w-[56px] md:w-[36px] sm:w-[36px] flex lg:rounded-xl md:rounded-[6.43px] sm:rounded-[6.43px] bg-[#ffffff] transition-all duration-1000 ease-in-out group-hover:bg-[#0d0d0d]">
+    <PiLeafBold className="md:w-[10.04px] md:h-[10.04px] sm:h-[10.04px] sm:w-[10.04px] lg:w-[15.63px] lg:h-[15.63px] text-[24px] text-[#0d0d0d] transition-colors duration-1000 ease-in-out group-hover:text-[#ffffff]" />
+  </div>
+  <h1 className="font-bold text-center text-[#ffffff] text-[18px] lg:leading-[23.03px] md:leading-[24.34px] sm:leading-[24.34px] underline underline-offset-4 transition-colors duration-1000 ease-in-out group-hover:text-[#0d0d0d]">
+    Workflow Creation
+  </h1>
+  <span className="flex flex-col lg:w-[400px] md:w-[311.67px] sm:w-auto text-center justify-center items-center font-normal md:text-[14.79px] sm:text-[14.79px] lg:text-base text-[#ffffff] transition-colors duration-1000 ease-in-out group-hover:text-[#0d0d0d]">
+    <p>
+      Voyex delivers the best tools and workflows, adapting with
+      feedback to ensure tasks are completed efficiently from start to
+      finish.
+    </p>
+  </span>
+</div>
+
       </div>
 
       {/* Image Section */}
@@ -135,7 +127,7 @@ const Everythingyouneed = () => {
             alt="holo"
             width={311}
             height={242}
-            className="lg:w-[311px] lg:h-[242px] md:w-[199.9px] md:h-[155.55px] sm:w-[263px] sm:h-[206px] sm:mx-auto md:mx-0"
+            className="lg:w-[311px] lg:h-[242px] md:w-[199.9px] md:h-[155.55px] sm:w-[263px] sm:h-[206px] sm:mx-auto md:mx-0 message-bubble"
           />
           <div className="flex flex-col lg:gap-[9px] md:gap-[5.79px] sm:gap-[5.79px] lg:w-auto md:w-[320.11px] sm:w-[250px] md:mx-0 sm:mx-auto">
             <h1 className="font-medium text-[#ffffff]">
