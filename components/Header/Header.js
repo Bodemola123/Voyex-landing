@@ -13,7 +13,7 @@ const Header = () => {
   }
 
   return (
-    <div className="flex justify-between items-center md:h-[72px] lg:px-[24px] md:px-[24px] sm:px-[24px] bg-[#0A0A0B] sticky top-0 z-20">
+    <div className="flex justify-between items-center sm:h-[72px] lg:px-[24px] md:px-[24px] sm:px-[24px] bg-[#0A0A0B] sticky top-0 z-20">
       <h1 className="font-bold text-2xl text-white">Voyex.</h1>
 
       {/* Desktop Navigation */}
