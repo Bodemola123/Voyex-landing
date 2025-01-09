@@ -22,7 +22,7 @@ export default function RootLayout({ children }) {
         />
       </head>
       <body
-        className="antialiased scroll-container scrollbar-hide overflow-hidden md:bg-[url('/stars.svg.svg')] sm:bg-[#0a0a0b] w-full h-full bg-cover bg-no-repeat bg-fixed bg-center bg-origin-content"
+        className="antialiased scroll-container scrollbar-hide overflow-hidden md:bg-[url('/stars.svg.svg')] sm:bg-black w-full h-full bg-cover bg-no-repeat bg-fixed bg-center bg-origin-content"
         style={{ fontFamily: "'DM Sans', sans-serif" }}
       >
         {children} {/* Content layer */}

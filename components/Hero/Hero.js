@@ -14,13 +14,13 @@ const Hero = () => {
 
   return (
     <div
-      className="flex flex-col items-center justify-center text-center h-screen bg-cover bg-center bg-no-repeat relative gap-[21px] z-20"
+      className="flex flex-col items-center justify-center text-center bg-black bg-cover bg-center bg-no-repeat relative gap-[21px] z-20"
       style={{ backgroundImage: "url('/background.png')" }}
     >
       <div className="flex flex-row justify-center items-center">
         <div className="lg:h-[322px] md:h-[198px] sm:h-[118px] mx-auto">
           <h1 className="lg:text-[165px] md:text-[98.67px] sm:text-[58.88px] sm:font-bold md:font-bold lg:font-black leading-tight text-[#ffffff] z-20">
-            Ideas Into Workflow
+            Ideas Into<br></br> Workflow
           </h1>
         </div>
       </div>
@@ -33,7 +33,7 @@ const Hero = () => {
         Voyex is your superapp for finding the right AI tools and workflows tailored to your use case. Describe your needs, and it helps you build a mini agency effortlessly.
       </p>
 
-      <div className="flex md:flex-row lg:flex-row sm:flex-col sm:gap-[18px] lg:gap-4 md:gap-[15.57px] mt-3 justify-center items-center">
+      <div className="flex mb-10 md:flex-row lg:flex-row sm:flex-col sm:gap-[18px] lg:gap-4 md:gap-[15.57px] mt-3 justify-center items-center">
         <button
           className="bg-[#c088fb] flex items-center justify-center sm:py-3 md:py-2.5 sm:px-3 md:px-9 rounded-3xl md:gap-2.5 lg:gap-2.5 sm:gap-[5.98px] text-[#141414] font-medium md:text-base sm:text-base transition-all duration-200 ease-in-out hover:scale-110 hover:bg-[#9b67d7] md:w-auto sm:w-[286px] z-20"
         >
