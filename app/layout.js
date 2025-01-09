@@ -1,10 +1,9 @@
-import { Inter } from "next/font/google";
+import { Don_Sans } from "next/font/google";  // Import Don Sans font
 import "./globals.css";
 
-
-const inter = Inter({
-  variable: "--font-inter", // Custom variable name
-  subsets: ["latin"],
+const donSans = Don_Sans({
+  weight: "400", // Specify the desired font weight, e.g., 400 for regular
+  subsets: ["latin"], // Include latin subset
 });
 
 export const metadata = {
@@ -17,9 +16,19 @@ export default function RootLayout({ children }) {
     <html lang="en">
       <head>
         <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+        <style>
+          {`
+            /* iOS-specific fix */
+            @supports (-webkit-overflow-scrolling: touch) {
+              body {
+                background-attachment: scroll !important; /* Override fixed background for iOS */
+              }
+            }
+          `}
+        </style>
       </head>
       <body
-        className={`${inter.variable} antialiased scroll-container scrollbar-hide overflow-hidden md:bg-[url('/stars.svg.svg')] sm:bg-sm-bg bg-black w-full h-full bg-cover bg-no-repeat bg-fixed bg-center bg-origin-content`}
+        className={`${donSans.variable} antialiased scroll-container scrollbar-hide overflow-hidden md:bg-[url('/stars.svg.svg')] sm:bg-sm-bg bg-black w-full h-full bg-cover bg-no-repeat bg-fixed bg-center bg-origin-content`}
       >
         {children} {/* Content layer */}
       </body>
