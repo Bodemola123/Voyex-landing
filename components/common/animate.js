@@ -5,7 +5,7 @@ function Animate() {
   return (
     <div className="relative w-full h-full flex items-center justify-center overflow-hidden">
       {/* Restrict the rotation area */}
-      <div className="relative w-[80vw] h-[80vw] max-w-[320px] max-h-[320px]">
+      <div className="relative w-[80vw] h-[80vw]">
         {/* ChatGPT Image */}
         <div className="absolute w-full h-full animate-1">
           <Image
