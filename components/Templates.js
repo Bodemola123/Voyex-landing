@@ -31,7 +31,7 @@ const Templates = () => {
           </h1>
         </div>
         <button 
-          className="border border-card sm:text-sm md:text-sm lg:px-9 md:px-[24.97px] sm:px-[24.97px] sm:py-[10px] lg:py-2.5 md:py-[10px] flex justify-center items-center lg:gap-2.5 md:gap-2 sm:gap-2 bg-[#C088FB] text-black font-medium lg:rounded-3xl md:rounded-[19.26px] sm:rounded-[19.26px] shadow-[0_0_20px_5px_rgba(192,136,251,0.5)] hover:shadow-[0_0_30px_10px_rgba(192,136,251,0.8)] transition-transform duration-300 md:w-auto sm:w-[236px] hover:scale-105"
+          className="border border-card sm:text-sm md:text-sm lg:px-9 md:px-[24.97px] sm:px-[24.97px] sm:py-[10px] lg:py-2.5 md:py-[10px] flex justify-center items-center lg:gap-2.5 md:gap-2 sm:gap-2 bg-[#C088FB] text-black font-medium lg:rounded-3xl md:rounded-[19.26px] sm:rounded-[19.26px] shadow-[0_0_20px_5px_rgba(192,136,251,0.5)] hover:shadow-[0_0_30px_10px_rgba(192,136,251,0.8)] transition-transform duration-300 md:w-auto lg:max-w-[239px] sm:w-[236px] hover:scale-105"
           data-aos="fade-up"
         >
           See All Templates
