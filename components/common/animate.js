@@ -3,33 +3,35 @@ import React from "react";
 
 function Animate() {
   return (
-    <>
-      <div className="absolute w-full h-full -z-10">
-        <div className="relative w-full h-full animate-1">
+    <div className="relative w-full h-full flex items-center justify-center overflow-hidden">
+      {/* Restrict the rotation area */}
+      <div className="relative w-[80vw] h-[80vw] max-w-[320px] max-h-[320px]">
+        {/* ChatGPT Image */}
+        <div className="absolute w-full h-full animate-1">
           <Image
-            className="absolute right-[20%] top-[20%] bg-contain "
+            className="absolute right-[20%] top-[20%] bg-contain"
             src="/chatgpt.svg"
             alt="chatgpt image"
             width={20}
             height={20}
           />
         </div>
-      </div>
-      <div className="absolute w-full h-full -z-10">
-        <div className="relative w-full h-full animate-2">
+
+        {/* Gemini Image */}
+        <div className="absolute w-full h-full animate-2">
           <Image
-            className="absolute left-[30%] top-[50%] bg-contain "
+            className="absolute left-[30%] top-[50%] bg-contain"
             src="/gemini.png"
             alt="gemini image"
             width={24}
             height={24}
           />
         </div>
-      </div>
-      <div className="absolute w-full h-full -z-10">
-        <div className="relative w-full h-full animate-3">
+
+        {/* Synthesia Image */}
+        <div className="absolute w-full h-full animate-3">
           <Image
-            className="absolute right-[10%] bottom-[10%] bg-contain "
+            className="absolute right-[10%] bottom-[10%] bg-contain"
             src="/synthesia.png"
             alt="synthesia image"
             width={15}
@@ -37,7 +39,7 @@ function Animate() {
           />
         </div>
       </div>
-    </>
+    </div>
   );
 }
 
