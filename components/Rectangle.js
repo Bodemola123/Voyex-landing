@@ -25,7 +25,6 @@ const Rectangle = () => {
         <div className="absolute w-full h-full bg-cover bg-center bg-fixed"
           style={{
             backgroundImage: 'url(/your-image.jpg)',
-            
           }}
         ></div>
       </div>
