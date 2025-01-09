@@ -25,7 +25,7 @@ const Templates = () => {
     >
       <div className="flex flex-col lg:gap-6 md:gap-[17.12px] sm:gap-[17.12px] justify-center items-center">
         <div className='flex flex-col items-center justify-center md:gap-[5.71px] lg:gap-2 sm:gap-[5.71px]'>
-          <p className="text-[#C088fb] font-medium lg:text-[18.44px] md:text-[13.16px] sm:text-[13.16px]">Use Templates</p>
+          <p className="text-[#C088fb] font-medium text-[18.44px] ">Use Templates</p>
           <h1 className="text-[#ffffff] font-medium lg:text-5xl md:text-[34.25px] sm:text-[32px] text-center" data-aos="zoom-in">
             Get Started with our Templates options
           </h1>
