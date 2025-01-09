@@ -14,7 +14,7 @@ const Hero = () => {
 
   return (
     <div
-      className="flex flex-col items-center justify-center text-center h-screen bg-cover bg-center bg-no-repeat relative gap-[21px] z-10"
+      className="flex flex-col items-center justify-center text-center h-screen bg-cover bg-center bg-no-repeat relative gap-[21px] z-15"
       style={{ backgroundImage: "url('/background.png')" }}
     >
       <div className="flex flex-row justify-center items-center">
@@ -26,7 +26,7 @@ const Hero = () => {
       </div>
 
       <p
-        className={`flex justify-center items-center md:mt-12 lg:mt-12 sm:mt-[5.97px] lg:text-xl md:text-base sm:text-base text-[#ffffff] md:leading-[25.6px] sm:leading-[23.92px] lg:w-[977px] text-center md:w-[584.27px] sm:w-auto sm:px-12 md:px-0 transition-opacity duration-1000 ${
+        className={`flex justify-center items-center md:mt-12 lg:mt-12 sm:mt-[5.97px] lg:text-xl md:text-lg sm:text-lg text-[#ffffff] md:leading-[25.6px] sm:leading-[23.92px] lg:w-[977px] text-center md:w-[584.27px] sm:w-auto sm:px-12 md:px-0 transition-opacity duration-1000 ${
           isVisible ? "opacity-100" : "opacity-0"
         }`}
       >
