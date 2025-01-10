@@ -4,7 +4,7 @@ import Hero from './Hero/Hero'
 
 const Combo = () => {
   return (
-    <div className='flex flex-col h-screen'
+    <div className='flex flex-col md:h-screen'
     >
       <Header/>
       <Hero/>
