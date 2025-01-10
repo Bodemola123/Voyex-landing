@@ -65,7 +65,7 @@ const FAQ = () => {
           </div>
         ))}
       </div>
-      <p className='mt-[47px] sm:hidden md:flex font-medium text-[18.44px] text-[#C088fb] text-center'>See More</p>
+      <p className='mt-[47px] sm:hidden font-medium text-[18.44px] text-[#C088fb] text-center'>See More</p>
     </div>
   );
 };
