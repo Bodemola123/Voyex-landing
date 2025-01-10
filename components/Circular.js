@@ -1,10 +1,17 @@
-'use client'
+'use client';
 import React, { useEffect, useRef, useState } from "react";
 import Image from "next/image";
 
 const CircularRings = () => {
   const canvasRef = useRef(null);
-  const [screenSize, setScreenSize] = useState(window.innerWidth);
+  const [screenSize, setScreenSize] = useState(0); // Start with a default value (0 or another placeholder)
+
+  useEffect(() => {
+    if (typeof window !== "undefined") {
+      // Only run this block in the client-side environment
+      setScreenSize(window.innerWidth); // Set the actual screen width
+    }
+  }, []); // Empty dependency array ensures this only runs once on mount
 
   useEffect(() => {
     const canvas = canvasRef.current;
@@ -26,6 +33,8 @@ const CircularRings = () => {
   }, []);
 
   useEffect(() => {
+    if (screenSize === 0) return; // Don't run the drawing logic if screenSize isn't set yet
+
     const canvas = canvasRef.current;
     const ctx = canvas.getContext("2d");
 
@@ -43,11 +52,12 @@ const CircularRings = () => {
       baseRadius = 150; // Larger base radius
     }
 
-    if (screenSize >= 1024){
-        ringCount = 4;
-        ringSpacing = 150;
-        baseRadius = 200;
+    if (screenSize >= 1024) {
+      ringCount = 4;
+      ringSpacing = 150;
+      baseRadius = 200;
     }
+    
     // Draw rings based on the current settings
     const drawRings = () => {
       ctx.strokeStyle = "rgba(255, 255, 255, 0.2)";

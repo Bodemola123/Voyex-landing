@@ -1,7 +1,6 @@
+'use client'
 import Companies from '@/components/Companies/Companies'
 import Everythingyouneed from '@/components/Everythingyouneed'
-import Header from '@/components/Header/Header'
-import Hero from '@/components/Hero/Hero'
 import CTA from '@/components/Play/CTA'
 import Playmode from '@/components/Play/Playmode'
 import Rectangle from '@/components/Rectangle'
