@@ -4,8 +4,7 @@ import Hero from './Hero/Hero'
 
 const Combo = () => {
   return (
-    <div className='flex flex-col bg-black bg-cover bg-center bg-no-repeat'
-    style={{ backgroundImage: "url('/background.png')" }}
+    <div className='flex flex-col'
     >
       <Header/>
       <Hero/>

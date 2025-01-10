@@ -3,7 +3,7 @@ import React from "react";
 
 function Animate() {
   return (
-    <div className="relative w-full h-full flex items-center justify-center overflow-hidden">
+    <div className="relative w-full h-full flex items-center justify-center overflow-hidden z-10">
       {/* Restrict the rotation area */}
       <div className="relative w-[80vw] h-[80vw]">
         {/* ChatGPT Image */}
