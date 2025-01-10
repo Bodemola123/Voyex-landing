@@ -1,13 +1,17 @@
-'use client'
-
-// CircularRings.jsx
-
+'use client';
 import React, { useEffect, useRef, useState } from "react";
 import Image from "next/image";
 
 const CircularRings = () => {
   const canvasRef = useRef(null);
-  const [screenSize, setScreenSize] = useState(window.innerWidth);
+  const [screenSize, setScreenSize] = useState(0); // Start with a default value (0 or another placeholder)
+
+  useEffect(() => {
+    if (typeof window !== "undefined") {
+      // Only run this block in the client-side environment
+      setScreenSize(window.innerWidth); // Set the actual screen width
+    }
+  }, []); // Empty dependency array ensures this only runs once on mount
 
   useEffect(() => {
     const canvas = canvasRef.current;
@@ -29,6 +33,8 @@ const CircularRings = () => {
   }, []);
 
   useEffect(() => {
+    if (screenSize === 0) return; // Don't run the drawing logic if screenSize isn't set yet
+
     const canvas = canvasRef.current;
     const ctx = canvas.getContext("2d");
 
@@ -37,20 +43,21 @@ const CircularRings = () => {
 
     // Set defaults for mobile, can be adjusted for different screen sizes
     let ringCount = 2; // Default for mobile
-    let ringSpacing = 70; // Default ring spacing
-    let baseRadius = 130; // Default starting radius
+    let ringSpacing = 110; // Default ring spacing
+    let baseRadius = 120; // Default starting radius
 
     if (screenSize >= 768) { // For tablets and larger (md breakpoint)
-      ringCount = 4; // 4 rings for tablets
+      ringCount = 4; // 2 rings for tablets
       ringSpacing = 120; // Adjusted ring spacing
       baseRadius = 150; // Larger base radius
     }
 
     if (screenSize >= 1024) {
-      ringCount = 4; // For larger screens (laptop view)
-      ringSpacing = 150; // Further adjusted ring spacing
-      baseRadius = 200; // Larger base radius for desktop
+      ringCount = 4;
+      ringSpacing = 150;
+      baseRadius = 200;
     }
+    
     // Draw rings based on the current settings
     const drawRings = () => {
       ctx.strokeStyle = "rgba(255, 255, 255, 0.2)";
@@ -78,7 +85,7 @@ const CircularRings = () => {
       <canvas ref={canvasRef} style={{ display: "block", zIndex: -10 }} />
 
       {/* Animate Component (Images rotating) */}
-      <div className="absolute top-0 left-0 w-full h-full flex items-center justify-center overflow-hidden z-10">
+      <div className="absolute top-0 left-0 w-full h-full flex items-center justify-center overflow-hidden">
         <div className="relative w-[80vw] h-[80vw]">
           {/* ChatGPT Image */}
           <div className="absolute w-full h-full animate-1">
@@ -103,7 +110,7 @@ const CircularRings = () => {
           </div>
 
           {/* Synthesia Image */}
-          <div className="absolute w-full h-full animate-3">
+          <div className="absolute w-full h-full animate-3 -z-10">
             <Image
               className="absolute right-[10%] bottom-[10%] bg-contain"
               src="/synthesia.png"
