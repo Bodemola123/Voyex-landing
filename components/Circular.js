@@ -1,17 +1,22 @@
 'use client';
+
 import React, { useEffect, useRef, useState } from "react";
-import Image from "next/image";
 
 const CircularRings = () => {
   const canvasRef = useRef(null);
-  const [screenSize, setScreenSize] = useState(0); // Start with a default value (0 or another placeholder)
+  const [screenSize, setScreenSize] = useState(0); // Default to 0 until client-side
+  const [images, setImages] = useState([]);
+  const [angle, setAngle] = useState(0);
 
+  // Speed for each image's rotation
+  const imageSpeeds = [0.002, 0.004, 0.006]; // Different speeds for images
+
+  // Ensure the window reference is available only on the client-side
   useEffect(() => {
     if (typeof window !== "undefined") {
-      // Only run this block in the client-side environment
-      setScreenSize(window.innerWidth); // Set the actual screen width
+      setScreenSize(window.innerWidth); // Now this will only run on the client
     }
-  }, []); // Empty dependency array ensures this only runs once on mount
+  }, []); // Empty dependency array ensures this runs only once after mount
 
   useEffect(() => {
     const canvas = canvasRef.current;
@@ -24,7 +29,6 @@ const CircularRings = () => {
     };
 
     window.addEventListener("resize", handleResize);
-
     handleResize(); // Call initially to set canvas size
 
     return () => {
@@ -33,7 +37,26 @@ const CircularRings = () => {
   }, []);
 
   useEffect(() => {
-    if (screenSize === 0) return; // Don't run the drawing logic if screenSize isn't set yet
+    // Preload images (example)
+    const loadImages = () => {
+      const img1 = new Image();
+      img1.src = "/gemini.png"; // Replace with actual image paths
+      const img2 = new Image();
+      img2.src = "/synthesia.png";
+      const img3 = new Image();
+      img3.src = "/chatgpt.svg";
+      // Add more images as needed
+
+      img1.onload = () => setImages((prevImages) => [...prevImages, img1]);
+      img2.onload = () => setImages((prevImages) => [...prevImages, img2]);
+      img3.onload = () => setImages((prevImages) => [...prevImages, img3]);
+    };
+
+    loadImages();
+  }, []);
+
+  useEffect(() => {
+    if (images.length === 0) return; // Skip drawing if images are not loaded yet
 
     const canvas = canvasRef.current;
     const ctx = canvas.getContext("2d");
@@ -47,18 +70,18 @@ const CircularRings = () => {
     let baseRadius = 120; // Default starting radius
 
     if (screenSize >= 768) { // For tablets and larger (md breakpoint)
-      ringCount = 4; // 2 rings for tablets
+      ringCount = 4; // 4 rings for tablets
       ringSpacing = 120; // Adjusted ring spacing
       baseRadius = 150; // Larger base radius
     }
 
     if (screenSize >= 1024) {
-      ringCount = 4;
-      ringSpacing = 150;
-      baseRadius = 200;
+      ringCount = 4; // For larger screens (laptop view)
+      ringSpacing = 150; // Further adjusted ring spacing
+      baseRadius = 200; // Larger base radius for desktop
     }
-    
-    // Draw rings based on the current settings
+
+    // Draw rings and images around them
     const drawRings = () => {
       ctx.strokeStyle = "rgba(255, 255, 255, 0.2)";
       ctx.lineWidth = 1;
@@ -67,62 +90,33 @@ const CircularRings = () => {
         ctx.beginPath();
         ctx.arc(centerX, centerY, i * ringSpacing + baseRadius, 0, Math.PI * 2);
         ctx.stroke();
+
+        // Only one image per ring
+        if (images.length > 0 && images[i - 1]) { // Check if image exists
+          const ringRadius = i * ringSpacing + baseRadius;
+          const image = images[i - 1]; // One image for each ring
+
+          // Apply different rotation speeds to images
+          const x = centerX + Math.cos(angle * imageSpeeds[i - 1]) * ringRadius;
+          const y = centerY + Math.sin(angle * imageSpeeds[i - 1]) * ringRadius;
+
+          const imageSize = 24; // Set image size to 24x24px
+          ctx.drawImage(image, x - imageSize / 2, y - imageSize / 2, imageSize, imageSize);
+        }
       }
     };
 
     const animate = () => {
       ctx.clearRect(0, 0, canvas.width, canvas.height);
+      setAngle(prevAngle => prevAngle + 0.002); // Slow rotation speed (500% slower)
       drawRings();
       requestAnimationFrame(animate);
     };
 
     animate();
-  }, [screenSize]); // Re-run when screen size changes
+  }, [screenSize, images, angle]); // Re-run when screen size or images change
 
-  return (
-    <div className="relative w-full h-full">
-      {/* Circular Rings Canvas */}
-      <canvas ref={canvasRef} style={{ display: "block", zIndex: -10 }} />
-
-      {/* Animate Component (Images rotating) */}
-      <div className="absolute top-0 left-0 w-full h-full flex items-center justify-center overflow-hidden">
-        <div className="relative w-[80vw] h-[80vw]">
-          {/* ChatGPT Image */}
-          <div className="absolute w-full h-full animate-1">
-            <Image
-              className="absolute right-[20%] top-[20%] bg-contain"
-              src="/chatgpt.svg"
-              alt="chatgpt image"
-              width={20}
-              height={20}
-            />
-          </div>
-
-          {/* Gemini Image */}
-          <div className="absolute w-full h-full animate-2">
-            <Image
-              className="absolute left-[30%] top-[50%] bg-contain"
-              src="/gemini.png"
-              alt="gemini image"
-              width={24}
-              height={24}
-            />
-          </div>
-
-          {/* Synthesia Image */}
-          <div className="absolute w-full h-full animate-3 -z-10">
-            <Image
-              className="absolute right-[10%] bottom-[10%] bg-contain"
-              src="/synthesia.png"
-              alt="synthesia image"
-              width={15}
-              height={15}
-            />
-          </div>
-        </div>
-      </div>
-    </div>
-  );
+  return <canvas ref={canvasRef} style={{ display: "block", zIndex: -10 }} />;
 };
 
 export default CircularRings;
