@@ -11,7 +11,7 @@ const Playmode = () => {
 
       <div
         className='relative lg:w-[1131px] lg:h-[635px] md:w-[730px] md:h-[409px] sm:w-[100%] sm:h-[315px]'
-      >
+      > 
         {/* YouTube iframe */}
         <iframe
           width="100%"
