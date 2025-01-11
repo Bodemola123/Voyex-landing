@@ -1,17 +1,26 @@
 'use client';
 import React, { useEffect, useRef, useState } from "react";
-import Image from "next/image";
 
 const CircularRings = () => {
   const canvasRef = useRef(null);
-  const [screenSize, setScreenSize] = useState(0); // Start with a default value (0 or another placeholder)
+  const [screenSize, setScreenSize] = useState(0);
+  const images = [
+    "/azure.svg",
+    "/chatgpt.svg",
+    "/claude.svg",
+    "/copyai.svg",
+    "/figma.svg",
+    "/google.svg",
+    "/microsoft.svg",
+    "/spotify.svg",
+    "/pi.svg",
+  ];
 
   useEffect(() => {
     if (typeof window !== "undefined") {
-      // Only run this block in the client-side environment
-      setScreenSize(window.innerWidth); // Set the actual screen width
+      setScreenSize(window.innerWidth);
     }
-  }, []); // Empty dependency array ensures this only runs once on mount
+  }, []);
 
   useEffect(() => {
     const canvas = canvasRef.current;
@@ -24,8 +33,7 @@ const CircularRings = () => {
     };
 
     window.addEventListener("resize", handleResize);
-
-    handleResize(); // Call initially to set canvas size
+    handleResize();
 
     return () => {
       window.removeEventListener("resize", handleResize);
@@ -33,7 +41,7 @@ const CircularRings = () => {
   }, []);
 
   useEffect(() => {
-    if (screenSize === 0) return; // Don't run the drawing logic if screenSize isn't set yet
+    if (screenSize === 0) return;
 
     const canvas = canvasRef.current;
     const ctx = canvas.getContext("2d");
@@ -41,15 +49,14 @@ const CircularRings = () => {
     const centerX = canvas.width / 2;
     const centerY = canvas.height / 2;
 
-    // Set defaults for mobile, can be adjusted for different screen sizes
-    let ringCount = 2; // Default for mobile
-    let ringSpacing = 110; // Default ring spacing
-    let baseRadius = 120; // Default starting radius
+    let ringCount = 2;
+    let ringSpacing = 110;
+    let baseRadius = 120;
 
-    if (screenSize >= 768) { // For tablets and larger (md breakpoint)
-      ringCount = 4; // 2 rings for tablets
-      ringSpacing = 120; // Adjusted ring spacing
-      baseRadius = 150; // Larger base radius
+    if (screenSize >= 768) {
+      ringCount = 4;
+      ringSpacing = 120;
+      baseRadius = 150;
     }
 
     if (screenSize >= 1024) {
@@ -57,12 +64,21 @@ const CircularRings = () => {
       ringSpacing = 150;
       baseRadius = 200;
     }
-    
-    // Draw rings based on the current settings
+
+    const items = images.map((src, index) => {
+      const ringIndex = Math.floor(Math.random() * ringCount) + 1;
+      const angle = Math.random() * Math.PI * 2;
+      const radius = ringIndex * ringSpacing + baseRadius;
+      const speed = 0.005 + Math.random() * 0.001;
+
+      return { src, angle, radius, speed };
+    });
+
+    const loadedImages = new Map();
+
     const drawRings = () => {
       ctx.strokeStyle = "rgba(255, 255, 255, 0.2)";
       ctx.lineWidth = 1;
-
       for (let i = 1; i <= ringCount; i++) {
         ctx.beginPath();
         ctx.arc(centerX, centerY, i * ringSpacing + baseRadius, 0, Math.PI * 2);
@@ -70,57 +86,37 @@ const CircularRings = () => {
       }
     };
 
+    const drawItems = () => {
+      items.forEach((item) => {
+        const x = centerX + Math.cos(item.angle) * item.radius;
+        const y = centerY + Math.sin(item.angle) * item.radius;
+
+        if (!loadedImages.has(item.src)) {
+          const img = new window.Image();
+          img.src = item.src;
+          img.onload = () => loadedImages.set(item.src, img);
+        } else {
+          const img = loadedImages.get(item.src);
+          ctx.drawImage(img, x - 15, y - 15, 30, 30); // Adjust size here
+        }
+
+        item.angle += item.speed;
+      });
+    };
+
     const animate = () => {
       ctx.clearRect(0, 0, canvas.width, canvas.height);
       drawRings();
+      drawItems();
       requestAnimationFrame(animate);
     };
 
     animate();
-  }, [screenSize]); // Re-run when screen size changes
+  }, [screenSize]);
 
   return (
     <div className="relative w-full h-full">
-      {/* Circular Rings Canvas */}
       <canvas ref={canvasRef} style={{ display: "block", zIndex: -10 }} />
-
-      {/* Animate Component (Images rotating) */}
-      <div className="absolute top-0 left-0 w-full h-full flex items-center justify-center overflow-hidden">
-        <div className="relative w-[80vw] h-[80vw]">
-          {/* ChatGPT Image */}
-          <div className="absolute w-full h-full animate-1">
-            <Image
-              className="absolute right-[20%] top-[20%] bg-contain"
-              src="/chatgpt.svg"
-              alt="chatgpt image"
-              width={20}
-              height={20}
-            />
-          </div>
-
-          {/* Gemini Image */}
-          <div className="absolute w-full h-full animate-2">
-            <Image
-              className="absolute left-[30%] top-[50%] bg-contain"
-              src="/gemini.png"
-              alt="gemini image"
-              width={24}
-              height={24}
-            />
-          </div>
-
-          {/* Synthesia Image */}
-          <div className="absolute w-full h-full animate-3 -z-10">
-            <Image
-              className="absolute right-[10%] bottom-[10%] bg-contain"
-              src="/synthesia.png"
-              alt="synthesia image"
-              width={15}
-              height={15}
-            />
-          </div>
-        </div>
-      </div>
     </div>
   );
 };
