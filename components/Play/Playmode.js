@@ -1,18 +1,22 @@
-'use client'
-import React, { useRef } from 'react';
+'use client';
+import React from 'react';
 import '../././../app/globals.css';
+import { motion } from 'framer-motion';
 
 const Playmode = () => {
   return (
-    <div className='flex flex-col justify-center gap-4 items-center md:mt-[159px] sm:mt-[75.32px] rounded-[18px] mx-auto z-35'>
+    <motion.div
+      className="flex flex-col justify-center gap-4 items-center md:mt-[159px] sm:mt-[75.32px] rounded-[18px] mx-auto z-35"
+      initial={{ opacity: 0, y: 50 }} // Start hidden and slightly below
+      whileInView={{ opacity: 1, y: 0 }} // Fade in and slide up
+      transition={{ duration: 1, ease: "easeOut" }} // Animation timing
+      viewport={{ once: true, amount: 0.3 }} // Trigger animation when 30% of the section is visible
+    >
       <h1 className="relative text-center text-[#ffffff] lg:text-[54px] md:text-[38.03px] sm:text-[32px] after:content-[''] after:absolute after:left-0 lg:after:bottom-[10px] md:after:bottom-[8px] sm:after:bottom-[8px] after:w-0 after:h-[2px] after:bg-[#ffffff] after:transition-all after:duration-1000 hover:after:w-full">
         How Voyex Works
       </h1>
 
-      <div
-        className='relative lg:w-[1131px] lg:h-[635px] md:w-[730px] md:h-[409px] sm:w-[100%] sm:h-[315px]'
-      >
-        {/* YouTube iframe */}
+      <div className="relative lg:w-[1131px] lg:h-[635px] md:w-[730px] md:h-[409px] sm:w-[100%] sm:h-[315px]">
         <iframe
           width="100%"
           height="100%"
@@ -25,7 +29,7 @@ const Playmode = () => {
           className="border border-[rgb(49,49,49)] border-opacity-100 rounded-lg"
         ></iframe>
       </div>
-    </div>
+    </motion.div>
   );
 };
 
