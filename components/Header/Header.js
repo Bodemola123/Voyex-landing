@@ -1,15 +1,15 @@
 "use client";
 import React, { useState } from "react";
 import { usePathname } from "next/navigation";
-import "../../app/globals.css";
 import Image from "next/image";
 import Link from "next/link";
+import "../../app/globals.css";
 
 const Header = () => {
   const [isOpen, setIsOpen] = useState(false);
   const pathname = usePathname(); // Get the current route
 
-  const isActive = (path) => pathname === path ? "text-[#C088fb]" : "text-white";
+  const isActive = (path) => (pathname === path ? "text-[#C088fb]" : "text-white");
 
   // Toggle the mobile menu
   const toggleDropdown = () => {
@@ -17,16 +17,18 @@ const Header = () => {
   };
 
   return (
-    <div className="flex justify-between items-center sm:h-[72px] lg:px-[24px] md:px-[24px] sm:px-[24px] z-40">
-      <Link href="/" className="font-bold text-2xl text-white">Voyex.</Link>
+    <header className="flex justify-between items-center sm:h-[72px] lg:px-[24px] md:px-[24px] sm:px-[24px] z-40 relative">
+      <Link href="/" className="font-bold text-2xl text-white">
+        Voyex.
+      </Link>
 
       {/* Desktop Navigation */}
-      <div className="hidden lg:flex md:flex text-sm font-medium gap-8 py-2 px-[48px] border border-card rounded-[43px]">
-        <Link href="/pricing" className={`${isActive("/pricing")} hover:text-[#C088fb]`}>Pricing</Link>
-        <Link href="/resources" className={`${isActive("/resources")} hover:text-[#C088fb]`}>Resources</Link>
+      <nav className="hidden lg:flex md:flex text-sm font-medium gap-8 py-2 px-[48px] border border-card rounded-[43px]">
+        <Link href="/" className={`${isActive("/pricing")} hover:text-[#C088fb]`}>Pricing</Link>
+        <Link href="/" className={`${isActive("/contact-us")} hover:text-[#C088fb]`}>Contact Us</Link>
         <Link href="/about-us" className={`${isActive("/about-us")} hover:text-[#C088fb]`}>About us</Link>
-        <Link href="/blog" className={`${isActive("/blog")} hover:text-[#C088fb]`}>Blog</Link>
-      </div>
+        <Link href="/" className={`${isActive("/blog")} hover:text-[#C088fb]`}>Blog</Link>
+      </nav>
 
       {/* Go to App Button */}
       <a 
@@ -43,19 +45,19 @@ const Header = () => {
 
       {/* Mobile Dropdown */}
       {isOpen && (
-        <div className="absolute top-16 right-8 sm:flex flex-col gap-4 bg-[#0d0d0d] text-white rounded-lg shadow-lg py-4 px-6 z-20">
+        <div className="absolute top-16 right-8 flex flex-col gap-4 bg-[#0d0d0d] text-white rounded-lg shadow-lg py-4 px-6 z-20">
           <ul className="flex flex-col gap-4">
             <li className={`${isActive("/pricing")} hover:text-[#C088fb]`}>
-              <Link href="/pricing">Pricing</Link>
+              <Link href="/">Pricing</Link>
             </li>
-            <li className={`${isActive("/resources")} hover:text-[#C088fb]`}>
-              <Link href="/resources">Resources</Link>
+            <li className={`${isActive("/contact-us")} hover:text-[#C088fb]`}>
+              <Link href="/">Contact Us</Link>
             </li>
             <li className={`${isActive("/about-us")} hover:text-[#C088fb]`}>
               <Link href="/about-us">About us</Link>
             </li>
             <li className={`${isActive("/blog")} hover:text-[#C088fb]`}>
-              <Link href="/blog">Blog</Link>
+              <Link href="/">Blog</Link>
             </li>
           </ul>
           <a 
@@ -66,7 +68,7 @@ const Header = () => {
           </a>
         </div>
       )}
-    </div>
+    </header>
   );
 };
 
