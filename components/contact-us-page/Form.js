@@ -36,9 +36,10 @@ const Form = () => {
     if (!validateForm()) return;
     
     const templateParams = {
-      from_name: `${formData.firstName} ${formData.lastName}`,
-      email: formData.email,
-      message: formData.message,
+        firstName: formData.firstName,
+        lastName: formData.lastName,
+        email: formData.email,
+        message: formData.message,
     };
 
     try {
