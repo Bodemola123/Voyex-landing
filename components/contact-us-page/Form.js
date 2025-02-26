@@ -53,7 +53,7 @@ const Form = () => {
       setFormData({ firstName: '', lastName: '', email: '', message: '', accepted: false });
       setErrors({});
     } catch (error) {
-      toast.error('Failed to send message. Please try again.');
+      toast.error('Failed to send message. Please try again later.');
     }
   };
   const [isPrivacyOpen, setIsPrivacyOpen] = useState(false);
@@ -63,14 +63,14 @@ const Form = () => {
       <form onSubmit={handleSubmit} className='flex flex-col lg:gap-6 sm:gap-4'>
         <div className='flex md:flex-row sm:flex-col lg:gap-8 sm:gap-6'>
           <div>
-            <label className='block lg:text-sm sm:text-xs font-medium text-[#f4f4f4] mb-1'>First Name</label>
+            <label className='block lg:text-sm sm:text-sm font-medium text-[#f4f4f4] mb-1'>First Name</label>
             <input
               type='text'
               name='firstName'
               placeholder='First Name'
               value={formData.firstName}
               onChange={handleChange}
-              className='w-full lg:px-4 lg:py-3 sm:px-3 sm:py-2 rounded-lg bg-[#000000] border border-[#1018280D] focus:outline-none focus:ring-0 text-white lg:text-base sm:text-xs placeholder:text-[#667085] placeholder:sm:text-xs placeholder:lg:text-base'
+              className='w-full lg:px-4 lg:py-3 sm:px-3 sm:py-2 rounded-lg bg-[#000000] border border-[#1018280D] focus:outline-none focus:ring-0 text-white lg:text-base sm:text-sm placeholder:text-[#667085] placeholder:sm:text-sm placeholder:lg:text-base'
             />
             {errors.firstName && <p className='text-red-500 text-xs'>{errors.firstName}</p>}
           </div>
@@ -83,41 +83,41 @@ const Form = () => {
               placeholder='Last Name'
               value={formData.lastName}
               onChange={handleChange}
-              className='w-full lg:px-4 lg:py-3 sm:px-3 sm:py-2 rounded-lg bg-[#000000] border border-[#1018280D] focus:outline-none focus:ring-0 text-white lg:text-base sm:text-xs placeholder:text-[#667085] placeholder:sm:text-xs placeholder:lg:text-base'
+              className='w-full lg:px-4 lg:py-3 sm:px-3 sm:py-2 rounded-lg bg-[#000000] border border-[#1018280D] focus:outline-none focus:ring-0 text-white lg:text-base sm:text-sm placeholder:text-[#667085] placeholder:sm:text-sm placeholder:lg:text-base'
             />
             {errors.lastName && <p className='text-red-500 text-xs'>{errors.lastName}</p>}
           </div>
         </div>
         <div>
-          <label className='block lg:text-sm sm:text-xs font-medium text-[#f4f4f4] mb-1'>Email</label>
+          <label className='block lg:text-sm sm:text-sm font-medium text-[#f4f4f4] mb-1'>Email</label>
           <input
             type='email'
             name='email'
             placeholder='you@company.com'
             value={formData.email}
             onChange={handleChange}
-            className='w-full lg:px-4 lg:py-3 sm:px-3 sm:py-2 rounded-lg bg-[#000000] border border-[#1018280D] focus:outline-none focus:ring-0 text-white lg:text-base sm:text-xs placeholder:text-[#667085] placeholder:sm:text-xs placeholder:lg:text-base'
+            className='w-full lg:px-4 lg:py-3 sm:px-3 sm:py-2 rounded-lg bg-[#000000] border border-[#1018280D] focus:outline-none focus:ring-0 text-white lg:text-base sm:text-sm placeholder:text-[#667085] placeholder:sm:text-sm placeholder:lg:text-base'
           />
           {errors.email && <p className='text-red-500 text-xs'>{errors.email}</p>}
         </div>
         <div>
-          <label className='block lg:text-sm sm:text-xs font-medium text-[#f4f4f4] mb-1'>Message</label>
+          <label className='block lg:text-sm sm:text-sm font-medium text-[#f4f4f4] mb-1'>Message</label>
           <textarea
             name='message'
             value={formData.message}
             onChange={handleChange}
-            className='w-full max-h-[130px] h-full lg:px-4 lg:py-2.5 sm:px-2.5 sm:py-1.5 resize-none rounded-lg bg-[#000000] border border-[#1018280D] text-white focus:outline-none focus:ring-0 lg:text-base sm:text-xs'
+            className='w-full max-h-[130px] h-full lg:px-4 lg:py-2.5 sm:px-2.5 sm:py-1.5 resize-none rounded-lg bg-[#000000] border border-[#1018280D] text-white focus:outline-none focus:ring-0 lg:text-base sm:text-sm'
             rows='4'
           />
           <div className='flex flex-row gap-2 mt-2'>
             <input type='checkbox' name='accepted' checked={formData.accepted} onChange={handleChange} />
-            <label className='font-normal lg:text-base sm:text-xs text-[#f4f4f4]'>You agree to our friendly <span className='underline underline-offset-4 hover:text-[#c088fb] cursor-pointer' onClick={() => setIsPrivacyOpen(true)}>privacy policy.</span></label>
+            <label className='font-normal lg:text-base sm:text-sm text-[#f4f4f4]'>You agree to our friendly <span className='underline underline-offset-4 hover:text-[#c088fb] cursor-pointer' onClick={() => setIsPrivacyOpen(true)}>privacy policy.</span></label>
           </div>
         </div>
         <button
           type='submit'
           disabled={!formData.accepted}
-          className='bg-[#c088fb] lg:px-4 sm:px-3 lg:py-3 sm:py-2 border border-[#c088fb] rounded-[20px] sm:text-xs lg:text-base text-[#0a0a0b] text-center disabled:opacity-50 disabled:cursor-not-allowed'
+          className='bg-[#c088fb] lg:px-4 sm:px-3 lg:py-3 sm:py-2 border border-[#c088fb] rounded-[20px] sm:text-sm lg:text-base text-[#0a0a0b] text-center disabled:opacity-50 disabled:cursor-not-allowed'
         >
           Send Message
         </button>
