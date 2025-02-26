@@ -23,7 +23,7 @@ const Header = () => {
       {/* Desktop Navigation */}
       <div className="hidden lg:flex md:flex text-sm font-medium gap-8 py-2 px-[48px] border border-card rounded-[43px]">
         <Link href="/pricing" className={`${isActive("/pricing")} hover:text-[#C088fb]`}>Pricing</Link>
-        <Link href="/contact-us" className={`${isActive("/contact-us")} hover:text-[#C088fb]`}>Resources</Link>
+        <Link href="/contact-us" className={`${isActive("/contact-us")} hover:text-[#C088fb]`}>Contact Us</Link>
         <Link href="/about-us" className={`${isActive("/about-us")} hover:text-[#C088fb]`}>About us</Link>
         <Link href="/blog" className={`${isActive("/blog")} hover:text-[#C088fb]`}>Blog</Link>
       </div>
@@ -49,7 +49,7 @@ const Header = () => {
               <Link href="/pricing">Pricing</Link>
             </li>
             <li className={`${isActive("/contact-us")} hover:text-[#C088fb]`}>
-              <Link href="/contact-us">Resources</Link>
+              <Link href="/contact-us">Contact Us</Link>
             </li>
             <li className={`${isActive("/about-us")} hover:text-[#C088fb]`}>
               <Link href="/about-us">About us</Link>

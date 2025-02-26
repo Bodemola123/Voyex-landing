@@ -1,9 +1,16 @@
 "use client"
+import Hero from '@/components/contact-us-page/Hero'
+import Main from '@/components/contact-us-page/Main'
+import Header from '@/components/Header/Header'
 import React from 'react'
 
 const page = () => {
   return (
-    <div>Contact us</div>
+    <div className='relative flex flex-col w-full h-full'>
+      <Header/>
+      <Hero/>
+      <Main/>
+    </div>
   )
 }
 
