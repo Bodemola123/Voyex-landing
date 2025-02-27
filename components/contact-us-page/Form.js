@@ -5,6 +5,7 @@ import emailjs from 'emailjs-com';
 import Privacy from './Privacy';
 
 const Form = () => {
+  const [loading, setLoading] = useState(false);
   const [formData, setFormData] = useState({
     firstName: '',
     lastName: '',
@@ -34,6 +35,8 @@ const Form = () => {
   const handleSubmit = async (e) => {
     e.preventDefault();
     if (!validateForm()) return;
+
+    setLoading(true); // Start loading
     
     const templateParams = {
         firstName: formData.firstName,
@@ -41,10 +44,6 @@ const Form = () => {
         email: formData.email,
         message: formData.message,
     };
-    console.log("Service ID:", process.env.NEXT_PUBLIC_EMAILJS_SERVICE_ID);
-    console.log("Template ID:", process.env.NEXT_PUBLIC_EMAILJS_TEMPLATE_ID);
-    console.log("User ID:", process.env.NEXT_PUBLIC_EMAILJS_USER_ID);
-    console.log("Template Params:", templateParams);
 
     try {
       await emailjs.send(
@@ -59,7 +58,9 @@ const Form = () => {
     }catch (error) {
       console.error("EmailJS Error:", error);
       toast.error(`Failed to send message: ${error.text || error.message}`);
-    }    
+    }finally {
+      setLoading(false); // Stop loading
+  }    
   };
   const [isPrivacyOpen, setIsPrivacyOpen] = useState(false);
   return (
@@ -124,7 +125,7 @@ const Form = () => {
           disabled={!formData.accepted}
           className='bg-[#c088fb] lg:px-4 sm:px-3 lg:py-3 sm:py-2 border border-[#c088fb] rounded-[20px] sm:text-sm lg:text-base text-[#0a0a0b] text-center disabled:opacity-50 disabled:cursor-not-allowed'
         >
-          Send Message
+           {loading ? "Sending Message..." : "Send Message"}
         </button>
       </form>
       {isPrivacyOpen && <Privacy onClose={() => setIsPrivacyOpen(false)} />}
