@@ -3,6 +3,7 @@ import React, { useState } from 'react';
 import toast, { Toaster } from 'react-hot-toast';
 import emailjs from 'emailjs-com';
 import Privacy from './Privacy';
+import "../../app/globals.css"
 
 const Form = () => {
   const [loading, setLoading] = useState(false);
@@ -112,7 +113,7 @@ const Form = () => {
             name='message'
             value={formData.message}
             onChange={handleChange}
-            className='w-full max-h-[130px] h-full lg:px-4 lg:py-2.5 sm:px-2.5 sm:py-1.5 resize-none rounded-lg bg-[#000000] border border-[#1018280D] text-white focus:outline-none focus:ring-0 lg:text-base sm:text-sm'
+            className='w-full max-h-[130px] h-full lg:px-4 lg:py-2.5 sm:px-2.5 sm:py-1.5 resize-none rounded-lg bg-[#000000] border border-[#1018280D] text-white focus:outline-none focus:ring-0 lg:text-base sm:text-sm scrollbar-hide'
             rows='4'
           />
           <div className='flex flex-row gap-2 mt-2'>
