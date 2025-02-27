@@ -41,6 +41,10 @@ const Form = () => {
         email: formData.email,
         message: formData.message,
     };
+    console.log("Service ID:", process.env.NEXT_PUBLIC_EMAILJS_SERVICE_ID);
+    console.log("Template ID:", process.env.NEXT_PUBLIC_EMAILJS_TEMPLATE_ID);
+    console.log("User ID:", process.env.NEXT_PUBLIC_EMAILJS_USER_ID);
+    console.log("Template Params:", templateParams);
 
     try {
       await emailjs.send(
@@ -52,9 +56,10 @@ const Form = () => {
       toast.success('Your message has been sent successfully!');
       setFormData({ firstName: '', lastName: '', email: '', message: '', accepted: false });
       setErrors({});
-    } catch (error) {
-      toast.error('Failed to send message. Please try again later.');
-    }
+    }catch (error) {
+      console.error("EmailJS Error:", error);
+      toast.error(`Failed to send message: ${error.text || error.message}`);
+    }    
   };
   const [isPrivacyOpen, setIsPrivacyOpen] = useState(false);
   return (

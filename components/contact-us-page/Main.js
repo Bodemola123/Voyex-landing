@@ -19,7 +19,7 @@ const Main = () => {
 
   return (
     <div className='flex lg:px-24 md:px-12 sm:px-8 lg:py-8 sm:py-6 lg:mt-11 sm:mt-9 h-full w-full items-center justify-center'>
-      <div className='flex md:flex-row sm:flex-col lg:gap-14 sm:gap-11 lg:px-8 sm:px-5 justify-between md:items-start sm:items-center'>
+      <div className='flex md:flex-row sm:flex-col lg:gap-14 sm:gap-11 lg:px-8 sm:px-5 justify-between lg:items-start md:items-start sm:items-start'>
         <div className='sm:flex sm:flex-col md:grid md:grid-rows-2 lg:gap-12 sm:gap-9'>
           <div className='sm:flex md:grid md:grid-cols-2 sm:flex-col lg:gap-8 sm:gap-6'>
             <div className='flex flex-col lg:gap-4 sm:gap-2 items-start justify-center text-[#f4f4f4]' data-aos='fade-up'>
