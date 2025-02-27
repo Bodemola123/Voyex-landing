@@ -7,7 +7,7 @@ const Hero = () => {
 
   // Trigger fade-in effect on component mount
   useEffect(() => {
-    setTimeout(() => setIsVisible(true), 2000); // Delays the fade-in effect slightly
+    setTimeout(() => setIsVisible(true), 1000); // Delays the fade-in effect slightly
   }, []);
 
   return (

@@ -61,7 +61,7 @@ const Final = () => {
                             onChange={(e) => setEmail(e.target.value)}
                             placeholder="name@email.com"
                             required
-                            className='px-3 py-2.5 rounded-[27px] flex gap-2.5 bg-white/20 text-white/50 items-center sm:w-[266px] focus:ring-2 focus:ring-[#C088fb] focus:outline-none'
+                            className='px-3 py-2.5 rounded-[27px] flex gap-2.5 bg-white/20 placeholder:text-white/50 text-[#f4f4f4] items-center sm:w-[266px] focus:ring-2 focus:ring-[#C088fb] focus:outline-none'
                         />
                         {error && (
                           <div className="absolute text-sm text-red-500 top-full mt-1">{error}</div>

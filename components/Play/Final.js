@@ -46,7 +46,7 @@ const Final = () => {
     };
 
   return (
-    <div className='md:mt-[176px] sm:mt-[120px] flex flex-col lg:px-[120px] md:px-[10px] sm:px-[16px] bg-black'>
+    <div className='md:mt-[176px] sm:mt-[120px] flex flex-col lg:px-[120px] md:px-[10px] sm:px-[16px]'>
         <div className='flex flex-row sm:gap-[40px] justify-center items-center sm:mx-auto'>
             <Image src={'/Chart.svg'} alt='chart' width={263} height={263} className='relative lg:top-[36px] md:top-[-136px] lg:left-0 md:right-[0px] sm:hidden lg:flex md:hidden message-bubble'/>
             <div className='flex flex-col gap-[20px]'>
@@ -61,7 +61,7 @@ const Final = () => {
                             onChange={(e) => setEmail(e.target.value)}
                             placeholder="name@email.com"
                             required
-                            className='px-3 py-2.5 rounded-[27px] flex gap-2.5 bg-white/20 text-white/50 items-center sm:w-[286px] focus:ring-2 focus:ring-[#C088fb] focus:outline-none'
+                            className='px-3 py-2.5 rounded-[27px] flex gap-2.5 bg-white/20 placeholder:text-white/50 text-[#f4f4f4] items-center sm:w-[286px] focus:ring-2 focus:ring-[#C088fb] focus:outline-none'
                         />
                         {error && (
                           <div className="absolute text-sm text-red-500 top-full mt-1">{error}</div>
@@ -69,7 +69,7 @@ const Final = () => {
                     </div>
                     <button
                         type='submit'
-                        className={`py-2.5 px-[15px] flex gap-1 bg-[#ffffff] text-[#000000] font-medium text-base rounded-[27px] sm:w-[286px] md:w-auto items-center justify-center ${isSubmitting ? 'opacity-50 cursor-not-allowed' : 'hover:bg-[#f1f1f1]'} `}
+                        className={`py-2.5 px-[15px] flex gap-1 bg-[#ffffff] text-[#000000] font-medium text-base rounded-[27px] sm:w-[136px] md:w-auto items-center justify-center ${isSubmitting ? 'opacity-50 cursor-not-allowed' : 'hover:bg-[#f1f1f1]'} `}
                         disabled={isSubmitting}
                     >
                         {isSubmitting ? (
