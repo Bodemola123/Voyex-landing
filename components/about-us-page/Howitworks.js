@@ -26,7 +26,7 @@ const Howitworks = () => {
           { number: "02", title: "Seamless Integration", desc: "Connect Voyex AI tools with your existing software effortlessly." },
           { number: "03", title: "Enterprise-Grade Security", desc: "Data privacy and security at the core of our platform." }
         ].map((item, index) => (
-          <div key={index} className='flex flex-col gap-2 justify-center items-start' data-aos='fade-in' data-aos-delay={index * 200}>
+          <div key={index} className='flex flex-col gap-2 justify-start items-start' data-aos='fade-in' data-aos-delay={index * 200}>
             <div className='flex flex-col gap-2.5'>
               <p className='font-black md:text-2xl sm:text-xl'>{item.number}</p>
               <p className='font-bold md:text-2xl sm:text-xl'>{item.title}</p>
