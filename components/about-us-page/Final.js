@@ -91,15 +91,6 @@ const Final = () => {
         </div>
         <div className='md:mt-[40px] sm:mt-[72px] border-t border-white/20 flex md:flex-row sm:flex-col md:px-[40px] md:py-[20px] sm:py-[50px] md:justify-between sm:justify-center sm:items-center sm:gap-3 md:gap-0'>
         <p className='text-sm font-normal text-center text-[#808080]'>@ 2024 VOYEX, Inc. All rights reserved</p>
-<<<<<<< HEAD
-        <div className='flex flex-row lg:gap-[16px] md:gap-[15px] sm:gap-[15px] justify-center items-center'>
-          <div className="social-icon hover:scale-125 transition-transform duration-200"><Image src={'/X.svg'} alt='X' width={16} height={14}/></div>
-          <div className="social-icon hover:scale-125 transition-transform duration-200"><Image src={'/Insta.svg'} alt='Instagram' width={19.5} height={19.5}/></div>
-          <div className="social-icon hover:scale-125 transition-transform duration-200"><Image src={'/Pinterest.svg'} alt='Pinterest' width={16} height={16}/></div>
-          <div className="social-icon hover:scale-125 transition-transform duration-200"><Image src={'/Linkedin.svg'} alt='LinkedIn' width={16} height={16}/></div>
-          <div className="social-icon hover:scale-125 transition-transform duration-200"><Image src={'/Tiktok.svg'} alt='TikTok' width={17} height={15}/></div>
-          <div className="social-icon hover:scale-125 transition-transform duration-200"><Image src={'/Youtube.svg'} alt='YouTube' width={21} height={16.5}/></div>
-=======
 
         {/* Privacy Policy & Terms */}
         <div className='flex space-x-4 text-sm'>
@@ -115,7 +106,6 @@ const Final = () => {
           <div className="social-icon hover:scale-125 transition-transform duration-200 cursor-pointer "><Image src={'/Linkedin.svg'} alt='LinkedIn' width={16} height={16}/></div>
           <div className="social-icon hover:scale-125 transition-transform duration-200 cursor-pointer"><Image src={'/Tiktok.svg'} alt='TikTok' width={17} height={15}/></div>
           <div className="social-icon hover:scale-125 transition-transform duration-200 cursor-pointer"><Image src={'/Youtube.svg'} alt='YouTube' width={21} height={16.5}/></div>
->>>>>>> 7c900df773d1bf0a9837021c85ca4b7ad33db3d5
         </div>
         </div>
     </div>
@@ -123,8 +113,5 @@ const Final = () => {
 }
 
 export default Final;
-<<<<<<< HEAD
-=======
 
 
->>>>>>> 7c900df773d1bf0a9837021c85ca4b7ad33db3d5
