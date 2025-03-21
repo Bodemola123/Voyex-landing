@@ -91,6 +91,7 @@ const Final = () => {
         </div>
         <div className='md:mt-[40px] sm:mt-[72px] border-t border-white/20 flex md:flex-row sm:flex-col md:px-[40px] md:py-[20px] sm:py-[50px] md:justify-between sm:justify-center sm:items-center sm:gap-3 md:gap-0'>
         <p className='text-sm font-normal text-center text-[#808080]'>@ 2024 VOYEX, Inc. All rights reserved</p>
+<<<<<<< Updated upstream
 
         {/* Privacy Policy & Terms */}
         <div className='flex space-x-4 text-sm'>
@@ -99,6 +100,14 @@ const Final = () => {
             <a href="/terms" className="hover:underline text-[#808080]">Terms & Conditions</a>
           </div>
 
+=======
+        {/* Privacy Policy & Terms */}
+        <div className='flex space-x-4 text-sm'>
+            <a href="/privacy" className="hover:underline text-gray-300">Privacy Policy</a>
+            <span className="text-gray-400">|</span>
+            <a href="/terms" className="hover:underline text-gray-300">Terms & Conditions</a>
+          </div>
+>>>>>>> Stashed changes
         <div className='flex flex-row lg:gap-[16px] md:gap-[15px] sm:gap-[15px] justify-center items-center'>
           <div className="social-icon hover:scale-125 transition-transform duration-200 cursor-pointer"><Image src={'/X.svg'} alt='X' width={16} height={14}/></div>
           <div className="social-icon hover:scale-125 transition-transform duration-200 cursor-pointer"><Image src={'/Insta.svg'} alt='Instagram' width={19.5} height={19.5}/></div>
@@ -112,6 +121,10 @@ const Final = () => {
   );
 }
 
+<<<<<<< Updated upstream
 export default Final;
 
 
+=======
+export default Final;
+>>>>>>> Stashed changes

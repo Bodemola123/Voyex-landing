@@ -1,13 +1,23 @@
 import React from "react";
+<<<<<<< Updated upstream
 import Header from "../../components/Header/Header";
 
 const Privacy = () => {
+=======
+import Header from "../Header/Header";
+
+const Terms = () => {
+>>>>>>> Stashed changes
   return (
     <div className="text-white min-h-screen flex flex-col">
       {/* Header */}
       <Header />
 
+<<<<<<< Updated upstream
      {/* Centered Content */}
+=======
+      {/* Centered Content */}
+>>>>>>> Stashed changes
 <div className="flex-grow flex items-center justify-center">
   <div className="max-w-3xl w-full px-6 text-center">
     
@@ -19,6 +29,7 @@ const Privacy = () => {
     </div>
 
     {/* Published Date */}
+<<<<<<< Updated upstream
     <p className="text-400 text-sm mt-6">Published: 27 February, 2025</p>
 
     {/* Title */}
@@ -26,6 +37,15 @@ const Privacy = () => {
 
     {/* Effective Date */}
     <p className="text-400 text-sm">Effective: December 11, 2024 (previous version)</p>
+=======
+    <p className="text-400 text-sm mt-4">Published: 27 February, 2025</p>
+
+    {/* Title */}
+    <h2 className="text-5xl font-bold tracking-wide">Privacy policy</h2>
+
+    {/* Effective Date */}
+    <p className="text-400 text-sm mt-4">Effective: December 11, 2024 (previous version)</p>
+>>>>>>> Stashed changes
 
           {/* Terms Content */}
           <div className="mt-6 text-gray-300 leading-relaxed text-left text-lg">
@@ -59,4 +79,8 @@ const Privacy = () => {
   );
 };
 
+<<<<<<< Updated upstream
 export default Privacy;
+=======
+export default Terms;
+>>>>>>> Stashed changes
