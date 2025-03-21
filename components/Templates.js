@@ -1,9 +1,15 @@
 'use client'
 // Templates Component with Micro-Interactions
+<<<<<<< HEAD
 import React from 'react';
 import '../app/globals.css';
 import Card from './Card';
 import { useEffect } from 'react';
+=======
+import React, { useEffect } from 'react';
+import '../app/globals.css';
+import Card from './Card';
+>>>>>>> 7c900df773d1bf0a9837021c85ca4b7ad33db3d5
 import AOS from 'aos';
 import 'aos/dist/aos.css';
 
@@ -24,12 +30,37 @@ const Templates = () => {
       data-aos="fade-up"
     >
       <div className="flex flex-col lg:gap-6 md:gap-[17.12px] sm:gap-[17.12px] justify-center items-center">
+<<<<<<< HEAD
         <div className='flex flex-col items-center justify-center md:gap-[5.71px] lg:gap-2 sm:gap-[5.71px]'>
           <p className="text-[#C088fb] font-medium text-[18.44px] ">Use Templates</p>
           <h1 className="text-[#ffffff] font-medium lg:text-5xl md:text-[34.25px] sm:text-[32px] text-center" data-aos="zoom-in">
             Get Started with our Templates options
           </h1>
         </div>
+=======
+        {/* Heading Section */}
+        <div className='flex flex-col items-center justify-center md:gap-[5.71px] lg:gap-2 sm:gap-[5.71px]'>
+          <p className="text-[#C088fb] font-medium text-[18.44px]">Use Templates</p>
+          <h1 
+            className="text-[#ffffff] font-medium lg:text-5xl md:text-[34.25px] sm:text-[32px] text-center"
+            data-aos="zoom-in"
+          >
+            Get Started with our Templates options
+          </h1>
+          
+          {/* Subheading Section - Styled as per your example */}
+          <span 
+            className="text-[#ffffff] text-center lg:w-[1044px] md:w-[729px] sm:w-auto sm:px-10 md:px-0 lg:text-[22px] md:text-[15px] sm:text-[15px] font-normal"
+            data-aos="fade-up"
+          >
+            <p>
+              We’ve curated a collection of templates to give you a head start. Explore the possibilities of AI and use these pre-built workflows to complete tasks effortlessly.
+            </p>
+          </span>
+        </div>
+
+        {/* Button */}
+>>>>>>> 7c900df773d1bf0a9837021c85ca4b7ad33db3d5
         <button 
           className="border border-card sm:text-sm md:text-sm lg:px-9 md:px-[24.97px] sm:px-[24.97px] sm:py-[10px] lg:py-2.5 md:py-[10px] flex justify-center items-center lg:gap-2.5 md:gap-2 sm:gap-2 bg-[#C088FB] text-black font-medium lg:rounded-3xl md:rounded-[19.26px] sm:rounded-[19.26px] shadow-[0_0_20px_5px_rgba(192,136,251,0.5)] hover:shadow-[0_0_30px_10px_rgba(192,136,251,0.8)] transition-transform duration-300 md:w-auto lg:max-w-[239px] sm:w-[236px] hover:scale-105"
           data-aos="fade-up"
@@ -37,6 +68,11 @@ const Templates = () => {
           See All Templates
         </button>
       </div>
+<<<<<<< HEAD
+=======
+
+      {/* Card Component */}
+>>>>>>> 7c900df773d1bf0a9837021c85ca4b7ad33db3d5
       <div className="lg:mt-14 md:mt-[37.81px] sm:mt-[37.81px] flex items-center justify-center">
         <Card />
       </div>
@@ -44,4 +80,8 @@ const Templates = () => {
   );
 };
 
+<<<<<<< HEAD
 export default Templates;
+=======
+export default Templates;
+>>>>>>> 7c900df773d1bf0a9837021c85ca4b7ad33db3d5
