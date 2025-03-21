@@ -62,22 +62,12 @@ const Everythingyouneed = () => {
           className="text-[#ffffff] lg:text-[54px] md:text-[38.03px] sm:text-[32px] lg:leading-[60px] md:leading-[38.57px] sm:leading-[38.57px] font-bold"
           data-aos="fade-up"
         >
-<<<<<<< HEAD
-          Everything you need
-        </h1>
-        <span className="text-[#ffffff] text-center lg:w-[1044px] md:w-[729px] sm:w-auto sm:px-10 md:px-0 lg:text-[22px] md:text-[15px] sm:text-[15px] font-normal">
-          <p>
-            It&apos;s like having a personal agency that manages everything,
-            from content creation and social media strategies to technical
-            tasks.
-=======
           Navigate the AI landscape easily
         </h1>
         <span className="text-[#ffffff] text-center lg:w-[1044px] md:w-[729px] sm:w-auto sm:px-10 md:px-0 lg:text-[22px] md:text-[15px] sm:text-[15px] font-normal">
           <p>
           Find everything you need to get from A to B. Did you check? There must 
           be a tool for it 
->>>>>>> 7c900df773d1bf0a9837021c85ca4b7ad33db3d5
           </p>
         </span>
       </div>
@@ -88,34 +78,18 @@ const Everythingyouneed = () => {
         data-aos="fade-up"
       >
         {/* Card 1 */}
-<<<<<<< HEAD
-        <div className="lg:p-10 md:p-[25.71px] sm:p-[25.71px] lg:border md:border-[0.64px] sm:border-[0.64px] border-card lg:rounded-xl md:rounded-[6.43px] sm:rounded-[6.43px] flex flex-col justify-center items-center bg-[#0d0d0d] lg:gap-6 md:gap-[15.43px] sm:gap-[15.43px] transition-all duration-1000 ease-in-out hover:bg-[#ffffff] group">
-=======
         <div className="lg:p-10 md:p-[25.71px] sm:p-[25.71px] lg:border md:border-[0.64px] sm:border-[0.64px] border-card lg:rounded-xl md:rounded-[6.43px] sm:rounded-[6.43px] flex flex-col justify-center items-center bg-[#0d0d0d] lg:gap-6 md:gap-[15.43px] sm:gap-[15.43px] transition-all duration-1000 ease-in-out hover:bg-[#ffffff] group cursor-pointer">
->>>>>>> 7c900df773d1bf0a9837021c85ca4b7ad33db3d5
   <div className="p-2.5 w-[52px] flex items-center justify-center lg:rounded-xl md:rounded-[6.43px] sm:rounded-[6.43px] bg-[#ffffff] transition-all duration-1000 ease-in-out  ">
     <HiOutlineLightBulb className="text-[24px] text-[#0d0d0d] transition-colors duration-1000 ease-in-out " />
   </div>
   <h1 className="font-bold text-center text-[#ffffff] text-[18px] lg:leading-[23.03px] md:leading-[24.34px] sm:leading-[24.34px] underline underline-offset-4 transition-colors duration-1000 ease-in-out group-hover:text-[#0d0d0d]">
     AI Query Engine
-  </h1>
-  <span className="flex flex-col lg:w-[319px] md:w-[294.77px] sm:w-auto md:px-0 md:text-[14.79px] sm:text-[14.79px] text-center justify-center items-center font-normal lg:text-base text-[#ffffff] transition-colors duration-1000 ease-in-out group-hover:text-[#0d0d0d]">
-    <p>
       Voyex&apos;s AI query engine finds the best tools for your tasks,
-      saving you time on research and maximizing efficiency.
-    </p>
-  </span>
+    </h1>
 </div>
 
-<<<<<<< HEAD
-
-
-        {/* Card 2 */}
-        <div className="lg:p-10 md:p-[25.71px] sm:p-[25.71px] lg:border md:border-[0.64px] sm:border-[0.64px] border-card lg:rounded-xl md:rounded-[6.43px] sm:rounded-[6.43px] flex flex-col justify-center items-center bg-[#0d0d0d] lg:gap-6 md:gap-[15.43px] sm:gap-[15.43px] transition-all duration-1000 ease-in-out hover:bg-[#ffffff] group">
-=======
         {/* Card 2 */}
         <div className="lg:p-10 md:p-[25.71px] sm:p-[25.71px] lg:border md:border-[0.64px] sm:border-[0.64px] border-card lg:rounded-xl md:rounded-[6.43px] sm:rounded-[6.43px] flex flex-col justify-center items-center bg-[#0d0d0d] lg:gap-6 md:gap-[15.43px] sm:gap-[15.43px] transition-all duration-1000 ease-in-out hover:bg-[#ffffff] group cursor-pointer">
->>>>>>> 7c900df773d1bf0a9837021c85ca4b7ad33db3d5
   <div className="p-2.5 w-[52px] flex items-center justify-center lg:rounded-xl md:rounded-[6.43px] sm:rounded-[6.43px] bg-[#ffffff] transition-all duration-1000 ease-in-out ">
     <HiOutlineLightBulb className="text-[24px] text-[#0d0d0d] transition-colors duration-1000 ease-in-out " />
   </div>
@@ -166,11 +140,7 @@ const Everythingyouneed = () => {
     sm:pl-[14.32px] sm:gap-[8px] sm:pb-[66.7px] sm:rounded-[6.43px] sm:w-full sm:h-[400px] 
     border border-card
     bg-cover bg-no-repeat bg-center transition-all duration-2000 ease-in-out
-<<<<<<< HEAD
-    bg-[#0a0a0b] opacity-100 hover:opacity-80 hover:bg-gradient-and-darkstar"
-=======
     bg-[#0a0a0b] opacity-100 hover:opacity-80 hover:bg-gradient-and-darkstar cursor-pointer"
->>>>>>> 7c900df773d1bf0a9837021c85ca4b7ad33db3d5
   data-aos="fade-up"
 >
 
