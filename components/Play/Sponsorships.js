@@ -14,7 +14,7 @@ const Sponsorships = () => {
       {/* Right Side - Description */}
       <p className="relative text-lg md:text-xl text-white md:w-2/4 text-center leading-relaxed opacity-90 hover:scale-110">
         Voyex is backed by industry leaders. Explore our sponsors and partners, 
-        and see how we’re making AI accessible to everyone.
+        and see how we&apos;re making AI accessible to everyone.
       </p>
 
     </section>
