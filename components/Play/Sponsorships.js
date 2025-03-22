@@ -4,7 +4,7 @@ import "../../app/globals.css";
 
 const Sponsorships = () => {
   return (
-    <section className="sponsorship-container relative flex flex-col md:flex-row items-center justify-between px-10 md:px-24 py-16 max-w-7xl mx-auto mt-[-150px] mb-[150px] overflow-hidden">
+    <div className="sponsorship-container relative flex flex-col md:flex-row items-center justify-between px-10 md:px-24 py-16 max-w-7xl mx-auto mt-[-150px] mb-[150px] overflow-hidden">
       
       {/* Left Side - Heading */}
       <h2 className="relative font-bold text-4xl uppercase md:text-6xl tracking-tight leading-tight md:w-2/5 text-neon hover:scale-110">
@@ -17,7 +17,7 @@ const Sponsorships = () => {
         and see how we&apos;re making AI accessible to everyone.
       </p>
 
-    </section>
+    </div>
   );
 };
 
