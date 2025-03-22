@@ -200,4 +200,28 @@ body {
   50% {
     opacity: 0; /* Vanishes in the middle of the animation */
   }
+
 }
+  .sponsorship-container {
+    background: rgba(0, 0, 0, 0.8); /* Dark semi-transparent background */
+    border: 2px solid rgba(128, 0, 128, 0.5); /* Neon purple border */
+    border-radius: 15px;
+    box-shadow: 
+      0 0 5px rgba(128, 0, 255, 1), 
+      0 0 10px rgba(128, 0, 255, 0.8), 
+      0 0 20px rgba(128, 0, 255, 0.6); /* Multi-layered neon glow */
+    transition: box-shadow 0.3s ease-in-out, transform 0.3s ease-in-out;
+  }
+  
+  .sponsorship-container:hover {
+    transform: scale(1.03); /* Slight hover zoom effect */
+    box-shadow: 
+      0 0 15px rgba(128, 0, 255, 1), 
+      0 0 30px rgba(128, 0, 255, 0.8), 
+      0 0 45px rgba(128, 0, 255, 0.6); /* Stronger glow on hover */
+  }
+  
+  .text-neon {
+    color: #ffffff;
+  }
+  

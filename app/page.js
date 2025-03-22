@@ -2,6 +2,7 @@
 import Companies from '@/components/Companies/Companies'
 import Everythingyouneed from '@/components/Everythingyouneed'
 import CTA from '@/components/Play/CTA'
+import Sponsorship from '@/components/Play/Sponsorships'
 import Playmode from '@/components/Play/Playmode'
 import Rectangle from '@/components/Rectangle'
 import Templates from '@/components/Templates'
@@ -24,6 +25,7 @@ const page = () => {
 </div>
 
       <CTA/>
+      <Sponsorship/>
       <FAQ/>
       <Final/>
     </div>

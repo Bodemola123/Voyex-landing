@@ -62,21 +62,12 @@ const Everythingyouneed = () => {
           className="text-[#ffffff] lg:text-[54px] md:text-[38.03px] sm:text-[32px] lg:leading-[60px] md:leading-[38.57px] sm:leading-[38.57px] font-bold"
           data-aos="fade-up"
         >
-<<<<<<< Updated upstream
-          Navigate the AI landscape easily
-=======
-          Navigate the AI landscape easily 
->>>>>>> Stashed changes
+           Navigate the AI landscape easily
         </h1>
         <span className="text-[#ffffff] text-center lg:w-[1044px] md:w-[729px] sm:w-auto sm:px-10 md:px-0 lg:text-[22px] md:text-[15px] sm:text-[15px] font-normal">
           <p>
-          Find everything you need to get from A to B. Did you check? There must 
-<<<<<<< Updated upstream
-          be a tool for it 
-=======
-          be a tool for it.
->>>>>>> Stashed changes
-          </p>
+          Find everything you need to get from A to B. Did you check? There must be a tool for it 
+         </p>
         </span>
       </div>
 
