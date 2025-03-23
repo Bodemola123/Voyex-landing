@@ -24,30 +24,20 @@ const Companies = () => {
   }, []);
 
   return (
-    <div className='flex flex-col md:gap-10 sm:gap-[31.19px] sm:px-4 md:px-0 items-center justify-center'>
-      
-      {/* Sponsorships & Partnerships Section */}
+    <div className='flex flex-col md:gap-10 sm:gap-[31.19px] sm:px-4 md:px-4 lg:px-0 items-center justify-center'>
       <h2 
         className="text-[#ffffff] lg:text-[54px] md:text-[38.03px] sm:text-[32px] 
-        lg:leading-[60px] md:leading-[38.57px] sm:leading-[38.57px] md:mt-[103px] font-bold text-center"
+        lg:leading-[60px] md:leading-[38.57px] sm:leading-[38.57px] md:mt-[103px] sm:mt-8 font-bold text-center"
         data-aos="fade-up"
       >
         Sponsorships and Partnerships
       </h2>
       <p 
-  className='text-center text-white max-w-2xl md:mt-3 sm:mt-2 text-lg md:text-xl lg:text-xl' 
-  data-aos="fade-up"
->
-  Voyex is backed by industry leaders. Explore our sponsors and partners,  
-  and see how we&apos;re making AI accessible to everyone.
-</p>
-
-      {/* Trusted by Companies Section */}
-      <p 
-        className='text-center text-[#f4f4f4b3] md:mt-[40px] sm:mt-[30px]' 
+        className='text-center text-[#f4f4f4b3]' 
         data-aos="fade-up"
       >
-        Trusted by the world&apos;s most innovative teams
+          Voyex is backed by industry leaders. Explore our sponsors and partners,  
+          and see how we&apos;re making AI accessible to everyone.
       </p>
 
       <div className='grid lg:gap-2.5 md:gap-2 sm:gap-2 md:grid-cols-4 md:grid-rows-2 sm:grid-cols-2 sm:grid-rows-4'>

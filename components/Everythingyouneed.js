@@ -124,7 +124,7 @@ const Everythingyouneed = () => {
             <h1 className="font-medium text-[#ffffff]">
               The Future of Automation: Agent-Based Workflows
             </h1>
-            <p className="text-[#ffffffb3] sm:mb-5 md:mb-0 lg:w-auto">
+            <p className="text-[#ffffffb3] sm:mb-5 md:mb-0 lg:w-auto sm:w-fit">
               This is just the beginning. We're developing agent-based
               workflows that will allow you to
             </p>

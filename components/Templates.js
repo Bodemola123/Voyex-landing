@@ -13,7 +13,7 @@ const Templates = () => {
 
   return (
     <div 
-      className="flex flex-col lg:gap-[53px] md:gap-[37.81px] sm:gap-[37.87px] sm:py-[84px] sm:px-[30px] lg:p-28 md:px-[30px] md:py-[84px] justify-center items-center absolute lg:top-[3320px] md:top-[2510px] sm:top-[3140px] opacity-[0.89] mx-auto z-10"
+      className="flex flex-col lg:gap-[53px] md:gap-[37.81px] sm:gap-[37.87px] sm:py-[84px] sm:px-[30px] lg:p-28 md:px-[30px] md:py-[84px] justify-center items-center absolute lg:top-[3320px] md:top-[2650px] sm:top-[3290px] opacity-[0.89] mx-auto z-10"
       style={{
         background: 'linear-gradient(180deg, #A46EDB 0%, #010101 9.46%)',
         backgroundImage: "url('/Ellipse.svg')", 
@@ -39,7 +39,7 @@ const Templates = () => {
             data-aos="fade-up"
           >
             <p>
-              We’ve curated a collection of templates to give you a head start. Explore the possibilities of AI and use these pre-built workflows to complete tasks effortlessly.
+              We&apos;ve curated a collection of templates to give you a head start. Explore the possibilities of AI and use these pre-built workflows to complete tasks effortlessly.
             </p>
           </span>
         </div>
