@@ -56,6 +56,7 @@
 
 
 
+
 'use client';
 import React, { useEffect, useState } from 'react';
 import "../../app/globals.css";
@@ -70,7 +71,7 @@ const Hero = () => {
   }, []);
 
   return (
-    <div className="relative overflow-visible z-20">
+    <div className="relative overflow-visible z-20 mt-20 md:mt-24 lg:mt-28">
       <div className="flex flex-col items-center justify-center text-center gap-[21px] relative">
         <div className="flex flex-row justify-center items-center relative">
           <div className="lg:h-[322px] md:h-[198px] sm:h-[118px] mx-auto relative">
@@ -111,12 +112,13 @@ const Hero = () => {
             Upload Product
           </button>
         </div>
-        
-  {/* Background Effects */}
-  <div className="absolute inset-0 -z-10 flex items-center justify-center overflow-visible">
-    <CircularRings className="scale-[1.4]" />
-    <StarsCanvas />
-  </div>
+
+ {/* Background Effects */}
+<div className="absolute inset-0 -z-10 flex items-center justify-center overflow-visible w-full h-[120vh]">
+  <CircularRings className="absolute scale-[3] md:scale-[2.5] lg:scale-[2] top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2" />
+  <StarsCanvas />
+</div>
+
       </div>
     </div>
   );
