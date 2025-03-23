@@ -62,7 +62,7 @@ const CircularRings = () => {
     if (screenSize >= 1024) {
       ringCount = 4;
       ringSpacing = 150;
-      baseRadius = 200;
+      baseRadius = 196;
     }
 
     const items = images.map((src, index) => {
