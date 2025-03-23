@@ -10,7 +10,7 @@ import '../app/globals.css'
 import FAQ from '@/components/FAQ'
 import Final from '@/components/Play/Final'
 import Combo from '@/components/Combo'
-import Sponsorships from '@/components/Play/Sponsorships'
+
 
 const page = () => {
   return (
@@ -25,7 +25,6 @@ const page = () => {
 </div>
 
       <CTA/>
-      <Sponsorships/>
       <FAQ/>
       <Final/>
     </div>
