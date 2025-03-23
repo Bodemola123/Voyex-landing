@@ -11,6 +11,7 @@ import FAQ from '@/components/FAQ'
 import Final from '@/components/Play/Final'
 import Combo from '@/components/Combo'
 
+
 const page = () => {
   return (
     <div className='relative flex flex-col w-full h-full '>
