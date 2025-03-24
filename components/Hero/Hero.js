@@ -43,7 +43,7 @@ const Hero = () => {
         </div>
         
         {/* The parent div now has overflow-hidden */}
-        <div className="absolute top-0 left-0 w-full h-full -z-10 flex items-center justify-center">
+        <div className="absolute w-full h-full -z-10 flex items-start justify-center">
           <CircularRings />
           <StarsCanvas />
         </div>

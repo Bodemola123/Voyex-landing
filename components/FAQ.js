@@ -7,20 +7,24 @@ const FAQ = () => {
 
   const faqData = [
     {
-      question: "What is Voyex?",
-      answer: "Voyex is an AI-driven platform that helps you discover and integrate AI tools into your workflow."
+      question: "How do I access Voyex?",
+      answer: "You can access Voyex through the app. Start typing your query, explore the templates, or browse all the tools in our marketplace. You can even make a few searches without signing in"
     },
     {
-      question: "How can I list my AI tool on Voyex?",
-      answer: "You can list your AI tool by partnering with us. We offer free listing opportunities for our first few partners."
+      question: "What all can I search on Voyex?",
+      answer: "You can possibly search about any usecase that you want help with, it can be “I want to do marketing for a product”, “I want to create content to be posted on my social media”, “I want to build a website for my new launch"
     },
     {
-      question: "What benefits do I get by partnering with Voyex?",
-      answer: "By partnering with Voyex, your tool becomes a key part of our workflow recommendations, ensuring it reaches users who need it most."
+      question: "How does Voyex know about the specific needs?",
+      answer: "Our model asks relevant questions after you enter your query to refine the results. We also consider your user profile to provide personalized tool suggestions."
     },
     {
-      question: "How do I contact support?",
-      answer: "You can contact support via email at support@voyex.com or through our website contact form."
+      question: "Is my Data safe with Voyex",
+      answer: "Yes, your data is completely safe as we do not sell or showcase any personal info of our users to anyone."
+    },
+    {
+      question:"How can I create workflow and access the tools?",
+      answer: "You can currently access workflow in the chatbot and even access the tools by clicking on the link and being redirected. We are working on building automated workflows and also building UI for some tools."
     }
   ];
 
@@ -33,7 +37,7 @@ const FAQ = () => {
   };
 
   return (
-    <div className='md:mt-[-50px] sm:mt-[-80px] flex flex-col justify-center items-center text-[#ffffff]'>
+    <div className='lg:-mt-[200px] md:-mt-[100px] sm:mt-[-80px] flex flex-col justify-center items-center text-[#ffffff]'>
       <h1 className='font-bold lg:text-[54px] md:text-[48px] sm:text-[32px] text-center'>Frequently asked questions</h1>
       <div className="mt-[47px]">
         {faqData.map((faq, index) => (

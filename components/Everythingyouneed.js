@@ -55,7 +55,7 @@ const Everythingyouneed = () => {
   };
 
   return (
-    <div className="flex flex-col lg:gap-16 md:gap-[43px] sm:gap-[43px] justify-center items-center sm:px-4 md:px-0 sm:-mt-[100px] md:-mt-0">
+    <div className="flex flex-col lg:gap-16 md:gap-[43px] sm:gap-[43px] justify-center items-center sm:px-4 md:px-0 sm:-mt-[200px] md:-mt-0">
       {/* Title Section */}
       <div className="flex flex-col lg:gap-5 md:gap-[13px] sm:gap-[13px] mt-44 text-center">
         <h1
@@ -124,7 +124,7 @@ const Everythingyouneed = () => {
             <h1 className="font-medium text-[#ffffff]">
               The Future of Automation: Agent-Based Workflows
             </h1>
-            <p className="text-[#ffffffb3] sm:mb-5 md:mb-0 lg:w-auto sm:w-fit">
+            <p className="text-[#ffffffb3] sm:mb-5 md:mb-0 lg:w-auto sm:w-[90%]">
               This is just the beginning. We're developing agent-based
               workflows that will allow you to
             </p>
