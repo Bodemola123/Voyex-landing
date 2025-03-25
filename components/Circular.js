@@ -1,4 +1,5 @@
 'use client';
+import { u } from "maath/dist/misc-19a3ec46.esm";
 import React, { useEffect, useRef, useState } from "react";
 
 const CircularRings = () => {
@@ -28,8 +29,8 @@ const CircularRings = () => {
 
     const handleResize = () => {
       setScreenSize(window.innerWidth);
-      canvas.width = window.innerWidth;
-      canvas.height = window.innerHeight;
+      canvas.width = window.innerWidth * 2 ;
+      canvas.height = window.innerHeight * 2;
     };
 
     window.addEventListener("resize", handleResize);
@@ -61,8 +62,8 @@ const CircularRings = () => {
 
     if (screenSize >= 1024) {
       ringCount = 4;
-      ringSpacing = 150;
-      baseRadius = 196;
+      ringSpacing = 130;
+      baseRadius = 160;
     }
 
     const items = images.map((src, index) => {
@@ -114,11 +115,11 @@ const CircularRings = () => {
     animate();
   }, [screenSize]);
 
-  return (
-    <div className="relative w-full h-full">
-      <canvas ref={canvasRef} style={{ display: "block", zIndex: -10 }} />
-    </div>
-  );
+  return (  
+    <div className="absolute inset-0 w-[200vw] h-[200vh] left-[-50vw] top-[-50vh] overflow-visible -z-10">
+  <canvas ref={canvasRef} className="block w-full h-full" />
+</div>
+);
 };
 
 export default CircularRings;

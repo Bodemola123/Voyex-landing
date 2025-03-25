@@ -14,7 +14,7 @@ import Combo from '@/components/Combo'
 
 const page = () => {
   return (
-    <div className='relative flex flex-col w-full h-full '>
+    <div className='relative flex flex-col w-full h-full'>
       <Combo/>
       <Playmode/>
       <Everythingyouneed/>

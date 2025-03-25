@@ -4,7 +4,7 @@ import '../././../app/globals.css';
 
 const Playmode = () => {
   return (
-    <div className='flex flex-col justify-center h-screen gap-4 items-center md:mt-[69px] sm:-mt-[52.32px] rounded-[18px] mx-auto z-35'>
+    <div className='relative z-50 flex flex-col justify-center h-screen gap-4 items-center md:mt-[69px] sm:-mt-[52.32px] rounded-[18px] mx-auto'  style={{ backgroundColor: "black" }}>
       <h1 className="relative text-center text-[#ffffff] lg:text-[54px] md:text-[38.03px] sm:text-[32px] after:content-[''] after:absolute after:left-0 lg:after:bottom-[10px] md:after:bottom-[8px] sm:after:bottom-[8px] after:w-0 after:h-[2px] after:bg-[#ffffff] after:transition-all after:duration-1000 hover:after:w-full">
         How Voyex Works
       </h1>
@@ -23,6 +23,7 @@ const Playmode = () => {
           referrerPolicy="strict-origin-when-cross-origin"
           allowFullScreen
           className="border border-[rgb(49,49,49)] border-opacity-100 rounded-lg"
+          style={{ backgroundColor: "black" }}
         ></iframe>
       </div>
     </div>

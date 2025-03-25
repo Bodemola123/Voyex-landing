@@ -13,7 +13,7 @@ const Hero = () => {
   }, []);
 
   return (
-    <div className="relative overflow-hidden z-20"> {/* Add overflow-hidden here */}
+    <div className="relative overflow-visible z-20"> 
       <div className="flex flex-col items-center justify-center text-center gap-[21px]">
         <div className="flex flex-row justify-center items-center">
           <div className="lg:h-[322px] md:h-[198px] sm:h-[118px] mx-auto">
@@ -43,7 +43,7 @@ const Hero = () => {
         </div>
         
         {/* The parent div now has overflow-hidden */}
-        <div className="absolute w-full h-full -z-10 flex items-start justify-center">
+        <div className="absolute w-full h-full flex items-center justify-center overflow-visible">
           <CircularRings />
           <StarsCanvas />
         </div>
