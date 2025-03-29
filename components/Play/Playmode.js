@@ -4,7 +4,7 @@ import '../././../app/globals.css';
 
 const Playmode = () => {
   return (
-    <div className='relative z-50 flex flex-col justify-center h-screen gap-4 items-center md:mt-[69px] sm:-mt-[52.32px] rounded-[18px] mx-auto'  style={{ backgroundColor: "black" }}>
+    <div className='relative z-50 flex flex-col justify-center h-screen gap-4 items-center md:mt-[100px] sm:-mt-[20px] rounded-[18px] mx-auto'  style={{ backgroundColor: "black" }}>
       <h1 className="relative text-center text-[#ffffff] lg:text-[54px] md:text-[38.03px] sm:text-[32px] after:content-[''] after:absolute after:left-0 lg:after:bottom-[10px] md:after:bottom-[8px] sm:after:bottom-[8px] after:w-0 after:h-[2px] after:bg-[#ffffff] after:transition-all after:duration-1000 hover:after:w-full">
         How Voyex Works
       </h1>

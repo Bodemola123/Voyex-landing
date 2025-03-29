@@ -13,7 +13,7 @@ const Hero = () => {
   }, []);
 
   return (
-    <div className="relative overflow-visible z-20"> 
+    <div className="relative overflow-visible z-20 mt-10"> 
       <div className="flex flex-col items-center justify-center text-center gap-[21px]">
         <div className="flex flex-row justify-center items-center">
           <div className="lg:h-[322px] md:h-[198px] sm:h-[118px] mx-auto">
