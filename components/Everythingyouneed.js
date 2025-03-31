@@ -1,5 +1,189 @@
+// 'use client';
+// import React, { useState, useEffect } from 'react';
+// import '../app/globals.css';
+// import Image from 'next/image';
+// import AOS from 'aos';
+// import 'aos/dist/aos.css';
+// import { IoMdArrowForward } from "react-icons/io";
+// import { HiOutlineLightBulb } from "react-icons/hi2";
+
+// const Everythingyouneed = () => {
+//   const [currentIndex, setCurrentIndex] = useState(0);
+//   const [fade, setFade] = useState(true); // Track fade state
+//   const [activeIndex, setActiveIndex] = useState(null);
+
+//   // features content
+//   const features = [
+//     {
+//       title: "Ask Deeper Questions",
+//       description: "Uncover insights with advanced AI for thoughtful, impactful decision-making.",
+//     },
+//     {
+//       title: "Automate Campaigns",
+//       description: "Automate campaigns to simplify marketing with personalized, data-driven strategies.",
+//     },
+//     {
+//       title: "Track Performance Metrics",
+//       description: "Monitor key metrics in real-time for continuous strategic optimization.",
+//     },
+//     {
+//       title: "Run Workflows Using Multiple AI Tools",
+//       description: "Streamline processes by integrating AI tools for maximum operational efficiency.",
+//     },
+//   ];
+
+//   // Carousel logic
+//   useEffect(() => {
+//     AOS.init({ duration: 1000 });
+//     const interval = setInterval(() => {
+//       setFade(false); // Start fading out
+//       setTimeout(() => {
+//         setCurrentIndex((prevIndex) => (prevIndex + 1) % carouselContent.length);
+//         setFade(true); // Fade in the new content
+//       }, 500); // Wait for fade-out before updating index
+//     }, 5000); // Change text every 5 seconds (slower speed)
+
+//     return () => clearInterval(interval);
+//   }, []);
+
+//   // Handle carousel button clicks
+//   const handleNext = () => {
+//     setCurrentIndex((prevIndex) => (prevIndex + 1) % carouselContent.length);
+//   };
+
+//   const handlePrevious = () => {
+//     setCurrentIndex((prevIndex) => (prevIndex - 1 + carouselContent.length) % carouselContent.length);
+//   };
+
+//   return (
+//     <div className="flex flex-col lg:gap-10 md:gap-[43px] sm:gap-[43px] justify-center items-center sm:px-4 md:px-0 sm:-mt-[200px] md:-mt-0">
+//       {/* Title Section */}
+//       <div className="flex flex-col lg:gap-5 md:gap-[13px] sm:gap-[13px] mt-44 text-center">
+//         <h1
+//           className="text-[#ffffff] lg:text-[54px] md:text-[38.03px] sm:text-[32px] lg:leading-[60px] md:leading-[38.57px] sm:leading-[38.57px] font-bold"
+//           data-aos="fade-up"
+//         >
+
+//            Navigate the AI Landscape Easily
+
+//         </h1>
+//         <span className="text-[#ffffff] text-center lg:w-[1044px] md:w-[729px] sm:w-auto sm:px-10 md:px-0 lg:text-[22px] md:text-[15px] sm:text-[15px] font-normal">
+//           <p>
+//           Find everything you need to get from A to B. Did you check? There must be a tool for it 
+//          </p>
+//         </span>
+//       </div>
+
+//       {/* Grid Section */}
+//       <div
+//         className="grid md:grid-cols-2 sm:grid-cols-1 lg:gap-4 md:gap-[10.28px] sm:gap-[10.28px] sm:w-auto sm:px-4 lg:w-[1144px] md:w-[729px]"
+//         data-aos="fade-up"
+//       >
+
+//       {/* Card 1 */}
+//     <div className="lg:p-10 md:p-[25.71px] sm:p-[25.71px] lg:border md:border-[0.64px] sm:border-[0.64px] border-card lg:rounded-xl md:rounded-[6.43px] sm:rounded-[6.43px] flex flex-col justify-center items-center bg-[#0d0d0d] lg:gap-6 md:gap-[15.43px] sm:gap-[15.43px] transition-all duration-1000 ease-in-out group cursor-pointer">
+//     <div className="p-2.5 w-[52px] flex items-center justify-center lg:rounded-xl md:rounded-[6.43px] sm:rounded-[6.43px] bg-[#ffffff] transition-all duration-1000 ease-in-out">
+//     <HiOutlineLightBulb className="text-[24px] text-[#0d0d0d] transition-colors duration-1000 ease-in-out" />
+//     </div>
+//     <div className="relative inline-block">
+//     <h1 className="font-bold text-center text-[#ffffff] text-[18px] lg:leading-[23.03px] md:leading-[24.34px] relative after:content-[''] after:absolute after:left-0 after:bottom-[-3px] after:w-0 after:h-[1px] after:bg-white after:transition-all after:duration-300 group-hover:after:w-full">
+//     AI Query Engine
+//     </h1>
+//     <div className="absolute bottom-[-4px] left-0 w-0 h-[1px] bg-white transition-all duration-300 group-hover:w-full"></div>
+//     </div>
+//     <span className="flex flex-col lg:w-[400px] md:w-[311.67px] sm:w-auto text-center justify-center items-center font-normal md:text-[14.79px] sm:text-[14.79px] lg:text-base text-[#ffffff] transition-colors duration-1000 ease-in-out">
+//     <p>
+//     Voyex&apos;s AI query engine trained to provide you accurate tools to get your work 
+//     done. Define your requirements and get tools, guides and workflows.
+//     </p>
+//     </span>
+//     </div>
+
+//         {/* Card 2 */}
+//         <div className="lg:p-10 md:p-[25.71px] sm:p-[25.71px] lg:border md:border-[0.64px] sm:border-[0.64px] border-card lg:rounded-xl md:rounded-[6.43px] sm:rounded-[6.43px] flex flex-col justify-center items-center bg-[#0d0d0d] lg:gap-6 md:gap-[15.43px] sm:gap-[15.43px] transition-all duration-1000 ease-in-out group cursor-pointer">
+//         <div className="p-2.5 w-[52px] flex items-center justify-center lg:rounded-xl md:rounded-[6.43px] sm:rounded-[6.43px] bg-[#ffffff] transition-all duration-1000 ease-in-out ">
+//         <HiOutlineLightBulb className="text-[24px] text-[#0d0d0d] transition-colors duration-1000 ease-in-out " />
+//         </div>
+//         <div className="relative inline-block">
+//         <h1 className="font-bold text-center text-[#ffffff] text-[18px] lg:leading-[23.03px] md:leading-[24.34px] sm:leading-[24.34px] relative after:content-[''] after:absolute after:left-0 after:bottom-[-3px] after:w-0 after:h-[1px] after:bg-white after:transition-all after:duration-300 group-hover:after:w-full">
+//         Workflow Creation
+//         </h1>
+//         <div className="absolute bottom-[-4px] left-0 w-0 h-[1px] bg-white transition-all duration-300 group-hover:w-full"></div>
+//         </div>
+//         <span className="flex flex-col lg:w-[400px] md:w-[311.67px] sm:w-auto text-center justify-center items-center font-normal md:text-[14.79px] sm:text-[14.79px] lg:text-base text-[#ffffff] transition-colors duration-1000 ease-in-out">
+//         <p>
+//         Use the tools like a pro and get work 
+//         done even faster. Prompt recommendation to get accurate results on 
+//         suggested tools.
+//        </p>
+//        </span>
+//        </div> 
+//       </div>
+
+
+//       <div className="relative flex flex-col items-center bg-black p-8 rounded-xl border border-gray-800">
+//       {/* Header Section */}
+//       <div className="w-full flex flex-col items-center">
+//         <div className="flex items-center space-x-4">
+//           <div className="inline-block bg-red-500 text-white text-xs font-semibold px-3 py-1 rounded-full">
+//             Coming Soon
+//           </div>
+//           <h2 className="text-3xl font-bold text-white text-center">
+//             Future of Automation (Agent-based Workflows)
+//           </h2>
+//         </div>
+//       </div>
+
+//       {/* Main Content Section */}
+//       <div className="w-full flex flex-col lg:flex-row lg:justify-between items-center mt-6">
+//         {/* Features List */}
+//         <div className="relative lg:w-1/2 max-h-64 overflow-y-auto scrollbar-thin scrollbar-thumb-gray-600 scrollbar-track-gray-800 space-y-8 text-white">
+//           <ul className="space-y-4 relative">
+//             {/* Side Slider */}
+//             {activeIndex !== null && (
+//               <div
+//                 className="absolute left-0 w-1 bg-purple-500 transition-all duration-300"
+//                 style={{
+//                   top: `${activeIndex * 60}px`,
+//                   height: "40px",
+//                 }}
+//               />
+//             )}
+
+//             {/* List Items */}
+//             {features.map((feature, index) => (
+//               <li
+//                 key={index}
+//                 className="relative group hover-trigger cursor-pointer flex items-center space-x-2"
+//                 onMouseEnter={() => setActiveIndex(index)}
+//                 onMouseLeave={() => setActiveIndex(null)}
+//               >
+//                 <span className="text-lg font-semibold">{feature.title}</span>
+//               </li>
+//             ))}
+//           </ul>
+//         </div>
+
+//         {/* Content Display Card */}
+//         <div
+//           className={`lg:w-1/2 flex justify-center mt-6 lg:mt-0 bg-white text-black p-6 rounded-lg shadow-lg transition-all duration-300 ${
+//             activeIndex !== null ? "opacity-100 scale-100" : "opacity-0 scale-90 hidden"
+//           }`}
+//         >
+//           <p className="text-gray-800">{activeIndex !== null ? features[activeIndex].description : ""}</p>
+//         </div>
+//       </div>
+// </div>
+// </div>
+//   );
+// };
+
+// export default Everythingyouneed;  
+
+
+
 'use client';
-import React, { useState, useEffect } from 'react';
+import React, { useState, useEffect,useRef } from 'react';
 import '../app/globals.css';
 import Image from 'next/image';
 import AOS from 'aos';
@@ -9,171 +193,227 @@ import { HiOutlineLightBulb } from "react-icons/hi2";
 
 const Everythingyouneed = () => {
   const [currentIndex, setCurrentIndex] = useState(0);
-  const [fade, setFade] = useState(true); // Track fade state
+  const [fade, setFade] = useState(true);
+  const [activeIndex, setActiveIndex] = useState(null);
+  const featureRefs = useRef([]);
+  const [indicatorHeight, setIndicatorHeight] = useState(0);
+  const [indicatorTop, setIndicatorTop] = useState(0);
+  const descRefs = useRef([]);
 
-  // Carousel content
-  const carouselContent = [
+  const features = [
     {
       title: "Ask Deeper Questions",
       description: "Uncover insights with advanced AI for thoughtful, impactful decision-making.",
+      image: "/images/deep.jpg",
+      
     },
     {
       title: "Automate Campaigns",
       description: "Automate campaigns to simplify marketing with personalized, data-driven strategies.",
+      image: "/images/auto.jpg",
     },
     {
       title: "Track Performance Metrics",
       description: "Monitor key metrics in real-time for continuous strategic optimization.",
+      image: "/images/track.jpg",
     },
     {
       title: "Run Workflows Using Multiple AI Tools",
       description: "Streamline processes by integrating AI tools for maximum operational efficiency.",
+      image: "/images/run.jpg",
     },
   ];
 
-  // Carousel logic
+
   useEffect(() => {
     AOS.init({ duration: 1000 });
-    const interval = setInterval(() => {
-      setFade(false); // Start fading out
-      setTimeout(() => {
-        setCurrentIndex((prevIndex) => (prevIndex + 1) % carouselContent.length);
-        setFade(true); // Fade in the new content
-      }, 500); // Wait for fade-out before updating index
-    }, 5000); // Change text every 5 seconds (slower speed)
+    const observer = new IntersectionObserver(
+      (entries) => {
+        entries.forEach((entry) => {
+          if (entry.isIntersecting) {
+            // Read the index from data-index
+            const index = Number(entry.target.getAttribute('data-index'));
+            setActiveIndex(index);
+          }
+        });
+      },
+      { threshold: 0.5 }
+    );
+    
+    featureRefs.current.forEach((ref) => {
+      if (ref) observer.observe(ref);
+    });
 
-    return () => clearInterval(interval);
+    return () => {
+      observer.disconnect();
+    };
   }, []);
 
-  // Handle carousel button clicks
-  const handleNext = () => {
-    setCurrentIndex((prevIndex) => (prevIndex + 1) % carouselContent.length);
-  };
+  useEffect(() => {
+    if (activeIndex !== null && descRefs.current[activeIndex]) {
+      const descriptionElement = descRefs.current[activeIndex];
+      const featureElement = featureRefs.current[activeIndex];
 
-  const handlePrevious = () => {
-    setCurrentIndex((prevIndex) => (prevIndex - 1 + carouselContent.length) % carouselContent.length);
-  };
+      if (descriptionElement && featureElement) {
+        setIndicatorHeight(descriptionElement.scrollHeight); // Set height to match the description
+        setIndicatorTop(featureElement.offsetTop); // Set top position to align with the feature
+      }
+    } else {
+      setIndicatorHeight(0);
+      setIndicatorTop(0);
+    }
+  }, [activeIndex]);
 
   return (
-    <div className="flex flex-col lg:gap-10 md:gap-[43px] sm:gap-[43px] justify-center items-center sm:px-4 md:px-0 sm:-mt-[200px] md:-mt-0">
+    <div className="flex flex-col lg:gap-10 md:gap-8 sm:gap-6 justify-center items-center px-4 md:px-0">
       {/* Title Section */}
-      <div className="flex flex-col lg:gap-5 md:gap-[13px] sm:gap-[13px] mt-44 text-center">
-        <h1
-          className="text-[#ffffff] lg:text-[54px] md:text-[38.03px] sm:text-[32px] lg:leading-[60px] md:leading-[38.57px] sm:leading-[38.57px] font-bold"
-          data-aos="fade-up"
-        >
-           Navigate the AI Landscape Easily
+      <div className="flex flex-col lg:gap-5 md:gap-4 sm:gap-3 text-center mt-20">
+        <h1 className="text-white lg:text-[54px] md:text-[38px] sm:text-[32px] font-bold leading-tight"
+            data-aos="fade-up">
+          Navigate the AI Landscape Easily
         </h1>
-        <span className="text-[#ffffff] text-center lg:w-[1044px] md:w-[729px] sm:w-auto sm:px-10 md:px-0 lg:text-[22px] md:text-[15px] sm:text-[15px] font-normal">
-          <p>
-          Find everything you need to get from A to B. Did you check? There must be a tool for it 
-         </p>
-        </span>
+        <p className="text-white lg:text-xl md:text-lg sm:text-base font-normal max-w-[1044px] mx-auto">
+          Find everything you need to get from A to B. Did you check? There must be a tool for it
+        </p>
       </div>
 
       {/* Grid Section */}
-      <div
-        className="grid md:grid-cols-2 sm:grid-cols-1 lg:gap-4 md:gap-[10.28px] sm:gap-[10.28px] sm:w-auto sm:px-4 lg:w-[1144px] md:w-[729px]"
-        data-aos="fade-up"
-      >
+      <div className="grid md:grid-cols-2 sm:grid-cols-1 gap-6 w-full max-w-[1144px] px-4 md:px-6 lg:px-8"
+           data-aos="fade-up">
         {/* Card 1 */}
-<div className="lg:p-10 md:p-[25.71px] sm:p-[25.71px] lg:border md:border-[0.64px] sm:border-[0.64px] border-card lg:rounded-xl md:rounded-[6.43px] sm:rounded-[6.43px] flex flex-col justify-center items-center bg-[#0d0d0d] lg:gap-6 md:gap-[15.43px] sm:gap-[15.43px] transition-all duration-1000 ease-in-out hover:bg-[#ffffff] group cursor-pointer">
-  <div className="p-2.5 w-[52px] flex items-center justify-center lg:rounded-xl md:rounded-[6.43px] sm:rounded-[6.43px] bg-[#ffffff] transition-all duration-1000 ease-in-out">
-    <HiOutlineLightBulb className="text-[24px] text-[#0d0d0d] transition-colors duration-1000 ease-in-out" />
-  </div>
-  <h1 className="font-bold text-center text-[#ffffff] text-[18px] lg:leading-[23.03px] md:leading-[24.34px] sm:leading-[24.34px] underline-offset-4 transition-colors duration-1000 ease-in-out group-hover:text-[#0d0d0d]">
-    AI Query Engine
-  </h1>
-  <p className="flex flex-col lg:w-[400px] md:w-[311.67px] sm:w-auto text-center justify-center items-center font-normal md:text-[14.79px] sm:text-[14.79px] lg:text-base text-[#ffffff] transition-colors duration-1000 ease-in-out group-hover:text-[#0d0d0d]">
-    Voyex&apos;s AI query engine trained to provide you accurate tools to get your work 
-    done. Define your requirements and get tools, guides and workflows.
-  </p>
-</div>
-
-        {/* Card 2 */}
-        <div className="lg:p-10 md:p-[25.71px] sm:p-[25.71px] lg:border md:border-[0.64px] sm:border-[0.64px] border-card lg:rounded-xl md:rounded-[6.43px] sm:rounded-[6.43px] flex flex-col justify-center items-center bg-[#0d0d0d] lg:gap-6 md:gap-[15.43px] sm:gap-[15.43px] transition-all duration-1000 ease-in-out hover:bg-[#ffffff] group cursor-pointer">
-  <div className="p-2.5 w-[52px] flex items-center justify-center lg:rounded-xl md:rounded-[6.43px] sm:rounded-[6.43px] bg-[#ffffff] transition-all duration-1000 ease-in-out ">
-    <HiOutlineLightBulb className="text-[24px] text-[#0d0d0d] transition-colors duration-1000 ease-in-out " />
-  </div>
-  <h1 className="font-bold text-center text-[#ffffff] text-[18px] lg:leading-[23.03px] md:leading-[24.34px] sm:leading-[24.34px] underline-offset-4 transition-colors duration-1000 ease-in-out group-hover:text-[#0d0d0d]">
-    Workflow Creation
-  </h1>
-  <span className="flex flex-col lg:w-[400px] md:w-[311.67px] sm:w-auto text-center justify-center items-center font-normal md:text-[14.79px] sm:text-[14.79px] lg:text-base text-[#ffffff] transition-colors duration-1000 ease-in-out group-hover:text-[#0d0d0d]">
-    <p>
-    Use the tools like a pro and get work 
-    done even faster. Prompt recommendation to get accurate results on 
-    suggested tools.
-    </p>
-  </span>
-</div>
-
-      </div>
-
-      {/* Image Section */}
-      <div
-        className="lg:grid lg:grid-cols-3 lg:gap-2.5 md:gap-[6.43px] md:grid md:grid-cols-2 sm:grid sm:grid-cols-1 sm:gap-2.5 lg:w-[1114px] md:w-[729px] sm:w-[91%] items-center justify-center"
-        data-aos="fade-up"
-      >
-        {/* Static card */}
-        <div className="flex flex-col lg:gap-2 lg:p-4 md:py-[10.93px] md:px-[10.28px] sm:px-[23.03px] border border-card bg-[#0A0A0B] lg:rounded-[13px] md:rounded-[8.36px] sm:rounded-[10px]">
-          <Image
-            src={'/Visual.svg'}
-            alt="holo"
-            width={311}
-            height={242}
-            className="lg:w-[311px] lg:h-[242px] md:w-[199.9px] md:h-[155.55px] sm:w-[263px] sm:h-[206px] sm:mx-auto md:mx-0 message-bubble"
-          />
-          <div className="flex flex-col lg:gap-[9px] md:gap-[5.79px] sm:gap-[5.79px] lg:w-auto md:w-[320.11px] sm:w-[250px] md:mx-0 sm:mx-auto">
-            <h1 className="font-medium text-[#ffffff]">
-              The Future of Automation: Agent-Based Workflows
-            </h1>
-            <p className="text-[#ffffffb3] sm:mb-5 md:mb-0 lg:w-auto sm:w-[90%]">
-              This is just the beginning. We're developing agent-based
-              workflows that will allow you to
-            </p>
+        <div className="p-8 border border-card rounded-xl flex flex-col items-center bg-[#0d0d0d] gap-6 group">
+          <div className="p-2.5 w-[52px] rounded-xl bg-white flex items-center justify-center">
+            <HiOutlineLightBulb className="text-2xl text-black" />
           </div>
+          <div className="relative inline-block">
+            <h2 className="font-bold text-white text-lg text-center">
+              <span className="relative after:content-[''] after:absolute after:left-0 after:bottom-[-3px] 
+                             after:w-0 after:h-[1px] after:bg-white after:transition-all after:duration-300 
+                             group-hover:after:w-full">
+                AI Query Engine
+              </span>
+            </h2>
+          </div>
+          <p className="text-white text-center max-w-[400px]">
+            Voyex&apos;s AI query engine trained to provide you accurate tools to get your work 
+            done. Define your requirements and get tools, guides and workflows.
+          </p>
         </div>
 
-        {/* Carousel card with fade effect */}
-        <div
-  className="flex flex-col items-baseline justify-end 
-    lg:pl-10 lg:gap-2 lg:pb-5 lg:col-span-2 lg:rounded-[13px] lg:w-auto lg:h-[386px] 
-    md:pl-[25.71px] md:gap-2 md:pb-[11.1px] md:col-span-1 md:rounded-[6.43px] md:w-[370.23px] md:h-[304.19px] 
-    sm:pl-[14.32px] sm:gap-[8px] sm:pb-[66.7px] sm:rounded-[6.43px] sm:w-full sm:h-[400px] 
-    border border-card
-    bg-cover bg-no-repeat bg-center transition-all duration-2000 ease-in-out
-    opacity-80 bg-gradient-and-darkstar cursor-pointer"
-  data-aos="fade-up"
->
-
-  <div className="flex flex-row gap-2">
-    <button
-      className="flex justify-center items-center border p-2.5 opacity-[.85] rounded-[35px]"
-      onClick={handlePrevious}
-    >
-      <IoMdArrowForward className="text-[24px] text-[#f4f4f4] rotate-180" />
-    </button>
-    <button
-      className="flex justify-center items-center border p-2.5 opacity-[.85] rounded-[35px]"
-      onClick={handleNext}
-    >
-      <IoMdArrowForward className="text-[24px] text-[#f4f4f4]" />
-    </button>
-  </div>
-  <h1
-    className={`font-medium text-[#ffffff] transition-opacity duration-500 ${fade ? 'opacity-100' : 'opacity-0'}`}
-  >
-    {carouselContent[currentIndex].title}
-  </h1>
-  <p
-    className={`text-[#ffffffb3] lg:w-[322px] md:w-[285.59px] sm:w-full transition-opacity duration-500 ${fade ? 'opacity-100' : 'opacity-0'}`}
-  >
-    {carouselContent[currentIndex].description}
-  </p>
-</div>
-
+        {/* Card 2 */}
+        <div className="p-8 border border-card rounded-xl flex flex-col items-center bg-[#0d0d0d] gap-6 group">
+          <div className="p-2.5 w-[52px] rounded-xl bg-white flex items-center justify-center">
+            <HiOutlineLightBulb className="text-2xl text-black" />
+          </div>
+          <div className="relative inline-block">
+            <h2 className="font-bold text-white text-lg text-center">
+              <span className="relative after:content-[''] after:absolute after:left-0 after:bottom-[-3px] 
+                             after:w-0 after:h-[1px] after:bg-white after:transition-all after:duration-300 
+                             group-hover:after:w-full">
+                Workflow Creation
+              </span>
+            </h2>
+          </div>
+          <p className="text-white text-center max-w-[400px]">
+            Use the tools like a pro and get work done even faster. Prompt recommendation 
+            to get accurate results on suggested tools.
+          </p>
+        </div>
       </div>
+
+    
+      <div className="relative flex flex-col items-center bg-black p-6 rounded-xl border border-gray-800 w-full max-w-[1090px] mt-6">
+  <div className="flex items-center justify-center gap-2 mb-4 flex-col text-center">
+    <h2 className="text-3xl font-bold text-white leading-tight">
+      Future of Automation
+    </h2>
+    <div className="flex items-center gap-2 ml-[8px]">
+      <h3 className="text-base font-medium text-gray-400">
+        (Agent Based Workflows)
+      </h3>
+      <span className="bg-red-500 text-white text-xs font-semibold px-3 py-1 rounded-full">
+        Coming Soon
+      </span>
     </div>
+  </div>
+
+
+  <div className="flex flex-col lg:flex-row w-full gap-8">
+    <div className="lg:w-1/2 relative">
+
+      {/* Side Slider */}
+      {activeIndex !== null && (
+            <div
+              className="absolute transition-all duration-500"
+              style={{
+                top: `${indicatorTop}px`,
+                left: '-20px', // Adjust this value to position the slider beside the description
+                height: `${indicatorHeight}px`,
+                maxHeight:'120px'
+              }}
+            >
+              <div className="w-1 bg-purple-500 h-full"></div>
+            </div>
+          )}
+
+      <ul className="space-y-16">
+      {features.map((feature, index) => (
+  <li
+    key={index}
+    data-index={index}
+    ref={(el) => (featureRefs.current[index] = el)}
+    className="feature-item cursor-pointer pl-6 relative"
+    onMouseEnter={() => setActiveIndex(index)}
+    onMouseLeave={() => setActiveIndex(null)}
+  >
+    
+                  {/* {Title} */}
+    <h3
+                  className={`text-lg font-semibold transition-colors duration-300 ${
+                    activeIndex === index ? "text-black" : "text-white"
+                  }`}
+                >
+                  {feature.title}
+                </h3>
+{/* Title and Description Panel */}
+<div
+  ref={(el) => (descRefs.current[index] = el)}
+  className={`feature-content overflow-hidden transition-all duration-500 ease-in-out bg-[#F4F4F4] rounded-lg p-5 mt-2 ${
+    activeIndex === index ? "max-h-[500px] opacity-100" : "max-h-0 opacity-0"
+  }`}
+  style={{
+    maxHeight: activeIndex === index ? `${descRefs.current[index]?.scrollHeight}px` : "0",
+  }}
+>
+  <h3
+    className={`text-lg font-semibold transition-colors duration-300 ${
+      activeIndex === index ? "text-black" : "text-white"
+    }`}
+  >
+    {feature.title}
+  </h3>
+  <p className="text-[#0A0A0B] text-lg mt-2">{feature.description}</p>
+</div>
+              </li>
+            ))}
+      </ul>
+    </div>
+
+    {/* Dynamic Image Section */}
+    <div className="lg:w-1/2 flex justify-center items-center">
+          <Image
+            src={activeIndex !== null ? features[activeIndex].image : "/images/auto.jpg"} // Default image if no feature is hovered
+            alt={activeIndex !== null ? features[activeIndex].title : "Default Image"}
+            width={500}
+            height={200}
+            className="rounded-lg border-4 border-t-white transition-all duration-500 ease-in-out"
+          />
+    </div>
+   
+  </div>
+</div>
+</div>
+  
   );
 };
 

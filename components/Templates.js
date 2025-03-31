@@ -64,6 +64,7 @@
 // export default Templates;
 
 
+
 'use client'
 // Templates Component with Micro-Interactions
 import React, { useEffect } from 'react';
@@ -85,7 +86,6 @@ const Templates = () => {
       <div className="flex flex-col lg:gap-6 md:gap-[17.12px] sm:gap-[17.12px] justify-center items-center">
         {/* Heading Section */}
         <div className='flex flex-col items-center justify-center md:gap-[5.71px] lg:gap-2 sm:gap-[5.71px]'>
-          <p className="text-[#C088fb] font-medium text-[18.44px]">Use Templates</p>
           <h1 
             className="text-[#ffffff] font-medium lg:text-5xl md:text-[34.25px] sm:text-[32px] text-center"
             data-aos="zoom-in"
@@ -105,12 +105,15 @@ const Templates = () => {
         </div>
 
         {/* Button */}
-        <button 
-  className="bg-[#C088FB] text-black font-medium lg:px-9 md:px-[24.97px] sm:px-[24.97px] sm:py-[10px] lg:py-2.5 md:py-[10px] flex justify-center items-center lg:gap-2.5 md:gap-2 sm:gap-2 rounded-3xl transition-transform duration-300 md:w-auto lg:max-w-[239px] sm:w-[236px] hover:scale-105 "
-  data-aos="fade-up"
->
-  See All Templates
-</button>
+        <a href="https://voyex-app-dev-delta.vercel.app/templates">
+  <button 
+    className="bg-[#C088FB] text-black font-medium lg:px-9 md:px-[24.97px] sm:px-[24.97px] sm:py-[10px] lg:py-2.5 md:py-[10px] flex justify-center items-center lg:gap-2.5 md:gap-2 sm:gap-2 rounded-3xl transition-transform duration-300 md:w-auto lg:max-w-[239px] sm:w-[236px] hover:scale-105"
+    data-aos="fade-up"
+  >
+    See All Templates
+  </button>
+</a>
+
       </div>
 
       {/* Card Component */}
