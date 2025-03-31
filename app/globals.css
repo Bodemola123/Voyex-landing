@@ -1,0 +1,229 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+
+body {
+
+  width: 100%;
+  height: 100%;
+  font-family: 'DMSans', 'MyFont', sans-serif;
+  margin: 0;
+  padding: 0;
+  -webkit-text-size-adjust: 100%;
+  overflow-x: hidden;
+  /* Use MyFont with a fallback to sans-serif */
+}
+@font-face {
+  font-family: 'MyFont'; /* Custom name for the local font */
+  src: url('/fonts/FKGroteskNeueTrial-Regular-BF6576818c3af74.otf') format('opentype'); /* Path to the font file */
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'DMSans'; /* Name for the DM Sans font */
+  src: url('https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;700&display=swap'); /* Google Fonts URL */
+  font-weight: 400 700; /* Range of weights available */
+  font-style: normal; /* Normal style */
+}
+
+
+*, *::before, *::after {
+  box-sizing: border-box;
+}
+
+
+/* Hide scrollbar for WebKit browsers */
+.scrollbar-hide::-webkit-scrollbar {
+  display: none; /* Hide scrollbar */
+}
+
+/* Hide scrollbar for Firefox */
+.scrollbar-hide {
+  scrollbar-width: none; /* Hide scrollbar in Firefox */
+}
+
+/* Optional: Add smooth scroll behavior */
+.scroll-container {
+  overflow-y: auto; /* Allow vertical scrolling */
+  scroll-behavior: smooth; /* Smooth scrolling */
+}
+
+.border-card {
+  --tw-border-opacity: 1;
+  border-color: rgb(49 49 49 / var(--tw-border-opacity)) /* #313131 */;
+}
+.bg-custom-gradient {
+  background-image: linear-gradient(90.83deg, rgba(0, 167, 102, 0.1) 0%, rgba(153, 153, 153, 0.1) 100%);
+}
+.backdrop-blur-custom {
+  --tw-backdrop-blur: blur(9.3px);
+  -webkit-backdrop-filter: var(--tw-backdrop-blur) var(--tw-backdrop-brightness) var(--tw-backdrop-contrast) var(--tw-backdrop-grayscale) var(--tw-backdrop-hue-rotate) var(--tw-backdrop-invert) var(--tw-backdrop-opacity) var(--tw-backdrop-saturate) var(--tw-backdrop-sepia);
+  backdrop-filter: var(--tw-backdrop-blur) var(--tw-backdrop-brightness) var(--tw-backdrop-contrast) var(--tw-backdrop-grayscale) var(--tw-backdrop-hue-rotate) var(--tw-backdrop-invert) var(--tw-backdrop-opacity) var(--tw-backdrop-saturate) var(--tw-backdrop-sepia);
+}
+
+.glow-gradient {
+  background-image: linear-gradient(180deg, rgba(140, 69, 255, 0.8),rgba(140, 69, 255, 0.6) 50%, rgba(0, 0, 0, 0));
+  filter: blur(30px);
+}
+
+.lazy-load {
+  opacity: 0;
+  transition: opacity 0.5s ease-in-out; /* Fade-in and fade-out transition */
+}
+
+.fade-in {
+  opacity: 1;
+}
+
+.fade-out {
+  opacity: 0;
+}
+/* Hover scale and shadow effect */
+.hover-scale {
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.hover-scale:hover {
+  transform: scale(1.05);
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
+}
+
+/* Text underline hover effect */
+.underline-hover {
+  position: relative;
+}
+
+.underline-hover::after {
+  content: '';
+  position: absolute;
+  width: 0;
+  height: 2px;
+  background-color: #ffffff;
+  bottom: 0;
+  left: 0;
+  transition: width 0.3s ease;
+}
+
+.underline-hover:hover::after {
+  width: 100%;
+}
+/* Add to your global styles or component CSS */
+.rotate-infinite {
+  animation: rotate 10s linear infinite;
+}
+
+@keyframes rotate {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
+@keyframes shake {
+  0% { transform: translateX(0); }
+  25% { transform: translateX(-5px); }
+  50% { transform: translateX(5px); }
+  75% { transform: translateX(-5px); }
+  100% { transform: translateX(0); }
+}
+
+.cursor-shake {
+  animation: shake 4s ease-in-out infinite;
+}
+
+@keyframes bubbleEffect {
+  0% {
+    transform: translateY(0);
+    opacity: 1;
+  }
+  50% {
+    transform: translateY(-20px);
+    opacity: 1;
+  }
+  100% {
+    transform: translateY(0);
+    opacity: 1;
+  }
+}
+
+.message-bubble {
+  animation: bubbleEffect 2s ease-in-out infinite;
+}
+
+@keyframes explode {
+  0% {
+    transform: scale(1);
+  }
+  50% {
+    transform: scale(1.5); /* Exploding effect */
+  }
+  100% {
+    transform: scale(1);
+    opacity: 0;
+  }
+}
+
+.explode-animation {
+  animation: explode 0.8s ease-out forwards;
+}
+
+.animate-1 {
+  animation: spin 50s linear infinite;
+}
+.animate-2 {
+  animation: spin 70s linear infinite;
+}
+.animate-3 {
+  animation: spin 90s linear infinite;
+}
+
+@keyframes spin {
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+.blinking-caret {
+  display: inline-block;
+  width: 2px; /* Thin, like a real typing cursor */
+  height: 0.7em;
+  background-color: white; /* Same color as the text */
+  animation: blink 0.8s steps(2, start) infinite;
+  margin-left: 2px; /* Small spacing for visual clarity */
+}
+
+@keyframes blink {
+  0%, 100% {
+    opacity: 1; /* Fully visible */
+  }
+  50% {
+    opacity: 0; /* Vanishes in the middle of the animation */
+  }
+
+}
+  .sponsorship-container {
+    background: rgba(0, 0, 0, 0.8); /* Dark semi-transparent background */
+    border: 2px solid rgba(128, 0, 128, 0.5); /* Neon purple border */
+    border-radius: 15px;
+    box-shadow: 
+      0 0 5px rgba(128, 0, 255, 1), 
+      0 0 10px rgba(128, 0, 255, 0.8), 
+      0 0 20px rgba(128, 0, 255, 0.6); /* Multi-layered neon glow */
+    transition: box-shadow 0.3s ease-in-out, transform 0.3s ease-in-out;
+  }
+  
+  .sponsorship-container:hover {
+    transform: scale(1.03); /* Slight hover zoom effect */
+    box-shadow: 
+      0 0 15px rgba(128, 0, 255, 1), 
+      0 0 30px rgba(128, 0, 255, 0.8), 
+      0 0 45px rgba(128, 0, 255, 0.6); /* Stronger glow on hover */
+  }
+  
+  .text-neon {
+    color: #ffffff;
+  }
+  
