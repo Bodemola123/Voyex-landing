@@ -55,7 +55,7 @@ const Everythingyouneed = () => {
   };
 
   return (
-    <div className="flex flex-col lg:gap-16 md:gap-[43px] sm:gap-[43px] justify-center items-center sm:px-4 md:px-0 sm:-mt-[200px] md:-mt-0">
+    <div className="flex flex-col lg:gap-10 md:gap-[43px] sm:gap-[43px] justify-center items-center sm:px-4 md:px-0 sm:-mt-[200px] md:-mt-0">
       {/* Title Section */}
       <div className="flex flex-col lg:gap-5 md:gap-[13px] sm:gap-[13px] mt-44 text-center">
         <h1
@@ -108,7 +108,7 @@ const Everythingyouneed = () => {
 
       {/* Image Section */}
       <div
-        className="lg:grid lg:grid-cols-3 lg:gap-2.5 md:gap-[6.43px] md:grid md:grid-cols-2 sm:grid sm:grid-cols-1 sm:gap-2.5 lg:max-w-[1144px] md:max-w-[729px] sm:w-[91%] md:w-auto items-center justify-center"
+        className="lg:grid lg:grid-cols-3 lg:gap-2.5 md:gap-[6.43px] md:grid md:grid-cols-2 sm:grid sm:grid-cols-1 sm:gap-2.5 lg:w-[1114px] md:w-[729px] sm:w-[91%] items-center justify-center"
         data-aos="fade-up"
       >
         {/* Static card */}
@@ -139,7 +139,7 @@ const Everythingyouneed = () => {
     sm:pl-[14.32px] sm:gap-[8px] sm:pb-[66.7px] sm:rounded-[6.43px] sm:w-full sm:h-[400px] 
     border border-card
     bg-cover bg-no-repeat bg-center transition-all duration-2000 ease-in-out
-    bg-[#0a0a0b] opacity-100 hover:opacity-80 hover:bg-gradient-and-darkstar cursor-pointer"
+    opacity-80 bg-gradient-and-darkstar cursor-pointer"
   data-aos="fade-up"
 >
 
