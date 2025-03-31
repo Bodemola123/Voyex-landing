@@ -111,6 +111,7 @@ const Templates = () => {
 >
   See All Templates
 </button>
+
       </div>
 
       {/* Card Component */}

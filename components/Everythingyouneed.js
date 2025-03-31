@@ -62,7 +62,9 @@ const Everythingyouneed = () => {
           className="text-[#ffffff] lg:text-[54px] md:text-[38.03px] sm:text-[32px] lg:leading-[60px] md:leading-[38.57px] sm:leading-[38.57px] font-bold"
           data-aos="fade-up"
         >
+
            Navigate the AI Landscape Easily
+
         </h1>
         <span className="text-[#ffffff] text-center lg:w-[1044px] md:w-[729px] sm:w-auto sm:px-10 md:px-0 lg:text-[22px] md:text-[15px] sm:text-[15px] font-normal">
           <p>
@@ -77,6 +79,7 @@ const Everythingyouneed = () => {
         data-aos="fade-up"
       >
         {/* Card 1 */}
+
 <div className="lg:p-10 md:p-[25.71px] sm:p-[25.71px] lg:border md:border-[0.64px] sm:border-[0.64px] border-card lg:rounded-xl md:rounded-[6.43px] sm:rounded-[6.43px] flex flex-col justify-center items-center bg-[#0d0d0d] lg:gap-6 md:gap-[15.43px] sm:gap-[15.43px] transition-all duration-1000 ease-in-out hover:bg-[#ffffff] group cursor-pointer">
   <div className="p-2.5 w-[52px] flex items-center justify-center lg:rounded-xl md:rounded-[6.43px] sm:rounded-[6.43px] bg-[#ffffff] transition-all duration-1000 ease-in-out">
     <HiOutlineLightBulb className="text-[24px] text-[#0d0d0d] transition-colors duration-1000 ease-in-out" />
@@ -88,6 +91,7 @@ const Everythingyouneed = () => {
     Voyex&apos;s AI query engine trained to provide you accurate tools to get your work 
     done. Define your requirements and get tools, guides and workflows.
   </p>
+
 </div>
 
         {/* Card 2 */}
@@ -95,14 +99,17 @@ const Everythingyouneed = () => {
   <div className="p-2.5 w-[52px] flex items-center justify-center lg:rounded-xl md:rounded-[6.43px] sm:rounded-[6.43px] bg-[#ffffff] transition-all duration-1000 ease-in-out ">
     <HiOutlineLightBulb className="text-[24px] text-[#0d0d0d] transition-colors duration-1000 ease-in-out " />
   </div>
+
   <h1 className="font-bold text-center text-[#ffffff] text-[18px] lg:leading-[23.03px] md:leading-[24.34px] sm:leading-[24.34px] underline-offset-4 transition-colors duration-1000 ease-in-out group-hover:text-[#0d0d0d]">
     Workflow Creation
   </h1>
   <span className="flex flex-col lg:w-[400px] md:w-[311.67px] sm:w-auto text-center justify-center items-center font-normal md:text-[14.79px] sm:text-[14.79px] lg:text-base text-[#ffffff] transition-colors duration-1000 ease-in-out group-hover:text-[#0d0d0d]">
     <p>
+
     Use the tools like a pro and get work 
     done even faster. Prompt recommendation to get accurate results on 
     suggested tools.
+
     </p>
   </span>
 </div>
