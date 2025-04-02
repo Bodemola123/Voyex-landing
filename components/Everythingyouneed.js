@@ -184,6 +184,7 @@
 
 'use client';
 import React, { useState, useEffect,useRef } from 'react';
+import dynamic from 'next/dynamic';
 import '../app/globals.css';
 import Image from 'next/image';
 import AOS from 'aos';
@@ -204,23 +205,22 @@ const Everythingyouneed = () => {
     {
       title: "Ask Deeper Questions",
       description: "Uncover insights with advanced AI for thoughtful, impactful decision-making.",
-      image: "/images/deep.jpg",
       
     },
     {
       title: "Automate Campaigns",
       description: "Automate campaigns to simplify marketing with personalized, data-driven strategies.",
-      image: "/images/auto.jpg",
+     
     },
     {
       title: "Track Performance Metrics",
       description: "Monitor key metrics in real-time for continuous strategic optimization.",
-      image: "/images/track.jpg",
+      
     },
     {
       title: "Run Workflows Using Multiple AI Tools",
       description: "Streamline processes by integrating AI tools for maximum operational efficiency.",
-      image: "/images/run.jpg",
+     
     },
   ];
 
@@ -295,7 +295,7 @@ const Everythingyouneed = () => {
             </h2>
           </div>
           <p className="text-white text-center max-w-[400px]">
-            Voyex&apos;s AI query engine trained to provide you accurate tools to get your work 
+            Trained to provide you accurate tools to get your work 
             done. Define your requirements and get tools, guides and workflows.
           </p>
         </div>
@@ -310,7 +310,7 @@ const Everythingyouneed = () => {
               <span className="relative after:content-[''] after:absolute after:left-0 after:bottom-[-3px] 
                              after:w-0 after:h-[1px] after:bg-white after:transition-all after:duration-300 
                              group-hover:after:w-full">
-                Workflow Creation
+                Prompt Recommendation Engine 
               </span>
             </h2>
           </div>
@@ -322,12 +322,12 @@ const Everythingyouneed = () => {
       </div>
 
     
-      <div className="relative flex flex-col items-center bg-black p-6 rounded-xl border border-gray-800 w-full max-w-[1090px] mt-6">
-  <div className="flex items-center justify-center gap-2 mb-4 flex-col text-center">
+      <div className="relative flex flex-col lg:flex-row items-center p-6 rounded-xl border border-gray-800 bg-[#0d0d0d] w-full max-w-[1090px] mt-[-18px]" data-aos="fade-up">
+      <div className="flex flex-col items-start justify-center ml-10 lg:w-1/2 text-left">
     <h2 className="text-3xl font-bold text-white leading-tight">
       Future of Automation
     </h2>
-    <div className="flex items-center gap-2 ml-[8px]">
+    <div className="flex items-center gap-2 mt-2">
       <h3 className="text-base font-medium text-gray-400">
         (Agent Based Workflows)
       </h3>
@@ -337,9 +337,11 @@ const Everythingyouneed = () => {
     </div>
   </div>
 
-
+{/* 
   <div className="flex flex-col lg:flex-row w-full gap-8">
-    <div className="lg:w-1/2 relative">
+    <div className="lg:w-1/2 relative"> */}
+    {/* Right Section: Features List */}
+  <div className="flex flex-col lg:w-1/2 relative">
 
       {/* Side Slider */}
       {activeIndex !== null && (
@@ -399,22 +401,11 @@ const Everythingyouneed = () => {
       </ul>
     </div>
 
-    {/* Dynamic Image Section */}
-    <div className="lg:w-1/2 flex justify-center items-center">
-          <Image
-            src={activeIndex !== null ? features[activeIndex].image : "/images/auto.jpg"} // Default image if no feature is hovered
-            alt={activeIndex !== null ? features[activeIndex].title : "Default Image"}
-            width={500}
-            height={200}
-            className="rounded-lg border-4 border-t-white transition-all duration-500 ease-in-out"
-          />
-    </div>
-   
   </div>
 </div>
-</div>
+
   
   );
 };
 
-export default Everythingyouneed;
+export default dynamic(() => Promise.resolve(Everythingyouneed), { ssr: false });

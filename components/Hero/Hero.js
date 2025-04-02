@@ -85,7 +85,7 @@ const Hero = () => {
               Your Google for AI
             </p>
             <h1
-              className="lg:text-[165px] md:text-[98.67px] sm:text-[58.88px] sm:font-bold md:font-bold lg:font-black leading-tight text-[#ffffff] z-20 lg:-mt-10"
+              className="lg:text-[165px] md:text-[98.67px] sm:text-[58.88px] sm:font-bold md:font-bold lg:font-black leading-[1.1] text-[#ffffff] z-20 lg:-mt-10"
               style={{ textShadow: "4px 4px 8px rgba(0,0,0,0.8)" }}
             >
               Ideas Into<br />Workflow

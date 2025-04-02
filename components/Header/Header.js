@@ -21,7 +21,7 @@ const Header = () => {
       <Link href="/" className="font-bold text-5xl text-white">Voyex.</Link>
 
       {/* Desktop Navigation */}
-      <div className="hidden lg:flex md:flex text-sm font-medium gap-8 py-2 px-[48px] border border-card rounded-[43px]">
+      <div className="hidden lg:flex md:flex text-sm font-semibold gap-10 py-3 px-[60px] border border-card rounded-[43px]">
         <Link href="/pricing" className={`${isActive("/pricing")} hover:text-[#C088fb]`}>Pricing</Link>
         <Link href="/contact-us" className={`${isActive("/contact-us")} hover:text-[#C088fb]`}>Contact Us</Link>
         <Link href="/about-us" className={`${isActive("/about-us")} hover:text-[#C088fb]`}>About us</Link>

@@ -6,7 +6,7 @@ const Playmode = () => {
   return (
     <div className='relative z-50 flex flex-col justify-center h-screen gap-4 items-center md:mt-[100px] sm:-mt-[20px] rounded-[18px] mx-auto'  style={{ backgroundColor: "black" }}>
      
-     <div className="relative text-center text-[#ffffff] lg:h-[50px] md:h-[38.03px] sm:h-[34px] text-4xl font-semibold">
+     <div className="relative text-center text-[#ffffff] lg:h-[50px] md:h-[38.03px] sm:h-[34px] text-6xl font-bold">
         How Voyex Works
       </div>
 

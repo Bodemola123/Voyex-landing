@@ -63,11 +63,7 @@ body {
   backdrop-filter: var(--tw-backdrop-blur) var(--tw-backdrop-brightness) var(--tw-backdrop-contrast) var(--tw-backdrop-grayscale) var(--tw-backdrop-hue-rotate) var(--tw-backdrop-invert) var(--tw-backdrop-opacity) var(--tw-backdrop-saturate) var(--tw-backdrop-sepia);
 }
 
-.glow-gradient {
-  background-image: linear-gradient(180deg, rgba(140, 69, 255, 0.8), rgba(140, 69, 255, 0.6) 50%, rgba(0, 0, 0, 0));
-  filter: blur(20px); /* Add a slight blur to the gradient */
 
-}
 
 .lazy-load {
   opacity: 0;
@@ -203,32 +199,7 @@ body {
   50% {
     opacity: 0; /* Vanishes in the middle of the animation */
   }
-
 }
-  .sponsorship-container {
-    background: rgba(0, 0, 0, 0.8); /* Dark semi-transparent background */
-    border: 2px solid rgba(128, 0, 128, 0.5); /* Neon purple border */
-    border-radius: 15px;
-    box-shadow: 
-      0 0 5px rgba(128, 0, 255, 1), 
-      0 0 10px rgba(128, 0, 255, 0.8), 
-      0 0 20px rgba(128, 0, 255, 0.6); /* Multi-layered neon glow */
-    transition: box-shadow 0.3s ease-in-out, transform 0.3s ease-in-out;
-  }
-  
-  .sponsorship-container:hover {
-    transform: scale(1.03); /* Slight hover zoom effect */
-    box-shadow: 
-      0 0 15px rgba(128, 0, 255, 1), 
-      0 0 30px rgba(128, 0, 255, 0.8), 
-      0 0 45px rgba(128, 0, 255, 0.6); /* Stronger glow on hover */
-  }
-  
-  .text-neon {
-    color: #ffffff;
-  }
-  
-
 
  
 
@@ -282,3 +253,31 @@ body {
   .feature-content:hover::-webkit-scrollbar-thumb {
     background: #555;
   }
+
+  /* @keyframes fadeIn {
+    from {
+      opacity: 0;
+    }
+    to {
+      opacity: 1;
+    }
+  } */
+  
+  /* .animate-fadeIn {
+    animation: fadeIn 1s ease-in-out forwards;
+  }
+  
+  /* Optional: Define fadeOut if you plan to unmount the component with a fade-out effect
+  @keyframes fadeOut {
+    from {
+      opacity: 1;
+    }
+    to {
+      opacity: 0;
+    }
+  }
+  
+  .animate-fadeOut {
+    animation: fadeOut 1s ease-in-out forwards;
+  }
+  */ 
