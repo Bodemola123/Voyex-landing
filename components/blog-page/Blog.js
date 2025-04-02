@@ -70,7 +70,7 @@ export default function Blog() {
   };
 
   return (
-    <div className="p-6 text-white min-h-screen">
+    <div className="py-6 px-10 text-white min-h-screen">
       {!selectedItem ? (
         <>
           {/* Category & View Toggle for Large Screens */}
