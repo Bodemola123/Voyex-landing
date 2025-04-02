@@ -18,7 +18,7 @@ const Header = () => {
 
   return (
     <div className="flex justify-between items-center sm:h-[72px] lg:px-[24px] md:px-[24px] sm:px-[24px] z-40">
-      <Link href="/" className="font-bold text-2xl text-white">Voyex.</Link>
+      <Link href="/" className="font-bold text-5xl text-white">Voyex.</Link>
 
       {/* Desktop Navigation */}
       <div className="hidden lg:flex md:flex text-sm font-medium gap-8 py-2 px-[48px] border border-card rounded-[43px]">

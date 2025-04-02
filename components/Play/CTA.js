@@ -60,20 +60,29 @@ const CTA = () => {
         Are You an AI Tool Developer or Product Owner?
       </h1>
 
-      <p
-        className="lg:text-base md:text-[13px] sm:text-sm lg:w-[1024px] md:w-[622.93px] text-center text-[#ffffffb3] sm:w-auto md:px-0 hover:scale-105 transition-transform duration-300"
-      >
-        Don&apos;t miss out on the momentum with Voyex. List your product or tool today and be part of the AI revolution.{' '}
-        <strong style={{ fontWeight: 'bold' }}>
-          We&apos;re offering free listing opportunities
-        </strong>{' '}
-        for our first few partners. Voyex acts as the Google for AI—don&apos;t let your tool go unnoticed. By partnering
-        with us, your tool becomes a key part of our workflow recommendations, ensuring it reaches users who need it
-        most.
-      </p>
+      <p className="lg:text-base md:text-[13px] sm:text-sm lg:w-[1024px] md:w-[622.93px] text-center text-[#ffffffb3] sm:w-auto md:px-0 hover:scale-105 transition-transform duration-300">
+  <ul className="list-disc list-inside flex flex-col gap-4 text-center">
+    <li className="leading-relaxed">
+      Don&apos;t miss out on the momentum with Voyex. List your product or tool today and be part of the AI revolution.
+    </li>
+    <li className="leading-relaxed">
+      <strong style={{ fontWeight: 'bold' }}>
+        We&apos;re offering free listing opportunities
+      </strong>{' '}
+      for our first few partners.
+    </li>
+    <li className="leading-relaxed">
+      <strong>Get Discovered:</strong> Voyex acts as the Google for AI—don&apos;t let your tool go unnoticed.
+    </li>
+    <li className="leading-relaxed">
+      By partnering with us, your tool becomes a key part of our workflow recommendations, ensuring it reaches users who need it most.
+    </li>
+  </ul>
+</p>
 
       <button
-        className="lg:mt-[55px] md:mt-[15px] sm:mt-[5px] sm:mb-2 md:mb-0 lg:rounded-[27px] md:rounded-[16.43px] sm:rounded-[23px] flex font-medium bg-[#f4f4f4] text-[#032400] lg:px-[35px] md:px-[21.29px] sm:px-[21.29px] sm:py-3 lg:py-2.5 md:py-3 lg:gap-2.5 md:gap-[6.08px] sm:gap-[6.08px] hover:scale-105  hover:bg-gradient-to-r hover:from-[#e4e4e4] hover:to-[#ffffff] transition-all duration-300"
+        className="lg:mt-[3y
+        0px] md:mt-[10px] sm:mt-[0px] sm:mb-2 md:mb-0 lg:rounded-[27px] md:rounded-[16.43px] sm:rounded-[23px] flex font-medium bg-[#f4f4f4] text-[#032400] lg:px-[35px] md:px-[21.29px] sm:px-[21.29px] sm:py-3 lg:py-2.5 md:py-3 lg:gap-2.5 md:gap-[6.08px] sm:gap-[6.08px] hover:scale-105  hover:bg-gradient-to-r hover:from-[#e4e4e4] hover:to-[#ffffff] transition-all duration-300"
       >
         Get started
       </button>

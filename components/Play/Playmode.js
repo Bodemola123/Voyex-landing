@@ -5,8 +5,9 @@ import '../././../app/globals.css';
 const Playmode = () => {
   return (
     <div className='relative z-50 flex flex-col justify-center h-screen gap-4 items-center md:mt-[100px] sm:-mt-[20px] rounded-[18px] mx-auto'  style={{ backgroundColor: "black" }}>
-      <div className="relative text-center text-[#ffffff] lg:h-[54px] md:h-[38.03px] sm:h-[32px]">
-        
+     
+     <div className="relative text-center text-[#ffffff] lg:h-[50px] md:h-[38.03px] sm:h-[34px] text-4xl font-semibold">
+        How Voyex Works
       </div>
 
       <div

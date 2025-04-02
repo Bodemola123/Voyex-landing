@@ -228,3 +228,57 @@ body {
     color: #ffffff;
   }
   
+
+
+ 
+
+  .feature-item {
+    position: relative;
+    overflow: hidden;
+  }
+  
+  .feature-content {
+    max-height: 0;
+    opacity: 0;
+    transition: max-height 300ms ease-out, opacity 300ms ease-out, padding 300ms ease-out;
+    background: #F4F4F4;
+    border-radius: 8px;
+    margin-top: 8px;
+    display: inline-block;
+    width: fit-content;
+    max-width: 90%;
+  }
+  
+  .feature-item:hover .feature-content {
+    max-height: 10px;
+    opacity: 1;
+    padding: 30px;
+  }
+  
+  .feature-indicator {
+    width: 2px;
+    background: #8C45FF;
+    position: absolute;
+    left: -16px;
+    height: 0;
+    transition: height 300ms ease-out;
+  }
+  
+  .feature-item:hover .feature-indicator {
+    height: 100%;
+  }
+
+  .feature-content::-webkit-scrollbar {
+    width: 8px;
+    transition: background-color 0.5s;
+  }
+  
+  .feature-content::-webkit-scrollbar-thumb {
+    background: #888;
+    border-radius: 4px;
+    transition: background-color 0.5s;
+  }
+  
+  .feature-content:hover::-webkit-scrollbar-thumb {
+    background: #555;
+  }
