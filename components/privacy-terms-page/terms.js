@@ -33,36 +33,6 @@ const Privacy = () => {
       {/* Centered Content */}
       <div className="flex-grow flex items-center justify-center">
         <div className="max-w-3xl w-full px-6 text-center">
-          
-          {/* Language Selector (Dropdown) */}
-          <div className="flex justify-center mb-2 relative" ref={dropdownRef}>
-            <button
-              className="bg-[#343434] text-white px-4 py-2 rounded-full text-sm flex items-center justify-center gap-2 shadow-md border border-[#3c3c3c]"
-              onClick={() => setIsOpen(!isOpen)}
-            >
-              {selectedLanguage}
-            </button>
-
-            {/* Dropdown with Smooth Transition */}
-            <div
-              className={`absolute top-[42px] left-0 w-full bg-[#343434] border border-[#3c3c3c] rounded-lg shadow-lg z-50 transition-all duration-300 ease-in-out overflow-hidden ${
-                isOpen ? "opacity-100 max-h-60" : "opacity-0 max-h-0"
-              }`}
-            >
-              {languages.map((lang, index) => (
-                <button
-                  key={index}
-                  className="block w-full text-left px-4 py-2 text-white hover:bg-[#454545] transition-all duration-200"
-                  onClick={() => {
-                    setSelectedLanguage(lang);
-                    setIsOpen(false);
-                  }}
-                >
-                  {lang}
-                </button>
-              ))}
-            </div>
-          </div>
 
           {/* Published Date */}
           <p className="text-400 text-sm mt-6">Published: 27 February, 2025</p>

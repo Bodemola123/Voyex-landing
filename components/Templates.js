@@ -84,6 +84,15 @@ const Templates = () => {
     data-aos="fade-up"
     >
       <div className="flex flex-col lg:gap-6 md:gap-[17.12px] sm:gap-[17.12px] justify-center items-center">
+
+         {/* "Use Templates" Button */}
+         <button 
+          className="bg-[#131314] text-[#F4F4F4] font-medium px-6 py-2 rounded-full text-sm shadow-md hover transition-all duration-300 mt-2"
+          data-aos="fade-up"
+        >
+          Use Templates
+        </button>
+
         {/* Heading Section */}
         <div className='flex flex-col items-center justify-center md:gap-[5.71px] lg:gap-2 sm:gap-[5.71px]'>
           <h1 
@@ -104,22 +113,23 @@ const Templates = () => {
           </span>
         </div>
 
-        {/* Button */}
-        <a href="https://voyex-app-dev-delta.vercel.app/templates">
+      </div>
+
+      {/* Card Component */}
+      <div className="lg:mt-2 md:mt-[37.81px] sm:mt-[37.81px] flex items-center justify-center sm:px-0 md:px-2 lg:px-0">
+        <Card />
+      </div>
+
+       {/* Button */}
+       <a href="https://voyex-app-dev-delta.vercel.app/templates">
   <button 
-    className="bg-[#C088FB] text-black font-medium lg:px-9 md:px-[24.97px] sm:px-[24.97px] sm:py-[10px] lg:py-2.5 md:py-[10px] flex justify-center items-center lg:gap-2.5 md:gap-2 sm:gap-2 rounded-3xl transition-transform duration-300 md:w-auto lg:max-w-[239px] sm:w-[236px] hover:scale-105"
+    className="text-[#C088FB] bg-transparent font-medium lg:text-lg md:text-base sm:text-base flex justify-center items-center transition-transform duration-300 hover:scale-105"
     data-aos="fade-up"
   >
     See All Templates
   </button>
 </a>
 
-      </div>
-
-      {/* Card Component */}
-      <div className="lg:mt-14 md:mt-[37.81px] sm:mt-[37.81px] flex items-center justify-center sm:px-0 md:px-2 lg:px-0">
-        <Card />
-      </div>
     </div>
   );
 };
