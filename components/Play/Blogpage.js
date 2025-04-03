@@ -86,7 +86,7 @@ const Blog = () => {
       {/* "Read More Blog Stories" Link */}
       <div className="mt-8">
         <a
-          href="#"
+          href="/blog"
           className="text-[#C088FB] text-md font-medium hover:underline"
         >
           Read More blog stories

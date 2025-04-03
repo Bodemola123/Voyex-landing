@@ -6,15 +6,10 @@ const CircularRings = () => {
   const canvasRef = useRef(null);
   const [screenSize, setScreenSize] = useState(0);
   const images = [
-     "/Mercuryy.webp",
-     "/Venuss.webp",
      "/Earthh.webp",
     "/Marss.webp",
-    "/Jupiterr.webp",
     "/Saturnn.webp",
-    "/Uranuss.webp",
-    "/Neptunee.webp",
-    "/Plutoo.webp",
+    "/Mercuryy.webp",
   ];
 
   useEffect(() => {
@@ -50,24 +45,28 @@ const CircularRings = () => {
     const centerX = canvas.width / 2;
     const centerY = canvas.height / 2;
 
-    let ringCount = 2;
+    // let ringCount = 2;
+    // let ringSpacing = 110;
+    // let baseRadius = 120;
+    const ringCount = images.length;
     let ringSpacing = 110;
     let baseRadius = 120;
 
     if (screenSize >= 768) {
-      ringCount = 4;
+      // ringCount = 4;
       ringSpacing = 120;
       baseRadius = 150;
     }
 
     if (screenSize >= 1024) {
-      ringCount = 4;
+      // ringCount = 4;
       ringSpacing = 130;
       baseRadius = 160;
     }
 
     const items = images.map((src, index) => {
-      const ringIndex = Math.floor(Math.random() * ringCount) + 1;
+      // const ringIndex = Math.floor(Math.random() * ringCount) + 1;
+      const ringIndex = index + 1;
       const angle = Math.random() * Math.PI * 2;
       const radius = ringIndex * ringSpacing + baseRadius;
       const speed = 0.005 + Math.random() * 0.001;
