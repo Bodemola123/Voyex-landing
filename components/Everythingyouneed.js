@@ -529,7 +529,7 @@ const Everythingyouneed = () => {
           className="relative flex flex-col items-center p-6 rounded-xl border border-gray-800 bg-[#0d0d0d] w-full max-w-[987px] mt-[-25px]"
           data-aos="fade-up"
         >
-          <div className="flex flex-col items-start justify-center text-left mt-[30px]">
+          <div className="flex flex-col items-start justify-center text-left mt-[10px]">
             <h2 className="text-3xl font-bold text-white leading-tight">
               Future of Automation
             </h2>
@@ -544,7 +544,7 @@ const Everythingyouneed = () => {
           </div>
 
           {/* Features Section aligned horizontally in the next line */}
-          <div className="flex flex-row justify-center gap-4 mt-10 mb-8">
+          <div className="flex flex-row justify-center gap-4 mt-10 mb-2">
             {features.map((feature, index) => (
               <button
                 key={index}

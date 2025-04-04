@@ -108,9 +108,9 @@ const CTA = () => {
       </h1>
 
     {/* Combined Cards Section */}
-    <div className="flex flex-row mt-6 ml-[-60px] mr-[-60px] mx-auto border border-white/10 rounded-lg bg-[#0d0d0d] h-[400px]">
+    {/* <div className="flex flex-row mt-6 ml-[-60px] mr-[-60px] mx-auto border border-white/10 rounded-lg bg-[#0d0d0d] h-[400px]"> */}
   {/* Left Column with 01 & 02 cards stacked */}
-  <div className="flex-1 flex flex-col">
+  {/* <div className="flex-1 flex flex-col">
     <div className="group flex-1 p-6 text-center">
       <h2 className="text-white text-lg text-left font-bold mb-2">01</h2>
       <h3 className="text-white text-base text-left font-semibold mb-2">
@@ -144,7 +144,7 @@ workflow recommendations, ensuring it reaches users who need it most.
 
 
 {/* Right Column with third card as is */}
-    <div className="group flex-1 p-6 text-center">
+    {/* <div className="group flex-1 p-6 text-center">
       <h2 className="text-white text-lg text-left font-bold mb-2">02</h2>
       <h3 className="text-white text-base text-left font-semibold mb-2">
         <span className="relative after:content-[''] after:absolute after:left-0 after:bottom-[-3px] after:w-0 after:h-[1px] after:bg-white after:transition-all after:duration-300 group-hover:after:w-full">
@@ -156,7 +156,56 @@ workflow recommendations, ensuring it reaches users who need it most.
       </p>
     </div>
 </div>
+</div>  */}
+
+<div className="flex flex-col mt-2 ml-[-60px] mr-[-60px] mx-auto rounded-lg h-[600px]">
+  {/* Top Row - Cards 01 & 02 side by side with gap */}
+  <div className="flex flex-row gap-4 p-6">
+    {/* Card 01 */}
+    <div className="group flex-1 p-6 text-center border border-white/10 rounded-lg bg-[#0D0D0D]">
+      <h2 className="text-white text-lg text-left font-bold mb-2">01</h2>
+      <h3 className="text-white text-base text-left font-semibold mb-2">
+        <span className="relative after:content-[''] after:absolute after:left-0 after:bottom-[-3px] after:w-0 after:h-[1px] after:bg-white after:transition-all after:duration-300 group-hover:after:w-full">
+          Don&apos;t miss out on the momentum with Voyex
+        </span>
+      </h3>
+      <p className="text-[#ffffffb3] text-sm text-left">
+        List your product or tool today and be part of the AI revolution. 
+      </p>
+    </div>
+
+    {/* Card 02 */}
+    <div className="group flex-1 p-6 text-center border border-white/10 rounded-lg bg-[#0D0D0D]">
+      <h2 className="text-white text-lg text-left font-bold mb-2">02</h2>
+      <h3 className="text-white text-base text-left font-semibold mb-2">
+        <span className="relative after:content-[''] after:absolute after:left-0 after:bottom-[-3px] after:w-0 after:h-[1px] after:bg-white after:transition-all after:duration-300 group-hover:after:w-full">
+          Free Listing Opportunities
+        </span>
+      </h3>
+      <p className="text-[#ffffffb3] text-sm text-left">
+        We&apos;re offering free listing opportunities for our first few partners.
+      </p>
+    </div>
+  </div>
+
+  {/* Bottom Row - Card 03 centered with gap */}
+  <div className="flex justify-center p-6 -mt-6">
+    <div className="group w-2/3 p-6 text-center border border-white/10 rounded-lg bg-[#0D0D0D]">
+      <h2 className="text-white text-lg text-left font-bold mb-2">03</h2>
+      <h3 className="text-white text-base text-left font-semibold mb-2">
+        <span className="relative after:content-[''] after:absolute after:left-0 after:bottom-[-3px] after:w-0 after:h-[1px] after:bg-white after:transition-all after:duration-300 group-hover:after:w-full">
+          Get Discovered:Voyex acts as the Google for AI    
+        </span>
+      </h3>
+      <p className="text-[#ffffffb3] text-sm text-left">
+        Don&apos;t let your tool go unnoticed. By partnering with us, your tool becomes a key part of our 
+        workflow recommendations, ensuring it reaches users who need it most.  
+      </p>
+    </div>
+  </div>
 </div>
+</div>
+
   );
 };
 

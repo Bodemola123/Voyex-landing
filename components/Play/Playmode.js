@@ -45,7 +45,10 @@ const Playmode = () => {
   return (
     <div className="relative z-50 flex flex-col justify-center items-center h-screen gap-4 ">
       {/* Title */}
-      <div className="text-center text-white font-bold text-4xl md:text-5xl mt-40">
+      {/* <div className="text-center text-white font-bold text-4xl md:text-5xl mt-40">
+        How Voyex Works
+      </div> */}
+       <div className="text-center text-white lg:text-[54px] md:text-[38px] sm:text-[32px] font-bold leading-tight mt-40">
         How Voyex Works
       </div>
 

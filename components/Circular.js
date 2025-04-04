@@ -49,19 +49,23 @@ const CircularRings = () => {
     // let ringSpacing = 110;
     // let baseRadius = 120;
     const ringCount = images.length;
-    let ringSpacing = 110;
-    let baseRadius = 120;
+    let ringSpacing = 80;
+    let baseRadius = 90;
 
-    if (screenSize >= 768) {
-      // ringCount = 4;
-      ringSpacing = 120;
-      baseRadius = 150;
+    if (screenSize >= 768) {  
+      ringSpacing = 100;      
+      baseRadius = 120;       
     }
 
     if (screenSize >= 1024) {
       // ringCount = 4;
-      ringSpacing = 130;
-      baseRadius = 160;
+      ringSpacing = 110;
+      baseRadius = 140;
+    }
+
+    if (screenSize < 768) {
+      ringSpacing = 60;
+      baseRadius = 70;
     }
 
     const items = images.map((src, index) => {
