@@ -116,14 +116,17 @@ const Templates = () => {
       </div>
 
       {/* Card Component */}
-      <div className="lg:mt-2 md:mt-[37.81px] sm:mt-[37.81px] flex items-center justify-center sm:px-0 md:px-2 lg:px-0">
+      {/* <div className="lg:mt-2 md:mt-[37.81px] sm:mt-[37.81px] flex items-center justify-center sm:px-0 md:px-2 lg:px-0">
+        <Card />
+      </div> */}
+       <div className="lg:-mt-3 md:mt-[20px] sm:mt-[20px] flex items-center justify-center sm:px-0 md:px-2 lg:px-0 scale-90">
         <Card />
       </div>
 
        {/* Button */}
        <a href="https://voyex-app-dev-delta.vercel.app/templates">
   <button 
-    className="text-[#C088FB] bg-transparent font-medium lg:text-lg md:text-base sm:text-base flex justify-center items-center transition-transform duration-300 hover:scale-105"
+    className="text-[#C088FB] bg-transparent -mt-4 font-medium lg:text-lg md:text-base sm:text-base flex justify-center items-center transition-transform duration-300 hover:scale-105"
     data-aos="fade-up"
   >
     See All Templates
