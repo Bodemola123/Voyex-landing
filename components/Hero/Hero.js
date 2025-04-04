@@ -77,9 +77,9 @@ const Hero = () => {
   }, []);
 
   return (
-    <div className="relative overflow-visible z-20 mt-10"> 
+    <div className="relative overflow-visible z-20 mt-12"> 
       <div className="flex flex-col items-center justify-center text-center gap-[10px] relative">
-        <div className="flex flex-row justify-center items-center">
+        <div className="flex flex-row justify-center items-center sm:mt-20 lg:mt-8">
           <div className="lg:h-[322px] md:h-[198px] sm:h-[118px] mx-auto">
             <p className="text-[#ffffff] font-semibold lg:px-[20px] lg:py-[9px] md:px-[15px] md:py-[6px] md:flex sm:hidden gap-2.5 rounded-[41px] bg-gradient-to-r from-[#C088FB] to-[#9747FF] w-fit md:text-xs lg:left-[150px] relative lg:top-[20px] md:top-[40px] md:left-[80px]">
               Your Google for AI
