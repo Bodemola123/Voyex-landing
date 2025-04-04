@@ -154,77 +154,77 @@ const Final = () => {
       }
     };
 
-  return (
-    <div className='md:mt-[126px] sm:mt-[60px] flex flex-col lg:px-[120px] md:px-[10px] sm:px-[16px]'>
-        <div className='flex flex-row sm:gap-[40px] justify-center items-center sm:mx-auto'>
-            <Image src={'/Chart.svg'} alt='chart' width={263} height={263} className='relative lg:top-[36px] md:top-[-136px] lg:left-0 md:right-[0px] sm:hidden lg:flex md:hidden message-bubble'/>
-            <div className='flex flex-col gap-[20px]'>
-                <h1 className='md:font-bold sm:font-normal md:text-[54px] sm:text-[32px] mt-[100px] text-center text-[#ffffff]'>Get instant access</h1>
-                <p className='text-[#bbbbbb] text-base sm:w-auto md:w-[447px] font-normal text-center'>Celebrate the joy of accomplishment with an app designed to track your progress and motivate your efforts.</p>
-                <form onSubmit={handleSubmit} className='flex md:flex-row sm:flex-col justify-center gap-2.5 items-center'>
-                    <div className='relative'>
-                        <input
-                            type='email'
-                            id='emailInput'
-                            value={email}
-                            onChange={(e) => setEmail(e.target.value)}
-                            placeholder="name@email.com"
-                            required
-                            className='px-3 py-2.5 rounded-[27px] flex gap-2.5 bg-white/20 placeholder:text-white/50 text-[#f4f4f4] items-center sm:w-[286px] focus:ring-2 focus:ring-[#C088fb] focus:outline-none'
-                        />
-                        {error && (
-                          <div className="absolute text-sm text-red-500 top-full mt-1">{error}</div>
-                        )}
-                    </div>
-                    <button
-                        type='submit'
-                        className={`py-2.5 px-[15px] flex gap-1 bg-[#ffffff] text-[#000000] font-medium text-base rounded-[27px] sm:w-[136px] md:w-auto items-center justify-center ${isSubmitting ? 'opacity-50 cursor-not-allowed' : 'hover:bg-[#f1f1f1]'} `}
-                        disabled={isSubmitting}
-                    >
-                        {isSubmitting ? (
-                          <div className="spinner-border animate-spin h-5 w-5 border-t-2 border-[#000000] rounded-full"></div>
-                        ) : (
-                          'Get Access'
-                        )}
-                    </button>
-                </form>
+    return (
+      <div className='md:mt-[126px] sm:mt-[60px] flex flex-col lg:px-[120px] md:px-[10px] sm:px-[16px]'>
+          <div className='flex flex-row sm:gap-[40px] justify-center items-center sm:mx-auto'>
+              <Image src={'/Chart.svg'} alt='chart' width={263} height={263} className='relative lg:top-[36px] md:top-[-136px] lg:left-0 md:right-[0px] sm:hidden lg:flex md:hidden message-bubble'/>
+              <div className='flex flex-col gap-[20px]'>
+                  <h1 className='md:font-bold sm:font-normal md:text-[54px] sm:text-[32px] mt-[20px] text-center text-[#ffffff]'>Get instant access</h1>
+                  <p className='text-[#bbbbbb] text-base sm:w-auto md:w-[447px] font-normal text-center'>Celebrate the joy of accomplishment with an app designed to track your progress and motivate your efforts.</p>
+                  <form onSubmit={handleSubmit} className='flex md:flex-row sm:flex-col justify-center gap-2.5 items-center'>
+                      <div className='relative'>
+                          <input
+                              type='email'
+                              id='emailInput'
+                              value={email}
+                              onChange={(e) => setEmail(e.target.value)}
+                              placeholder="name@email.com"
+                              required
+                              className='px-3 py-2.5 rounded-[27px] flex gap-2.5 bg-white/20 placeholder:text-white/50 text-[#f4f4f4] items-center sm:w-[286px] focus:ring-2 focus:ring-[#C088fb] focus:outline-none'
+                          />
+                          {error && (
+                            <div className="absolute text-sm text-red-500 top-full mt-1">{error}</div>
+                          )}
+                      </div>
+                      <button
+                          type='submit'
+                          className={`py-2.5 px-[15px] flex gap-1 bg-[#ffffff] text-[#000000] font-medium text-base rounded-[27px] sm:w-[136px] md:w-auto items-center justify-center ${isSubmitting ? 'opacity-50 cursor-not-allowed' : 'hover:bg-[#f1f1f1]'} `}
+                          disabled={isSubmitting}
+                      >
+                          {isSubmitting ? (
+                            <div className="spinner-border animate-spin h-5 w-5 border-t-2 border-[#000000] rounded-full"></div>
+                          ) : (
+                            'Get Access'
+                          )}
+                      </button>
+                  </form>
+              </div>
+              <Image
+                  src={'/Bolt.svg'}
+                  alt='bolt'
+                  width={225}
+                  height={225}
+                  className={`relative lg:top-[35px] md:top-[38px] lg:left-0 md:left-[0px] sm:hidden lg:flex md:hidden ${isInView ? 'rotate-infinite' : ''}`} 
+                  ref={boltRef}
+              />
+          </div>
+  
+          {/* Footer Section */}
+          <div className='md:mt-[40px] sm:mt-[72px] border-t border-white/20 flex md:flex-row sm:flex-col md:px-[40px] md:py-[20px] sm:py-[50px] md:justify-between sm:justify-center sm:items-center sm:gap-3 md:gap-0'>
+  
+            {/* Copyright Text */}
+            <p className='text-sm font-normal text-center text-[#808080]'>@ 2024 VOYEX, Inc. All rights reserved</p>
+  
+            {/* Privacy Policy & Terms */}
+            <div className='flex space-x-4 text-sm'>
+              <a href="/privacy" className="hover:underline text-[#808080]">Privacy Policy</a>
+              <span className="text-gray-400">|</span>
+              <a href="/terms" className="hover:underline text-[#808080]">Terms & Conditions</a>
             </div>
-            <Image
-                src={'/Bolt.svg'}
-                alt='bolt'
-                width={225}
-                height={225}
-                className={`relative lg:top-[35px] md:top-[38px] lg:left-0 md:left-[0px] sm:hidden lg:flex md:hidden ${isInView ? 'rotate-infinite' : ''}`} 
-                ref={boltRef}
-            />
-        </div>
-
-        {/* Footer Section */}
-        <div className='md:mt-[40px] sm:mt-[72px] border-t border-white/20 flex md:flex-row sm:flex-col md:px-[40px] md:py-[20px] sm:py-[50px] md:justify-between sm:justify-center sm:items-center sm:gap-3 md:gap-0'>
-
-          {/* Copyright Text */}
-          <p className='text-sm font-normal text-center text-[#808080]'>@ 2024 VOYEX, Inc. All rights reserved</p>
-
-          {/* Privacy Policy & Terms */}
-          <div className='flex space-x-4 text-sm'>
-            <a href="/privacy" className="hover:underline text-[#808080]">Privacy Policy</a>
-            <span className="text-gray-400">|</span>
-            <a href="/terms" className="hover:underline text-[#808080]">Terms & Conditions</a>
+  
+            {/* Social Icons */}
+            <div className='flex flex-row lg:gap-[16px] md:gap-[15px] sm:gap-[15px] justify-center items-center'>
+              <div className="social-icon hover:scale-125 transition-transform duration-200 cursor-pointer"><Image src={'/X.svg'} alt='X' width={16} height={14}/></div>
+              <div className="social-icon hover:scale-125 transition-transform duration-200 cursor-pointer"><Image src={'/Insta.svg'} alt='Instagram' width={19.5} height={19.5}/></div>
+              <div className="social-icon hover:scale-125 transition-transform duration-200 cursor-pointer"><Image src={'/Pinterest.svg'} alt='Pinterest' width={16} height={16}/></div>
+              <div className="social-icon hover:scale-125 transition-transform duration-200 cursor-pointer"><Image src={'/Linkedin.svg'} alt='LinkedIn' width={16} height={16}/></div>
+              <div className="social-icon hover:scale-125 transition-transform duration-200 cursor-pointer"><Image src={'/Tiktok.svg'} alt='TikTok' width={17} height={15}/></div>
+              <div className="social-icon hover:scale-125 transition-transform duration-200 cursor-pointer"><Image src={'/Youtube.svg'} alt='YouTube' width={21} height={16.5}/></div>
+            </div>
+            
           </div>
-
-          {/* Social Icons */}
-          <div className='flex flex-row lg:gap-[16px] md:gap-[15px] sm:gap-[15px] justify-center items-center'>
-            <div className="social-icon hover:scale-125 transition-transform duration-200 cursor-pointer"><Image src={'/X.svg'} alt='X' width={16} height={14}/></div>
-            <div className="social-icon hover:scale-125 transition-transform duration-200 cursor-pointer"><Image src={'/Insta.svg'} alt='Instagram' width={19.5} height={19.5}/></div>
-            <div className="social-icon hover:scale-125 transition-transform duration-200 cursor-pointer"><Image src={'/Pinterest.svg'} alt='Pinterest' width={16} height={16}/></div>
-            <div className="social-icon hover:scale-125 transition-transform duration-200 cursor-pointer"><Image src={'/Linkedin.svg'} alt='LinkedIn' width={16} height={16}/></div>
-            <div className="social-icon hover:scale-125 transition-transform duration-200 cursor-pointer"><Image src={'/Tiktok.svg'} alt='TikTok' width={17} height={15}/></div>
-            <div className="social-icon hover:scale-125 transition-transform duration-200 cursor-pointer"><Image src={'/Youtube.svg'} alt='YouTube' width={21} height={16.5}/></div>
-          </div>
-          
-        </div>
-    </div>
-  );
-}
-
-export default Final;
+      </div>
+    );
+  }
+  
+  export default Final;

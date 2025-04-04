@@ -17,7 +17,7 @@ const Header = () => {
   };
 
   return (
-    <div className="flex justify-between items-center sm:h-[72px] lg:px-[24px] md:px-[24px] sm:px-[24px] z-40">
+    <div className="flex justify-between items-center sm:h-[72px] lg:px-[24px] md:px-[24px] sm:px-[24px] z-40 mt-3.5">
       <Link href="/" className="font-bold text-5xl text-white">Voyex.</Link>
 
       {/* Desktop Navigation */}
