@@ -8,18 +8,18 @@ const FAQ = () => {
   const faqData = [
     {
       question: "How do I access Voyex?",
-      answer: "You can access Voyex through the app. Start typing your query, explore the templates, or browse all the tools in our marketplace. You can even make a few searches without signing in"
+      answer: "You can access Voyex through the app. Start typing your query, explore the templates, or browse all the tools in our marketplace. You can even make a few searches without signing in."
     },
     {
       question: "What all can I search on Voyex?",
-      answer: "You can possibly search about any usecase that you want help with, it can be “I want to do marketing for a product”, “I want to create content to be posted on my social media”, “I want to build a website for my new launch"
+      answer: "You can possibly search about any usecase that you want help with, it can be “I want to do marketing for a product”, “I want to create content to be posted on my social media”, “I want to build a website for my new launch."
     },
     {
       question: "How does Voyex know about the specific needs?",
       answer: "Our model asks relevant questions after you enter your query to refine the results. We also consider your user profile to provide personalized tool suggestions."
     },
     {
-      question: "Is my Data safe with Voyex",
+      question: "Is my Data safe with Voyex?",
       answer: "Yes, your data is completely safe as we do not sell or showcase any personal info of our users to anyone."
     },
     {
