@@ -26,7 +26,7 @@ const Companies = () => {
   return (
     <div className='flex flex-col md:gap-10 sm:gap-[31.19px] sm:px-4 md:px-4 lg:px-0 items-center justify-center'>
       <h2 
-        className="text-[#ffffff] lg:text-[54px] md:text-[38.03px] sm:text-[32px] 
+        className="text-[#ffffff] lg:text-[54px] md:text-[38px] sm:text-[32px] 
         lg:leading-[60px] md:leading-[38.57px] sm:leading-[38.57px] md:mt-[103px] sm:mt-8 font-bold text-center"
         data-aos="fade-up"
       >

@@ -188,7 +188,7 @@ const CTA = () => {
       </h1> */}
 
       {/* Heading */}
-      <h1 className="text-center text-[#ffffff] font-medium lg:text-[64px] md:text-[40px] sm:text-[32px] mt-4 whitespace-nowrap hover:scale-105 transition-transform duration-300"
+      <h1 className="text-center text-[#ffffff] font-bold lg:text-[54px] md:text-[38px] sm:text-[32px] mt-4 whitespace-nowrap hover:scale-105 transition-transform duration-300"
        data-aos="fade-up"
        data-aos-delay="200">
         Are You an AI Tool Developer or Product Owner?

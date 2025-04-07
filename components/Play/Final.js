@@ -159,7 +159,7 @@ const Final = () => {
           <div className='flex flex-row sm:gap-[40px] justify-center items-center sm:mx-auto'>
               <Image src={'/Chart.svg'} alt='chart' width={263} height={263} className='relative lg:top-[36px] md:top-[-136px] lg:left-0 md:right-[0px] sm:hidden lg:flex md:hidden message-bubble'/>
               <div className='flex flex-col gap-[20px]'>
-                  <h1 className='md:font-bold sm:font-normal md:text-[54px] sm:text-[32px] mt-[20px] text-center text-[#ffffff]'>Get instant access</h1>
+              <h1 className="text-white lg:text-[54px] md:text-[38px] sm:text-[32px] font-bold leading-tight text-center">Get instant access</h1>
                   <p className='text-[#bbbbbb] text-base sm:w-auto md:w-[447px] font-normal text-center'>Celebrate the joy of accomplishment with an app designed to track your progress and motivate your efforts.</p>
                   <form onSubmit={handleSubmit} className='flex md:flex-row sm:flex-col justify-center gap-2.5 items-center'>
                       <div className='relative'>

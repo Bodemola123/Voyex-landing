@@ -38,7 +38,9 @@ const FAQ = () => {
 
   return (
     <div className='lg:-mt-[200px] md:-mt-[100px] sm:mt-[-80px] flex flex-col justify-center items-center text-[#ffffff]'>
-      <h1 className='font-bold lg:text-[54px] md:text-[48px] sm:text-[32px] text-center'>Frequently asked questions</h1>
+      <h1 className="text-white lg:text-[54px] md:text-[38px] sm:text-[32px] font-bold leading-tight text-center">
+        Frequently asked Questions
+      </h1>
       <div className="mt-[47px]">
         {faqData.map((faq, index) => (
           <div key={index} className="border-b py-[30px] md:w-[675px] sm:w-auto border-white/20">
