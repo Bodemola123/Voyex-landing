@@ -41,7 +41,7 @@ const Blog = () => {
       </div>
 
       {/* Section Title */}
-      <h2 className="text-white text-5xl md:text-5xl font-bold text-center mb-8">
+      <h2 className="text-white lg:text-[54px] md:text-[38px] sm:text-[32px] font-bold leading-tight text-center mb-8">
         Read Our Latest Research & Blog Posts
       </h2>
 

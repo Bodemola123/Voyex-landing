@@ -27,7 +27,7 @@ const Templates = () => {
         {/* Heading Section */}
         <div className="flex flex-col items-center justify-center gap-2">
           <h1
-            className="text-[#ffffff] font-medium text-4xl md:text-5xl text-center"
+            className="text-white lg:text-[54px] md:text-[38px] sm:text-[32px] font-bold leading-tight text-center"
             data-aos="zoom-in"
           >
             Get Started with our Templates options

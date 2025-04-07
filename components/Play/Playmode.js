@@ -49,14 +49,14 @@ const Playmode = () => {
   }, []);
 
   return (
-    <div className="relative z-50 flex flex-col justify-center items-center h-screen gap-4 ">
+    <div className="relative z-50 flex flex-col justify-center items-center h-screen gap-6 pt-20">
       {/* Title */}
-      <div className="text-center text-white lg:text-[54px] md:text-[38px] sm:text-[32px] font-bold leading-tight mt-12 sm:mt-8 md:mt-12 lg:mt-28">
+      <div className="text-center text-white lg:text-[54px] md:text-[38px] sm:text-[32px] font-bold leading-tight mt-12 sm:mt-8 md:mt-12 lg:mt-20">
         How Voyex Works
       </div>
 
       {/* Video Container */}
-      <div className="w-full max-w-4xl flex-grow flex items-center mt-[-10px] lg:mt-[12px]  md:mt-[-100px]  sm:mt-[-290px]">
+      <div className="w-full max-w-5xl flex-grow flex items-center mt-[-10px] lg:mt-0  md:mt-[-80px]  sm:mt-[-240px]">
         <div className="relative w-full aspect-video">
           {isClient && (
             <iframe
