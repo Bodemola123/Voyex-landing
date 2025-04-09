@@ -64,6 +64,8 @@ const Form = () => {
   }    
   };
   const [isPrivacyOpen, setIsPrivacyOpen] = useState(false);
+
+  
   return (
     <div className='flex flex-col bg-[#0d0d0d] lg:gap-8 sm:gap-6 lg:py-10 sm:py-8 lg:px-8 sm:px-6 border rounded-2xl border-[#FFFFFF33]'>
       <Toaster position='top-right' />
