@@ -6,8 +6,8 @@ import { IoChatbubbleOutline } from 'react-icons/io5';
 import { MdOutlineEmail } from "react-icons/md";
 import { CiLocationOn } from "react-icons/ci";
 import { FiPhone } from "react-icons/fi";
+import { Toaster } from 'react-hot-toast';
 import Form from './Form';
-import Hero from './Hero';
 
 const Main = () => {
   useEffect(() => {
@@ -19,65 +19,66 @@ const Main = () => {
   }, []);
 
   return (
-    <div className='flex flex-col gap-8 justify-center items-center md:px-10 sm:px-6 lg:py-8 sm:py-6 lg:mt-11 sm:mt-9 h-full w-full'>
-      <div className='flex flex-col gap-11'>
-      <Hero/>
-      <div className=' mt-4 flex md:flex-row sm:flex-col lg:gap-14 sm:gap-11 justify-between lg:items-start md:items-start sm:items-center'>
-        <div className='sm:flex sm:flex-col md:grid md:grid-rows-2 lg:gap-12 sm:gap-9'>
-          <div className='sm:flex md:grid md:grid-cols-2 sm:flex-col lg:gap-8 sm:gap-6'>
-            <div className='flex flex-col lg:gap-4 sm:gap-2 items-start justify-center text-[#f4f4f4]' data-aos='fade-up'>
-              <MdOutlineEmail className='lg:text-2xl sm:text-2xl text-[#f4f4f4] hover:scale-110 transition-transform duration-300'/>
-              <div className='flex flex-col gap-2'>
-                <p className='text-[#f4f4f4] font-semibold lg:text-xl sm:text-lg'>Email</p>
-                <p className='text-[#667085] font-normal lg:text-base sm:text-sm'>Our friendly team is here to help.</p>
-              </div>
-              <button 
-                className='lg:text-base sm:text-sm hover:text-blue-400 transition-colors duration-300' 
-                onClick={() => window.location.href = 'mailto:hi@untitledui.com'}>
-                hi@untitledui.com
-              </button>
-            </div>
-            <div className='flex flex-col lg:gap-4 sm:gap-2 items-start justify-center text-[#f4f4f4]' data-aos='fade-up'>
-              <IoChatbubbleOutline className='lg:text-2xl sm:text-2xl text-[#f4f4f4] hover:scale-110 transition-transform duration-300'/>
-              <div className='flex flex-col gap-2'>
-                <p className='text-[#f4f4f4] font-semibold lg:text-xl sm:text-lg'>Live Chat</p>
-                <p className='text-[#667085] font-normal lg:text-base sm:text-sm'>Our friendly team is here to help.</p>
-              </div>
-              <button className='lg:text-base sm:text-sm hover:text-blue-400 transition-colors duration-300'>Start new chat</button>
-            </div>
+    <div className='flex flex-col justify-center items-center md:px-10 sm:px-6 lg:py-8 sm:py-6 lg:mt-11 sm:mt-9 h-full w-full max-w-[1200px] mx-auto'>
+  
+      <div className='mt-4 flex md:flex-row sm:flex-col lg:gap-14 sm:gap-11 justify-between w-full'>
+  
+        {/* Left Side: Titles + Email Section */}
+        <div className='flex flex-col lg:gap-8 sm:gap-6 w-full md:w-1/2'>
+          {/* Titles */}
+          <p className="bg-[#0d0d0d] text-white font-semibold lg:text-base justify-center items-center text-center sm:text-sm px-5 py-2 rounded-full inline-block w-fit">
+  Contact us
+</p>
+          <div className='flex flex-col text-left text-[#f4f4f4] lg:gap-3 sm:gap-2'>
+  
+            <h1 className='font-semibold lg:text-4xl sm:text-3xl'>Chat to our friendly team</h1>
+            <p className='font-normal lg:text-xl sm:text-lg text-[#f4f4f4]'>
+              We&apos;d love to hear from you. Please fill out this form or shoot us an email.
+            </p>
           </div>
-          <div className='sm:flex md:grid md:grid-cols-2 sm:flex-col lg:gap-8 sm:gap-6'>
-            <div className='flex flex-col lg:gap-4 sm:gap-2 items-start justify-center text-[#f4f4f4]' data-aos='fade-up'>
-              <CiLocationOn className='lg:text-2xl sm:text-2xl text-[#f4f4f4] hover:scale-110 transition-transform duration-300'/>
-              <div className='flex flex-col gap-2'>
-                <p className='text-[#f4f4f4] font-semibold lg:text-xl sm:text-lg'>Office</p>
-                <p className='text-[#667085] font-normal lg:text-base sm:text-sm'>Come say hello at our office HQ.</p>
-              </div>
-              <button 
-                className='lg:text-base sm:text-sm hover:text-blue-400 transition-colors duration-300 text-left' 
-                onClick={() => window.open('https://www.google.com/maps/search/?api=1&query=100+Smith+Street+Collingwood+VIC+3066+AU', '_blank')}>
-                100 Smith Street <br /> Collingwood VIC 3066 AU
-              </button>
+  
+          {/* Email Section */}
+          <div className='flex flex-col lg:gap-4 sm:gap-2 text-[#f4f4f4]' data-aos='fade-up'>
+            <MdOutlineEmail className='lg:text-2xl sm:text-2xl text-[#f4f4f4] hover:scale-110 transition-transform duration-300' />
+            <div className='flex flex-col gap-2'>
+              <p className='text-[#f4f4f4] font-semibold lg:text-xl sm:text-lg'>Email</p>
+              <p className='text-[#667085] font-normal lg:text-base sm:text-sm'>Our friendly team is here to help.</p>
             </div>
-            <div className='flex flex-col lg:gap-4 sm:gap-2 items-start justify-center text-[#f4f4f4]' data-aos='fade-up'>
-              <FiPhone className='lg:text-2xl sm:text-2xl text-[#f4f4f4] hover:scale-110 transition-transform duration-300'/>
-              <div className='flex flex-col gap-2'>
-                <p className='text-[#f4f4f4] font-semibold lg:text-xl sm:text-lg'>Phone</p>
-                <p className='text-[#667085] font-normal lg:text-base sm:text-sm'>Mon-Fri from 8am to 5pm.</p>
-              </div>
-              <button 
-                className='lg:text-base sm:text-sm hover:text-blue-400 transition-colors duration-300 text-left' 
-                onClick={() => window.location.href = 'tel:+15550000000'}>
-                +1 (555) 000-0000
-              </button>
-            </div>
+
           </div>
         </div>
-        <Form data-aos='fade-left'/>
-      </div>
+  
+        {/* Right Side: Form Section */}
+        <div className='w-full md:w-1/2'>
+          <Form />
+        </div>
+  
       </div>
     </div>
   );
+  
+   
 };
 
 export default Main;
+
+
+
+    // <div className='flex flex-col gap-8 justify-center items-center md:px-10 sm:px-6 lg:py-8 sm:py-6 lg:mt-11 sm:mt-9 h-full w-full'>
+    // <Hero />
+    
+    // <div className='mt-4 flex md:flex-row sm:flex-col lg:gap-14 sm:gap-11 justify-between lg:items-center md:items-center sm:items-center'>
+      
+    //   {/* Email Section */}
+    //   <div className='flex flex-col lg:gap-4 sm:gap-2 items-start justify-center text-[#f4f4f4]' data-aos='fade-up'>
+    //     <MdOutlineEmail className='lg:text-2xl sm:text-2xl text-[#f4f4f4] hover:scale-110 transition-transform duration-300' />
+    //     <div className='flex flex-col gap-2'>
+    //       <p className='text-[#f4f4f4] font-semibold lg:text-xl sm:text-lg'>Email</p>
+    //       <p className='text-[#667085] font-normal lg:text-base sm:text-sm'>Our friendly team is here to help.</p>
+    //     </div>
+    //     <button 
+    //       className='lg:text-base sm:text-sm hover:text-blue-400 transition-colors duration-300' 
+    //       onClick={() => window.location.href = 'mailto:hi@untitledui.com'}>
+    //       hi@untitledui.com
+    //     </button>
+    //   </div>

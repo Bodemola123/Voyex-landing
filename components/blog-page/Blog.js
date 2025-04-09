@@ -150,7 +150,7 @@ export default function Blog() {
           {/* Article Grid */}
           <div className="grid grid-cols-1 md:grid-cols-3 lg:grid-cols-3 gap-6">
             {loading ? (
-              Array.from({ length: 9 }).map((_, index) => <SkeletonArticleCard key={index} />)
+              Array.from({ length: 3 }).map((_, index) => <SkeletonArticleCard key={index} />)
             ) : (
               articles.map((article, index) => (
                 <div key={index} onClick={() => setSelectedItem(article)}>
@@ -180,6 +180,11 @@ export default function Blog() {
     </button>
   </div>
 )}
+
+<div className="text-center text-[#c088fb] font-semibold mt-8">
+  More coming soon 
+</div>
+
 
         </>
       ) : (
