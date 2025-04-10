@@ -8,7 +8,7 @@ const categories = [
 ];
 
 const API_KEY = process.env.NEXT_PUBLIC_MEDIASTACK_API_KEY;
-const PAGE_SIZE = 9; // Increased to 9 for a 3x3 grid
+const PAGE_SIZE = 3; // Increased to 9 for a 3x3 grid
 
 function SkeletonArticleCard() {
   return (
