@@ -268,10 +268,16 @@ const Everythingyouneed = () => {
       </div>
 
         {/* Future of Automation Section */}
-        <div
+        {/* <div
           className="relative flex flex-col items-center p-6 rounded-xl border border-gray-800 bg-[#0d0d0d] w-full max-w-[964px] mt-[20px]"
           data-aos="fade-up"
-        >
+        > */}
+        <div
+  className="relative flex flex-col items-center p-6 rounded-xl border border-gray-800 bg-[#0d0d0d] w-full 
+    max-w-full sm:max-w-[454px] md:max-w-[932px] lg:max-w-[964px] mt-[20px]"
+  data-aos="fade-up"
+>
+
           <div className="flex flex-col items-start justify-center text-left mt-[10px]">
             <h2 className="text-3xl font-bold text-white leading-tight">
               Future of Automation
