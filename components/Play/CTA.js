@@ -9,19 +9,12 @@ const CTA = () => {
       className="flex flex-col lg:gap-8 md:gap-6 sm:gap-4 z-10 lg:px-[170px] md:px-[70.42px] sm:px-[35px] lg:rounded-lg md:rounded-[6.08px] sm:rounded-[10px] mx-auto relative lg:top-[-315px] md:top-[-145px] sm:top-[-200px] justify-center items-center lg:-mb-20 lg:max-w-[1100px] lg:h-auto md:max-w-[669.17px] sm:w-full hover:border-white/30 transition-all duration-300"
       data-aos="fade-up"
     >
-      {/* "Our Audience" Label */}
+      {/* "Our Audience" Label
       <div className="bg-[#131314] text-[#F4F4F4] text-md font-medium px-7 py-1 rounded-full mb-[-30px]"
       data-aos="fade-up"
       data-aos-delay="100">
         Our Audience
-      </div>
-{/* 
-      Heading
-      <h1 className="text-center text-[#ffffff] font-medium lg:text-[64px] md:text-[40px] sm:text-[32px] mt-4 sm:w-4/5 md:w-[479.97px] lg:w-[789px] leading-tight hover:scale-105 transition-transform duration-300"
-       data-aos="fade-up"
-       data-aos-delay="200">
-        Are You an AI Tool Developer or Product Owner?
-      </h1> */}
+      </div> */}
 
       {/* Heading */}
       <h1 className="text-center text-[#ffffff] font-bold lg:text-[54px] md:text-[38px] sm:text-[32px] mt-4 hover:scale-105 transition-transform duration-300"
