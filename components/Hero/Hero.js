@@ -247,7 +247,7 @@ create your own mini agency.
           </button>
 
            {/* Background orbits with reduced scale and blur */}
-           <div className="absolute inset-0 pointer-events-none z-[-1] flex items-center justify-center transform scale-90 filter blur-[1px]">
+           <div className="absolute inset-0 pointer-events-none z-[-1] flex items-center justify-center transform scale-90 filter">
             <CircularRings />
            <StarsCanvas />
            </div>
