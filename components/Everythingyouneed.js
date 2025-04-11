@@ -222,7 +222,7 @@ const Everythingyouneed = () => {
       {/* Title Section */}
       <div className="flex flex-col lg:gap-5 md:gap-4 sm:gap-3 text-center mt-20" data-aos="fade-up">
         <h1 className="text-white lg:text-[54px] md:text-[38px] sm:text-[32px] font-bold leading-tight">
-          Navigate the AI Landscape Easily
+          Navigate the AI Landscape Easily 
         </h1>
         <p className="text-white lg:text-xl md:text-lg sm:text-base font-normal max-w-[1044px] mx-auto">
           Find everything you need to get from A to B. Did you check? There must be a tool for it
