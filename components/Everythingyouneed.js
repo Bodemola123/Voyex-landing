@@ -218,7 +218,7 @@ const Everythingyouneed = () => {
 
   return (
     // <div className="flex flex-col lg:gap-10 md:gap-8 sm:gap-6 justify-center items-center px-4 md:px-0">
-    <div className="flex flex-col justify-center items-center px-4 lg:px-8">
+    <div className="flex flex-col justify-center items-center px-4 lg:px-8 lg:-mt-[100px] sm:-mt-[100px]">
       {/* Title Section */}
       <div className="flex flex-col lg:gap-5 md:gap-4 sm:gap-3 text-center mt-20" data-aos="fade-up">
         <h1 className="text-white lg:text-[54px] md:text-[38px] sm:text-[32px] font-bold leading-tight">
@@ -274,7 +274,7 @@ const Everythingyouneed = () => {
         > */}
         <div
   className="relative flex flex-col items-center p-6 rounded-xl border border-gray-800 bg-[#0d0d0d] w-full 
-    max-w-full sm:max-w-[454px] md:max-w-[932px] lg:max-w-[964px] mt-[20px]"
+    max-w-full sm:max-w-[425px] md:max-w-[908px] lg:max-w-[964px] mt-[20px]"
   data-aos="fade-up"
 >
 
@@ -293,13 +293,13 @@ const Everythingyouneed = () => {
           </div>
 
           {/* Features Section aligned horizontally in the next line */}
-          <div className="flex flex-col sm:flex-row justify-center gap-4 mt-10 mb-2">
+          {/* <div className="flex flex-col xl:flex-row justify-center gap-4 mt-10 mb-2">
             {features.map((feature, index) => (
               <button
                 key={index}
                 data-index={index}
                 ref={(el) => (featureRefs.current[index] = el)}
-                className={`flex flex-col sm:flex-row items-center justify-center p-3 bg-[#F4F4F4] text-#0A0A0B rounded-3xl shadow-md w-[200px] h-[90px] cursor-pointer hover:bg-[#F4F4F4] transition-all ${
+                className={`flex flex-col lg:flex-row items-center justify-center p-3 bg-[#F4F4F4] text-#0A0A0B rounded-3xl shadow-md w-[200px] h-[90px] cursor-pointer hover:bg-[#F4F4F4] transition-all ${
                   activeIndex === index ? "ring-2 ring-purple-500" : ""
                 }`}
                 onMouseEnter={() => setActiveIndex(index)}
@@ -309,7 +309,21 @@ const Everythingyouneed = () => {
                 <h3 className="text-md font-semibold text-center">{feature.title}</h3>
               </button>
             ))}
-        </div>
+        </div> */}
+        <div className="flex flex-col xl:flex-row justify-center gap-4 mt-10 mb-2">
+  {features.map((feature, index) => (
+    <button
+      key={index}
+      data-index={index}
+      ref={(el) => (featureRefs.current[index] = el)}
+      className="flex flex-col lg:flex-row items-center justify-center p-3 bg-[#F4F4F4] text-[#0A0A0B] rounded-3xl shadow-md w-[200px] h-[90px] cursor-pointer transition-all hover:ring-2 hover:ring-purple-500"
+      aria-label={`Feature: ${feature.title}`}
+    >
+      <h3 className="text-md font-semibold text-center">{feature.title}</h3>
+    </button>
+  ))}
+</div>
+        
       </div>
     </div>
   );
