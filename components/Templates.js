@@ -111,14 +111,14 @@ const Templates = () => {
       </div>
 
       {/* Card Component */}
-      <div className="flex items-center justify-center scale-90">
+      <div className="flex items-center justify-center scale-90 md:max-w-[4000px]">
         <Card />
       </div>
 
       {/* "See All Templates" Button */}
       <a href="https://voyex-app-dev-delta.vercel.app/templates">
         <button
-          className="text-[#C088FB] bg-transparent font-medium text-lg flex justify-center items-center transition-transform duration-300 hover:scale-105"
+          className="text-[#C088FB] bg-transparent font-medium text-lg flex justify-center lg:-mt-[20px] sm:-mt-[50px] md:-mt-[20px] items-center transition-transform duration-300 hover:scale-105"
           data-aos="fade-up"
         >
           See All Templates

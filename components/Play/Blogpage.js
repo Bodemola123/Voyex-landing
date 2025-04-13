@@ -32,7 +32,7 @@ const Blog = () => {
   ];
 
   return (
-    <div className="relative flex flex-col items-center justify-center py-14 px-6 max-w-5xl mx-auto -mt-[450px] mb-80" data-aos="fade-up">
+    <div className="relative flex flex-col items-center justify-center py-14 px-6 max-w-5xl mx-auto md:-mt-[350px] lg:-mt-[500px] sm:-mt-[350px] mb-80  " data-aos="fade-up">
       {/* "Our Blog" Button */}
       <div className="mb-4">
         <button className="bg-[#0d0d0d] text-white text-sm font-medium px-6 py-2 rounded-full" data-aos="fade-up">
