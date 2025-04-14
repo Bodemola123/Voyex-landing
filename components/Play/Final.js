@@ -155,9 +155,16 @@ const Final = () => {
     };
 
     return (
-      <div className='md:mt-[126px] sm:mt-[60px] flex flex-col lg:px-[120px] md:px-[10px] sm:px-[16px]'>
+      <div className='md:mt-[126px] sm:mt-[126px] flex flex-col lg:px-[120px] md:px-[10px] sm:px-[16px]'>
           <div className='flex flex-row sm:gap-[40px] justify-center items-center sm:mx-auto'>
-              <Image src={'/Chart.svg'} alt='chart' width={263} height={263} className='relative lg:top-[36px] md:top-[-136px] lg:left-0 md:right-[0px] sm:hidden lg:flex md:hidden message-bubble'/>
+              {/* <Image src={'/Chart.svg'} alt='chart' width={263} height={263} className='relative lg:top-[36px] md:top-[-136px] lg:left-0 md:right-[0px] sm:hidden lg:flex md:hidden message-bubble'/> */}
+              <Image
+  src={'/Chart.svg'}
+  alt='chart'
+  width={263}
+  height={263}
+  className="relative top-4 sm:top-2 md:top-[-20px] lg:top-[36px] left-0 sm:left-0 md:right-0 lg:left-0 w-20 sm:w-24 md:w-32 lg:w-[263px] message-bubble"
+/>
               <div className='flex flex-col gap-[20px]'>
               <h1 className="text-white lg:text-[54px] md:text-[38px] sm:text-[32px] font-bold leading-tight text-center">Get instant access</h1>
                   <p className='text-[#bbbbbb] text-base sm:w-auto md:w-[447px] font-normal text-center'>Celebrate the joy of accomplishment with an app designed to track your progress and motivate your efforts.</p>
@@ -189,14 +196,23 @@ const Final = () => {
                       </button>
                   </form>
               </div>
-              <Image
+              {/* <Image
                   src={'/Bolt.svg'}
                   alt='bolt'
                   width={225}
                   height={225}
                   className={`relative lg:top-[35px] md:top-[38px] lg:left-0 md:left-[0px] sm:hidden lg:flex md:hidden ${isInView ? 'rotate-infinite' : ''}`} 
                   ref={boltRef}
-              />
+              /> */}
+              <Image
+  src={'/Bolt.svg'}
+  alt='bolt'
+  width={225}
+  height={225}
+  className={`relative top-4 sm:top-4 md:top-2 lg:top-[35px] left-0 sm:left-0 md:left-0 lg:left-0 w-16 sm:w-20 md:w-28 lg:w-[225px] ${isInView ? 'rotate-infinite' : ''}`}
+  ref={boltRef}
+/>
+
           </div>
   
           {/* Footer Section */}

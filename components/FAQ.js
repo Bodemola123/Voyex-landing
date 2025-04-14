@@ -37,7 +37,7 @@ const FAQ = () => {
   };
 
   return (
-    <div className='lg:-mt-[200px] md:-mt-[100px] sm:mt-[-80px] flex flex-col justify-center items-center text-[#ffffff]'>
+    <div className='lg:-mt-[200px] md:-mt-[200px] sm:mt-[-200px] flex flex-col justify-center items-center text-[#ffffff]'>
       <h1 className="text-white lg:text-[54px] md:text-[38px] sm:text-[32px] font-bold leading-tight text-center" data-aos="fade-up">
         Frequently asked Questions
       </h1>
