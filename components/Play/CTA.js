@@ -185,22 +185,22 @@ const CTA = () => {
         {/* Section 1 */}
         <div className="flex-1 text-white mb-6 md:mb-0 md:mr-8">
           <p className="text-[#F4F4F4] text-xl font-semibold mb-2">01</p>
-          <h3 className="text-lg font-bold mb-1">Get Discovered with Voyex : </h3>
-          <p className="text-[#B0B0B0] text-sm">Voyex acts as the Google for AI .don&apos;t let your tool go unnoticed.</p>
+          <h3 className="text-lg font-bold mb-1">Get Discovered : Voyex acts as the Google for AI</h3>
+          <p className="text-[#B0B0B0] text-sm">Don&apos;t let your tool go unnoticed. Get Discovered by users who need it most.</p>
         </div>
 
         {/* Section 2 */}
         <div className="flex-1 text-white mb-6 md:mb-0 md:mr-8">
           <p className="text-[#F4F4F4] text-xl font-semibold mb-2">02</p>
           <h3 className="text-lg font-bold mb-1">Don&apos;t miss out on the momentum with Voyex.</h3>
-          <p className="text-[#B0B0B0] text-sm">Automate tasks, optimize workflows, and boost productivity.</p>
+          <p className="text-[#B0B0B0] text-sm">List your product or tool today and be a part of the AI Revolution.</p>
         </div>
 
         {/* Section 3 */}
         <div className="flex-1 text-white">
           <p className="text-[#F4F4F4] text-xl font-semibold mb-2">03</p>
-          <h3 className="text-lg font-bold mb-1">Free Listing Opportunities </h3>
-          <p className="text-[#B0B0B0] text-sm">We&apos;re offering free listing opportunities for our first few partners.</p>
+          <h3 className="text-lg font-bold mb-1">Free Listing Opportunities for our first few partners </h3>
+          <p className="text-[#B0B0B0] text-sm">Be among the first to join Voyex and enjoy featured free listing opportunities.</p>
         </div>
       </div>
 

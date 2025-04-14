@@ -292,25 +292,9 @@ const Everythingyouneed = () => {
             </div>
           </div>
 
-          {/* Features Section aligned horizontally in the next line */}
-          {/* <div className="flex flex-col xl:flex-row justify-center gap-4 mt-10 mb-2">
-            {features.map((feature, index) => (
-              <button
-                key={index}
-                data-index={index}
-                ref={(el) => (featureRefs.current[index] = el)}
-                className={`flex flex-col lg:flex-row items-center justify-center p-3 bg-[#F4F4F4] text-#0A0A0B rounded-3xl shadow-md w-[200px] h-[90px] cursor-pointer hover:bg-[#F4F4F4] transition-all ${
-                  activeIndex === index ? "ring-2 ring-purple-500" : ""
-                }`}
-                onMouseEnter={() => setActiveIndex(index)}
-                onMouseLeave={() => setActiveIndex(null)}
-                aria-label={`Feature: ${feature.title}`}
-              >
-                <h3 className="text-md font-semibold text-center">{feature.title}</h3>
-              </button>
-            ))}
-        </div> */}
-        <div className="flex flex-col xl:flex-row justify-center gap-4 mt-10 mb-2">
+          
+        {/* <div className="flex flex-col xl:flex-row justify-center gap-4 mt-10 mb-2"> */}
+        <div className="grid grid-cols-1 md:grid-cols-2 xl:grid-cols-4 gap-4 mt-10 mb-2">
   {features.map((feature, index) => (
     <button
       key={index}
