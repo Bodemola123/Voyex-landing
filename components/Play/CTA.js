@@ -164,12 +164,12 @@ const CTA = () => {
       data-aos="fade-up"
     >
       {/* "Our Audience" Label */}
-      <div className="bg-[#131314] text-[#F4F4F4] text-sm font-medium px-5 py-1 rounded-full mb-6"
+      {/* <div className="bg-[#131314] text-[#F4F4F4] text-sm font-medium px-5 py-1 rounded-full mb-6"
         data-aos="fade-up"
         data-aos-delay="100"
       >
         Our Audience
-      </div>
+      </div> */}
 
       {/* Heading */}
       <h1 className="text-center text-white font-bold lg:text-[42px] md:text-[36px] sm:text-[32px] mb-8 leading-tight"
@@ -205,9 +205,16 @@ const CTA = () => {
       </div>
 
       {/* CTA Button */}
-      <button className="mt-8 bg-white text-black text-sm font-medium px-6 py-2 rounded-full">
+      {/* <button className="mt-8 bg-white text-black text-sm font-medium px-6 py-2 rounded-full">
         Mail us Today!
-      </button>
+      </button> */}
+      <button
+  className="mt-8 bg-white text-black text-sm font-medium px-6 py-2 rounded-full"
+  onClick={() => window.location.href = 'https://voyex-landing.vercel.app/contact-us'}
+>
+  Mail us Today!
+</button>
+
     </div>
   );
 };
