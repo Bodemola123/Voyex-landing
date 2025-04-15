@@ -31,17 +31,17 @@ const Whatweoffer = () => {
         {/* Row 1 */}
         <div className="flex md:flex-row sm:flex-col justify-center items-center lg:gap-4 md:gap-[10.28px] sm:gap-[10.28px]" data-aos="fade-up">
           {/* Card 1 */}
-          <Card title="AI-Powered Chat Interface" description="Get real-time AI assistance for instant answers and insights." />
+          <Card title="AI Query Engine" description="Ask a question. We&apos;ll understand your intent and suggest the best tools — tailored to your specific need." />
           {/* Card 2 */}
-          <Card title="Templates & Workflows" description="Use pre-built AI workflows tailored to various business needs." />
+          <Card title="Templates" description="Use pre-built templates to kickstart your workflow. Whether it&apos;s content marketing, brainstorming, or design." />
         </div>
 
         {/* Row 2 */}
         <div className="flex md:flex-row sm:flex-col justify-center items-center lg:gap-4 md:gap-[10.28px] sm:gap-[10.28px]" data-aos="fade-up">
           {/* Card 3 */}
-          <Card title="Galacticmart" description="Discover, explore, and integrate AI tools with ease." />
+          <Card title="Galacticmart" description="Explore the entire Voyex tool ecosystem — filter by category, discover new solutions, and build your personal toolkit." />
           {/* Card 4 */}
-          <Card title="User & Organization Dashboards" description="Manage your AI tools, analytics, and settings effortlessly." />
+          <Card title=" Prompt Suggestions " description="For every tool we recommend, we also give you the right way to use it — with clear, actionable prompts." />
         </div>
       </div>
     </div>

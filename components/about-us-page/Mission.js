@@ -16,7 +16,7 @@ const Mission = () => {
   return (
     <div className='flex md:flex-row sm:flex-col-reverse items-center justify-center lg:gap-9 md:gap-6 sm:gap-6 md:px-5 sm:px-5 h-screen'>
       <div className='flex flex-col md:gap-[23px] sm:gap-4 items-center justify-center sm:ml-0'>
-        {["Make AI efficient & scalable for businesses.", "Provide seamless and intuitive tools.", "Ensure data privacy & security at every step."].map((text, index) => (
+        {["Identify exactly what they need.", "Understand how to use AI to achieve it.", "Get real results — fast."].map((text, index) => (
           <div
             key={index}
             data-aos='fade-up'
@@ -36,7 +36,9 @@ const Mission = () => {
           Mission Statement
         </h1>
         <p data-aos='fade-left' className='italic font-normal text-[#f4f4f4] lg:text-3xl md:text-base sm:text-base'>
-          At Voyex, our mission is to democratize AI by making cutting-edge automation tools accessible to everyone. We strive to enhance productivity, optimize decision-making, and simplify complex processes through intelligent AI solutions.
+        To make AI practical, personal, and productive for everyone.
+We&apos;re not building another AI tool — we&apos;re building the engine that helps you find the right ones.
+At Voyex, our mission is to simplify the AI landscape by enabling users to: From startups to solo creators to large enterprises, we&apos;re making AI more accessible, more intuitive, and more effective.
         </p>
       </div>
     </div>

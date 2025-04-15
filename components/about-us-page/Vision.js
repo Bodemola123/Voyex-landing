@@ -16,7 +16,13 @@ const Vision = () => {
   return (
     <div className='flex md:flex-row-reverse sm:flex-col-reverse items-center justify-center lg:gap-9 md:gap-6 sm:gap-6 md:px-5 sm:px-5 h-screen'>
       <div className='flex flex-col md:gap-[23px] sm:gap-4 items-center justify-center sm:ml-0'>
-        {["Work smarter, not harder", "Optimize efficiency with intelligent automation.", "Transform ideas into reality with AI-powered insights."].map((text, index) => (
+      <p
+    data-aos='fade-up'
+    className='text-[#f4f4f4] font-semibold lg:text-3xl md:text-lg sm:text-base mb-4'
+  >
+    Voyex envisions a world where :
+  </p>
+        {["People ask natural questions — and get AI-powered action plans.", "Businesses build custom AI workflows in minutes.", "Teams stop searching for tools and start solving problems."].map((text, index) => (
           <div
             key={index}
             data-aos='fade-up'
@@ -36,7 +42,7 @@ const Vision = () => {
           Vision Statement
         </h1>
         <p data-aos='fade-left' className='italic font-normal text-[#f4f4f4] lg:text-3xl md:text-base sm:text-base'>
-          We believe in a future where AI is not just a tool, but a trusted assistant in everyday decision-making. Voyex envisions a world where businesses, professionals, and individuals can leverage AI to its fullest potential.
+        A future where AI becomes your invisible co-pilot — always ready, always relevant. We believe AI shouldn&apos;t be intimidating or overwhelming. It should be smart, context-aware, and actually helpful. We&apos;re not just building a product — we&apos;re shaping how people interact with AI in their daily lives.
         </p>
       </div>
     </div>
