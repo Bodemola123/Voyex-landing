@@ -15,7 +15,7 @@ const Hero = () => {
       <div className="flex flex-col items-center justify-center text-center gap-[21px]">
         <div className="flex flex-row justify-center items-center">
           <div className="lg:h-[322px] md:h-[198px] sm:h-[118px] mx-auto mt-32">
-            <p className='text-[#ffffff] font-semibold lg:px-[20px] lg:py-[9px] md:px-[15px] md:py-[6px] md:flex sm:hidden gap-2.5 rounded-[41px] bg-gradient-to-r from-[#C088FB] to-[#9747FF] w-fit md:text-xs lg:left-[150px] relative lg:top-[20px] md:top-[20px] md:left-[80px] '>Revolutionizing AI-Powered Productivity</p>
+            <p className='text-[#ffffff] font-semibold lg:px-[20px] lg:py-[9px] md:px-[15px] md:py-[6px] md:flex sm:hidden gap-2.5 rounded-[41px] bg-gradient-to-r from-[#C088FB] to-[#9747FF] w-fit md:text-xs lg:left-[150px] relative lg:top-[10px] md:top-[20px] md:left-[80px] '>Your Gateway to Smarter Work, Powered by AI</p>
             <h1 className="lg:text-[165px] md:text-[98.67px] sm:text-[58.88px] sm:font-bold md:font-bold lg:font-black leading-tight text-[#ffffff] z-20 lg:-mt-10">
               About Us
             </h1>
@@ -27,7 +27,9 @@ const Hero = () => {
             isVisible ? "opacity-100" : "opacity-0"
           }`}
         >
-          At Voyex, we empower individuals and organizations with AI-driven tools that streamline workflows, enhance efficiency, and unlock new possibilities. Whether you're an individual user or a large enterprise, our intelligent solutions help you achieve more with automation, insights, and seamless integration.
+          In a world overwhelmed by AI tools, Voyex is your intelligent guide.
+We help you discover exactly the tools you need — based on what you&apos;re trying to achieve. Whether you're launching a business, scaling marketing, or automating daily tasks, Voyex removes the guesswork from AI.
+We don&apos;t just show you tools. We ask the right questions, understand your intent, and then match you with powerful AI solutions — all in one seamless experience.
         </p>
 
         <div className="flex mb-10 md:flex-row lg:flex-row sm:flex-col sm:gap-[18px] lg:gap-4 md:gap-[15.57px] mt-3 justify-center items-center">
