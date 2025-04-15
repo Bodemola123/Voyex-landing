@@ -6,7 +6,7 @@ import Howitworks from '@/components/about-us-page/Howitworks'
 import Mission from '@/components/about-us-page/Mission'
 import Vision from '@/components/about-us-page/Vision'
 import Whatweoffer from '@/components/about-us-page/Whatweoffer'
-import CTA from '@/components/about-us-page/cta'
+import CTA from '@/components/about-us-page/CTA'
 import Header from '@/components/Header/Header'
 import React from 'react'
 

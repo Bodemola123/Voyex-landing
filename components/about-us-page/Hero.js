@@ -15,7 +15,7 @@ const Hero = () => {
       <div className="flex flex-col items-center justify-center text-center gap-[21px]">
         <div className="flex flex-row justify-center items-center">
           <div className="lg:h-[322px] md:h-[198px] sm:h-[118px] mx-auto mt-32">
-            <p className='text-[#ffffff] font-semibold lg:px-[20px] lg:py-[9px] md:px-[15px] md:py-[6px] md:flex sm:hidden gap-2.5 rounded-[41px] bg-gradient-to-r from-[#C088FB] to-[#9747FF] w-fit md:text-xs lg:left-[150px] relative lg:top-[20px] md:top-[20px] md:left-[80px] '>Your Gateway to Smarter Work, Powered by AI</p>
+            <p className='text-[#ffffff] font-semibold lg:px-[20px] lg:py-[9px] md:px-[15px] md:py-[6px] md:flex sm:hidden gap-2.5 rounded-[41px] bg-gradient-to-r from-[#C088FB] to-[#9747FF] w-fit md:text-xs lg:left-[150px] relative lg:top-[10px] md:top-[20px] md:left-[80px] '>Your Gateway to Smarter Work, Powered by AI</p>
             <h1 className="lg:text-[165px] md:text-[98.67px] sm:text-[58.88px] sm:font-bold md:font-bold lg:font-black leading-tight text-[#ffffff] z-20 lg:-mt-10">
               About Us
             </h1>
