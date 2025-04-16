@@ -107,22 +107,24 @@ const Howitworks = () => {
         <p className='font-bold lg:text-6xl md:text-5xl sm:text-3xl text-center text-[#f4f4f4]'>Why Choose Voyex?</p>
       </div>
 
-      <div className='flex items-start justify-between md:flex-row sm:flex-col md:px-6 sm:px-4 sm:py-5 md:py-8 md:gap-6 sm:gap-5 bg-[#0d0d0d] border border-[#ffffff20] md:rounded-2xl sm:rounded-[10px] text-[#f4f4f4]' data-aos='fade-up'>
-        {data.map((item, index) => (
-          <div
-            key={index}
-            className='flex flex-col md:w-1/3 sm:w-full px-2'
-            data-aos='fade-in'
-            data-aos-delay={index * 200}
-          >
-            <p className='font-black md:text-2xl sm:text-xl mb-1'>{item.number}</p>
-            <p className='font-bold md:text-xl sm:text-lg leading-tight mb-2'>{item.title}</p>
-            <p className='font-normal text-sm md:text-base leading-relaxed line-clamp-2'>
-              {item.desc}
-            </p>
-          </div>
-        ))}
+      <div className='flex items-start justify-between max-w-[1380px] lg:ml-8  md:flex-row sm:flex-col md:px-6 sm:px-4 sm:py-5 md:py-8 md:gap-6 sm:gap-5 bg-[#0d0d0d] border border-[#ffffff20] md:rounded-2xl sm:rounded-[10px] text-[#f4f4f4]' data-aos='fade-up'>
+  {data.map((item, index) => (
+    <div
+      key={index}
+      className='flex flex-col md:w-1/3 sm:w-full px-2'
+      data-aos='fade-in'
+      data-aos-delay={index * 200}
+    >
+      <p className='font-black md:text-2xl sm:text-xl mb-1'>{item.number}</p>
+      <p className='font-bold md:text-xl sm:text-lg leading-tight mb-2'>{item.title}</p>
+      <div className="line-clamp-3 text-sm md:text-base leading-snug overflow-hidden">
+        {item.desc}
       </div>
+    </div>
+  ))}
+</div>
+
+
     </div>
   );
 };
