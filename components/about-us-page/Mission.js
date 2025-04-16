@@ -92,7 +92,7 @@ const Mission = () => {
       data-aos='fade-left'
       className='font-normal text-[#f4f4f4] lg:text-3xl md:text-base sm:text-base'
     >
-      To make AI practical, personal, and productive for everyone. <br />
+      To make AI practical, personal, and productive for everyone.
       We're not building another AI tool — we're building the engine that helps you find the right ones. <br />
       From startups to solo creators to large enterprises, we're making AI more accessible, more intuitive, and more effective.
     </p>
