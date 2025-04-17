@@ -95,7 +95,7 @@ const Final = () => {
           <div className='md:mt-[40px] sm:mt-[72px] border-t border-white/20 flex md:flex-row sm:flex-col md:px-[40px] md:py-[20px] sm:py-[50px] md:justify-between sm:justify-center sm:items-center sm:gap-3 md:gap-0'>
   
             {/* Copyright Text */}
-            <p className='text-sm font-normal text-center text-[#808080]'>@ 2024 VOYEX, Inc. All rights reserved</p>
+            <p className='text-sm font-normal text-center text-[#808080]'>@ 2025 VOYEX, Inc. All rights reserved</p>
   
             {/* Privacy Policy & Terms */}
             <div className='flex space-x-4 text-sm'>
