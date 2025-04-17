@@ -3,76 +3,142 @@
 import React, { useState, useRef, useEffect } from "react";
 import Header from "../../components/Header/Header";
 
-const Privacy = () => {
+const Terms = () => {
   const [isOpen, setIsOpen] = useState(false);
   const [selectedLanguage, setSelectedLanguage] = useState("Select Language");
   const dropdownRef = useRef(null);
 
-  // Close dropdown when clicking outside
   useEffect(() => {
     const handleClickOutside = (event) => {
-      if (dropdownRef.current && dropdownRef.current.contains(event.target)) {
-        return;
+      if (dropdownRef.current && !dropdownRef.current.contains(event.target)) {
+        setIsOpen(false);
       }
-      setIsOpen(false);
     };
-
     document.addEventListener("mousedown", handleClickOutside);
-    return () => {
-      document.removeEventListener("mousedown", handleClickOutside);
-    };
+    return () => document.removeEventListener("mousedown", handleClickOutside);
   }, []);
 
-  const languages = ["English", "Kannada", "Hindi", "Telugu"];
-
   return (
-    <div className="text-white min-h-screen flex flex-col">
-      {/* Header */}
+    <div
+      className="min-h-screen text-white font-sans bg-cover bg-center">
       <Header />
 
-      {/* Centered Content */}
-      <div className="flex-grow flex items-center justify-center">
-        <div className="max-w-3xl w-full px-6 text-center">
+      {/* Top Info Section */}
+      <div className="flex flex-col items-center justify-center mt-18 text-center px-4 pt-12 pb-16">
+        {/* Language Selector */}
+        <div ref={dropdownRef} className="mb-6">
+  <button
+    onClick={() => setIsOpen(!isOpen)}
+    className="bg-[#313131] text-white text-sm rounded-full px-4 py-2  flex items-center gap-2"
+  >
+    {selectedLanguage}
+    <svg
+      className="w-3 h-3 text-blue-300"
+      fill="currentColor"
+      viewBox="0 0 20 20"
+    >
+      <path
+        fillRule="evenodd"
+        d="M5.23 7.21a.75.75 0 011.06.02L10 11.174l3.71-3.944a.75.75 0 111.08 1.04l-4.25 4.52a.75.75 0 01-1.08 0l-4.25-4.52a.75.75 0 01.02-1.06z"
+        clipRule="evenodd"
+      />
+    </svg>
+  </button>
+          {isOpen && (
+            <div className="absolute mt-2 bg-white text-black rounded-md shadow-md">
+              <div
+                onClick={() => {
+                  setSelectedLanguage("English");
+                  setIsOpen(false);
+                }}
+                className="px-4 py-2 hover:bg-gray-100 cursor-pointer"
+              >
+                English
+              </div>
+              <div
+                onClick={() => {
+                  setSelectedLanguage("Hindi");
+                  setIsOpen(false);
+                }}
+                className="px-4 py-2 hover:bg-gray-100 cursor-pointer"
+              >
+                Hindi
+              </div>
+            </div>
+          )}
+        </div>
 
-          {/* Published Date */}
-          <p className="text-400 text-sm mt-6">Published: 27 February, 2025</p>
+        {/* Dates & Title */}
+        <p className="text-sm text-[#F4F4F4] -mt-2 mb-2">Published: 27 February, 2025</p>
+        <h1 className="text-6xl font-extrabold mt-2 mb-2">Terms of Use</h1>
+        <p className="text-md text-[#F4F4F4] mb-6 mt-2">
+          Effective: December 11, 2024 (previous version)
+        </p>
 
-          {/* Title */}
-          <h2 className="text-5xl font-bold tracking-wide mt-4 mb-4">Terms Of Use</h2>
+        {/* Intro Paragraph */}
+        <p className="max-w-[600px] text-gray-200 text-left mt-20 mr-[84px] text-lg">
+          Welcome to Voyex. By using our website or services, you agree to these Terms & Conditions.
+        </p>
+      </div>
 
-          {/* Effective Date */}
-          <p className="text-400 text-sm">Effective: December 11, 2024 (previous version)</p>
+       {/* Terms Content */}
+       <div className="max-w-[760px] mx-auto px-10 py-12 space-y-10 -mt-10 text-gray-200">
+        <div className="space-y-4">
+          <h2 className="text-3xl font-bold ml-4">1. Information we collect</h2>
+          <p>
+            Voyex is a discovery and recommendation platform for AI tools. Users input their goals or queries, and we suggest tools that may help achieve those goals.
+            <br />
+            We <strong><em>do not host, own, or operate</em></strong> the tools listed on our platform.
+          </p>
+        </div>
 
-          {/* Terms Content */}
-          <div className="mt-6 text-gray-300 leading-relaxed text-left text-lg">
-            <p>Thank you for using OpenAI!</p>
-            <p className="mt-4">
-              These Terms of Use apply to your use of ChatGPT, DALL-E, and OpenAI&apos;s other services for individuals,
-              along with any associated software applications and websites (all together, “Services”). These Terms form
-              an agreement between you and OpenAI, L.L.C., a Delaware company, and they include our
-              <a href="#" className="text-blue-400 hover:underline"> Service Terms </a>
-              and important provisions for resolving disputes through arbitration. By using our Services, you agree to
-              these Terms.
-            </p>
-            <p className="mt-4">
-              If you reside in the European Economic Area, Switzerland, or the UK, your use of the Services is governed by
-              <a href="#" className="text-blue-400 hover:underline"> these terms </a>.
-            </p>
-            <p className="mt-4">
-              Our
-              <a href="#" className="text-blue-400 hover:underline"> Business Terms </a>
-              govern use of ChatGPT Enterprise, our APIs, and our other services for businesses and developers.
-            </p>
-            <p className="mt-4">
-              Our
-              <a href="/privacy" className="text-blue-400 hover:underline"> Privacy Policy </a>
-              explains how we collect and use personal information. Although it does not form part of these Terms, it is an important document that you should read.
-            </p>
-          </div>
+        <div className="space-y-4">
+          <h2 className="text-3xl font-bold ml-4">2. No Liability for Third-Party Tools</h2>
+          <ul className="list-disc pl-6 space-y-2">
+            <li>
+              Voyex <strong><em>does not guarantee</em></strong> the accuracy, reliability, or safety of any tool recommended on the platform.
+            </li>
+            <li>
+              We are not responsible for any <strong><em>data loss, privacy issues, inappropriate results, or technical errors</em></strong> caused by third-party services.
+            </li>
+            <li>
+              Users must <strong><em>review and agree</em></strong> to the terms of each tool before using it.
+            </li>
+          </ul>
+        </div>
+
+        <div className="space-y-4">
+          <h2 className="text-3xl font-bold ml-4">3. Content Disclaimer</h2>
+          <p>
+            Prompt suggestions, templates, and workflows are for informational purposes only. The final output and its consequences depend on the tools being used.
+          </p>
+          <p>Voyex does not take responsibility for:</p>
+          <ul className="list-disc pl-6 space-y-2">
+            <li>Generated content from third–party AI tools</li>
+            <li>Business decisions made based on tool suggestions</li>
+            <li>Any legal, ethical, or financial outcome of using a recommended service</li>
+          </ul>
+        </div>
+
+        <div className="space-y-4">
+          <h2 className="text-3xl font-bold ml-4">4. Use of Platform</h2>
+          <p>By using Voyex, you agree not to:</p>
+          <ul className="list-disc pl-6 space-y-2">
+            <li>Misuse the platform for harmful, illegal, or abusive purposes</li>
+            <li>Attempt to reverse–engineer or clone the service</li>
+            <li>Hold Voyex liable for any loss incurred from using external tools</li>
+          </ul>
+        </div>
+
+        <div className="space-y-4">
+          <h2 className="text-3xl font-bold ml-4">5. Changes to the Terms</h2>
+          <p>
+            We may update these terms from time to time. Continued use of the platform after changes means you accept the revised terms.
+          </p>
         </div>
       </div>
-    </div>
+      </div>
   );
 };
 
-export default Privacy;
+export default Terms;

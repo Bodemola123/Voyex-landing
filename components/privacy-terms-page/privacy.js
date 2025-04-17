@@ -8,70 +8,135 @@ const Privacy = () => {
   const [selectedLanguage, setSelectedLanguage] = useState("Select Language");
   const dropdownRef = useRef(null);
 
-  // Close dropdown when clicking outside
   useEffect(() => {
     const handleClickOutside = (event) => {
-      if (dropdownRef.current && dropdownRef.current.contains(event.target)) {
-        return;
+      if (dropdownRef.current && !dropdownRef.current.contains(event.target)) {
+        setIsOpen(false);
       }
-      setIsOpen(false);
     };
-
     document.addEventListener("mousedown", handleClickOutside);
-    return () => {
-      document.removeEventListener("mousedown", handleClickOutside);
-    };
+    return () => document.removeEventListener("mousedown", handleClickOutside);
   }, []);
 
-  const languages = ["English", "Kannada", "Hindi", "Telugu"];
-
   return (
-    <div className="text-white min-h-screen flex flex-col">
-      {/* Header */}
+    <div
+      className="min-h-screen text-white font-sans bg-cover bg-center">
       <Header />
 
-      {/* Centered Content */}
-      <div className="flex-grow flex items-center justify-center">
-        <div className="max-w-3xl w-full px-6 text-center">
+      {/* Top Info Section */}
+      <div className="flex flex-col items-center justify-center mt-18 text-center px-4 pt-12 pb-16">
+        {/* Language Selector */}
+        <div ref={dropdownRef} className="mb-6">
+  <button
+    onClick={() => setIsOpen(!isOpen)}
+    className="bg-[#313131] text-white text-sm rounded-full px-4 py-2  flex items-center gap-2"
+  >
+    {selectedLanguage}
+    <svg
+      className="w-3 h-3 text-blue-300"
+      fill="currentColor"
+      viewBox="0 0 20 20"
+    >
+      <path
+        fillRule="evenodd"
+        d="M5.23 7.21a.75.75 0 011.06.02L10 11.174l3.71-3.944a.75.75 0 111.08 1.04l-4.25 4.52a.75.75 0 01-1.08 0l-4.25-4.52a.75.75 0 01.02-1.06z"
+        clipRule="evenodd"
+      />
+    </svg>
+  </button>
 
-          {/* Published Date */}
-          <p className="text-400 text-sm mt-6">Published: 27 February, 2025</p>
-
-          {/* Title */}
-          <h2 className="text-5xl font-bold tracking-wide mt-4 mb-4">Privacy policy</h2>
-
-          {/* Effective Date */}
-          <p className="text-400 text-sm">Effective: December 11, 2024 (previous version)</p>
-
-          {/* Terms Content */}
-          <div className="mt-6 text-gray-300 leading-relaxed text-left text-lg">
-            <p>Thank you for using OpenAI!</p>
-            <p className="mt-4">
-              These Terms of Use apply to your use of ChatGPT, DALL-E, and OpenAI&apos;s other services for individuals,
-              along with any associated software applications and websites (all together, “Services”). These Terms form
-              an agreement between you and OpenAI, L.L.C., a Delaware company, and they include our
-              <a href="#" className="text-blue-400 hover:underline"> Service Terms </a>
-              and important provisions for resolving disputes through arbitration. By using our Services, you agree to
-              these Terms.
-            </p>
-            <p className="mt-4">
-              If you reside in the European Economic Area, Switzerland, or the UK, your use of the Services is governed by
-              <a href="#" className="text-blue-400 hover:underline"> these terms </a>.
-            </p>
-            <p className="mt-4">
-              Our
-              <a href="#" className="text-blue-400 hover:underline"> Business Terms </a>
-              govern use of ChatGPT Enterprise, our APIs, and our other services for businesses and developers.
-            </p>
-            <p className="mt-4">
-              Our
-              <a href="/privacy" className="text-blue-400 hover:underline"> Privacy Policy </a>
-              explains how we collect and use personal information. Although it does not form part of these Terms, it is an important document that you should read.
-            </p>
-          </div>
+          {isOpen && (
+            <div className="absolute mt-2 bg-white text-black rounded-md shadow-md">
+              <div
+                onClick={() => {
+                  setSelectedLanguage("English");
+                  setIsOpen(false);
+                }}
+                className="px-4 py-2 hover:bg-gray-100 cursor-pointer"
+              >
+                English
+              </div>
+              <div
+                onClick={() => {
+                  setSelectedLanguage("Hindi");
+                  setIsOpen(false);
+                }}
+                className="px-4 py-2 hover:bg-gray-100 cursor-pointer"
+              >
+                Hindi
+              </div>
+            </div>
+          )}
         </div>
+
+        {/* Dates & Title */}
+        <p className="text-sm text-[#F4F4F4] -mt-2 mb-2">Published: 27 February, 2025</p>
+        <h1 className="text-6xl font-extrabold mt-2 mb-2">Privacy policy</h1>
+        <p className="text-md text-[#F4F4F4] mb-6 mt-2">
+          Effective: December 11, 2024 (previous version)
+        </p>
+
+        {/* Intro Paragraph */}
+        <p className="max-w-[800px] text-gray-200 text-left mt-20 ml-[110px] text-lg">
+        At Voyex, we are committed to protecting your privacy. This Privacy Policy explains how we handle your information when you use our platform.
+        </p>
       </div>
-    </div>
+
+         {/* Terms Content */}
+         <div className="max-w-[760px] mx-auto px-10 py-12 space-y-10 -mt-10 text-gray-200">
+  <div className="space-y-4">
+    <h2 className="text-3xl font-bold ml-4">1. Information we collect</h2>
+    <p>
+      We collect limited information to improve your experience, such as:
+    </p>
+    <ul className="list-disc pl-6 space-y-2">
+      <li>Queries or inputs submitted on the platform</li>
+      <li>Browser/device metadata (for performance & analytics)</li>
+      <li>Optional user feedback or tool bookmarks (if logged in)</li>
+    </ul>
+    <p>
+      We do not collect or store any sensitive personal information (e.g., passwords, financial data) unless explicitly stated.
+    </p>
+  </div>
+
+  <div className="space-y-4">
+    <h2 className="text-3xl font-bold ml-4">2. How We Use Your Data</h2>
+    <ul className="list-disc pl-6 space-y-2">
+      <li>To personalize tool recommendations</li>
+      <li>To improve platform functionality and user experience</li>
+      <li>To monitor traffic and usage trends (via analytics services)</li>
+    </ul>
+  </div>
+
+  <div className="space-y-4">
+    <h2 className="text-3xl font-bold ml-4">3. Third–Party Tools and Services</h2>
+    <p>
+      Voyex recommends and links to third–party AI tools. We <em><strong>do not control, operate, or take responsibility</strong></em> for these external services.
+    </p>
+    <p>When you visit or use a tool listed on Voyex:</p>
+    <ul className="list-disc pl-6 space-y-2">
+      <li>You are subject to that tool’s own privacy policy and terms</li>
+      <li>Voyex does not store your data, prompts, or outputs sent to third–party platforms</li>
+      <li>We are not liable for any data handling or content generated by those tools</li>
+    </ul>
+  </div>
+
+  <div className="space-y-4">
+    <h2 className="text-3xl font-bold ml-4">4. Data Security</h2>
+    <p>
+      We follow best practices to protect any non–sensitive data we store. However, you are responsible for verifying the security and compliance of any third–party tool you choose to use.
+    </p>
+  </div>
+
+  <div className="space-y-4">
+    <h2 className="text-3xl font-bold ml-4">5. Your Rights</h2>
+    <p>
+      If you wish to access, delete, or request more information about your data (if applicable), please contact us at [support@voyex.ai]
+    </p>
+  </div>
+</div>
+
+      </div>
   );
 };
 
