@@ -25,52 +25,10 @@ const Terms = () => {
 
       {/* Top Info Section */}
       <div className="flex flex-col items-center justify-center mt-18 text-center px-4 pt-12 pb-16">
-        {/* Language Selector */}
-        <div ref={dropdownRef} className="mb-6">
-  <button
-    onClick={() => setIsOpen(!isOpen)}
-    className="bg-[#313131] text-white text-sm rounded-full px-4 py-2  flex items-center gap-2"
-  >
-    {selectedLanguage}
-    <svg
-      className="w-3 h-3 text-blue-300"
-      fill="currentColor"
-      viewBox="0 0 20 20"
-    >
-      <path
-        fillRule="evenodd"
-        d="M5.23 7.21a.75.75 0 011.06.02L10 11.174l3.71-3.944a.75.75 0 111.08 1.04l-4.25 4.52a.75.75 0 01-1.08 0l-4.25-4.52a.75.75 0 01.02-1.06z"
-        clipRule="evenodd"
-      />
-    </svg>
-  </button>
-          {isOpen && (
-            <div className="absolute mt-2 bg-white text-black rounded-md shadow-md">
-              <div
-                onClick={() => {
-                  setSelectedLanguage("English");
-                  setIsOpen(false);
-                }}
-                className="px-4 py-2 hover:bg-gray-100 cursor-pointer"
-              >
-                English
-              </div>
-              <div
-                onClick={() => {
-                  setSelectedLanguage("Hindi");
-                  setIsOpen(false);
-                }}
-                className="px-4 py-2 hover:bg-gray-100 cursor-pointer"
-              >
-                Hindi
-              </div>
-            </div>
-          )}
-        </div>
-
+       
         {/* Dates & Title */}
-        <p className="text-sm text-[#F4F4F4] -mt-2 mb-2">Published: 27 February, 2025</p>
-        <h1 className="text-6xl font-extrabold mt-2 mb-2">Terms of Use</h1>
+        <p classname="text-sm text-[#F4F4F4] -mt-2 mb-2">Published: 18 April, 2025</p>
+        <h1 className="text-6xl font-extrabold mt-2 mb-2">Terms & Conditions</h1>
         <p className="text-md text-[#F4F4F4] mb-6 mt-2">
           Effective: December 11, 2024 (previous version)
         </p>
@@ -84,9 +42,10 @@ const Terms = () => {
        {/* Terms Content */}
        <div className="max-w-[760px] mx-auto px-10 py-12 space-y-10 -mt-10 text-gray-200">
         <div className="space-y-4">
-          <h2 className="text-3xl font-bold ml-4">1. Information we collect</h2>
+          <h2 className="text-3xl font-bold ml-4">1. Service Overview</h2>
           <p>
             Voyex is a discovery and recommendation platform for AI tools. Users input their goals or queries, and we suggest tools that may help achieve those goals.
+            <br />
             <br />
             We <strong><em>do not host, own, or operate</em></strong> the tools listed on our platform.
           </p>
