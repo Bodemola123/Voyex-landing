@@ -81,7 +81,7 @@ const CircularRings = () => {
     const loadedImages = new Map();
 
     const drawRings = () => {
-      ctx.strokeStyle = "rgba(255, 255, 255, 0.2)";
+      ctx.strokeStyle = "rgba(255, 255, 255, 0.1)";
       ctx.lineWidth = 1;
       for (let i = 1; i <= ringCount; i++) {
         ctx.beginPath();
