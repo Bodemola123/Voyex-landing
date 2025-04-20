@@ -7,7 +7,7 @@ const Final = () => {
     const [isSubmitting, setIsSubmitting] = useState(false);
     const [error, setError] = useState('');
     const [isInView, setIsInView] = useState(false); // State to track if the Bolt image is in view
-    const boltRef = useRef(null); // Ref for the Bolt image
+    const boltRef = useRef(null); 
 
     // Set up the IntersectionObserver to detect when the Bolt SVG is in the viewport
     useEffect(() => {
@@ -46,7 +46,7 @@ const Final = () => {
     };
 
   return (
-    <div className='-mt-32 flex flex-col lg:px-[120px] md:px-[10px] sm:px-[16px]'>
+    <div className='-mt-38 flex flex-col lg:px-[120px] md:px-[10px] sm:px-[16px]'>
         <div className='flex flex-row sm:gap-[40px] justify-center items-center sm:mx-auto'>
             <Image src={'/Chart.svg'} alt='chart' width={263} height={263} className='relative lg:top-[36px] md:top-[-136px] lg:left-0 md:right-[0px] sm:hidden lg:flex md:hidden message-bubble'/>
             <div className='flex flex-col gap-[20px]'>
@@ -95,11 +95,7 @@ const Final = () => {
         
         <div className='flex flex-row lg:gap-[16px] md:gap-[15px] sm:gap-[15px] justify-center items-center'>
           <div className="social-icon hover:scale-125 transition-transform duration-200 cursor-pointer"><Image src={'/X.svg'} alt='X' width={16} height={14}/></div>
-          <div className="social-icon hover:scale-125 transition-transform duration-200 cursor-pointer"><Image src={'/Insta.svg'} alt='Instagram' width={19.5} height={19.5}/></div>
-          <div className="social-icon hover:scale-125 transition-transform duration-200 cursor-pointer"><Image src={'/Pinterest.svg'} alt='Pinterest' width={16} height={16}/></div>
           <div className="social-icon hover:scale-125 transition-transform duration-200 cursor-pointer "><Image src={'/Linkedin.svg'} alt='LinkedIn' width={16} height={16}/></div>
-          <div className="social-icon hover:scale-125 transition-transform duration-200 cursor-pointer"><Image src={'/Tiktok.svg'} alt='TikTok' width={17} height={15}/></div>
-          <div className="social-icon hover:scale-125 transition-transform duration-200 cursor-pointer"><Image src={'/Youtube.svg'} alt='YouTube' width={21} height={16.5}/></div>
         </div>
         </div>
     </div>
