@@ -81,10 +81,6 @@
 
 // export default page
 
-'use client';
-
-import { useAnalytics } from './analytics/useAnalytics'; // 1. Import the hook
-
  import Companies from '@/components/Companies/Companies'
  import Everythingyouneed from '@/components/Everythingyouneed'
  import CTA from '@/components/Play/CTA'
@@ -98,9 +94,7 @@ import { useAnalytics } from './analytics/useAnalytics'; // 1. Import the hook
  import Final from '@/components/Play/Final'
  import Combo from '@/components/Combo'
 
-export default function page() {
-  useAnalytics(); // 2. Call the hook
-
+ const page = () => {
   return (
     <div className='relative flex flex-col w-full h-full'>
           <Combo/>
@@ -120,3 +114,5 @@ export default function page() {
     
   );
 }
+
+export default page

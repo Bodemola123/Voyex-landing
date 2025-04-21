@@ -47,14 +47,18 @@ const Privacy = ({ onClose }) => {
         <p className="lg:text-base sm:text-sm text-gray-300 mb-4 flex flex-col gap-1 max-h-[60vh]">Voyex may use third-party tools and services (e.g., analytics, payment processors) that operate under their own privacy policies. We recommend reviewing their policies to understand how your data is handled.</p>
         <h1 className="lg:text-lg sm:text-base font-semibold mb-2 text-left">7. Changes to This Policy</h1>
         <p className="lg:text-base sm:text-sm text-gray-300 mb-4 flex flex-col gap-1 max-h-[60vh]">We may update this Privacy Policy periodically. Any changes will be communicated via email or prominently on our website.</p>
-        <h1 className="lg:text-lg sm:text-base font-semibold mb-2 text-left">8. Contact Us</h1>
+        {/* <h1 className="lg:text-lg sm:text-base font-semibold mb-2 text-left">8. Contact Us</h1>
         <p className="lg:text-base sm:text-sm text-gray-300 mb-4 flex flex-col gap-1 max-h-[60vh]">
             For any privacy-related inquiries, please contact us:
-            <ol className="flex flex-col gap-1 list-disc px-4">
-                <li>Email: hi@untitledui.com</li>
-                <li>Phone: +1 (555) 000-0000</li>
-            </ol>
-        </p>
+            <a
+            href="https://www.voyex.com/contact"
+            target="_blank"
+            rel="noopener noreferrer"
+            className="text-[#c088fb] underline underline-offset-4 hover:text-[#a06de0]"
+          >
+            https://voyex-landing.vercel.app/privacy
+          </a>
+        </p> */}
         <button
           onClick={onClose}
           className="bg-[#c088fb] px-4 py-2 border border-[#c088fb] rounded-lg sm:text-base lg:text-base text-[#0a0a0b] w-full text-center"

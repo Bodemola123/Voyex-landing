@@ -30,7 +30,7 @@ const Privacy = () => {
         <p className="text-sm text-[#F4F4F4] -mt-2 mb-2">Published: 18 April, 2025</p>
         <h1 className="text-6xl font-extrabold mt-2 mb-2">Privacy policy</h1>
         <p className="text-md text-[#F4F4F4] mb-6 mt-2">
-          Effective: December 11, 2024 (previous version)
+          Effective: April 18, 2025 (previous version)
         </p>
 
         {/* Intro Paragraph */}
@@ -88,7 +88,7 @@ const Privacy = () => {
   <div className="space-y-4">
     <h2 className="text-3xl font-bold ml-4">5. Your Rights</h2>
     <p>
-      If you wish to access, delete, or request more information about your data (if applicable), please contact us at [support@voyex.ai]
+      If you wish to access, delete, or request more information about your data (if applicable), please contact us at  [voyex.outreach@gmail.com]
     </p>
   </div>
 </div>
