@@ -7,7 +7,7 @@ const CircularRings = () => {
   const [screenSize, setScreenSize] = useState(0);
   const images = [
      "/earthp.svg",
-     "/saturnp.svg",
+     "/planmars.png",
      "/neptunep.svg",
      "/jupp.png",
   ];
