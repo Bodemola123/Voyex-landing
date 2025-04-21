@@ -1,5 +1,4 @@
 import "./globals.css";
-import SessionWrapper from './SessionWrapper'; // use the wrapper
 
 export const metadata = {
   title: "Voyex",
@@ -26,14 +25,11 @@ export default function RootLayout({ children }) {
         className="antialiased scroll-container scrollbar-hide overflow-hidden md:bg-[url('/stars.svg.svg')] sm:bg-black w-full h-full bg-cover bg-no-repeat bg-fixed bg-center bg-origin-content"
         style={{ fontFamily: "'DM Sans', sans-serif" }}
       >
-        <SessionWrapper>
-          {children}
-        </SessionWrapper>
+        {children} {/* Content layer */}
       </body>
     </html>
   );
 }
-
 
 
 // import "./globals.css";

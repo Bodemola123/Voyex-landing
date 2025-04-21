@@ -160,101 +160,454 @@
 
 
 
+// 'use client';
+// import React, { useEffect, useState } from 'react';
+// import "../../app/globals.css";
+// import StarsCanvas from '../common/StarBackground';
+// import CircularRings from '../Circular';
+
+// const Hero = () => {
+//   const titles = [
+//     { text: 'Turn your ideas into', keyword: 'Workflow' },
+//     { text: 'Find the right', keyword: 'Tools' },
+//     { text: 'Your', keyword: 'Google for AI' },
+//   ];
+
+//   const [currentTitleIndex, setCurrentTitleIndex] = useState(0);
+//   const [displayedText, setDisplayedText] = useState('');
+//   const [isDeleting, setIsDeleting] = useState(false);
+
+//   useEffect(() => {
+//     const currentTitle = titles[currentTitleIndex];
+//     const fullText = currentTitle.text + ' ' + currentTitle.keyword;
+
+//     const typingSpeed = 90; // slow typing
+//     const deletingSpeed = 80; // slower untyping
+//     const pauseTime = 1000; // pause at full text
+
+//     const handleTyping = () => {
+//       setDisplayedText(prev => {
+//         const updatedText = isDeleting
+//           ? fullText.substring(0, prev.length - 1)
+//           : fullText.substring(0, prev.length + 1);
+
+//         return updatedText;
+//       });
+
+//       if (!isDeleting && displayedText === fullText) {
+//         setTimeout(() => setIsDeleting(true), pauseTime);
+//       } else if (isDeleting && displayedText === '') {
+//         setIsDeleting(false);
+//         setCurrentTitleIndex(prev => (prev + 1) % titles.length);
+//       }
+//     };
+
+//     const timer = setTimeout(handleTyping, isDeleting ? deletingSpeed : typingSpeed);
+//     return () => clearTimeout(timer);
+//   }, [displayedText, isDeleting, currentTitleIndex]);
+
+//   const currentTitle = titles[currentTitleIndex];
+//   const mainText = currentTitle.text;
+//   const keyword = currentTitle.keyword;
+
+//   const mainTextLength = mainText.length;
+
+//   return (
+//     <div className="relative overflow-visible z-20 mt-12">
+//       <div className="flex flex-col items-center justify-center mt-20 text-center gap-6 transition-opacity duration-1000 h-full ">
+//         <h1 className="text-5xl md:text-7xl font-bold text-white leading-snug absolute -top-16 mt-40">
+//           {displayedText.length <= mainTextLength ? (
+//             <>
+//               {displayedText}
+//             </>
+//           ) : (
+//             <>
+//               {mainText}
+//               <br />
+//               <span className="text-purple-400">
+//                 {displayedText.slice(mainTextLength + 1)}
+//               </span>
+//             </>
+//           )}
+//         </h1>
+
+//         <p className="text-gray-300 text-base md:text-lg max-w-[600px] mt-40">
+//         Voyex helps you find the right AI tools for your usecases. Find AI tools 
+// with just a query. It simplifies finding, using and querying AI tools and 
+// create your own mini agency. 
+//         </p>
+
+//         {/* Buttons */}
+//         <div className="flex gap-4 mt-4">
+//           <button className="bg-[#C088FB] text-[#0A0A0B] px-6 py-3 rounded-full font-medium hover transition">
+//             Start your AI Journey
+//           </button>
+//           <button className="bg-[#F4F4F4] text-[#0A0A0B] px-6 py-3 rounded-full font-medium hover transition">
+//            Upload Product
+//           </button>
+
+//            {/* Background orbits with reduced scale and blur */}
+//            <div className="absolute inset-0 pointer-events-none z-[-1] flex items-center justify-center transform scale-90 filter">
+//             <CircularRings />
+//            <StarsCanvas />
+//            </div>
+//       </div>
+//     </div>
+//   </div>
+//   );
+// };
+
+// export default Hero; 
+
+
+
+// 'use client';
+// import React, { useEffect, useState } from 'react';
+// import "../../app/globals.css";
+// import StarsCanvas from '../common/StarBackground';
+// import CircularRings from '../Circular';
+
+// const titles = [
+//   {
+//     text: 'Turn your Ideas into ',
+//     keyword: 'Workflow',
+//     typewriter: true,
+//   },
+//   {
+//     text: 'Discover and use the',
+//     keyword: 'tools that align with your goals ',
+//     typewriter: true,
+//   },
+//   {
+//     text: ' at your fingertips.',
+//     keyword: 'Your AI powered Agency ',
+//     typewriter: true,
+//   },
+// ];
+
+// const Hero = () => {
+//   const [currentTitleIndex, setCurrentTitleIndex] = useState(0);
+//   const [typedKeyword, setTypedKeyword] = useState('');
+//   const [isDeleting, setIsDeleting] = useState(false);
+
+//   // Typewriter effect for "Workflow" only in the first title
+//   useEffect(() => {
+//     if (!titles[currentTitleIndex].typewriter) return;
+
+//     const keyword = titles[currentTitleIndex].keyword;
+//     const typingSpeed = 90;
+//     const deletingSpeed = 80;
+//     const pauseTime = 1200;
+
+//     let timer;
+//     if (!isDeleting && typedKeyword.length < keyword.length) {
+//       timer = setTimeout(() => {
+//         setTypedKeyword(keyword.substring(0, typedKeyword.length + 1));
+//       }, typingSpeed);
+//     } else if (!isDeleting && typedKeyword.length === keyword.length) {
+//       timer = setTimeout(() => setIsDeleting(true), pauseTime);
+//     } else if (isDeleting && typedKeyword.length > 0) {
+//       timer = setTimeout(() => {
+//         setTypedKeyword(keyword.substring(0, typedKeyword.length - 1));
+//       }, deletingSpeed);
+//     } else if (isDeleting && typedKeyword.length === 0) {
+//       setIsDeleting(false);
+//       setCurrentTitleIndex((prev) => (prev + 1) % titles.length);
+//     }
+//     return () => clearTimeout(timer);
+//   }, [typedKeyword, isDeleting, currentTitleIndex]);
+
+//   // When switching to a non-typewriter title, auto-advance after a pause
+//   useEffect(() => {
+//     if (!titles[currentTitleIndex].typewriter) {
+//       const timer = setTimeout(() => {
+//         setCurrentTitleIndex((prev) => (prev + 1) % titles.length);
+//         setTypedKeyword('');
+//         setIsDeleting(false);
+//       }, 2200);
+//       return () => clearTimeout(timer);
+//     } else {
+//       setTypedKeyword('');
+//       setIsDeleting(false);
+//     }
+//   }, [currentTitleIndex]);
+
+//   // Render logic
+//   const current = titles[currentTitleIndex];
+
+//   return (
+//     <div className="relative overflow-visible z-20 mt-12">
+//       <div className="flex flex-col items-start justify-center mt-32 text-left gap-8 transition-opacity duration-1000 h-full max-w-3xl mx-auto">
+//         <h1 className="text-5xl md:text-7xl font-bold text-white leading-snug mb-2">
+//           {current.typewriter ? (
+//             <>
+//               {current.text}
+//               <span className="text-purple-400">
+//                 {typedKeyword}
+//                 <span className="animate-pulse">|</span>
+//               </span>
+//             </>
+//           ) : (
+//             current.text
+//           )}
+//         </h1>
+//         <p className="text-gray-300 text-base md:text-lg max-w-2xl mb-6">
+//           Voyex is your superapp for finding the right AI tools and workflows tailored to your use case. Describe your needs, and it helps you build a mini agency effortlessly.
+//         </p>
+//         <div className="flex gap-4 mt-2">
+//           <button className="bg-[#C088FB] text-[#0A0A0B] px-6 py-3 rounded-full font-medium hover:scale-105 transition">
+//             Start your AI Journey
+//           </button>
+//           <button className="bg-[#F4F4F4] text-[#0A0A0B] px-6 py-3 rounded-full font-medium hover:scale-105 transition">
+//             Upload Product
+//           </button>
+//         </div>
+//         {/* Background orbits with reduced scale and blur */}
+//         <div className="absolute inset-0 pointer-events-none z-[-1] flex items-center justify-center transform scale-90 filter">
+//           <CircularRings />
+//           <StarsCanvas />
+//         </div>
+//       </div>
+//     </div>
+//   );
+// };
+
+// export default Hero;
+
+
+
+// 'use client';
+// import React, { useEffect, useState } from 'react';
+// import "../../app/globals.css";
+// import StarsCanvas from '../common/StarBackground';
+// import CircularRings from '../Circular';
+
+// const titles = [
+//   {
+//     text: 'Turn your Ideas into ',
+//     keyword: 'Workflow',
+//     typewriter: true,
+//     showTextAfter: false,
+//   },
+//   {
+//     text: 'Discover and use the',
+//     keyword: ' tools that align with your goals',
+//     typewriter: true,
+//     showTextAfter: false,
+//   },
+//   {
+//     text: ' at your fingertips.',
+//     keyword: 'Your AI powered Agency',
+//     typewriter: true,
+//     showTextAfter: true, // Show text after keyword
+//   },
+// ];
+
+// const Hero = () => {
+//   const [currentTitleIndex, setCurrentTitleIndex] = useState(0);
+//   const [typedKeyword, setTypedKeyword] = useState('');
+//   const [isDeleting, setIsDeleting] = useState(false);
+
+//   useEffect(() => {
+//     if (!titles[currentTitleIndex].typewriter) return;
+
+//     const keyword = titles[currentTitleIndex].keyword;
+//     const typingSpeed = 90;
+//     const deletingSpeed = 80;
+//     const pauseTime = 1200;
+
+//     let timer;
+//     if (!isDeleting && typedKeyword.length < keyword.length) {
+//       timer = setTimeout(() => {
+//         setTypedKeyword(keyword.substring(0, typedKeyword.length + 1));
+//       }, typingSpeed);
+//     } else if (!isDeleting && typedKeyword.length === keyword.length) {
+//       timer = setTimeout(() => setIsDeleting(true), pauseTime);
+//     } else if (isDeleting && typedKeyword.length > 0) {
+//       timer = setTimeout(() => {
+//         setTypedKeyword(keyword.substring(0, typedKeyword.length - 1));
+//       }, deletingSpeed);
+//     } else if (isDeleting && typedKeyword.length === 0) {
+//       setIsDeleting(false);
+//       setCurrentTitleIndex((prev) => (prev + 1) % titles.length);
+//     }
+//     return () => clearTimeout(timer);
+//   }, [typedKeyword, isDeleting, currentTitleIndex]);
+
+//   useEffect(() => {
+//     setTypedKeyword('');
+//     setIsDeleting(false);
+//   }, [currentTitleIndex]);
+
+//   const current = titles[currentTitleIndex];
+
+//   return (
+//     <div className="relative overflow-visible z-20 mt-12">
+//       <div className="flex flex-col items-start justify-center mt-32 text-left gap-8 transition-opacity duration-1000 h-full max-w-3xl mx-auto">
+//         <h1 className="text-5xl md:text-7xl font-bold text-white leading-snug mb-2">
+//           {/* Special handling for the third title */}
+//           {current.showTextAfter ? (
+//             <>
+//               <span className="text-purple-400">
+//                 {typedKeyword}
+//                 <span className="animate-pulse">|</span>
+//               </span>
+//               {typedKeyword.length === current.keyword.length && (
+//                 <span className="text-white">{current.text}</span>
+//               )}
+//             </>
+//           ) : (
+//             <>
+//               {current.text}
+//               <span className="text-purple-400">
+//                 {typedKeyword}
+//                 <span className="animate-pulse">|</span>
+//               </span>
+//             </>
+//           )}
+//         </h1>
+//         <p className="text-gray-300 text-base md:text-lg max-w-2xl mb-6">
+//           Voyex is your superapp for finding the right AI tools and workflows tailored to your use case. Describe your needs, and it helps you build a mini agency effortlessly.
+//         </p>
+//         <div className="flex gap-4 mt-2">
+//           <button className="bg-[#C088FB] text-[#0A0A0B] px-6 py-3 rounded-full font-medium hover:scale-105 transition">
+//             Start your AI Journey
+//           </button>
+//           <button className="bg-[#F4F4F4] text-[#0A0A0B] px-6 py-3 rounded-full font-medium hover:scale-105 transition">
+//             Upload Product
+//           </button>
+//         </div>
+//         {/* Background orbits with reduced scale and blur */}
+//         <div className="absolute inset-0 pointer-events-none z-[-1] flex items-center justify-center transform scale-90 filter">
+//           <CircularRings />
+//           <StarsCanvas />
+//         </div>
+//       </div>
+//     </div>
+//   );
+// };
+
+// export default Hero;
+
+
 'use client';
 import React, { useEffect, useState } from 'react';
 import "../../app/globals.css";
 import StarsCanvas from '../common/StarBackground';
 import CircularRings from '../Circular';
 
-const Hero = () => {
-  const titles = [
-    { text: 'Turn your ideas into', keyword: 'Workflow' },
-    { text: 'Find the right', keyword: 'Tools' },
-    { text: 'Your', keyword: 'Google for AI' },
-  ];
+const titles = [
+  {
+    text: 'Turn your Ideas into\n ',
+    keyword: 'Workflow',
+    typewriter: true,
+    showTextAfter: false,
+  },
+  {
+    text: 'Discover and use the\n',
+    keyword: ' tools that align with your goals',
+    typewriter: true,
+    showTextAfter: false,
+  },
+  {
+    text: ' at your fingertips.',
+    keyword: 'Your AI powered Agency',
+    typewriter: true,
+    showTextAfter: true,
+  },
+];
 
+const Hero = () => {
   const [currentTitleIndex, setCurrentTitleIndex] = useState(0);
-  const [displayedText, setDisplayedText] = useState('');
+  const [typedKeyword, setTypedKeyword] = useState('');
   const [isDeleting, setIsDeleting] = useState(false);
 
   useEffect(() => {
-    const currentTitle = titles[currentTitleIndex];
-    const fullText = currentTitle.text + ' ' + currentTitle.keyword;
+    if (!titles[currentTitleIndex].typewriter) return;
 
-    const typingSpeed = 90; // slow typing
-    const deletingSpeed = 80; // slower untyping
-    const pauseTime = 1000; // pause at full text
+    const keyword = titles[currentTitleIndex].keyword;
+    const typingSpeed = 90;
+    const deletingSpeed = 80;
+    const pauseTime = 1200;
 
-    const handleTyping = () => {
-      setDisplayedText(prev => {
-        const updatedText = isDeleting
-          ? fullText.substring(0, prev.length - 1)
-          : fullText.substring(0, prev.length + 1);
-
-        return updatedText;
-      });
-
-      if (!isDeleting && displayedText === fullText) {
-        setTimeout(() => setIsDeleting(true), pauseTime);
-      } else if (isDeleting && displayedText === '') {
-        setIsDeleting(false);
-        setCurrentTitleIndex(prev => (prev + 1) % titles.length);
-      }
-    };
-
-    const timer = setTimeout(handleTyping, isDeleting ? deletingSpeed : typingSpeed);
+    let timer;
+    if (!isDeleting && typedKeyword.length < keyword.length) {
+      timer = setTimeout(() => {
+        setTypedKeyword(keyword.substring(0, typedKeyword.length + 1));
+      }, typingSpeed);
+    } else if (!isDeleting && typedKeyword.length === keyword.length) {
+      timer = setTimeout(() => setIsDeleting(true), pauseTime);
+    } else if (isDeleting && typedKeyword.length > 0) {
+      timer = setTimeout(() => {
+        setTypedKeyword(keyword.substring(0, typedKeyword.length - 1));
+      }, deletingSpeed);
+    } else if (isDeleting && typedKeyword.length === 0) {
+      setIsDeleting(false);
+      setCurrentTitleIndex((prev) => (prev + 1) % titles.length);
+    }
     return () => clearTimeout(timer);
-  }, [displayedText, isDeleting, currentTitleIndex]);
+  }, [typedKeyword, isDeleting, currentTitleIndex]);
 
-  const currentTitle = titles[currentTitleIndex];
-  const mainText = currentTitle.text;
-  const keyword = currentTitle.keyword;
+  useEffect(() => {
+    setTypedKeyword('');
+    setIsDeleting(false);
+  }, [currentTitleIndex]);
 
-  const mainTextLength = mainText.length;
+  const current = titles[currentTitleIndex];
 
   return (
     <div className="relative overflow-visible z-20 mt-12">
-      <div className="flex flex-col items-center justify-center mt-20 text-center gap-6 transition-opacity duration-1000 h-full ">
-        <h1 className="text-5xl md:text-7xl font-bold text-white leading-snug absolute -top-16 mt-40">
-          {displayedText.length <= mainTextLength ? (
+      <div className="flex flex-col items-start justify-center mt-[56px] text-left gap-8 transition-opacity duration-1000 h-full max-w-3xl ml-80">
+        <h1 
+          className="text-5xl md:text-7xl font-bold text-white leading-tight mb-2"
+          style={{
+            display: '-webkit-box',
+            WebkitLineClamp: '2',
+            WebkitBoxOrient: 'vertical',
+            overflow: 'hidden',
+            lineHeight: '1.2',
+            minHeight: '2.4em',
+          }}
+        >
+          {current.showTextAfter ? (
             <>
-              {displayedText}
+              <span className="text-purple-400 block whitespace-nowrap">
+                {typedKeyword}
+                <span className="animate-pulse">|</span>
+              </span>
+              {typedKeyword.length === current.keyword.length && (
+                <span className="text-white block">{current.text}</span>
+              )}
             </>
           ) : (
             <>
-              {mainText}
-              <br />
-              <span className="text-purple-400">
-                {displayedText.slice(mainTextLength + 1)}
+              <span className="block whitespace-normal">{current.text}</span>
+              <span className="text-purple-400 block whitespace-nowrap">
+                {typedKeyword}
+                <span className="animate-pulse">|</span>
               </span>
             </>
           )}
         </h1>
-
-        <p className="text-gray-300 text-base md:text-lg max-w-[600px] mt-40">
-        Voyex helps you find the right AI tools for your usecases. Find AI tools 
-with just a query. It simplifies finding, using and querying AI tools and 
-create your own mini agency. 
+        <p className="text-gray-300 text-base md:text-lg max-w-3xl mb-6">
+          Voyex helps you find the right AI tools for your usecases. Find AI tools with just a query. It simplifies finding, using and querying AI tools and create your own mini agency.
         </p>
-
-        {/* Buttons */}
-        <div className="flex gap-4 mt-4">
-          <button className="bg-[#C088FB] text-[#0A0A0B] px-6 py-3 rounded-full font-medium hover transition">
+        <div className="flex gap-4 -mt-6">
+          <button className="bg-[#C088FB] text-[#0A0A0B] px-6 py-3 rounded-full font-medium hover:scale-105 transition">
             Start your AI Journey
           </button>
-          <button className="bg-[#F4F4F4] text-[#0A0A0B] px-6 py-3 rounded-full font-medium hover transition">
-           Upload Product
+          <button className="bg-[#F4F4F4] text-[#0A0A0B] px-6 py-3 rounded-full font-medium hover:scale-105 transition">
+            Upload Product
           </button>
-
-           {/* Background orbits with reduced scale and blur */}
-           <div className="absolute inset-0 pointer-events-none z-[-1] flex items-center justify-center transform scale-90 filter">
+        </div>
+        {/* Background orbits with reduced scale and blur */}
+        <div className="absolute inset-0 pointer-events-none z-[-1] flex items-center justify-center transform scale-90 filter">
             <CircularRings />
            <StarsCanvas />
            </div>
       </div>
     </div>
-  </div>
   );
 };
 
-export default Hero; 
+export default Hero;
