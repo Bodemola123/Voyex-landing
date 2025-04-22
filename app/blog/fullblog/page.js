@@ -1,8 +1,8 @@
 "use client";
 import React from "react";
 import Header from "@/components/Header/Header";
-import Final from "@/components/blog-page/final";
 import CTA from "@/components/about-us-page/CTA";
+import Final from "@/components/blog-page/Final";
 
 const FullBlog = () => {
   return (
@@ -92,10 +92,10 @@ const FullBlog = () => {
               AI is no longer reserved for tech teams or enterprise labs. From
               solopreneurs to creative teams, more people are looking for{" "}
               <span className="block mt-2">
-                ways to bring AI into their everyday tasks — whether it’s
+                ways to bring AI into their everyday tasks — whether it&apos;s
                 writing, marketing, research, or productivity.
               </span>{" "}
-              <span className="block mt-2">That’s exactly where Voyex comes in.</span>
+              <span className="block mt-2">That&apos;s exactly where Voyex comes in.</span>
             </p>
           </div>
 
