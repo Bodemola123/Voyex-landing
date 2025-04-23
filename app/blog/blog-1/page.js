@@ -67,7 +67,7 @@ const Blog1 = () => {
               className="text-[32px] leading-[100%] tracking-[-0.02em] font-bold mb-6"
               style={{ fontFamily: "DM Sans, sans-serif" }}
             >
-              Title
+              Title:
             </h2>
             <p
               className="text-[18px] leading-[100%] font-normal text-[#FFFFFF]"
