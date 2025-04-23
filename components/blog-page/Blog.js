@@ -4,7 +4,7 @@ import DetailedView from "./DetailedView";
 import Link from 'next/link';
 
 const categories = [
-  "All Categories", "Green House Gas(GHG)", "ESG Trends", "Net Zero", "Reporting Standards"
+  "All Categories"
 ];
 
 export default function Blog() {
@@ -53,7 +53,7 @@ export default function Blog() {
         <>
           {/* Category & View Toggle for Large Screens */}
           <div className="md:flex justify-between mb-6 sm:hidden">
-            <div className="flex flex-row gap-4 px-[1px] py-[1px] bg-[#0d0d0d] border border-[#ffffff20] rounded-[27px]">
+            <div className="flex flex-row gap-4 px-[1px] py-[1px] bg-[#0d0d0d] rounded-[27px]">
               {categories.map((cat) => (
                 <button
                   key={cat}
@@ -64,23 +64,17 @@ export default function Blog() {
                 </button>
               ))}
             </div>
-            <div className="flex flex-row gap-2">
+             <div className="flex flex-row gap-2">
               <button
                 className={`lg:px-5 lg:py-2.5 md:px-3 md:py-2 rounded-[27px] text-[#2d2d2d] text-base font-semibold ${view === "Articles" ? "bg-[#c088fb]" : "bg-[#ebffe8]"}`}
                 onClick={() => setView("Articles")}
               >
                 Articles
               </button>
-              <button
-                className={`lg:px-5 lg:py-2.5 md:px-3 md:py-2 rounded-[27px] text-[#2d2d2d] text-base font-semibold ${view === "Videos" ? "bg-[#c088fb]" : "bg-[#ebffe8]"}`}
-                onClick={() => setView("Videos")}
-              >
-                Videos
-              </button>
             </div>
           </div>
                     {/* Category & View Toggle for small Screens */}
-          <div className="md:hidden sm:flex justify-between mb-6">
+          {/* <div className="md:hidden sm:flex justify-between mb-6">
           <div className="relative">
               <button
                 onClick={() => setShowCategoryDropdown(!showCategoryDropdown)}
@@ -123,20 +117,21 @@ export default function Blog() {
                 </div>
               )}
             </div>
-          </div>
+          </div>  */}
 
+        
           {/* Article Grid */}
-          <div className="grid grid-cols-1 md:grid-cols-3 lg:grid-cols-3 gap-6">
-            {manualArticles.map((article, index) => (
-              <div key={index}>
-                <Link href="/blog/fullblog" passHref>
-                  <div>
-                    <ArticleCard {...article} />
-                  </div>
-                </Link>
-              </div>
-            ))}
-          </div>
+<div className="grid grid-cols-1 md:grid-cols-3 lg:grid-cols-3 gap-6">
+  {manualArticles.map((article, index) => (
+    <div key={index}>
+      <Link href={`/blog/blog-${index + 1}`} passHref>
+        <div>
+          <ArticleCard {...article} />
+        </div>
+      </Link>
+    </div>
+  ))}
+</div>
 
           <div className="text-center text-[#c088fb] font-semibold mt-8">
          More coming soon 
