@@ -26,7 +26,7 @@ const Blog1 = () => {
             src="/blog3.png"
             alt="Blog Card"
             className="w-full object-cover object-bottom"
-            style={{ height: "150%", marginTop: "-20%" }}
+            style={{ height: "150%", marginTop: "-25%" }}
           />
         </div>
 
