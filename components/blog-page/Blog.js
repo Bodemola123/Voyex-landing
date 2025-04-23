@@ -73,52 +73,6 @@ export default function Blog() {
               </button>
             </div>
           </div>
-                    {/* Category & View Toggle for small Screens */}
-          {/* <div className="md:hidden sm:flex justify-between mb-6">
-          <div className="relative">
-              <button
-                onClick={() => setShowCategoryDropdown(!showCategoryDropdown)}
-                className="px-5 py-2.5 border border-[#ffffff20] rounded-[17px] font-semibold text-base relative text-black bg-[#c088fb]"
-              >
-                {activeCategory} ▼
-              </button>
-              {showCategoryDropdown && (
-                <div className="absolute left-0 mt-1 w-[168px] bg-[#0d0d0d] border border-[#ffffff20] rounded-[17px] shadow-lg z-10 overflow-hidden">
-                  {categories.map((cat) => (
-                    <div
-                      key={cat}
-                      className={`px-4 py-2 cursor-pointer ${activeCategory === cat ? "bg-[#c088fb] text-[#0a0a0b]" : "text-[#f4f4f4] hover:bg-[#c088fb] hover:text-[#0a0a0b]"}`}
-                      onClick={() => { setActiveCategory(cat); setShowCategoryDropdown(false); }}
-                    >
-                      {cat}
-                    </div>
-                  ))}
-                </div>
-              )}
-            </div>
-            <div className="relative">
-              <button
-                onClick={() => setShowViewDropdown(!showViewDropdown)}
-                className="px-5 py-2.5 border border-[#ffffff20] rounded-[17px] font-semibold text-base relative bg-white text-black"
-              >
-                {view} ▼
-              </button>
-              {showViewDropdown && (
-                <div className="absolute right-0 mt-2 w-[120px] bg-[#0d0d0d] border border-[#ffffff20] rounded-[17px] shadow-lg z-10 overflow-hidden">
-                  {["Articles", "Videos"].map((option) => (
-                    <div
-                      key={option}
-                      className={`px-4 py-2 cursor-pointer ${view === option ? "bg-white text-black" : "text-[#f4f4f4]  hover:bg-[#c088fb] hover:text-[#0a0a0b]"}`}
-                      onClick={() => { setView(option); setShowViewDropdown(false); }}
-                    >
-                      {option}
-                    </div>
-                  ))}
-                </div>
-              )}
-            </div>
-          </div>  */}
-
         
           {/* Article Grid */}
 <div className="grid grid-cols-1 md:grid-cols-3 lg:grid-cols-3 gap-6">
