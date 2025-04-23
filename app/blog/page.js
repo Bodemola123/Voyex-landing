@@ -1,6 +1,6 @@
 "use client"
 // import CTA from '@/components/about-us-page/CTA'
-import Final from '@/components/about-us-page/Final'
+import Final from '@/components/blog-page/Final'
 import Blog from '@/components/blog-page/Blog'
 import Combo from '@/components/blog-page/Combo'
 import CTA from '@/components/blog-page/CTA'
