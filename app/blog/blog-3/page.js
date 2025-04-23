@@ -23,10 +23,10 @@ const Blog3 = () => {
         {/* Blog Card Image Section */}
         <div className="w-full h-[80vh] overflow-hidden mt-12 mb-12">
           <img
-            src="/blog3.png"
+            src="/blog1.png"
             alt="Blog Card"
             className="w-full object-cover object-bottom"
-            style={{ height: "150%", marginTop: "-25%" }}
+            style={{ height: "150%", marginTop: "-20%" }}
           />
         </div>
 

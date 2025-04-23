@@ -22,8 +22,8 @@ export default function Blog() {
       readTime: "4 Mins Read",
       date: "11 Jan, 2025",
       content: "Full content of the first blog post.",
-      image: "/blog1.png", // Placeholder image URL
-      imagePosition: "center 70%",
+      image: "/blog3.png", // Placeholder image URL
+      imagePosition: "center 90%",
     },
     {
       title: "Behind the Scenes - How th...",
@@ -42,8 +42,8 @@ export default function Blog() {
       readTime: "4 Mins Read",
       date: "11 Jan, 2025",
       content: "Full content of the third blog post.",
-      image: "/blog3.png", // Placeholder image URL
-      imagePosition: "center 90%",
+      image: "/blog1.png", // Placeholder image URL
+      imagePosition: "center 70%",
     },
   ];
 

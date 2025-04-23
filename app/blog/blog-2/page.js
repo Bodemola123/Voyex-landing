@@ -116,17 +116,17 @@ const Blog2 = () => {
               className="text-[32px] leading-[100%] tracking-[-0.02em] font-bold mb-6"
               style={{ fontFamily: "DM Sans, sans-serif" }}
             >
-              How It Works
+              Step-by-Step: How It Works
             </h2>
             <ol className="list-disc list-inside space-y-6 text-[18px] leading-[100%] font-normal text-[#FFFFFF]">
               <li>
-                <span className="font-semibold">You Enter a Query:</span> For example, “I want to market my product.”
+                <span className="font-semibold">You Enter a Query: </span> For example, “I want to market my product.”
               </li>
               <li>
-                <span className="font-semibold">Voyex Asks Smart Questions:</span> What kind of product? What marketing channels? Any visuals needed?
+                <span className="font-semibold">Voyex Asks Smart Questions: </span> What kind of product? What marketing channels? Any visuals needed?
               </li>
               <li>
-                <span className="font-semibold">We Narrow the Context:</span>Based on your answers, we understand the use case more clearly.
+                <span className="font-semibold">We Narrow the Context: </span>Based on your answers, we understand the use case more clearly.
               </li>
               <li>
                 <span className="font-semibold">We Recommend Tools: </span>From video generators to ad copywriters, we match the right tools to your exact need.
