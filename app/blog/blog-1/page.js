@@ -1,8 +1,8 @@
 "use client";
 import React from "react";
 import Header from "@/components/Header/Header";
-import CTA from "@/components/about-us-page/CTA";
 import Final from "@/components/blog-page/Final";
+import CTA from "@/components/blog-page/CTA";
 
 const Blog1 = () => {
   return (
@@ -26,7 +26,7 @@ const Blog1 = () => {
             src="/blog3.png"
             alt="Blog Card"
             className="w-full object-cover object-bottom"
-            style={{ height: "150%", marginTop: "-25%" }}
+            style={{ height: "150%", marginTop: "-20%" }}
           />
         </div>
 
@@ -96,6 +96,7 @@ const Blog1 = () => {
                 writing, marketing, research, or productivity.
               </span>{" "}
               <span className="block mt-2">That&apos;s exactly where Voyex comes in.</span>
+
             </p>
           </div>
 

@@ -1,8 +1,8 @@
 "use client";
 import React from "react";
 import Header from "@/components/Header/Header";
-import CTA from "@/components/about-us-page/CTA";
 import Final from "@/components/blog-page/Final";
+import CTA from "@/components/blog-page/CTA";
 
 const Blog3 = () => {
   return (
@@ -55,7 +55,9 @@ const Blog3 = () => {
             className="font-bold text-[64px] leading-[100%] tracking-[-0.02em] mb-6"
             style={{ fontFamily: "Aeonik TRIAL, sans-serif" }}
           >
+
            The Real Benefits of AI Tools (And How to Start Using Them Today)
+
           </h1>
         </div>
 
@@ -89,7 +91,8 @@ const Blog3 = () => {
               className="text-[18px] leading-[100%] font-normal text-[#FFFFFF]"
               style={{ fontFamily: "DM Sans, sans-serif", marginBottom: "12px" }}
             >
-              AI isn&apos;t just for developers or data scientists anymore. Today, AI tools are helping entrepreneurs write better copy,<span className="block mt-2"></span> designers brainstorm ideas, and marketers automate workflows. And the best part? You don’t need to be technical to use<span className="block mt-2"></span> them.
+            AI isn&apos;t just for developers or data scientists anymore. Today, AI tools are helping entrepreneurs write better copy,<span className="block mt-2"></span> designers brainstorm ideas, and marketers automate workflows. And the best part? You don’t need to be technical to use<span className="block mt-2"></span> them.
+
             </p>
           </div>
 
@@ -121,7 +124,7 @@ const Blog3 = () => {
               className="text-[18px] leading-[100%] font-normal text-[#FFFFFF]"
               style={{ fontFamily: "DM Sans, sans-serif", marginBottom: "12px" }}
             >
-              The problem isn&apos;t the tools — it&apos;s figuring out which one to use, and how. That’s where platforms like Voyex come in.
+              The problem isn&apos;t the tools — it&apos;s figuring out which one to use, and how. That&apos;s where platforms like Voyex come in.
             </p>
           </div>
 
@@ -149,8 +152,6 @@ const Blog3 = () => {
             </ol>
           </div>
 
-          
-
           {/* Closing Line Section */}
           <div>
             <h2
@@ -158,6 +159,7 @@ const Blog3 = () => {
               style={{ fontFamily: "DM Sans, sans-serif" }}
             >
              Takeaway:
+
             </h2>
             <p
               className="text-[18px] leading-[100%] font-normal text-[#FFFFFF]"

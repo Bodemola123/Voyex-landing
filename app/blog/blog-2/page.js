@@ -1,8 +1,8 @@
 "use client";
 import React from "react";
 import Header from "@/components/Header/Header";
-import CTA from "@/components/about-us-page/CTA";
 import Final from "@/components/blog-page/Final";
+import CTA from "@/components/blog-page/CTA";
 
 const Blog2 = () => {
   return (
@@ -74,7 +74,6 @@ const Blog2 = () => {
               style={{ fontFamily: "DM Sans, sans-serif", marginBottom: "12px" }}
             >
                How the Voyex Query Engine Understands You (And Finds the Right AI Tools)
-
             </p>
           </div>
 
@@ -107,8 +106,6 @@ const Blog2 = () => {
               style={{ fontFamily: "DM Sans, sans-serif", marginBottom: "12px" }}
             >
              It’s not a search bar. It’s a smart assistant that interprets your intent and helps clarify your goals through guided follow-up<span className="block mt-2"></span> questions.
-              <span className="block mt-2">
-              </span>
             </p>
           </div>
 
@@ -159,6 +156,7 @@ const Blog2 = () => {
               style={{ fontFamily: "DM Sans, sans-serif" }}
             >
              Closing Line:
+
             </h2>
             <p
               className="text-[18px] leading-[100%] font-normal text-[#FFFFFF]"

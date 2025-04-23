@@ -64,7 +64,7 @@ export default function Blog() {
                 </button>
               ))}
             </div>
-            <div className="flex flex-row gap-2">
+             <div className="flex flex-row gap-2">
               <button
                 className={`lg:px-5 lg:py-2.5 md:px-3 md:py-2 rounded-[27px] text-[#2d2d2d] text-base font-semibold ${view === "Articles" ? "bg-[#c088fb]" : "bg-[#ebffe8]"}`}
                 onClick={() => setView("Articles")}
@@ -73,9 +73,8 @@ export default function Blog() {
               </button>
             </div>
           </div>
-         
-
-{/* Article Grid */}
+        
+          {/* Article Grid */}
 <div className="grid grid-cols-1 md:grid-cols-3 lg:grid-cols-3 gap-6">
   {manualArticles.map((article, index) => (
     <div key={index}>
