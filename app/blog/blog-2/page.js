@@ -2,7 +2,7 @@
 import React from "react";
 import Header from "@/components/Header/Header";
 import Final from "@/components/blog-page/Final";
-import CTA from "@/components/about-us-page/CTA";
+import CTA from "@/components/blog-page/CTA";
 
 const Blog2 = () => {
   return (
@@ -118,7 +118,7 @@ const Blog2 = () => {
             >
               Step-by-Step: How It Works
             </h2>
-            <ol className="list-disc list-inside space-y-6 text-[18px] leading-[100%] font-normal text-[#FFFFFF]">
+            <ol className="list-decimal list-inside space-y-6 text-[18px] leading-[100%] font-normal text-[#FFFFFF]">
               <li>
                 <span className="font-semibold">You Enter a Query: </span> For example, “I want to market my product.”
               </li>

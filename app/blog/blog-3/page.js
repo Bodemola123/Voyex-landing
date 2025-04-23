@@ -2,7 +2,7 @@
 import React from "react";
 import Header from "@/components/Header/Header";
 import Final from "@/components/blog-page/Final";
-import CTA from "@/components/about-us-page/CTA";
+import CTA from "@/components/blog-page/CTA";
 
 const Blog3 = () => {
   return (
