@@ -21,7 +21,7 @@ const Blog3 = () => {
 
       <div className="max-w-5xl mx-auto">
         {/* Blog Card Image Section */}
-        <div className="w-full h-[80vh] overflow-hidden mt-12 mb-12">
+        <div className="w-full h-[80vh] overflow-hidden mt-12 mb-12 lg:h-[80vh] md:h-[65vh] sm:h-[35vh]">
           <img
             src="/blog1.png"
             alt="Blog Card"
@@ -171,13 +171,14 @@ const Blog3 = () => {
         </div>
       </div>
 
-      {/* CTA Section */}
-      <div className="mt-[600px]">
-          <CTA />
-        </div>
+    
+{/* CTA Section */}
+<div className="sm:mt-[700px] lg:mt-[600px] relative z-10">
+        <CTA />
+      </div>
 
       {/* Final Section */}
-      <div className="mt-0">
+      <div className="sm:mt-[-400px] lg:mt-[20px]">
   <Final />
 </div>
     </div>

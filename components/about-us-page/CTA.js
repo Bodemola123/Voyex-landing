@@ -5,7 +5,7 @@ import '../../app/globals.css';
 const CTA = () => {
   return (
     <div
-      className="flex flex-col lg:gap-2.5 md:gap-[6.08px] sm:gap-2.5 z-10 lg:px-[170px] md:px-[70.42px] sm:px-[35px] lg:rounded-lg md:rounded-[6.08px] sm:rounded-[10px] border border-white/15 mx-auto relative lg:top-[-400px] md:top-[-140px] sm:top-[-150px] justify-center items-center lg:max-w-[1100px] lg:h-[473px] md:max-w-[669.17px] md:h-[341.27px] sm:w-full sm:h-[533px] hover:border-white/30 transition-all duration-300"
+      className="flex flex-col lg:gap-2.5 md:gap-[6.08px] sm:gap-2.5 z-10 lg:px-[170px] md:px-[70.42px] sm:px-[35px] lg:rounded-lg md:rounded-[6.08px] sm:rounded-[10px] border border-white/15 mx-auto relative lg:top-[-400px] md:top-[-400px] sm:top-[-500px] justify-center items-center lg:max-w-[1100px] lg:h-[473px] md:max-w-[669.17px] md:h-[341.27px] sm:w-full sm:h-[533px] hover:border-white/30 transition-all duration-300"
       style={{
         background: 'linear-gradient(180.17deg, rgba(2, 1, 3, 0) 0%, #020103 90%), url("/pattern.svg")',
         backgroundSize: 'contain',
@@ -21,7 +21,13 @@ const CTA = () => {
         Whether you&apos;re an entrepreneur, a growing startup, or an enterprise, Voyex is here to help you harness the power of AI.
       </p> */}
 
-<p className="text-center text-[#FFFFFFB2] text-base sm:text-sm md:text-md lg:text-lg whitespace-nowrap overflow-x-auto mt-4 mb-4 px-2">
+{/* <p className="text-center text-[#FFFFFFB2] text-base sm:text-sm md:text-md lg:text-lg whitespace-nowrap overflow-x-auto mt-4 mb-4 px-2">
+  Whether you're an entrepreneur, a growing startup, or an enterprise, Voyex is here to help you harness the power of AI.
+</p> */}
+
+<p className="text-center text-[#FFFFFFB2] text-base sm:text-sm md:text-md lg:text-lg 
+  lg:whitespace-normal sm:whitespace-normal md:whitespace-normal mt-4 mb-4 px-2
+  sm:max-w-[300px] md:max-w-[400px] lg:max-w-none mx-auto">
   Whether you're an entrepreneur, a growing startup, or an enterprise, Voyex is here to help you harness the power of AI.
 </p>
 
