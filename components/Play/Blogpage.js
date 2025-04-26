@@ -7,9 +7,9 @@ const Blog = () => {
       title: "Deepseek New Launch",
       description:
         "According to a source, the current ESG market is estimated to be worth 7.02 trillion USD, with significant investment growth in green bonds...",
-      tags: ["AI", "Marketing"],
+      tags: ["AI", "Workflow Automation"],
       readTime: "4 Mins Read",
-      date: "11 Jan, 2025",
+      date: "26 April, 2025",
     },
     {
       id: 2,
@@ -18,16 +18,16 @@ const Blog = () => {
         "According to a source, the current ESG market is estimated to be worth 7.02 trillion USD, with significant investment growth in green bonds...",
       tags: ["AI", "Marketing"],
       readTime: "4 Mins Read",
-      date: "11 Jan, 2025",
+      date: "26 April, 2025",
     },
     {
       id: 3,
       title: "Deepseek New Launch",
       description:
         "According to a source, the current ESG market is estimated to be worth 7.02 trillion USD, with significant investment growth in green bonds...",
-      tags: ["AI", "Marketing"],
+      tags: ["AI", "Productivity"],
       readTime: "4 Mins Read",
-      date: "11 Jan, 2025",
+      date: "26 April, 2025",
     },
   ];
 
