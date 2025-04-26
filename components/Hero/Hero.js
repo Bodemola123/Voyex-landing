@@ -556,19 +556,21 @@ const Hero = () => {
   const current = titles[currentTitleIndex];
 
   return (
-    <div className="relative overflow-visible z-20 mt-12">
+     <div className="relative overflow-visible z-20 mt-12">
+  
       <div className="flex flex-col items-start justify-center mt-[56px] text-left gap-8 transition-opacity duration-1000 h-full max-w-3xl lg:ml-80 md:ml-8 sm:ml-4">
-        <h1 
-          className="text-5xl md:text-7xl font-bold text-white leading-tight mb-2 "
-          style={{
-            display: '-webkit-box',
-            WebkitLineClamp: '2',
-            WebkitBoxOrient: 'vertical',
-            overflow: 'hidden',
-            lineHeight: '1.2',
-            minHeight: '2.4em',
-          }}
-        >
+      <h1 
+  className="text-4xl sm:text-5xl md:text-6xl lg:text-7xl font-bold text-white leading-tight mb-2"
+  style={{
+    display: '-webkit-box',
+    WebkitLineClamp: '2',
+    WebkitBoxOrient: 'vertical',
+    overflow: 'hidden',
+    lineHeight: '1.2',
+    minHeight: '2.4em',
+  }}
+>
+
           {current.showTextAfter ? (
             <>
               <span className="text-purple-400 block whitespace-nowrap">

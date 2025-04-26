@@ -49,7 +49,7 @@ const Blog2 = () => {
             className="text-[#F4F4F4] text-[16px] leading-[24px] font-semibold mb-2"
             style={{ fontFamily: "DM Sans, sans-serif" }}
           >
-            Published: 27 February, 2025
+            Published: 26 April, 2025
           </p>
           <h1
             className="font-bold text-[64px] leading-[100%] tracking-[-0.02em] mb-6"
