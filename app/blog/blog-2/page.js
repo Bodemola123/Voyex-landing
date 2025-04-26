@@ -73,7 +73,7 @@ const Blog2 = () => {
               className="text-[18px] leading-[100%] font-normal text-[#FFFFFF]"
               style={{ fontFamily: "DM Sans, sans-serif", marginBottom: "12px" }}
             >
-              How the Voyex Query Engine Understands You (And Finds the Right AI Tools)
+               How the Voyex Query Engine Understands You (And Finds the Right AI Tools)
             </p>
           </div>
 
@@ -89,8 +89,7 @@ const Blog2 = () => {
               className="text-[18px] leading-[100%] font-normal text-[#FFFFFF]"
               style={{ fontFamily: "DM Sans, sans-serif", marginBottom: "12px" }}
             >
-               One of the most powerful features of Voyex is its Query Engine — a smart system that understands what you want to
-              <span className="block mt-2">do, then guides you to the best tools to get it done. But how does it actually work?</span> 
+               One of the most powerful features of Voyex is its Query Engine — a smart system that understands what you want to do,<span className="block mt-2"></span> then guides you to the best tools to get it done. But how does it actually work?
             </p>
           </div>
 
@@ -100,7 +99,7 @@ const Blog2 = () => {
               className="text-[32px] leading-[100%] tracking-[-0.02em] font-bold mb-6"
               style={{ fontFamily: "DM Sans, sans-serif" }}
             >
-              What Is the Query Engine?
+             What Is the Query Engine?
             </h2>
             <p
               className="text-[18px] leading-[100%] font-normal text-[#FFFFFF]"
@@ -116,20 +115,20 @@ const Blog2 = () => {
               className="text-[32px] leading-[100%] tracking-[-0.02em] font-bold mb-6"
               style={{ fontFamily: "DM Sans, sans-serif" }}
             >
-              Step-by-Step: How It Works
+             Step-by-Step: How It Works
             </h2>
             <ol className="list-decimal list-inside space-y-6 text-[18px] leading-[100%] font-normal text-[#FFFFFF]">
               <li>
-                <span className="font-semibold">You Enter a Query: </span> For example, “I want to market my product.”
+                <span className="font-semibold">You Enter a Query: </span>  For example, “I want to market my product.”
               </li>
               <li>
-                <span className="font-semibold">Voyex Asks Smart Questions: </span> What kind of product? What marketing channels? Any visuals needed?
+                <span className="font-semibold">Voyex Asks Smart Questions: </span>  What kind of product? What marketing channels? Any visuals needed?
               </li>
               <li>
-                <span className="font-semibold">We Narrow the Context: </span>Based on your answers, we understand the use case more clearly.
+                <span className="font-semibold">We Narrow the Context: </span> Based on your answers, we understand the use case more clearly.
               </li>
               <li>
-                <span className="font-semibold">We Recommend Tools: </span>From video generators to ad copywriters, we match the right tools to your exact need.
+                <span className="font-semibold">We Recommend Tools: </span> From video generators to ad copywriters, we match the right tools to your exact need.
               </li>
             </ol>
           </div>
@@ -146,8 +145,7 @@ const Blog2 = () => {
               className="text-[18px] leading-[100%] font-normal text-[#FFFFFF]"
               style={{ fontFamily: "DM Sans, sans-serif", marginBottom: "12px" }}
             >
-              Most platforms throw a list of tools at you and hope something sticks. Voyex uses intent-driven matching, so your <span className="block mt-2"></span> recommendations are specific, useful, and directly applicable.
-            
+              Most platforms throw a list of tools at you and hope something sticks. Voyex uses intent-driven matching, so your<span className="block mt-2"></span> recommendations are specific, useful, and directly applicable.
             </p>
           </div>
 
@@ -157,7 +155,8 @@ const Blog2 = () => {
               className="text-[32px] leading-[100%] tracking-[-0.02em] font-bold mb-6"
               style={{ fontFamily: "DM Sans, sans-serif" }}
             >
-              Closing Line:
+             Closing Line:
+
             </h2>
             <p
               className="text-[18px] leading-[100%] font-normal text-[#FFFFFF]"

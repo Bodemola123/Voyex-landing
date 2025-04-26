@@ -55,7 +55,9 @@ const Blog3 = () => {
             className="font-bold text-[64px] leading-[100%] tracking-[-0.02em] mb-6"
             style={{ fontFamily: "Aeonik TRIAL, sans-serif" }}
           >
-            The Real Benefits of AI Tools (And How to Start Using Them Today)
+
+           The Real Benefits of AI Tools (And How to Start Using Them Today)
+
           </h1>
         </div>
 
@@ -73,7 +75,7 @@ const Blog3 = () => {
               className="text-[18px] leading-[100%] font-normal text-[#FFFFFF]"
               style={{ fontFamily: "DM Sans, sans-serif", marginBottom: "12px" }}
             >
-              How AI Tools Can Boost Your Productivity — Even If You're Not a Techie
+               How AI Tools Can Boost Your Productivity — Even If You're Not a Techie
             </p>
           </div>
 
@@ -89,7 +91,8 @@ const Blog3 = () => {
               className="text-[18px] leading-[100%] font-normal text-[#FFFFFF]"
               style={{ fontFamily: "DM Sans, sans-serif", marginBottom: "12px" }}
             >
-              AI isn’t just for developers or data scientists anymore. Today, AI tools are helping entrepreneurs write better copy,<span className="block mt-2"></span> designers brainstorm ideas, and marketers automate workflows. And the best part? You don’t need to be technical to use <span className="block mt-2"> them.</span>
+            AI isn&apos;t just for developers or data scientists anymore. Today, AI tools are helping entrepreneurs write better copy,<span className="block mt-2"></span> designers brainstorm ideas, and marketers automate workflows. And the best part? You don’t need to be technical to use<span className="block mt-2"></span> them.
+
             </p>
           </div>
 
@@ -115,13 +118,13 @@ const Blog3 = () => {
               className="text-[32px] leading-[100%] tracking-[-0.02em] font-bold mb-6"
               style={{ fontFamily: "DM Sans, sans-serif" }}
             >
-            Why Most People Struggle to Start
+              Why Most People Struggle to Start
             </h2>
             <p
               className="text-[18px] leading-[100%] font-normal text-[#FFFFFF]"
               style={{ fontFamily: "DM Sans, sans-serif", marginBottom: "12px" }}
             >
-             The problem isn’t the tools — it’s figuring out which one to use, and how. That’s where platforms like Voyex come in.
+              The problem isn&apos;t the tools — it&apos;s figuring out which one to use, and how. That&apos;s where platforms like Voyex come in.
             </p>
           </div>
 
@@ -134,22 +137,20 @@ const Blog3 = () => {
              How to Start Using AI Today
             </h2>
             <ol className="list-decimal list-inside space-y-6 text-[18px] leading-[100%] font-normal text-[#FFFFFF]">
-            <li>
-                <span className="font-semibold">Identify a task you do often </span>(e.g., writing, planning, analyzing)
+              <li>
+                <span className="font-semibold">Identify a task you do often</span>  (e.g., writing, planning, analyzing)
               </li>
               <li>
-                <span className="font-semibold">Visit Voyex </span>and enter your query
+                <span className="font-semibold">Visit Voyex </span> and enter your query
               </li>
               <li>
                 <span className="font-semibold">Follow the suggestions — </span>tools, prompts, and templates tailored to your task
               </li>
               <li>
-                <span className="font-semibold">Test and explore —  </span>you’ll be surprised how much time you save
+                <span className="font-semibold">Test and explore — </span>you&apos;ll be surprised how much time you save
               </li>
             </ol>
           </div>
-
-
 
           {/* Closing Line Section */}
           <div>
@@ -157,13 +158,14 @@ const Blog3 = () => {
               className="text-[32px] leading-[100%] tracking-[-0.02em] font-bold mb-6"
               style={{ fontFamily: "DM Sans, sans-serif" }}
             >
-              Takeaway:
+             Takeaway:
+
             </h2>
             <p
               className="text-[18px] leading-[100%] font-normal text-[#FFFFFF]"
               style={{ fontFamily: "DM Sans, sans-serif", marginBottom: "12px" }}
             >
-              AI tools are not a replacement for your work — they’re a force multiplier. And the sooner you start, the sooner you’ll see the <span className="block mt-2"> difference.</span>
+            AI tools are not a replacement for your work — they’re a force multiplier. And the sooner you start, the sooner you’ll see the<span className="block mt-2"></span> difference.
             </p>
           </div>
         </div>
