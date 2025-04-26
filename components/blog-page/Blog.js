@@ -18,9 +18,9 @@ export default function Blog() {
     {
       title: "How Voyex Helps You Bring A...",
       description: "According to a source, the current ESG market is estimated to be worth 7.02 trillion USD, with significant investment growth in green bonds...",
-      tags: ["AI", "Marketing"],
+      tags: ["AI", "Workflow Automation"],
       readTime: "4 Mins Read",
-      date: "11 Jan, 2025",
+      date: "26 April, 2025",
       content: "Full content of the first blog post.",
       image: "/blog3.png", // Placeholder image URL
       imagePosition: "center 90%",
@@ -30,7 +30,7 @@ export default function Blog() {
       description: "According to a source, the current ESG market is estimated to be worth 7.02 trillion USD, with significant investment growth in green bonds...",
       tags: ["AI", "Marketing"],
       readTime: "4 Mins Read",
-      date: "11 Jan, 2025",
+      date: "26 April, 2025",
       content: "Full content of the second blog post.",
       image: "/blogcard.png", // Placeholder image URL
       imagePosition: "center 83%",
@@ -38,9 +38,9 @@ export default function Blog() {
     {
       title: "The Real Benefits of AI Tools...",
       description: "According to a source, the current ESG market is estimated to be worth 7.02 trillion USD, with significant investment growth in green bonds...",
-      tags: ["AI", "Marketing"],
+      tags: ["AI", "Productivity"],
       readTime: "4 Mins Read",
-      date: "11 Jan, 2025",
+      date: "26 April, 2025",
       content: "Full content of the third blog post.",
       image: "/blog1.png", // Placeholder image URL
       imagePosition: "center 70%",

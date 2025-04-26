@@ -557,7 +557,7 @@ const Hero = () => {
 
   return (
     <div className="relative overflow-visible z-20 mt-12">
-      <div className="flex flex-col items-start justify-center mt-[56px] text-left gap-8 transition-opacity duration-1000 h-full max-w-3xl ml-80 md:ml-8 sm:ml-4">
+      <div className="flex flex-col items-start justify-center mt-[56px] text-left gap-8 transition-opacity duration-1000 h-full max-w-3xl lg:ml-80 md:ml-8 sm:ml-4">
         <h1 
           className="text-5xl md:text-7xl font-bold text-white leading-tight mb-2 "
           style={{
