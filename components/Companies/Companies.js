@@ -53,6 +53,8 @@ const Companies = () => {
           </div>
         ))}
       </div>
+
+
     </div>
   );
 };
