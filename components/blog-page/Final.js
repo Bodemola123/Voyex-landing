@@ -1,4 +1,5 @@
 'use client'
+import { c } from 'maath/dist/index-0332b2ed.esm';
 import Image from 'next/image'
 import React, { useState, useEffect, useRef } from 'react'
 
@@ -8,7 +9,7 @@ const Final = () => {
     const [error, setError] = useState('');
     const [isInView, setIsInView] = useState(false); // State to track if the Bolt image is in view
     const boltRef = useRef(null); // Ref for the Bolt image
-
+    const [success, setSuccess] = useState(''); // State to track if the form submission was successful
     // Set up the IntersectionObserver to detect when the Bolt SVG is in the viewport
     useEffect(() => {
         const observer = new IntersectionObserver(
@@ -30,18 +31,44 @@ const Final = () => {
         };
     }, []);
 
-    const handleSubmit = (e) => {
+    const handleSubmit = async (e) => {
       e.preventDefault();
       if (email && /^[^\s@]+@[^\s@]+\.[^\s@]+$/.test(email)) {
         setIsSubmitting(true);
-        setError('');
-        setTimeout(() => {
-          alert('Email submitted: ' + email);
-          setEmail('');
-          setIsSubmitting(false);
-        }, 1000);
+        setError("");
+        setSuccess(""); // Reset success message on new submission
+  
+        try {
+          const response = await fetch(
+            "https://xi92wp7t87.execute-api.eu-north-1.amazonaws.com/default/voyex_otp",
+            {
+              method: "POST",
+              headers: {
+                "Content-Type": "application/json",
+              },
+              body: JSON.stringify({
+                service: "invite",
+                email: email,
+              }),
+            }
+          );
+  
+          const data = await response.json();
+  
+          if (!response.ok) {
+            // Handle non-200 responses
+            setError(data?.message || "Something went wrong. Please try again.");
+          } else {
+            setEmail("");
+            setSuccess("Sent! Check your email.");
+          }
+        } catch (err) {
+          setError("Network error. Please try again later.");
+        }
+  
+        setIsSubmitting(false);
       } else {
-        setError('Please enter a valid email address');
+        setError("Please enter a valid email address");
       }
     };
 
@@ -63,9 +90,15 @@ const Final = () => {
                             required
                             className='px-3 py-2.5 rounded-[27px] flex gap-2.5 bg-white/20 placeholder:text-white/50 text-[#f4f4f4] items-center sm:w-[266px] focus:ring-2 focus:ring-[#C088fb] focus:outline-none'
                         />
-                        {error && (
-                          <div className="absolute text-sm text-red-500 top-full mt-1">{error}</div>
-                        )}
+                        {error ? (
+                <div className="absolute text-sm text-red-500 top-full mt-1">
+                  {error}
+                </div>
+              ) : success ? (
+                <div className="absolute text-sm text-green-500 top-full mt-1">
+                  {success}
+                </div>
+              ) : null}
                     </div>
                     <button
                         type='submit'
