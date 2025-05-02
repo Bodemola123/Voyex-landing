@@ -55,7 +55,7 @@ const Mission = () => {
   <div className='flex flex-col md:gap-3 sm:gap-3 items-center justify-center sm:ml-0'>
     <p
       data-aos='fade-up'
-      className='text-[#f4f4f4] lg:text-3xl md:text-xl sm:text-base font-semibold max-w-[550px] ml-4 mb-2'
+      className='text-[#f4f4f4] lg:text-2xl md:text-xl sm:text-base font-semibold max-w-[550px] ml-4 mb-2'
     >
       At Voyex, our mission is to simplify the
       AI landscape by enabling users to:

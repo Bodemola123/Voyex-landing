@@ -42,7 +42,7 @@ const Main = () => {
             <MdOutlineEmail className='lg:text-2xl sm:text-2xl text-[#f4f4f4] hover:scale-110 transition-transform duration-300' />
             <div className='flex flex-col gap-2'>
               <p className='text-[#f4f4f4] font-semibold lg:text-xl sm:text-lg'>Email</p>
-              <p className='text-[#667085] font-normal lg:text-base sm:text-sm'>voyex.outreach@gmail.com</p>
+              <p className='text-[#eaeaea] font-normal lg:text-base sm:text-sm'>voyex.outreach@gmail.com</p>
             </div>
 
           </div>
