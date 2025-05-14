@@ -558,12 +558,12 @@ const Hero = () => {
   return (
      <div className="relative overflow-visible z-20 w-full px-2">
   
-      <div className="flex flex-col text-left gap-8 transition-opacity duration-1000 h-full lg:ml-5 xl:ml-80 md:ml-5">
+      <div className="flex flex-col text-left gap-8 transition-opacity duration-1000 h-full lg:ml-5 md:ml-5">
       <h1 
-  className="sm:text-2xl md:text-5xl lg:text-6xl xl:text-9xl font-bold text-white leading-tight"
+  className="sm:text-2xl md:text-4xl lg:text-6xl  font-bold text-white leading-tight"
   style={{
     display: '-webkit-box',
-    WebkitLineClamp: '3',
+    WebkitLineClamp: '2',
     WebkitBoxOrient: 'vertical',
     overflow: 'hidden',
     lineHeight: '1.2',

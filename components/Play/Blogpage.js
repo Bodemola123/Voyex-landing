@@ -109,7 +109,7 @@ import ArticleCard from "../Play/ArticleCard";
 
 const manualArticles = [
   {
-    title: "How Voyex Helps You Bring A...",
+    title: "How the Voyex Query Engine Understands You (And Finds the Right AI Tools)",
     description: "According to a source, the current ESG market is estimated to be worth 7.02 trillion USD, with significant investment growth in green bonds...",
     tags: ["AI", "Workflow Automation"],
     readTime: "4 Mins Read",
@@ -117,9 +117,9 @@ const manualArticles = [
     content: "Full content of the first blog post.",
     image: "/blog3.png",
     imagePosition: "center 90%",
-    },
+  },
   {
-    title: "Behind the Scenes - How th...",
+    title: "Behind the Scenes — How the Voyex Query Engine Works",
     description: "According to a source, the current ESG market is estimated to be worth 7.02 trillion USD, with significant investment growth in green bonds...",
     tags: ["AI", "Marketing"],
     readTime: "4 Mins Read",
@@ -129,7 +129,7 @@ const manualArticles = [
     imagePosition: "center 83%",
   },
   {
-    title: "The Real Benefits of AI Tools...",
+    title: "The Real Benefits of AI Tools (And How to Start Using Them Today)",
     description: "According to a source, the current ESG market is estimated to be worth 7.02 trillion USD, with significant investment growth in green bonds...",
     tags: ["AI", "Productivity"],
     readTime: "4 Mins Read",

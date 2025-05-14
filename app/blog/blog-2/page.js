@@ -105,7 +105,7 @@ const Blog2 = () => {
               className="text-[18px] leading-[100%] font-normal text-[#FFFFFF]"
               style={{ fontFamily: "DM Sans, sans-serif", marginBottom: "12px" }}
             >
-             It’s not a search bar. It’s a smart assistant that interprets your intent and helps clarify your goals through guided follow-up<span className="block mt-2"></span> questions.
+             It&apos;s not a search bar. It&apos;s a smart assistant that interprets your intent and helps clarify your goals through guided follow-up<span className="block mt-2"></span> questions.
             </p>
           </div>
 
