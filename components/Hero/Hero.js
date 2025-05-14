@@ -560,7 +560,7 @@ const Hero = () => {
   
       <div className="flex flex-col text-left gap-8 transition-opacity duration-1000 h-full lg:ml-5 xl:ml-80 md:ml-5">
       <h1 
-  className="sm:text-3xl md:text-5xl lg:text-6xl xl:text-9xl font-bold text-white leading-tight"
+  className="sm:text-2xl md:text-5xl lg:text-6xl xl:text-9xl font-bold text-white leading-tight"
   style={{
     display: '-webkit-box',
     WebkitLineClamp: '3',
@@ -595,10 +595,10 @@ const Hero = () => {
           Voyex helps you find the right AI tools for your usecases. Find AI tools with just a query. It simplifies finding, using and querying AI tools and create your own mini agency.
         </p>
         <div className="flex gap-4">
-          <button className="bg-[#C088FB] text-[#0A0A0B] lg:px-6 lg:py-3 md:px-5 md:py-2 sm:px-1.5 sm:py-1.5 rounded-full lg:font-medium font-base sm:text-sm md:text-base hover:scale-105 transition">
+          <button className="bg-[#C088FB] text-[#0A0A0B] lg:px-6 lg:py-3 md:px-5 md:py-2 sm:px-2.5 sm:py-1.5 rounded-full lg:font-medium font-base sm:text-sm md:text-base hover:scale-105 transition">
             Start your AI Journey
           </button>
-          <button className="bg-[#F4F4F4] text-[#0A0A0B] lg:px-6 lg:py-3 md:px-5 md:py-2 sm:px-1.5 sm:py-1.5 rounded-full lg:font-medium font-base sm:text-sm md:text-base hover:scale-105 transition">
+          <button className="bg-[#F4F4F4] text-[#0A0A0B] lg:px-6 lg:py-3 md:px-5 md:py-2 sm:px-2.5 sm:py-1.5 rounded-full lg:font-medium font-base sm:text-sm md:text-base hover:scale-105 transition">
             Upload Product
           </button>
         </div>
