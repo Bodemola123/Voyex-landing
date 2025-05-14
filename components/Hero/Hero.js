@@ -556,14 +556,14 @@ const Hero = () => {
   const current = titles[currentTitleIndex];
 
   return (
-     <div className="relative overflow-visible z-20 mt-12">
+     <div className="relative overflow-visible z-20 w-full px-2">
   
-      <div className="flex flex-col items-start justify-center mt-[56px] text-left gap-8 transition-opacity duration-1000 h-full max-w-3xl lg:ml-80 md:ml-8 sm:ml-4">
+      <div className="flex flex-col text-left gap-8 transition-opacity duration-1000 h-full lg:ml-5 xl:ml-80 md:ml-5">
       <h1 
-  className="text-4xl sm:text-5xl md:text-6xl lg:text-7xl font-bold text-white leading-tight mb-2"
+  className="sm:text-[19px] md:text-5xl lg:text-6xl xl:text-9xl font-bold text-white leading-tight"
   style={{
     display: '-webkit-box',
-    WebkitLineClamp: '2',
+    WebkitLineClamp: '3',
     WebkitBoxOrient: 'vertical',
     overflow: 'hidden',
     lineHeight: '1.2',
@@ -591,20 +591,20 @@ const Hero = () => {
             </>
           )}
         </h1>
-        <p className="text-gray-300 text-base md:text-lg max-w-3xl mb-6">
+        <p className="text-gray-300 text-base md:text-base lg:text-lg xl:text-2xl sm:text-sm">
           Voyex helps you find the right AI tools for your usecases. Find AI tools with just a query. It simplifies finding, using and querying AI tools and create your own mini agency.
         </p>
-        <div className="flex gap-4 -mt-6">
-          <button className="bg-[#C088FB] text-[#0A0A0B] px-6 py-3 rounded-full font-medium hover:scale-105 transition">
+        <div className="flex gap-4">
+          <button className="bg-[#C088FB] text-[#0A0A0B] lg:px-6 lg:py-3 md:px-5 md:py-2 sm:px-1.5 sm:py-1.5 rounded-full lg:font-medium font-base sm:text-sm md:text-base hover:scale-105 transition">
             Start your AI Journey
           </button>
-          <button className="bg-[#F4F4F4] text-[#0A0A0B] px-6 py-3 rounded-full font-medium hover:scale-105 transition">
+          <button className="bg-[#F4F4F4] text-[#0A0A0B] lg:px-6 lg:py-3 md:px-5 md:py-2 sm:px-1.5 sm:py-1.5 rounded-full lg:font-medium font-base sm:text-sm md:text-base hover:scale-105 transition">
             Upload Product
           </button>
         </div>
         {/* Background orbits with reduced scale and blur */}
         <div className="absolute inset-0 pointer-events-none z-[-1] flex items-center justify-center transform scale-90 filter">
-            <CircularRings />
+            {/* <CircularRings /> */}
            <StarsCanvas />
            </div>
       </div>

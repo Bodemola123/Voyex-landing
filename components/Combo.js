@@ -1,14 +1,17 @@
-import React from 'react'
-import Header from './Header/Header'
-import Hero from './Hero/Hero'
+import React from 'react';
+import Header from './Header/Header';
+import Hero from './Hero/Hero';
 
 const Combo = () => {
   return (
-    <div className='flex flex-col h-screen gap-8 relative'>
-      <Header/>
-      <Hero/>
-    </div>
-  )
-}
+    <div className='relative h-screen'>
+      <Header />
 
-export default Combo
+      <div className='absolute top-1/2 w-full -translate-y-1/2'>
+        <Hero />
+      </div>
+    </div>
+  );
+};
+
+export default Combo;

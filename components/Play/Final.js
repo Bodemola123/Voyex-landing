@@ -190,7 +190,7 @@ const Final = () => {
   alt='chart'
   width={263}
   height={263}
-  className="relative top-4 sm:top-2 md:top-[-20px] lg:top-[36px] left-0 sm:left-0 md:right-0 lg:left-0 w-20 sm:w-24 md:w-32 lg:w-[263px] message-bubble"
+  className="hidden md:flex relative top-4 sm:top-2 md:top-[-20px] lg:top-[36px] left-0 sm:left-0 md:right-0 lg:left-0 w-20 sm:w-24 md:w-32 lg:w-[263px] message-bubble"
 />
               <div className='flex flex-col gap-[20px]'>
               <h1 className="text-white lg:text-[54px] md:text-[38px] sm:text-[32px] font-bold leading-tight text-center">Get instant access</h1>
@@ -242,7 +242,7 @@ const Final = () => {
   alt='bolt'
   width={225}
   height={225}
-  className={`relative top-4 sm:top-4 md:top-2 lg:top-[35px] left-0 sm:left-0 md:left-0 lg:left-0 w-16 sm:w-20 md:w-28 lg:w-[225px] ${isInView ? 'rotate-infinite' : ''}`}
+  className={`md:flex sm:hidden relative top-4 sm:top-4 md:top-2 lg:top-[35px] left-0 sm:left-0 md:left-0 lg:left-0 w-16 sm:w-20 md:w-28 lg:w-[225px] ${isInView ? 'rotate-infinite' : ''}`}
   ref={boltRef}
 />
 

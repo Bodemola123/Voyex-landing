@@ -18,10 +18,10 @@ const Header = () => {
 
   return (
     <div className="flex justify-between items-center sm:h-[72px] lg:px-[24px] md:px-[24px] sm:px-[24px] z-40 mt-3.5">
-      <Link href="/" className="font-bold text-5xl text-white">Voyex.</Link>
+      <Link href="/" className="font-bold lg:text-5xl md:text-4xl sm:text-xl text-white">Voyex.</Link>
 
       {/* Desktop Navigation */}
-      <div className="hidden lg:flex md:flex text-sm font-semibold gap-10 py-3 px-[60px] border border-card rounded-[43px]">
+      <div className="hidden lg:flex md:flex text-sm font-semibold lg:gap-10 lg:py-3 lg:px-[60px] md:gap-5 md:px-5 md:py-2 border border-card rounded-[43px]">
         <Link href="/pricing" className={`${isActive("/pricing")} hover:text-[#C088fb]`}>Pricing</Link>
         <Link href="/contact-us" className={`${isActive("/contact-us")} hover:text-[#C088fb]`}>Contact Us</Link>
         <Link href="/about-us" className={`${isActive("/about-us")} hover:text-[#C088fb]`}>About us</Link>

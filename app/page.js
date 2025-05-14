@@ -22,7 +22,7 @@
          <Everythingyouneed/>
            {/* <Rectangle/> */}
            <Templates/>
-           <Companies/>
+           {/* <Companies/> */}
      <div className='relative lg:w-[786px] lg:h-[270px] md:w-[478.15px] md:h-[110px] sm:w-[226.29px] sm:h-[90px] lg:mt-[200px] md:mt-[200px] sm:mt-[220px] opacity-100 rounded-b-full mx-auto '>
      </div>
          <div className='px-[1.5px] md:px-0'><CTA/></div>

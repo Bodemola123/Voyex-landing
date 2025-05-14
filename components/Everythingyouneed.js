@@ -217,7 +217,7 @@ const Everythingyouneed = () => {
   }, []);
 
   return (
-    // <div className="flex flex-col lg:gap-10 md:gap-8 sm:gap-6 justify-center items-center px-4 md:px-0">
+    // <div className="flex flex-col lg:gap-10 md:gap-8 sm:gap-6 justify-center items-center px-4 lg:px-0">
     <div className="flex flex-col justify-center items-center px-4 lg:px-8 lg:-mt-[100px] sm:-mt-[100px]">
       {/* Title Section */}
       <div className="flex flex-col lg:gap-5 md:gap-4 sm:gap-3 text-center mt-20" data-aos="fade-up">
@@ -230,7 +230,7 @@ const Everythingyouneed = () => {
       </div>
 
       {/* grid section */}
-      <div className="grid md:grid-cols-2 sm:grid-cols-1 gap-4 w-full max-w-5xl px-4 lg:px-8 mt-10" data-aos="fade-up">
+      <div className="grid md:grid-cols-2 sm:grid-cols-1 gap-4 w-full sm:max-w-[425px] md:max-w-[838px] lg:max-w-[964px] mt-10" data-aos="fade-up">
 
         {/* Card 1 */}
         <div className="p-5 border border-card rounded-xl flex flex-col items-center bg-[#0d0d0d] gap-4 group h-[210px]">
@@ -238,13 +238,13 @@ const Everythingyouneed = () => {
             <HiOutlineLightBulb className="text-2xl text-black" />
           </div>
           <div className="relative inline-block">
-            <h2 className="font-bold text-white text-base text-center">
+            <h2 className="font-bold text-white md:text-base sm:text-sm text-center">
               <span className="relative after:content-[''] after:absolute after:left-0 after:bottom-[-3px] after:w-0 after:h-[1px] after:bg-white after:transition-all after:duration-300 group-hover:after:w-full">
                 AI Query Engine
               </span>
             </h2>
           </div>
-          <p className="text-white text-center max-w-[400px]">
+          <p className="text-white text-center max-w-[400px] lg:text-base md:text-sm sm:text-xs">
             Trained to provide you accurate tools to get your work done. Define your requirements and get tools, guides and workflows.
           </p>
         </div>
@@ -255,13 +255,13 @@ const Everythingyouneed = () => {
             <HiOutlineLightBulb className="text-2xl text-black" />
           </div>
           <div className="relative inline-block">
-            <h2 className="font-bold text-white text-base text-center">
+            <h2 className="font-bold text-white md:text-base sm:text-sm text-center">
               <span className="relative after:content-[''] after:absolute after:left-0 after:bottom-[-3px] after:w-0 after:h-[1px] after:bg-white after:transition-all after:duration-300 group-hover:after:w-full">
                 Prompt Recommendation Engine
               </span>
             </h2>
           </div>
-          <p className="text-white text-center max-w-[400px]">
+          <p className="text-white text-center max-w-[400px] lg:text-base md:text-sm sm:text-xs">
             Use the tools like a pro and get work done even faster. Prompt recommendation to get accurate results on suggested tools.
           </p>
         </div>
@@ -273,8 +273,7 @@ const Everythingyouneed = () => {
           data-aos="fade-up"
         > */}
         <div
-  className="relative flex flex-col items-center p-6 rounded-xl border border-gray-800 bg-[#0d0d0d] w-full 
-    max-w-full sm:max-w-[425px] md:max-w-[908px] lg:max-w-[964px] mt-[20px]"
+  className="relative flex flex-col items-center p-6 rounded-xl border border-gray-800 bg-[#0d0d0d] w-full  sm:max-w-[425px] md:max-w-[838px] lg:max-w-[964px] mt-[20px]"
   data-aos="fade-up"
 >
 
@@ -282,11 +281,11 @@ const Everythingyouneed = () => {
             <h2 className="text-3xl font-bold text-white leading-tight">
               Future of Automation
             </h2>
-            <div className="flex items-center gap-2 mt-2">
-              <h3 className="text-base font-medium text-gray-400">
+            <div className="flex items-center md:justify-center gap-2 sm:justify-between mt-2">
+              <h3 className="md:text-base sm:text-xs font-medium text-gray-400">
                 (Agent Based Workflows)
               </h3>
-              <span className="bg-red-500 text-white text-xs font-semibold px-3 py-1 rounded-full">
+              <span className="bg-red-500 text-white md:text-xs sm:text-[10px] font-semibold md:px-3 sm:px-1 py-1 rounded-full">
                 Coming Soon
               </span>
             </div>

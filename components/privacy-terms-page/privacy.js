@@ -34,7 +34,7 @@ const Privacy = () => {
         </p>
 
         {/* Intro Paragraph */}
-        <p className="max-w-[800px] text-gray-200 text-left mt-20 ml-[110px] text-lg">
+        <p className="max-w-[800px] text-gray-200 md:text-left sm:text-center mt-20 text-lg">
         At Voyex, we are committed to protecting your privacy. This Privacy Policy explains how we handle your information when you use our platform.
         </p>
       </div>
@@ -42,7 +42,7 @@ const Privacy = () => {
          {/* Terms Content */}
          <div className="max-w-[760px] mx-auto px-10 py-12 space-y-10 -mt-10 text-gray-200">
   <div className="space-y-4">
-    <h2 className="text-3xl font-bold ml-4">1. Information we collect</h2>
+    <h2 className="text-3xl font-bold text-left">1. Information we collect</h2>
     <p>
       We collect limited information to improve your experience, such as:
     </p>
@@ -57,7 +57,7 @@ const Privacy = () => {
   </div>
 
   <div className="space-y-4">
-    <h2 className="text-3xl font-bold ml-4">2. How We Use Your Data</h2>
+    <h2 className="text-3xl font-bold text-left">2. How We Use Your Data</h2>
     <ul className="list-disc pl-6 space-y-2">
       <li>To personalize tool recommendations</li>
       <li>To improve platform functionality and user experience</li>
@@ -66,7 +66,7 @@ const Privacy = () => {
   </div>
 
   <div className="space-y-4">
-    <h2 className="text-3xl font-bold ml-4">3. Third–Party Tools and Services</h2>
+    <h2 className="text-3xl font-bold text-left">3. Third–Party Tools and Services</h2>
     <p>
       Voyex recommends and links to third–party AI tools. We <em><strong>do not control, operate, or take responsibility</strong></em> for these external services.
     </p>
@@ -79,14 +79,14 @@ const Privacy = () => {
   </div>
 
   <div className="space-y-4">
-    <h2 className="text-3xl font-bold ml-4">4. Data Security</h2>
+    <h2 className="text-3xl font-bold text-left">4. Data Security</h2>
     <p>
       We follow best practices to protect any non–sensitive data we store. However, you are responsible for verifying the security and compliance of any third–party tool you choose to use.
     </p>
   </div>
 
   <div className="space-y-4">
-    <h2 className="text-3xl font-bold ml-4">5. Your Rights</h2>
+    <h2 className="text-3xl font-bold text-left">5. Your Rights</h2>
     <p>
       If you wish to access, delete, or request more information about your data (if applicable), please contact us at  [voyex.outreach@gmail.com]
     </p>

@@ -6,10 +6,10 @@ const CircularRings = () => {
   const canvasRef = useRef(null);
   const [screenSize, setScreenSize] = useState(0);
   const images = [
-     "/earthp.svg",
-     "/planmars.png",
-     "/neptunep.svg",
-     "/jupp.png",
+     "/jupiter.png",
+     "/mars.gif",
+     "/neptune.png",
+     "/planet-earth.png",
   ];
 
   useEffect(() => {
