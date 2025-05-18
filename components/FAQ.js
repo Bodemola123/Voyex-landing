@@ -43,7 +43,7 @@ const FAQ = () => {
       </h1>
       <div className="mt-[47px]">
         {faqData.map((faq, index) => (
-          <div key={index} className="border-b py-[30px] md:w-[675px] sm:w-auto border-white/20">
+          <div key={index} className="border-b py-[30px] md:w-[675px] lg:w-[980px] xl:w-[1280px] sm:w-auto border-white/20">
             <div
               className="flex justify-between items-center cursor-pointer md:text-xl sm:text-lg font-medium text-[#ffffff] hover:text-[#C088fb] transition-colors duration-300 sm:px-4 md:px-0"
               onClick={() => handleToggle(index)}

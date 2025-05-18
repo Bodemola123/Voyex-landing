@@ -18,7 +18,7 @@ const Playmode = () => {
       </div>
 
       {/* Video Container */}
-      <div className="w-full max-w-5xl flex-grow flex items-center px-4 lg:px-8">
+      <div className="w-full xl:max-w-7xl lg:max-w-[980px] flex-grow flex items-center px-4 lg:px-8">
         <div className="relative w-full aspect-video">
           {isClient && (
             <iframe

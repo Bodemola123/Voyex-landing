@@ -79,7 +79,7 @@ const Templates = () => {
 
   return (
     <div
-      className="flex flex-col gap-10 py-16 px-4 lg:px-8 items-center mx-auto w-full max-w-6xl mt-16"
+      className="flex flex-col gap-10 py-16 sm:px-4 lg:px-0 items-center mx-auto w-full lg:max-w-[980px] xl:max-w-[1280px] mt-16"
       data-aos="fade-up"
     >
       {/* Top Section */}
