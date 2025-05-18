@@ -595,10 +595,10 @@ const Hero = () => {
           Voyex helps you find the right AI tools for your usecases. Find AI tools with just a query. It simplifies finding, using and querying AI tools and create your own mini agency.
         </p>
         <div className="flex gap-4">
-          <button className="bg-[#C088FB] text-[#0A0A0B] lg:px-6 lg:py-3 md:px-5 md:py-2 sm:px-3.5 sm:py-2 rounded-full lg:font-medium font-base lg:text-lg xl:text-xl sm:text-sm md:text-base hover:scale-105 transition">
+          <button className="bg-[#C088FB] text-[#0A0A0B] lg:px-6 lg:py-3 md:px-5 md:py-2 sm:px-3.5 sm:py-2 rounded-full lg:font-medium font-base lg:text-lg  sm:text-sm md:text-base hover:scale-105 transition">
             Start your AI Journey
           </button>
-          <button className="bg-[#F4F4F4] text-[#0A0A0B] lg:px-6 lg:py-3 md:px-5 md:py-2 sm:px-3.5 sm:py-2 rounded-full lg:font-medium font-base lg:text-lg xl:text-xl sm:text-sm md:text-base hover:scale-105 transition">
+          <button className="bg-[#F4F4F4] text-[#0A0A0B] lg:px-6 lg:py-3 md:px-5 md:py-2 sm:px-3.5 sm:py-2 rounded-full lg:font-medium font-base lg:text-lg sm:text-sm md:text-base hover:scale-105 transition">
             Upload Product
           </button>
         </div>
