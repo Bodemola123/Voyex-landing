@@ -249,7 +249,7 @@ const Final = () => {
           </div>
   
           {/* Footer Section */}
-          <div className='md:mt-[40px] sm:mt-[72px] border-t border-white/20 flex md:flex-row sm:flex-col md:px-0 md:py-[20px] sm:py-[50px] md:justify-between sm:justify-center sm:items-center sm:gap-3 md:gap-0'>
+          <div className='md:mt-[40px] sm:mt-[72px] border-t border-white/20 flex md:flex-row sm:flex-col md:px-[40px] md:py-[20px] sm:py-[50px] md:justify-between sm:justify-center sm:items-center sm:gap-3 md:gap-0'>
   
             {/* Copyright Text */}
             <p className='text-sm font-normal text-center text-[#808080]'>@ 2025 VOYEX, Inc. All rights reserved</p>
