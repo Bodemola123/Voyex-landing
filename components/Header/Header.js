@@ -21,7 +21,7 @@ const Header = () => {
       <Link href="/" className="font-bold lg:text-5xl md:text-4xl sm:text-xl text-white">Voyex.</Link>
 
       {/* Desktop Navigation */}
-      <div className="hidden lg:flex md:flex text-sm font-semibold lg:gap-10 lg:py-3 lg:px-[60px] md:gap-5 md:px-5 md:py-2 border border-card rounded-[43px]">
+      <div className="hidden lg:flex md:flex sm:text-sm lg:text-lg font-semibold lg:gap-10 lg:py-3 lg:px-[60px] md:gap-5 md:px-5 md:py-2 border border-card rounded-[43px]">
         <Link href="/pricing" className={`${isActive("/pricing")} hover:text-[#C088fb]`}>Pricing</Link>
         <Link href="/contact-us" className={`${isActive("/contact-us")} hover:text-[#C088fb]`}>Contact Us</Link>
         <Link href="/about-us" className={`${isActive("/about-us")} hover:text-[#C088fb]`}>About us</Link>
@@ -31,7 +31,7 @@ const Header = () => {
       {/* Go to App Button */}
       <a 
         href="https://voyex-app-dev-delta.vercel.app/" 
-        className="sm:hidden lg:flex md:flex bg-[#c088fb] rounded-3xl md:rounded-[27px] border-[1.5px] border-[#c088fb] text-[#0a0a0b] flex gap-2 lg:py-[6px] lg:px-9 md:py-[6px] md:px-9 transition-all duration-200 ease-in-out hover:scale-110 hover:bg-[#9b67d7] hover:backdrop-blur-[18.4px]"
+        className="sm:hidden lg:flex md:flex bg-[#c088fb] rounded-3xl md:rounded-[27px] border-[1.5px] border-[#c088fb] text-[#0a0a0b] text-lg flex gap-2 lg:py-[6px] lg:px-9 md:py-[6px] md:px-9 transition-all duration-200 ease-in-out hover:scale-110 hover:bg-[#9b67d7] hover:backdrop-blur-[18.4px]"
       >
         Go to App
       </a>
