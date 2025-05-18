@@ -560,7 +560,7 @@ const Hero = () => {
   
       <div className="flex flex-col text-left gap-8 transition-opacity duration-1000 h-full mx-auto lg:w-[980px] xl:w-[1280px] md:w-[600px]">
       <h1 
-  className="sm:text-[28.2px] md:text-4xl lg:text-5xl xl:text-8xl font-bold text-white leading-tight"
+  className="sm:text-[28.2px] md:text-4xl lg:text-5xl xl:text-6xl font-bold text-white leading-tight"
   style={{
     display: '-webkit-box',
     WebkitLineClamp: '2',
@@ -591,7 +591,7 @@ const Hero = () => {
             </>
           )}
         </h1>
-        <p className="text-gray-300 text-sm md:text-base lg:text-lg xl:text-3xl sm:text-base">
+        <p className="text-gray-300 text-sm md:text-base lg:text-lg xl:text-2xl sm:text-base">
           Voyex helps you find the right AI tools for your usecases. Find AI tools with just a query. It simplifies finding, using and querying AI tools and create your own mini agency.
         </p>
         <div className="flex gap-4">
