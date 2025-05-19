@@ -591,7 +591,7 @@ const Hero = () => {
             </>
           )}
         </h1>
-        <p className="text-gray-300 text-sm md:text-base lg:text-xl sm:text-base lg:max-w-[810px]">
+        <p className="text-gray-300 text-sm md:text-base lg:text-xl sm:text-base lg:max-w-[810px] lg:-mt-10">
           Voyex helps you find the right AI tools for your usecases. Find AI tools with just a query. It simplifies finding, using and querying AI tools and create your own mini agency.
         </p>
         <div className="flex gap-4">
