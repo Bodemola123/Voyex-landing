@@ -10,15 +10,15 @@ const Playmode = () => {
   }, []);
 
   return (
-    <div className="relative z-50 flex flex-col justify-center items-center h-screen py-40 mb-[8px]">
+    <div className="relative z-50 flex flex-col justify-center items-center min-h-screen gap-5 py-40 mb-[32px]">
 
       {/* Title */}
-      <div className="text-center text-white lg:text-[54px] md:text-[38px] sm:text-[32px] font-bold leading-tight mb-[28px]">
+      <div className="text-center text-white lg:text-[54px] md:text-[38px] sm:text-[32px] font-bold leading-tight mb-[20px]">
         How Voyex Works
       </div>
 
       {/* Video Container */}
-      <div className="w-full xl:max-w-7xl lg:max-w-[980px] flex-grow flex items-center px-4 lg:px-8">
+      <div className="w-full h-full xl:max-w-[1130px] lg:max-h-[554px] lg:max-w-[980px] flex-grow flex items-center px-4 lg:px-8">
         <div className="relative w-full aspect-video">
           {isClient && (
             <iframe
@@ -28,7 +28,7 @@ const Playmode = () => {
               allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
               referrerPolicy="strict-origin-when-cross-origin"
               allowFullScreen
-              className="absolute inset-0 w-full h-full rounded-lg border border-[rgb(49,49,49)] border-opacity-100"
+              className="absolute inset-0 w-full h-full xl:max-w-[1130px] lg:max-h-[554px] lg:max-w-[980px] rounded-lg border border-[rgb(49,49,49)] border-opacity-100"
               style={{ backgroundColor: "black" }}
             ></iframe>
           )}
