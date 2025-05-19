@@ -230,7 +230,7 @@ const Everythingyouneed = () => {
       </div>
 
       {/* grid section */}
-      <div className="grid md:grid-cols-2 sm:grid-cols-1 gap-4 w-full sm:max-w-[425px] md:max-w-[838px] lg:max-w-[980px] xl:max-w-[1280px] mt-10" data-aos="fade-up">
+      <div className="grid md:grid-cols-2 sm:grid-cols-1 gap-4 w-full sm:max-w-[425px] md:max-w-[838px] lg:max-w-[980px] xl:max-w-[1144px] mt-10" data-aos="fade-up">
 
         {/* Card 1 */}
         <div className="p-5 border border-card rounded-xl flex flex-col items-center bg-[#0d0d0d] gap-4 group h-[210px]">
@@ -273,7 +273,7 @@ const Everythingyouneed = () => {
           data-aos="fade-up"
         > */}
         <div
-  className="relative flex flex-col items-center p-6 rounded-xl border border-gray-800 bg-[#0d0d0d] w-full  sm:max-w-[425px] md:max-w-[838px] lg:max-w-[980px] xl:max-w-[1280px] mt-[20px]"
+  className="relative flex flex-col items-center p-6 rounded-xl border border-gray-800 bg-[#0d0d0d] w-full  sm:max-w-[425px] md:max-w-[838px] lg:max-w-[980px] xl:max-w-[1144px] mt-[20px]"
   data-aos="fade-up"
 >
 

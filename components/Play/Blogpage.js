@@ -142,7 +142,7 @@ const manualArticles = [
 
 export default function BlogPage() {
   return (
-    <div className=" flex flex-col items-center justify-center py-14 px-6 max-w-6xl lg:max-w-[980px] xl:max-w-[1280px] mx-auto md:-mt-[350px] lg:-mt-[500px] sm:-mt-[350px] mb-80  " data-aos="fade-up">
+    <div className=" flex flex-col items-center justify-center py-14 px-6 max-w-6xl lg:max-w-[980px] xl:max-w-[1153px] mx-auto md:-mt-[350px] lg:-mt-[500px] sm:-mt-[350px] mb-80  " data-aos="fade-up">
     {/* // <div className="pt-0 px-6 md:px-10 max-w-[1286px] text-white min-h-screen mx-auto"> */}
 
           {/* "Our Blog" Button */}

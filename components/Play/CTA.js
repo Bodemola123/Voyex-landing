@@ -6,7 +6,7 @@ import '../../app/globals.css';
 const CTA = () => {
   return (
     <div
-      className="flex flex-col items-center justify-center z-10 px-4 md:px-12 mx-auto relative lg:top-[-500px] md:top-[-300px] sm:top-[-300px] lg:max-w-[980px] xl:max-w-[1280px] mt-40 mb-40 w-full"
+      className="flex flex-col items-center justify-center z-10 px-4 md:px-12 mx-auto relative lg:top-[-500px] md:top-[-300px] sm:top-[-300px] lg:max-w-[980px] xl:max-w-[1138px] mt-40 mb-40 w-full"
       data-aos="fade-up"
     >
       {/* "Our Audience" Label */}
