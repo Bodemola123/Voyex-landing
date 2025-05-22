@@ -98,7 +98,7 @@ const FirstModal = ({ onClose, onGetAnalytics }) => {
                 <FaCaretDown />
               </div>
               {openDropdown === 'category' && (
-                <div className="absolute z-10 mt-2 w-full bg-[#0A0A0B] max-h-48 overflow-y-auto rounded-md shadow-lg scrollbar-hide">
+                <div className="absolute z-10 mt-2 w-full bg-[#0A0A0B] max-h-48 overflow-y-auto rounded-2xl shadow-lg scrollbar-hide">
                   {categoryOptions.map((category) => (
                     <div
                       key={category}
@@ -125,7 +125,7 @@ const FirstModal = ({ onClose, onGetAnalytics }) => {
                 <FaCaretDown className="text-gray-300" />
               </div>
               {openDropdown === 'tag' && (
-                <div className="absolute z-10 mt-2 w-full bg-[#0A0A0B] max-h-48 overflow-y-auto rounded-md shadow-lg scrollbar-hide">
+                <div className="absolute z-10 mt-2 w-full bg-[#0A0A0B] max-h-48 overflow-y-auto rounded-2xl shadow-lg scrollbar-hide">
                   {tagOptions.map((tag) => (
                     <div
                       key={tag}
