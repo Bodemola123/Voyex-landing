@@ -56,7 +56,7 @@ const CTA = () => {
       </button> */}
       <button
   className="mt-8 bg-white text-black text-sm font-medium px-6 py-2 rounded-full"
-  onClick={() => window.location.href = 'https://voyex-landing.vercel.app/contact-us'}
+  onClick={() => window.location.href = '/contact-us'}
 >
   Mail us Today!
 </button>

@@ -278,7 +278,7 @@ const Form = () => {
               You agree to our friendly{" "}
               <span
         className="underline underline-offset-4 hover:text-[#c088fb] cursor-pointer"
-        onClick={() => window.location.href = "https://voyex-landing.vercel.app/privacy"}
+        onClick={() => window.location.href = "/privacy"}
         >
         privacy policy.
          </span>

@@ -33,11 +33,11 @@ We don&apos;t just show you tools. We ask the right questions, understand your i
         </p>
 
         <div className="flex mb-10 md:flex-row lg:flex-row sm:flex-col sm:gap-[18px] lg:gap-4 md:gap-[15.57px] mt-3 justify-center items-center">
-          <button 
-          onClick={() => window.location.href = "https://voyex-app-dev-delta.vercel.app/search"}
+          <a 
+          href = "https://voyex-app-dev-delta.vercel.app/search" target="_blank" rel="noopener noreferrer" 
           className="bg-[#f4f4f4] flex items-center justify-center sm:py-3 sm:px-3 md:py-2.5 md:px-9 rounded-3xl md:gap-2.5 lg:gap-2.5 sm:gap-[5.98px] text-[#032400] font-medium md:text-base sm:text-base transition-all duration-200 ease-in-out hover:scale-110 hover:bg-[#e0e0e0] z-20 md:w-auto lg:max-w-[217px] sm:w-[236px]">
             Get Started
-          </button>
+          </a>
         </div>
         
       </div>
