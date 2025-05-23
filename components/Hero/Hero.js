@@ -3,9 +3,7 @@ import React, { useEffect, useState } from 'react';
 import "../../app/globals.css";
 import StarsCanvas from '../common/StarBackground';
 import CircularRings from '../Circular';
-import FirstModal from '../Modals/FirstModal';
-import LoadingModal from '../Modals/LoadingModal';
-import ResultsModal from '../Modals/ResultsModal';
+import Link from 'next/link';
 
 
 
@@ -34,12 +32,6 @@ const Hero = () => {
   const [currentTitleIndex, setCurrentTitleIndex] = useState(0);
   const [typedKeyword, setTypedKeyword] = useState('');
   const [isDeleting, setIsDeleting] = useState(false);
-  const [showFirstModal, setShowFirstModal] = useState(false);
-const [showLoadingModal, setShowLoadingModal] = useState(false);
-const [showResultsModal, setShowResultsModal] = useState(false);
-  // New state to hold the analytics payload
-  const [analyticsPayload, setAnalyticsPayload] = useState(null);
-    const [apiResult, setApiResult] = useState(null);
 
 
   useEffect(() => {
@@ -139,9 +131,9 @@ const [showResultsModal, setShowResultsModal] = useState(false);
           <button className="bg-[#C088FB] text-[#0A0A0B] lg:px-8 lg:py-4 md:px-5 md:py-2 sm:px-3.5 sm:py-2 rounded-[27px] lg:font-medium font-base lg:text-lg  sm:text-sm md:text-base hover:scale-105 transition">
             Start your AI Journey
           </button>
-          <button className="bg-[#F4F4F4] text-[#0A0A0B] lg:px-8 lg:py-4 md:px-5 md:py-2 sm:px-3.5 sm:py-2 rounded-[27px] lg:font-medium font-base lg:text-lg sm:text-sm md:text-base hover:scale-105 transition" onClick={() => setShowFirstModal(true)}>
+          <Link href="/Forecaster" className="bg-[#F4F4F4] text-[#0A0A0B] lg:px-8 lg:py-4 md:px-5 md:py-2 sm:px-3.5 sm:py-2 rounded-[27px] lg:font-medium font-base lg:text-lg sm:text-sm md:text-base hover:scale-105 transition">
             Upload Product
-          </button>
+          </Link>
         </div>
         {/* Background orbits with reduced scale and blur */}
         <div className="absolute inset-0 pointer-events-none z-[-1] flex items-center justify-center transform scale-90 filter">
@@ -150,21 +142,6 @@ const [showResultsModal, setShowResultsModal] = useState(false);
            </div>
       </div>
     </div>
-    {showFirstModal && (
-  <FirstModal
-          onClose={() => setShowFirstModal(false)}
-          onGetAnalytics={handleGetAnalytics}  // pass handler with payload
-        />
-)}
-
-{showLoadingModal && <LoadingModal 
-                payload={analyticsPayload} 
-                onComplete={handleLoadingComplete} // pass the payload here
-                />}
-
-{showResultsModal && (
-  <ResultsModal onClose={() => setShowResultsModal(false)} results={apiResult} />
-)}
 
     </>
   );

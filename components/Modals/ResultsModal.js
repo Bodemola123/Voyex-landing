@@ -62,8 +62,7 @@ const ResultsModal = ({onClose, results}) => {
 
     }
   return (
-    <div className="fixed inset-0 bg-[rgba(19,19,20,0.8)]  flex items-center justify-center z-50">
-    <div className='bg-[#1C1D1F] p-[27px] h-full w-full flex flex-col gap-[29px] rounded-[41px] max-w-[957px] max-h-[683px] overflow-y-auto scrollbar-hide overflow-x-visible'>
+    <div className='bg-[#1C1D1F] p-[27px] h-full w-full flex flex-col gap-[29px] rounded-[41px] max-w-[957px] overflow-y-auto'>
         <div className='flex justify-between items-center'>
         <p className='text-left font-normal text-[27px] text-[#f4f4f4]'>Your Tool results are out</p>
         <button onClick={onClose}>
@@ -89,7 +88,6 @@ className={`flex items-center gap-2 text-base text-center font-medium ${
        </div>
 
 
-    </div>
     </div>
   )
 }

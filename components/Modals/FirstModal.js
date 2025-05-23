@@ -60,14 +60,7 @@ const FirstModal = ({ onClose, onGetAnalytics }) => {
     productPrice.trim() !== '';
 
   return (
-    <div className="fixed inset-0 bg-[rgba(19,19,20,0.8)] flex items-center justify-center z-50 w-full h-full">
       <div className="relative bg-[#1C1D1F] p-[27px] items-center h-full w-full flex flex-col gap-[29px] rounded-[41px] max-w-[794px] max-h-[785px] overflow-y-scroll scrollbar-hide">
-        <button
-          onClick={onClose}
-          className="absolute top-5 right-5 text-white text-2xl font-bold hover:text-gray-300"
-        >
-          <Image src={'/close-square.svg'} alt="Close" width={58} height={58} />
-        </button>
         <span className="flex items-center justify-center py-[23px] text-5xl font-bold text-[#f4f4f4]">
           Voyex
         </span>
@@ -161,7 +154,7 @@ const FirstModal = ({ onClose, onGetAnalytics }) => {
           </div>
         </div>
       </div>
-    </div>
+
   );
 };
 
