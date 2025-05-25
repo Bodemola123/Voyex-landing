@@ -1,4 +1,5 @@
-import React, { useRef, useState } from 'react';
+"use client"
+import React, { useEffect, useRef, useState } from 'react';
 import { Label } from '../ui/label';
 import { Input } from '../ui/input';
 import { FaCaretDown, FaCheck } from 'react-icons/fa';
@@ -24,12 +25,13 @@ const FirstModal = ({ onClose, onGetAnalytics }) => {
   const [selectedTags, setSelectedTags] = useState([]);
   const [openDropdown, setOpenDropdown] = useState(null);
 
-  const dropdownRef = useRef(null);
+const categoryRef = useRef(null);
+
 
 useEffect(() => {
   const handleClickOutside = (event) => {
-    if (dropdownRef.current && !dropdownRef.current.contains(event.target)) {
-      setOpenDropdown(null);
+    if (categoryRef.current && !categoryRef.current.contains(event.target)) {
+      setOpenDropdown((prev) => (prev === 'category' ? null : prev));
     }
   };
 
@@ -38,6 +40,7 @@ useEffect(() => {
     document.removeEventListener('mousedown', handleClickOutside);
   };
 }, []);
+
 
   const toggleDropdown = (type) => {
     setOpenDropdown(openDropdown === type ? null : type);
@@ -99,7 +102,7 @@ useEffect(() => {
           </div>
 
           {/* Category */}
-          <div className="space-y-1 relative " ref={dropdownRef}>
+          <div className="space-y-1 relative " ref={categoryRef}>
             <Label className="text-[#F4F4F4] text-sm font-medium">Category</Label>
             <div
               className="w-full py-3 px-4 bg-[#0A0A0B] text-gray-300 rounded-[68px] cursor-pointer flex items-center justify-between"
