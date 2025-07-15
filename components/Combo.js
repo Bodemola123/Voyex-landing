@@ -4,7 +4,7 @@ import Hero from './Hero/Hero';
 
 const Combo = () => {
   return (
-    <div className="relative min-h-screen overflow-visible">
+    <div className="relative min-h-screen">
       <Header />
       
       <div className="flex justify-center items-center h-screen w-full -mt-12">
