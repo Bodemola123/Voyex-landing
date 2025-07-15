@@ -7,7 +7,7 @@ const Combo = () => {
     <div className="relative h-screen overflow-visible">
       <Header />
       
-      <div className="flex justify-center items-center w-full h-max mt-12">
+      <div className="flex justify-center items-center w-full h-screen mt-12">
         <Hero />
       </div>
     </div>
